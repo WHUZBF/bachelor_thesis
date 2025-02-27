@@ -1,0 +1,87 @@
+% !TeX program = xelatex
+
+\documentclass[type = bachelor]{whu-thesis}
+
+\whusetup{
+	info = {
+		title      = {纯旋量超弦},
+		title*     = {Pure Spinor Superstring Theory},
+		department = {物理科学与技术学院},
+		department* = {School of Physics and Technology},
+		author     = {郑卜凡},
+		author*    = {Bufan Zheng},
+		student-id = {2021302022016},
+		supervisor = {杜一剑},
+		supervisor* = {Yi-jian Du},
+		supervisor-outer = {},
+		academic-title = {副教授},
+		academic-title* = {},
+		academic-title-outer = {},
+		subject = {},
+		major   = {物理学},
+		major* = {Physics},
+		research-area = {理论物理},
+		research-area* = {},
+		year = 2025,
+		keywords = {超弦理论,散射振幅,旋量,色运动学对偶,量子场论},
+		keywords* = {Superstring Theory,Scattering Amplitudes,Spinor,Color-Kinematic Duality, Quantum Field Theory},
+		month = 4,
+		clc = O175.29,
+		udc = 517.9,
+	},
+	style = {
+		% footnote-style = libertinus-sans,
+		font = times,
+		math-font = default,
+		cjk-font = windows,
+		% library,
+		% cjk-fakefont = true,
+		bib-backend = bibtex,
+		% bib-style = numerical,
+		bib-resource = {ref/bachelor-refs},
+		bachelor-encover = true, % 显示英文封面
+		license = false
+	}
+}
+
+% 宏包引入
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{extarrows}
+\usepackage{annotate-equations}
+
+%自定义命令
+%%实现双重尖括号
+\makeatletter
+\newsavebox{\@brx}
+\newcommand{\llangle}[1][]{\savebox{\@brx}{\(\m@th{#1\langle}\)}%
+	\mathopen{\copy\@brx\kern-0.5\wd\@brx\usebox{\@brx}}}
+\newcommand{\rrangle}[1][]{\savebox{\@brx}{\(\m@th{#1\rangle}\)}%
+	\mathclose{\copy\@brx\kern-0.5\wd\@brx\usebox{\@brx}}}
+\makeatother
+
+\begin{document}
+	%生成目录
+	\tableofcontents
+	% \listoffigures
+	% \listoftables
+	% 正文
+	\mainmatter
+	\include{pages/chapter1}
+	\include{pages/chapter2}
+	\include{pages/chapter3}
+	\include{pages/chapter4}
+	\include{pages/chapter5}
+	\include{pages/chapter6}
+	
+	\backmatter
+	% 附录
+	\appendix
+	\include{pages/appendix}
+	
+	% 参考文献
+	\printbibliography
+	
+	% 致谢
+	\include{pages/acknowledgement}
+\end{document}

@@ -1,0 +1,116 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[Berkovits et~al.(2022)Berkovits, D'Hoker, Green, Johansson, and
+  Schlotterer]{berkovits2022snowmasswhitepaperstring}
+BERKOVITS N, D'HOKER E, GREEN M~B, et~al.
+\newblock Snowmass white paper: String perturbation theory\allowbreak[A/OL].
+\newblock 2022.
+\newblock arXiv: \eprint{https://arxiv.org/abs/2203.09099}{2203.09099}.
+\newblock \url{https://arxiv.org/abs/2203.09099}.
+
+\bibitem[Polchinski(2007)]{Polchinski:1998rq}
+POLCHINSKI J.
+\newblock Cambridge monographs on mathematical physics: {String theory. Vol. 1:
+  An introduction to the bosonic string}\allowbreak[M/OL].
+\newblock Cambridge University Press, 2007.
+\newblock DOI: \doi{10.1017/CBO9780511816079}.
+
+\bibitem[Blumenhagen et~al.(2013)Blumenhagen, L\"ust, and
+  Theisen]{Blumenhagen:2013fgp}
+BLUMENHAGEN R, L\"UST D, THEISEN S.
+\newblock Theoretical and mathematical physics: {Basic concepts of string
+  theory}\allowbreak[M/OL].
+\newblock Heidelberg, Germany: Springer, 2013.
+\newblock DOI: \doi{10.1007/978-3-642-29497-6}.
+
+\bibitem[Becker et~al.(2006)Becker, Becker, and Schwarz]{Becker:2006dvp}
+BECKER K, BECKER M, SCHWARZ J~H.
+\newblock {String theory and M-theory: A modern introduction}\allowbreak[M/OL].
+\newblock Cambridge University Press, 2006.
+\newblock DOI: \doi{10.1017/CBO9780511816086}.
+
+\bibitem[Di~Francesco et~al.(1997)Di~Francesco, Mathieu, and
+  Senechal]{DiFrancesco:1997nk}
+DI~FRANCESCO P, MATHIEU P, SENECHAL D.
+\newblock Graduate texts in contemporary physics: {Conformal Field
+  Theory}\allowbreak[M/OL].
+\newblock New York: Springer-Verlag, 1997.
+\newblock DOI: \doi{10.1007/978-1-4612-2256-9}.
+
+\bibitem[Blumenhagen et~al.(2009)Blumenhagen and
+  Plauschinn]{Blumenhagen:2009zz}
+BLUMENHAGEN R, PLAUSCHINN E.
+\newblock {Introduction to conformal field theory}: {with applications to
+  String theory}: Vol. 779\allowbreak[M/OL].
+\newblock 2009.
+\newblock DOI: \doi{10.1007/978-3-642-00450-6}.
+
+\bibitem[Weinberg(2013)]{Weinberg:1996kr}
+WEINBERG S.
+\newblock {The quantum theory of fields. Vol. 2: Modern
+  applications}\allowbreak[M/OL].
+\newblock Cambridge University Press, 2013.
+\newblock DOI: \doi{10.1017/CBO9781139644174}.
+
+\bibitem[Erbin(2021)]{Erbin:2021smf}
+ERBIN H.
+\newblock Lecture notes in physics: Vol. 980\quad {String Field Theory: A
+  Modern Introduction}\allowbreak[M/OL].
+\newblock 2021.
+\newblock DOI: \doi{10.1007/978-3-030-65321-7}.
+
+\bibitem[Henneaux et~al.(1994)Henneaux and Teitelboim]{Henneaux:1994lbw}
+HENNEAUX M, TEITELBOIM C.
+\newblock {Quantization of Gauge Systems}\allowbreak[M].
+\newblock Princeton University Press, 1994.
+
+\bibitem[Green et~al.(2012)Green, Schwarz, and Witten]{Green:2012oqa}
+GREEN M~B, SCHWARZ J~H, WITTEN E.
+\newblock Cambridge monographs on mathematical physics: {Superstring Theory
+  Vol. 1}: {25th Anniversary Edition}\allowbreak[M/OL].
+\newblock Cambridge University Press, 2012.
+\newblock DOI: \doi{10.1017/CBO9781139248563}.
+
+\bibitem[Green et~al.(2012)Green, Schwarz, and Witten]{Green:2012pqa}
+GREEN M~B, SCHWARZ J~H, WITTEN E.
+\newblock Cambridge monographs on mathematical physics: {Superstring Theory
+  Vol. 2}: {25th Anniversary Edition}\allowbreak[M/OL].
+\newblock Cambridge University Press, 2012.
+\newblock DOI: \doi{10.1017/CBO9781139248570}.
+
+\bibitem[伊藤克司(2011)]{itocft}
+伊藤克司.
+\newblock {共形場理論 :
+  現代数理物理の基礎として}\allowbreak[M].
+\newblock サイエンス社, 2011.
+
+\bibitem[王竹溪郭敦仁(2012)]{wzx}
+王竹溪郭敦仁.
+\newblock {特殊函数概论}\allowbreak[M].
+\newblock 北京大学出版社, 2012.
+
+\bibitem[Adams et~al.(2010)Adams, Taylor, and DeWolfe]{PhysRevLett.105.071601}
+ADAMS A, TAYLOR W, DEWOLFE O.
+\newblock String universality in ten dimensions\allowbreak[J/OL].
+\newblock Phys. Rev. Lett., 2010, 105: 071601.
+\newblock \url{https://link.aps.org/doi/10.1103/PhysRevLett.105.071601}.
+
+\bibitem[Berkovits(2000)]{Berkovits:2000fe}
+BERKOVITS N.
+\newblock {Super Poincare covariant quantization of the
+  superstring}\allowbreak[J/OL].
+\newblock JHEP, 2000, 04: 018.
+\newblock DOI: \doi{10.1088/1126-6708/2000/04/018}.
+
+\end{thebibliography}

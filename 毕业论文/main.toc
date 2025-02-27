@@ -1,0 +1,36 @@
+\contentsline {chapter}{摘要}{I}{chapter*.1}%
+\contentsline {chapter}{ABSTRACT}{III}{chapter*.2}%
+\contentsline {chapter}{\numberline {1\hspace {.3em}}引言}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2\hspace {.3em}}玻色弦及其量子化}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}正则量子化}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Nambu-Goto 作用量}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}光锥量子化}{4}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}协变量子化}{6}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}路径积分量子化}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Polyakov路径积分}{7}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}弦振幅}{9}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}顶角算符}{10}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}BRST量子化}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}鬼场的真空}{13}{section.2.4}%
+\contentsline {section}{\numberline {2.5}*BV形式}{13}{section.2.5}%
+\contentsline {chapter}{\numberline {3\hspace {.3em}}Ramond-Neveu-Schwarz超弦}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}世界面超场}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}正则量子化}{17}{section.3.2}%
+\contentsline {section}{\numberline {3.3}GSO投影}{18}{section.3.3}%
+\contentsline {section}{\numberline {3.4}RNS超弦顶角算符}{20}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}超鬼场真空}{20}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}*弦理论之间的对偶关系}{20}{section.3.5}%
+\contentsline {chapter}{\numberline {4\hspace {.3em}}弦微扰论}{21}{chapter.4}%
+\contentsline {chapter}{\numberline {5\hspace {.3em}}Berkovits超弦}{23}{chapter.5}%
+\contentsline {chapter}{\numberline {6\hspace {.3em}}BCJ分子的构造}{25}{chapter.6}%
+\contentsline {section}{\numberline {6.1}色-运动学对偶}{25}{section.6.1}%
+\contentsline {section}{\numberline {6.2}利用纯旋量超弦构造Yang-Mills理论的树图BCJ分子}{25}{section.6.2}%
+\contentsline {chapter}{本论文主要使用到的OPE}{27}{appendix*.7}%
+\contentsline {section}{\numberline {1}自由CFT}{27}{section.Alph0.1}%
+\contentsline {subsection}{\numberline {1.1}自由玻色CFT}{27}{subsection.Alph0.1.1}%
+\contentsline {subsection}{\numberline {1.2}$bc$鬼场}{27}{subsection.Alph0.1.2}%
+\contentsline {section}{\numberline {2}$\mathcal {N}=1$SCFT}{27}{section.Alph0.2}%
+\contentsline {subsection}{\numberline {2.1}自由费米CFT}{27}{subsection.Alph0.2.1}%
+\contentsline {subsection}{\numberline {2.2}$\beta \gamma $鬼场}{27}{subsection.Alph0.2.2}%
+\contentsline {chapter}{参考文献}{29}{appendix*.8}%
+\contentsline {chapter}{致谢}{31}{appendix*.9}%

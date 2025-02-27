@@ -1,0 +1,154 @@
+\chapter{Ramond-Neveu-Schwarz超弦}
+本章使用超对称共形场论（SCFT）的方法介绍世界面超对称的RNS超弦理论。更多细节详见\cite{Green:2012oqa,Green:2012pqa}。
+\section{世界面超场}
+考虑世界面超对称，Polyakov作用量\ref{eq:2.2}中为$X$引入世界面自旋$\frac12$超伴场$\Psi$，为$\gamma$引入世界面自旋$\frac32$超伴场$\chi$，他们都是世界面上的二维旋量。在世界面Wick转动后，RNS超弦作用量为\footnote{$\rho$是二维gamma矩阵。}：
+\begin{equation}
+	\begin{aligned}
+		S_{\mathrm{RNS}}[X,\Psi,g,\chi]=&\frac1{4\pi}\int\mathrm{d}^2\sigma\sqrt{-g}\Big[-\frac1{\alpha^{\prime}}g^{\alpha\beta}\partial_\alpha X^\mu\partial_\beta X_\mu+\overline{\Psi}^\mu\rho^\alpha\nabla_\alpha\Psi_\mu\\&+(\overline{\chi}_\alpha\rho^\beta\rho^\alpha\Psi^\mu)\Big(\frac1{\sqrt{2\alpha^{\prime}}}\partial_\beta X_\mu+\frac18\overline{\chi}_\beta\Psi_\mu\Big)\Big]
+	\end{aligned}
+\end{equation}
+对于闭弦，上述作用量的超对称荷有左右模部分，所以实际上是$\mathcal{N}=2$超对称，而超弦只有左模有贡献，所以是$\mathcal{N}=1$超对称。后面将会看到他们低能极限下的谱分别是$\mathcal{N}=2$超引力以及$\mathcal{N}=1$超对称Yang-Mills理论。
+
+现在$\mathrm{diff}\times\mathrm{Weyl}$不变性被提升为$\mathrm{Super\mbox{-}diff}\times\mathrm{Super\mbox{-}Weyl}$不变性，类似\ref{eq:2.30}取等温坐标到共形规范下消去$g$，这里我们可以取超共形规范消去$\chi$，并且将Majorana旋量\footnote{二维情况下总可以选取$\rho$的实表示从而要求$\Psi$为实的，这在二维情况下意味着是Majorana旋量}$\Psi$分解成左右手Weyl旋量$\psi/\bar\psi$。最终得到世界面上的超对称共形场论的物质项：
+\begin{equation}
+	S=\frac{1}{2\pi}\int\mathrm{d}^2z\left(\frac{2}{\alpha^{\prime}}\partial X^\mu\overline{\partial}X_\mu+\psi^\mu\overline{\partial}\psi_\mu+\overline{\psi}^\mu\partial\overline{\psi}_\mu\right)
+\end{equation}
+同时可以引入玻色鬼场$bc$以及费米鬼场$\beta\gamma$：
+\begin{equation}
+	S_{\mathrm{gh}}=\frac{1}{2\pi}\int\mathrm{d}^2z\left(b\overline{\partial}c+\overline{b}\partial\overline{c}+\beta\overline{\partial}\gamma+\overline{\beta}\partial\overline{\gamma}\right)
+\end{equation}
+共形变换以及相应的超共形变换的能动张量为：
+\begin{equation}
+	\label{eq:3.4}
+	\begin{gathered}
+		\frac{\delta S_m}{\delta g}\sim T^\mathrm{m}(z)=-\frac{1}{\alpha^{\prime}}:\partial X\cdot\partial X:-\frac{1}{2}:\psi\cdot\partial\psi:\\
+		\frac{\delta S_m}{\delta\chi}\sim G^\mathrm{m}(z)=i\sqrt{\frac{2}{\alpha^{\prime}}}\psi^\mu\partial X_\mu
+	\end{gathered}
+\end{equation}
+由于$g,\chi$都没有动力学，$T^m,G^m$应当为$0$类似\ref{eq:2.22}作为约束出现。另外$bc\beta\gamma$鬼场总共对中心荷贡献$-15$，而玻色场贡献$D$，费米场贡献$\frac{D}{2}$，所以共形反常消去必须要求：
+\begin{equation}
+	\boxed{D_{\mathrm{super}}=10}
+\end{equation}
+
+后面的讨论主要针对左模。类似开弦边界条件\ref{eq:2.9}的边界条件选取消去作用量泛函导数的边界项贡献，最终加倍技巧后体现为左右模相等\ref{eq:2.35}。而对RNS超弦，类似的条件会导致世界面超场左右模之间相差正负号，从而给出两种不同的超场模展开：
+\begin{equation}
+	\psi_{\mathrm{NS}}^\mu(z)=\sum_{r\in\mathbb{Z}+\frac{1}{2}}\psi_r^\mu z^{-r-\frac{1}{2}},\quad\psi_{\mathrm{R}}^\mu(z)=\sum_{n\in\mathbb{Z}}\psi_n^\mu z^{-n-\frac{1}{2}}
+\end{equation}
+世界面超场应当看作是在复平面的双覆盖黎曼面上定义。世界面超流$G$以及$\beta\gamma$鬼场同样可以分为NS和R两个部分，只是$z$的指数依赖要根据共形权重写。后面会看到$R$部分负责产生费米子，NS部分负责产生玻色子。对于闭弦，边界条件\ref{eq:2.8}变化为超场可以满足周期性或者反周期性。左右模部分可以分别处于NS，R部分，所以总共有四个部分。
+
+最后来讨论一下费米物质场的真空。玻色场的真空由$\alpha^\mu_{n\geq 1}$湮灭的$\ket{0;p^\mu}$生成，其中$p^\mu\propto\alpha^\mu_0$用来标记真空动量$p^\mu$。类似的，费米物质场真空也由对应的湮灭算符产生：
+\begin{equation}
+	\psi_{r\geq\frac12}^\mu\left|0,p\right\rangle_{\mathrm{NS}}=0,\quad \psi_{n\geq1}^\mu\left|0,p\right\rangle_{\mathrm{R}}=0
+\end{equation}
+$\psi_0$类似$\alpha_0$既不是产生也不是湮灭算符，而是用于标记简并的真空态。不过$\psi_0$只存在于R部分真空，所以NS部分的真空依旧直接是$\ket{0}_{\mathrm{NS}}$，而且这也正是$\frac12$共形权的$\psi$场的$SL(2,\mathbb{C})$不变真空。注意到$\psi_0$之间满足：
+\begin{equation}
+	[\psi_0^\mu,\psi_0^\nu]=\eta^{\mu\nu}
+	\xleftrightarrow{\Gamma\sim\sqrt{2}\psi_0} [\Gamma^\mu,\Gamma^\mu]=2\eta^{\mu\nu}
+\end{equation}
+也就是说R部分真空应当处于$SO(9,1)$的旋量表示也就是十维Clifford代数表示中，是具有$2^5=32$个分量的Dirac旋量$\left|A^{\prime}\right\rangle_{\mathrm{R}}=\left|A\right\rangle\oplus|\dot A\rangle$，现在考虑$G^m=0$的限制要求，类似\ref{eq:2.23}，对R部分有：
+\begin{equation}
+	G^m_{n\geq0}\left|\mathrm{phys}\right\rangle_{\mathrm{R}}=\sum_{m\in\mathbb{Z}}\alpha_m\cdot\psi_{m-n}\left|\mathrm{phys}\right\rangle_{\mathrm{R}}=0
+\end{equation}
+这个时候由于\ref{eq:3.4}中$G^m$部分$\psi$与$\partial X$之间OPE正则，所以不需要引入类似\ref{eq:2.23}的正规排序常数\footnote{这其实也是因为鬼场和物质场对R真空的总真空能贡献为0。}。考虑$n=0$时类似$L_0=0$的质量在壳条件，物质场超流要求的在壳条件可以改写为下面的Dirac-Ramond方程：
+\begin{equation}
+	\left(p\cdot\Gamma+\frac{2\sqrt{2}}{\ell}\sum_{n=1}^\infty(\alpha_{-n}\cdot \psi_n+\psi_{-n}\cdot\alpha_n)\right)\left|\mathrm{phys}\right\rangle_{\mathrm{R}}=0
+\end{equation}
+上述方程对真空态退化为$p\cdot\Gamma\ket{0}=0$即Dirac方程。这一方程将每个Weyl分量从$16$缩减到$8$。后面GSO投影会对这一自由度再次进行修正。
+
+NS真空是$SL(2,\mathbb{C})$不变真空，而R真空实际上可以看作是NS真空的激发态，自旋场将这两个真空联系起来：
+\begin{equation}
+	\left|A^{\prime}\right\rangle_{R}=\lim_{z\to 0}S_{{A^{\prime}}}(z)\left|0\right\rangle_{NS},\quad 
+	{}_R\left\langle A^{\prime}\right|=\lim_{z\to\infty}{}_{NS}\left\langle0\right|S_{{A^{\prime}}}(z)z^{D/8}
+\end{equation}
+$z^{D/8}$的出现是BPZ共轭的要求\cite{itocft}，$S_A$的共形权为$\frac{D}{16}=\frac58$，其来自于R部分物质场真空能贡献，相应的NS部分物质场真空能贡献为0：
+\vspace{4em}% 这里需要调
+\begin{equation}
+	\label{eq:3.12}
+	a^{\mathrm{m}}_R=
+	\eqnmarkbox[blue]{node1}{\frac{1}{24}c^{\mathrm{m}}}+
+	\left(\eqnmark[red]{node2}{-\frac{1}{24}}+\tikzmarknode{node3}{\frac{1}{24}}\right)D=\frac{1}{16}D
+\end{equation}
+\annotate[yshift=1em]{right}{node1}{能动张量非主场，共形变换贡献}
+\annotate[yshift=-0.5em]{below,left}{node2}{玻色场贡献}
+\annotate[yshift=-1em]{below,label below}{node3}{费米场贡献}
+\vspace{1em}
+\section{正则量子化}
+本节使用光锥量子化处理RNS超弦，好处是规范完全固定，只用讨论物质场，能方便看出粒子谱的超对称性\footnote{协变量子化可见\href{https://www.uu.se/en/department/physics-and-astronomy/research/theoretical-physics/oliver-schlotterer}{Oliver Schlotter的在线讲义}。}。后面再使用BRST量子化来构造协变的顶角算符，后面的讨论以开弦为例。
+
+玻色场的光锥规范依旧和第\ref{chap:2}章的讨论相同，费米场NS部分的光锥规范有如下的简单形式：
+\begin{equation}
+	\psi^+ = 0
+\end{equation}
+R部分同上式一样，唯一不同是保留零模，用于生成简并R真空。而$\psi^-$部分同样也可以用横向振动激发描述。所以$\psi^\pm$不再拥有动力学，我们只需要关注横向振动激发。粒子谱由$\psi^i_\bullet,\alpha^i_\bullet$作用在R和NS真空上得到。
+
+NS部分的质量谱可以从$L_0^m$最高权限制给出的在壳条件推出：
+\begin{equation}
+	\label{eq:3.14}
+	\alpha^{\prime}m^2_{NS}=\sum_{n=1}^\infty\alpha_{-n}^i\alpha_n^i+\sum_{r=1/2}^\infty r\psi_{-r}^i\psi_r^i-\frac{1}{2}
+\end{equation}
+这里$-\frac12$来源于\ref{eq:3.12}类似的计算，注意还要加上鬼场的贡献，同理R部分有：
+\begin{equation}
+	\alpha^{\prime}m^2_{R}=\sum_{n=1}^\infty\alpha_{-n}^i\alpha_n^i+\sum_{n=1}^\infty n\psi_{-n}^i \psi_n^i
+\end{equation}
+不过从\ref{eq:3.14}能看出NS部分依旧存在快子态。
+\section{GSO投影}
+RNS形式只保证了世界面上的超对称性，而我们更应当要求保留十维靶空间的超对称性。这一点需要在量子化的基础上剔除一些态。定义如下的G宇称算符：
+\begin{equation}
+\begin{aligned}
+		G_{NS}&=(-1)^{F+1}=(-1)^{\sum_{r=1/2}^\infty \psi_{-r}^i\psi_r^i+1}\\
+	G_R&=\Gamma_{11}(-1)^{\sum_{n=1}^\infty \psi_{-n}^i\psi_n^i}
+\end{aligned}
+\end{equation}
+其中$\Gamma_{11}=\Gamma_{0}\Gamma_{1}\ldots\Gamma_{9}$。GSO投影要求NS部分的态满足$G_{NS}=+1$，显然快子态不满足这一要求，所以被剔除了，基态变为无质量矢量玻色子激发$\psi^i_{-1/2}\ket{0}_{NS}$。对于R部分，为了要求处于$G_R$本征态，则是要求剔除掉一般的手征。也就是说如果我们选取$\ket{\alpha;+}_R$\footnote{其实记号$\alpha$就已经表明了$\Gamma_{11}=+1$，这里后面加个$+$只是为了符号更加清晰。}作为基态，那么投影到$G_R=+1$，反之投影到$G_R=-1$。也就是说在GSO投影下，R部分基态从$8\oplus 8$破缺成了仅含一个手征$8$。对于开弦来说，取左右手征完全只是人为约定。
+
+但是对于闭弦，左右模的R部分真空完全可以取相同或者相反手征，然后再把两部分GSO投影后的谱拼起来，这就得到了表\ref{tab:2}所示两种不同的自洽的闭弦构造。
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|cc}
+		\hline
+		 &Type IIA &Type IIB\\
+		 \hline
+		$m^2=0$ 
+		&\(\displaystyle
+			\begin{gathered}
+				|\dot\alpha;-\rangle_{\mathrm{R}}\otimes|\alpha;+\rangle_{\mathrm{R}}\\\tilde{\psi}_{-1/2}^i|0\rangle_{\mathrm{NS}}\otimes \psi_{-1/2}^j|0\rangle_{\mathrm{NS}}\\\tilde{\psi}_{-1/2}^i|0\rangle_{\mathrm{NS}}\otimes|\alpha;+\rangle_{\mathrm{R}}\\|\dot\alpha;-\rangle_{\mathrm{R}}\otimes \psi_{-1/2}^i|0\rangle_{\mathrm{NS}}
+			\end{gathered}
+		\)
+		&\(\displaystyle
+		\begin{gathered}
+			|\alpha;+\rangle_{\mathrm{R}}\otimes|\alpha;+\rangle_{\mathrm{R}}\\\tilde{\psi}_{-1/2}^i|0\rangle_{\mathrm{NS}}\otimes \psi_{-1/2}^j|0\rangle_{\mathrm{NS}}\\\tilde{\psi}_{-1/2}^i|0\rangle_{\mathrm{NS}}\otimes|\alpha;+\rangle_{\mathrm{R}}\\|\alpha;+\rangle_{\mathrm{R}}\otimes \psi_{-1/2}^i|0\rangle_{\mathrm{NS}}
+		\end{gathered}
+		\)\\
+		\hline
+	\end{tabular}
+	\caption{Type IIA/B超弦}
+	\label{tab:2}
+\end{table}
+
+他们是可定向的闭弦理论，本身构造是不包含超弦的，为了引入开弦可以通过额外引入D膜。现在来观察无质量谱构成的超多重态：
+\begin{equation}
+	\text{type IIA: }(\mathbf{8_v}+\mathbf{8_c})\otimes(\mathbf{8_v}+\mathbf{8_s}),\quad \text{type IIB: }(\mathbf{8_v}+\mathbf{8_c})\otimes(\mathbf{8_v}+\mathbf{8_c})
+\end{equation}
+\begin{itemize}
+	\item[$\bullet$]NS-NS部分：A/B型弦论都是$\mathbf{8_v}\otimes\mathbf{8_v}=\mathbf{1}+\mathbf{28}+\mathbf{35}=\phi\oplus B_{\mu\nu}\oplus G_{\mu\nu}$，分解为伸缩子，反对称$B$-场以及引力子
+	\item[$\bullet$]NS-R和R-NS部分：注意到$\mathbf{8_v}\otimes\mathbf{8_s}=\mathbf{8_c}\oplus\mathbf{56_s}$以及$\mathbf{8_v}\otimes\mathbf{8_c}=\mathbf{8_s}\oplus\mathbf{56_c}$。所以A/B型弦论的两个部分都给出伸缩超伴子和引力超伴子。但是A型超弦NS-R和R-NS的手性不一样，B型则相同
+	\item[$\bullet$]R-R部分：对于A型超弦$\mathbf{8_c}\otimes\mathbf{8_s}=\mathbf{8_v}\oplus\mathbf{56_t}$，分解为1-形式（矢量场）规范场和3-形式规范场；对于B型超弦$\mathbf{8_c}\otimes\mathbf{8_c}=\mathbf{1}+\mathbf{2}\mathbf{8}+\mathbf{3}\mathbf{5_+}$，分解为0-形式（标量场）、2-形式和4-形式规范场。这些场统称为R-R形式场，类似Yang-Mills场作为1-形式场$A^\mu$在世界线上的拉回与点粒子相互作用，高形式场可以与更高维带R-R荷的D膜相互作用，这是D膜作为BPS态在超弦中稳定存在的关键。
+\end{itemize}
+而且不难看出费米子自由度和玻色子自由度至少在$m^2=0$层面上是吻合的。实际上GSO投影后，玻色子（NS部分生成）和费米子（R部分生成）生成函数为：
+\begin{equation}
+	\begin{gathered}
+		f_{\mathrm{NS}}(w)=\frac{1}{2\sqrt{w}}\left[\prod_{m=1}^{\infty}\left(\frac{1+w^{m-1/2}}{1-w^m}\right)^8-\prod_{m=1}^{\infty}\left(\frac{1-w^{m-1/2}}{1-w^m}\right)^8\right]=\frac{\vartheta_3^4(\tau)-\vartheta_4^4(\tau)}{2\eta^{12}(\tau)}\\
+	f_{\mathrm{R}}(w)=8\prod_{m=1}^\infty\left(\frac{1+w^m}{1-w^m}\right)^8=\frac{\vartheta_2^4(\tau)}{2\eta^{12}(\tau)}
+	\end{gathered}
+\end{equation}
+其中$\vartheta_k(\tau)|_{w:=\mathrm{e}^{2\pi\mathrm{i}\tau}}$是Jacobi-$\theta$函数，$\eta(\tau)|_{w:=\mathrm{e}^{2\pi\mathrm{i}\tau}}$是Dedekind-$\eta$函数，定义可在\cite{Blumenhagen:2013fgp}中找到。利用$\vartheta^4_3-\vartheta^4_4=\vartheta^4_2$\cite{wzx}可立刻说明上述两生成函数等价，从而说明了在自由度层面靶空间超对称的保留。
+
+本论文主要考虑开弦盘面振幅的计算，构造中即包含开弦谱的理论为I型超弦。其可以看作是由IIB型超弦将世界面宇称提升为规范对称性，从而取世界面$\mathbb{Z}_2$轨形投影得到，轨形不动点带来$O9$平面自然使得靶空间存在$D9$膜，而且由于需要消去引力反常，所以需要开弦带有$SO(32)$或$E_8\times E_8$对称性\footnote{利用Green-Schwarz机制消去反常还允许$E_8\times U(1)^{248}$和$U(1)^{496}$，不过\cite{PhysRevLett.105.071601}指出这两个李群其实无法自洽消去反常。}，只有前者对应I型超弦，所以要求有32个$D9$膜存在，后者可以在杂交弦中发挥作用。这样得到的超弦也可以称作IB型超弦，IIA型超弦由于左右模手征不同，不存在世界面宇称对称性，所以无法直接通过轨形投影得到对应得I型超弦理论，但是可以先通过T对偶将IIA型超弦转换为IIB型超弦，再同时取世界面和靶空间$\mathbb{Z}_2$轨形投影得到IA型超弦。由于宇称作为规范对称性存在，所以I型超弦是非定向超弦。
+
+本论文并不详细讨论自洽弦理论的构造问题，仅仅考虑弦论振幅本身的计算问题。
+
+\section{RNS超弦顶角算符}
+\subsection{超鬼场真空}
+由于BRST量子化中鬼场也会同样贡献产生算符，前面玻色弦中$bc$鬼场真空存在一些问题，$\beta\gamma$鬼场则更加麻烦。
+
+\section{*弦理论之间的对偶关系}
