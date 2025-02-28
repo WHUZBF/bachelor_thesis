@@ -145,8 +145,9 @@
 \begin{equation}
 	\ket\psi \sim \ket\psi +\ket\chi,\quad \forall\psi\in\mathscr{H}_{\mathrm{phys}},\chi\in\mathscr{H}_{\mathrm{null}}
 \end{equation}
-最终我们得到协变微扰论的态空间：
+最终我们得到协变微扰论的态空间：\footnote{这里似乎很像BRST量子化\ref{eq:2.48}，但是由于我们并没有直接考虑鬼场，所以无法写下一个分次链复形}
 \begin{equation}
+	\label{eq:2.26}
 	\mathscr{H}_{\mathrm{CQ}}\simeq\frac{\mathscr{H}_{\mathrm{phys}}}{\mathscr{H}_{\mathrm{null}}}
 \end{equation}
 计算此商空间便得到弦的激发态，而且自洽性自然要求$A=-1,D=26$，开弦快子态和无质量激发态构造如下：
@@ -284,9 +285,10 @@
 \begin{equation}
 	\cdots\longrightarrow\mathscr{H}_{g-1}\xrightarrow{Q_{g-1}}\mathscr{H}_g\xrightarrow{Q_g}\mathscr{H}_{g+1}\longrightarrow\cdots
 \end{equation}
-BRST量子化则是要求物理态处于鬼数为0的上同调群中\footnote{对于无积分顶角算符则是要求在鬼数为1的上同调群中，而且额外要求是共形不变的，也就是限制在共形权为0的子复形中讨论上同调。}，这其实是要求可观测量具有BRST不变性：
+BRST量子化则是要求物理态处于鬼数为0的上同调群中\footnote{对于无积分顶角算符则是要求在鬼数为1的上同调群中，而且额外要求是共形不变的，也就是限制在共形权为0的子复形中讨论上同调。}，这其实是要求可观测量具有BRST不变性：\footnote{准确来说$\ket{\text{phys}}\in Z$，闭链要求给出BRST不变性，而模掉边缘链$B$（物理上也称$B$中的态为BRST恰当）意味着$B$中的态都是和物理态脱耦的，类似\ref{eq:2.26}}
 \begin{equation}
-	\mathscr{H}_{\mathrm{BRST}}\cong H^0(C^\bullet_{\mathrm{BRST}})
+	\label{eq:2.48}
+	\mathscr{H}_{\mathrm{BRST}}\cong H^0(C^\bullet_{\mathrm{BRST}}):=Z(C^\bullet_{\mathrm{BRST}})/B(C^\bullet_{\mathrm{BRST}})
 \end{equation}
 
 接下来我们将上面一般性的方法应用到弦论中，BRST荷有如下形式：
@@ -301,13 +303,14 @@ $Q_B^2=0$要求$\{Q_B,Q_B\}=0$，这对应$j_B$OPE的一阶奇点：\footnote{�
 \end{equation}
 由此可以看出自洽量子化要求$c^m=26$，也即靶空间维数为$26$。另外，物理态在壳要求：
 \begin{equation}
+	\label{eq:2.51}
 	L_0|\psi\rangle=\{Q_B,b_0\}|\psi\rangle=0\Rightarrow b_0\ket{\psi}=0
 \end{equation}
 为了构造无质量态无积分顶角算符，首先使用$bc$鬼场物质场$\partial^n X$以及平面波$\mathrm{e}^{ip\cdot X}$构造出最一般的共形权为$0$的顶角算符：\footnote{注意我们这里忽视了鬼数为1这个条件，后面会在求BRST恰当项中引入。也可以先引入这个条件使得计算更加简便，但我们这里考虑最一般的构造帮助读者熟悉OPE计算。}
 \begin{equation}
 	V_{\text{general}}=:\left(\alpha\partial c+\beta c\partial^2c+\gamma c\partial c\partial^2c+\epsilon_\mu c\partial X^\mu+\zeta_\mu c\partial c\partial X^\mu+\lambda\right)e^{ip\cdot X}:
 \end{equation}
-上述对态的要求可以转化为对算符的要求：
+上述对态的要求可以转化为对算符的要求：\footnote{这里我们利用了$Q$的定义含围道积分，对易子的计算可以转换为被积算符OPE的计算}
 \begin{equation}
 	Q_B\ket{\psi}=0\Leftrightarrow [Q_B,V] = 0 \Leftrightarrow Q_B V\sim 0
 \end{equation}
@@ -345,9 +348,10 @@ $Q_B^2=0$要求$\{Q_B,Q_B\}=0$，这对应$j_B$OPE的一阶奇点：\footnote{�
 
 不难看出无积分顶角算符和积分顶角算符的联系为$V=cU$\footnote{如果是闭弦则是$V=c\tilde{c}U$}，这是$bc$鬼场的性质，即便是RNS超弦这一点也成立，更重要的是这一联系也可以用BRST荷表述为：
 \begin{equation}
-	Q_B U= \partial V
+	\label{eq:UV}
+	[Q_B, U]\sim Q_B U= \partial V
 \end{equation}
-这在后面构造纯旋量超弦的积分顶角算符中非常重要。
+这在后面构造纯旋量超弦的积分顶角算符中非常重要。而且上式立刻说明了$\int\mathrm{d}z U(z)$ BRST闭，所以这也能看出$cU\leftrightarrow\int\mathrm{d}z U$。
 \section{鬼场的真空}
 现在我们来简要讨论上述结果的物理意义，这对后面构造RNS超弦顶角算符具有很大的意义。首先我们需要区分一下共形场论中的$SL(2,\mathbb{C})$不变真空$\ket{1}$。以及物理上关注的真空$\ket{0}$。对于共形权为$h$的主场，其$SL(2,\mathbb{C})$不变真空定义为：
 \begin{equation}
@@ -357,7 +361,31 @@ $Q_B^2=0$要求$\{Q_B,Q_B\}=0$，这对应$j_B$OPE的一阶奇点：\footnote{�
 \begin{equation}
 	\phi_{n>0}\ket{0}=0
 \end{equation}
-不难看出两者一般而言是不同的，这一点对于鬼场这种中心荷为负数的奇异系统尤为显著。
+不难看出两者一般而言是不同的，这一点对于鬼场这种中心荷为负数的奇异系统尤为显著。由于$c$鬼场共形权为$-1$，所以我们能够构造能量低于$SL(2,\mathbb{C})$不变真空的真空态：
+\begin{equation}
+	\left|c\right\rangle=c_{1}\left|1\right\rangle,\quad\left|(\partial c)c\right\rangle=c_{0}c_{1}\left|1\right\rangle
+\end{equation}
+而\ref{eq:2.51}中$b_0$的要求相当于选取$\ket{c}$而不是$\ket{(\partial c) c}$作为微扰展开的鬼场真空。这样我们就能将$V$中出现的$c$自然解释为鬼场真空的贡献。而且$c$的出现是必然的，$bc$鬼场$U(1)$对称性给出下面的Noether流：
+\begin{equation}
+	\label{eq:2.63}
+	j_{b,c}(z)=-:b(z)c(z):
+\end{equation}
+由此可以用下面的OPE定义算符$\mathcal{O}_q$的鬼数$q$：
+\begin{equation}
+	j_{b,c}(z)\mathcal{O}_q(w)\sim\frac{q\mathcal{O}_q(w)}{z-w}\Leftrightarrow j_0\ket{q} = q\ket{q}
+\end{equation}
+而$j_g$其实不是主场，其存在共形反常，可以由下面OPE看出：
+\begin{equation}
+	T_{b,c}(z)j_{b,c}(w)\sim\frac{-3}{(z-w)^3}+\frac{j_{b,c}(w)}{(z-w)^2}+\frac{\partial j_{b,c}(w)}{z-w}
+\end{equation}
+所以$bc$鬼系统具有背景鬼数$Q_{b,c}=-3$，这给出厄米共轭修正$j_n^\dagger=(-1)^{\delta_{n,0}}j_{-n}-Q_{b,c}\delta_{n,0}$。这要求只有当关联函数的鬼数（考虑真空背景后）为$0$时关联函数才不为$0$。所以关联函数中出现带$c$的无积分顶角算符是必然的。后面会看到对真空背景鬼数的补偿相当于路径积分中插入一些鬼场零模，Riemann-Roch定理指出鬼场零模插入有如下关系：
+\begin{equation}
+	\label{eq:2.66}
+	N_c-N_b=3-3g
+\end{equation}
+对于$g=0$的球面情况，注意到$b$鬼数为$-1$，$c$鬼数为$+1$，这正好补偿了$Q_{b,c}=-3$。更高亏格的情况会在第\ref{chap:4}章详细说明。
+
+而前面我们提到过积分顶角算符$U$和无积分顶角算符$V$在振幅计算中都非常重要，具体来说$\int d\sigma U$和$cV$对应同一个态的不同版本的顶角算符。为了补偿鬼场真空背景荷，在球面上就必须选取三个积分顶角算符替换为积分顶角算符，从而才能得到非零的振幅。后面第\ref{chap:4}章会从路径积分的角度直接看出这一点。
 \section{*BV形式}
 BRST量子化方法适用的前提是规范对称性满足\ref{eq:2.41}的结构，但如果这一结构不满足，比如结构常数不再是常数，而与场本身有关，而且不再是李代数闭的。BRST量子化就需要被扩充为更一般的Batalin–Vilkovisky量子化。更多细节可以在\cite{Weinberg:1996kr,Erbin:2021smf,Henneaux:1994lbw}中找到。
 

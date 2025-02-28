@@ -55,7 +55,7 @@ $\psi_0$类似$\alpha_0$既不是产生也不是湮灭算符，而是用于标�
 \end{equation}
 上述方程对真空态退化为$p\cdot\Gamma\ket{0}=0$即Dirac方程。这一方程将每个Weyl分量从$16$缩减到$8$。后面GSO投影会对这一自由度再次进行修正。
 
-NS真空是$SL(2,\mathbb{C})$不变真空，而R真空实际上可以看作是NS真空的激发态，自旋场将这两个真空联系起来：
+NS真空是$SL(2,\mathbb{C})$不变真空，而R真空实际上可以看作是NS真空的激发态，自旋场\footnote{其本质来源于$\psi$的玻色化\cite{Blumenhagen:2013fgp,Schlotterer:2012zz}，不过后续计算我们并不会过多使用$S_A$。}将这两个真空联系起来：
 \begin{equation}
 	\left|A^{\prime}\right\rangle_{R}=\lim_{z\to 0}S_{{A^{\prime}}}(z)\left|0\right\rangle_{NS},\quad 
 	{}_R\left\langle A^{\prime}\right|=\lim_{z\to\infty}{}_{NS}\left\langle0\right|S_{{A^{\prime}}}(z)z^{D/8}
@@ -141,14 +141,154 @@ RNS形式只保证了世界面上的超对称性，而我们更应当要求保�
 	f_{\mathrm{R}}(w)=8\prod_{m=1}^\infty\left(\frac{1+w^m}{1-w^m}\right)^8=\frac{\vartheta_2^4(\tau)}{2\eta^{12}(\tau)}
 	\end{gathered}
 \end{equation}
-其中$\vartheta_k(\tau)|_{w:=\mathrm{e}^{2\pi\mathrm{i}\tau}}$是Jacobi-$\theta$函数，$\eta(\tau)|_{w:=\mathrm{e}^{2\pi\mathrm{i}\tau}}$是Dedekind-$\eta$函数，定义可在\cite{Blumenhagen:2013fgp}中找到。利用$\vartheta^4_3-\vartheta^4_4=\vartheta^4_2$\cite{wzx}可立刻说明上述两生成函数等价，从而说明了在自由度层面靶空间超对称的保留。
+其中$\vartheta_k(\tau)|_{w:=\mathrm{e}^{2\pi\mathrm{i}\tau}}$是Jacobi-$\theta$函数，$\eta(\tau)|_{w:=\mathrm{e}^{2\pi\mathrm{i}\tau}}$是Dedekind-$\eta$函数，定义可在\cite{Blumenhagen:2013fgp}中找到。利用$\vartheta^4_3-\vartheta^4_4=\vartheta^4_2$\cite{wzx,Hirschhorn2017}可立刻说明上述两生成函数等价，从而说明了在自由度层面靶空间超对称的保留。
 
 本论文主要考虑开弦盘面振幅的计算，构造中即包含开弦谱的理论为I型超弦。其可以看作是由IIB型超弦将世界面宇称提升为规范对称性，从而取世界面$\mathbb{Z}_2$轨形投影得到，轨形不动点带来$O9$平面自然使得靶空间存在$D9$膜，而且由于需要消去引力反常，所以需要开弦带有$SO(32)$或$E_8\times E_8$对称性\footnote{利用Green-Schwarz机制消去反常还允许$E_8\times U(1)^{248}$和$U(1)^{496}$，不过\cite{PhysRevLett.105.071601}指出这两个李群其实无法自洽消去反常。}，只有前者对应I型超弦，所以要求有32个$D9$膜存在，后者可以在杂交弦中发挥作用。这样得到的超弦也可以称作IB型超弦，IIA型超弦由于左右模手征不同，不存在世界面宇称对称性，所以无法直接通过轨形投影得到对应得I型超弦理论，但是可以先通过T对偶将IIA型超弦转换为IIB型超弦，再同时取世界面和靶空间$\mathbb{Z}_2$轨形投影得到IA型超弦。由于宇称作为规范对称性存在，所以I型超弦是非定向超弦。
 
 本论文并不详细讨论自洽弦理论的构造问题，仅仅考虑弦论振幅本身的计算问题。
 
 \section{RNS超弦顶角算符}
+协变顶角算符的构造我们遵循\cite{Friedan:1985ge,Knizhnik:1985ke}给出的方案。
 \subsection{超鬼场真空}
-由于BRST量子化中鬼场也会同样贡献产生算符，前面玻色弦中$bc$鬼场真空存在一些问题，$\beta\gamma$鬼场则更加麻烦。
+由于BRST量子化中鬼场也会同样贡献产生算符，前面玻色弦中$bc$鬼场真空存在一些问题，$\beta\gamma$鬼场则更加麻烦。在共形场论的语言下，OPE是最重要的东西，其地位等同于正则对易关系\footnote{其实最开始OPE就是作为场论量子化的替代途径引入的，后来由于CFT处于重整化群不动点，OPE形式简单，所以作为CFT的标准语言。}，而玻色场OPE一般是$\ln(z-w)$形式，费米场OPE一般是$(z-w)^{-1}$的形式。玻色化和费米化的想法就是将玻色场分解为费米场，费米场满足某个OPE，但最终得到的玻色场OPE不变。而对于树图，或者说球面，OPE决定关联函数的奇异部分，但球面上全纯函数只能是个常函数，这意味着玻色化和费米化后不会改变关联函数，这为求解问题带来了极大的方便！利用这一思想我们将$\beta\gamma$进行费米化，然后将一个费米自由度再进行玻色化：
+\begin{equation}
+	\label{eq:3.19}
+	\beta(z)=:\mathrm{e}^{-\phi(z)}:\partial\xi(z),\quad\gamma(z)=:\mathrm{e}^{\phi(z)}:\eta(z)
+\end{equation}
+详细的OPE见附录。类似$bc$鬼场$c$共形权$-1$带来的问题，$\gamma$鬼场共形权$-\frac12$导致$\gamma_{1/2}$作用于$SL(2,\mathbb{C})$上降低共形权但不将其湮灭。$bc$鬼场由于费米性带来的泡利不相容原理最多也只能允许作用一个$c_1$，但是$\gamma$满足玻色统计，这意味着真空共形权可以无限降低。另外对于R部分，$\beta\gamma$零模也会带来无穷多简并的真空，如何理解这一点是本节的核心。
 
+利用\ref{eq:3.19}我们可以先给出一个临时的办法，也就是构造出一个基态，NS部分被$\gamma_{1/2}$湮灭，R部分被$\gamma_1$湮灭：\footnote{这一选取常常称为正则绘景。}
+\begin{equation}
+	\label{eq:3.20}
+	\text{NS: }\left|q=-1\right\rangle_{\beta,\gamma}=:e^{-\phi(0)}:\left|0\right\rangle,\quad \text{R: }\left|q=-1/2\right\rangle_{\beta,\gamma}=:e^{-\phi(0)/2}:\left|0\right\rangle
+\end{equation}
+$:e^{q\phi}:$便会类似$c$一样出现在RNS无积分顶角算符中。类似\ref{eq:2.63}，可以定义如下超鬼数流：
+\begin{equation}
+	\label{eq:3.21}
+	j_{\beta,\gamma}(z)=-:\beta(z)\gamma(z):
+\end{equation}
+$\beta$鬼数$-1$，$\gamma$鬼数$+1$，$\mathrm{e}^{q\phi}$鬼数为$q$。
+$\mathrm{e}^{q\phi}$超鬼数为$q$，其实在经过\ref{eq:3.19}的变换后，$\xi,\eta,\phi$系统存在一个新的守恒荷，称为绘景数：
+\begin{equation}
+	N_p=\oint\frac{dz}{2\pi i}(\xi\eta-\partial\phi)
+\end{equation}
+$\beta\gamma$本身的绘景数为$0$，所以用$\beta,\gamma$作用于真空上生成态空间不会改变绘景数。$\xi$鬼数为$+1$，$\eta$为$-1$，$\mathrm{e}^{q\phi}$为$q$。\ref{eq:3.20}相当于选取了一个“海拔最高”的真空，那么其它的更低能量的真空如何理解？类似Dirac当年为了解释反粒子引入费米子海的概念，这里我们应当引入玻色子海，认为所有低能量的真空都被完全填充，而且由于$\beta\gamma$鬼场是自由CFT，所以也不会造成真空不稳定衰变到其它真空的问题。从群表示的观点看，绘景数$q$相当于给出了不同的$\beta\gamma$鬼场的表示，而$:\mathrm{e}^{q\phi}:$沟通了这些不同真空。不同的真空上产生出的希尔伯特空间应当认为描述的是同一个态空间，只是他们带有不同的绘景数。
+
+就像是$bc$鬼场对真空的影响，导致积分顶角算符和无积分顶角算符之间可以相互转换用于描述同一个物理态从而抵消$Q_{b,c}$。同样的，我们应该预期$\beta\gamma$也会有零模的插入，实际上\ref{eq:3.21}也不是共形主场：
+\begin{equation}
+	T_{\beta,\gamma}(z)j_{\beta,\gamma}(w)\sim\frac{+2}{(z-w)^3}+\frac{j_{\beta,\gamma}(w)}{(z-w)^2}+\frac{\partial j_{\beta,\gamma}(w)}{z-w}
+\end{equation}
+真空带有背景超鬼数$Q_{\beta\gamma}+2$，对于更一般的黎曼面有类似\ref{eq:2.66}：
+\begin{equation}
+	Q_{\beta,\gamma} = N_{\gamma}-N_{\beta}=2-2g
+\end{equation}
+注意到绘景数来源于$:\mathrm{e}^{q\phi}:$，其鬼数和绘景数都是$q$，所以背景超鬼数的补偿也可以看作是要求关联函数绘景数为$-2$。也就是说一个物理态会对应到多个不同绘景数的顶角算符，只要绘景数之和为$-2$，计算出来的弦振幅就是一样的。树级振幅只需要直到$-1\leq q\leq+\frac{1}{2}$的顶角算符便可以始终构造非零的关联函数，更高圈振幅需要更大绘景数的顶角算符。
+\subsection{BRST量子化}
+BRST流形式为：
+\begin{equation}
+	j_B=c\left(T+\frac{T_{b,c}+T_{\beta,\gamma}}{2}\right)-\gamma\left(G^m+\frac{G^{\mathrm{gh}}}{2}\right)
+\end{equation}
+其中$G^{gh}\sim\frac{\delta S_{gh}}{\delta\chi}$是鬼场超流，具体形式见附录。BRST荷可以利用超鬼荷分为三个部分：\footnote{但是总的鬼数还是$1$。}
+\begin{equation}
+	\begin{aligned}
+		Q_{\mathrm{BRST}}&=\oint\frac{\mathrm{d}z}{2\pi i}j_{\mathrm{B}}(z)=Q_0+Q_1+Q_2\\Q_{0}&=\oint\frac{\mathrm{d}z}{2\pi i}\left(c(T+T_{\beta,\gamma})+:bc\partial c:\right)\\Q_{1}&=-\oint\frac{\mathrm{d}z}{2\pi i}:\gamma G^m:=-\oint\frac{\mathrm{d}z}{2\pi i}:\mathrm{e}^\phi\eta G^m:\\Q_{2}&=-\frac{1}{4}\oint\frac{\mathrm{d}z}{2\pi i}:b\gamma^2:=-\frac{1}{4}\oint\frac{\mathrm{d}z}{2\pi i}:b\mathrm{e}^{2\phi}\eta\partial\eta:
+	\end{aligned}
+\end{equation}
+分成三部分原因是超鬼数作为守恒荷，最终BRST闭的态应当对每个鬼数的BRST算符分别闭，后面的计算会简便一些。剩下的就是利用$S_\alpha,\psi,X,b,c,\beta,\gamma$构造BRST闭的顶角算符，而且在顶角算符层面，NS部分只能含有奇数个$\psi$，R部分只能含有偶数个$\psi$而且自旋矩阵只能带手征Weyl指标，这些可以从关联函数单值性的要求看出。而且算符应当有$c:\mathrm{e}^{q\phi}:\Phi$的形式，记相应的积分顶角算符为$U:=:\mathrm{e}^{q\phi}:\Phi$。后面的讨论都在积分顶角算符下讨论，$Q_1,Q_2$的计算与$c$无关，而$Q_0$闭的要求转化为要求结果为全导数。\footnote{因为$cU(z)\leftrightarrow\int \mathrm{d}z U(z)$}计算下面的OPE：
+\begin{equation}
+	Q_0:cU: \sim (h_U-1):\partial c c U:
+\end{equation}
+所以$Q_0$闭仅仅要求$U$的共形权为$1$这相当于要求整体顶角算符共形权为$0$，利用$\mathrm{e}^{q\phi}$共形权为$-\frac{q^2}{2}-q$可以写下$\Phi$的共形权。考虑下面的$q=-1,-\frac12$绘景的顶角算符以及$q=0,\frac12$绘景的顶角算符：
+\begin{equation}
+	U^{q=-1,-\frac12} = \begin{cases}
+		\Phi_{h=1/2}^{\mathrm{NS}}(z)\mathrm{e}^{-\phi(z)}\\
+		\Phi_{h=5/8}^{\mathrm{R}}(z)\mathrm{e}^{-\phi(z)/2}
+	\end{cases},\quad 
+	U^{q=0,+\frac12} = \begin{cases}
+		\Phi_{h=1}^{\mathrm{NS}}(z)\mathrm{e}^{0\phi(z)}\\
+		\Phi_{h=13/8}^{\mathrm{R}}(z)\mathrm{e}^{+\phi(z)/2}
+	\end{cases}
+\end{equation}
+上面左右两边描述不同绘景下的同一个物理态。事实上，绘景之间的变换有下面的关系：
+\begin{equation}
+	\label{eq:PCO}
+	U^{(q+1)}=\mathcal{P}U^{(q)}=2[Q_{\mathrm{BRST}},\xi U^{(q)}]=2\oint_{\mathcal{C}(w)}\frac{\mathrm{d}z}{2\pi i }j_B(z)\left(\xi(w)U^{(q)}(w)\right)
+\end{equation}
+
+注意到$Q_{\mathrm{BRST}}$绘景数为$0$，$\xi$绘景数为$+1$，所以从绘景数的意义上上式良定义。另外，似乎构造出来的新算符是BRST恰当的，但是注意到$\xi$共形权为$0$，所以插入$\xi(z)$从算符对应的角度看相当于在态层面上插入$\xi_0$。注意到\ref{eq:3.19}中的构造，$\xi$始终是以$\partial\xi$的形式出现，类似于自由玻色场中$X$总是以$\partial X$的形式出现。这时$X$的零模$\alpha_0$不作为激发模式的生成元，而是作为真空态的好量子数，显然$\ket{0;k}$不会被看作是一个BRST恰当的态。同理$\xi_0$也只是用来沟通不同绘景，所以\ref{eq:3.19}虽然具有BRST恰当的形式，但本质上并没有与物理态脱耦。上式联系不同绘景等同于$bc$鬼场中联系积分和无积分顶角算符的\ref{eq:UV}。
+
+下面来考虑无质量顶角算符的具体构造，后面我们不再使用上标区分NS和R部分，他们分别对应绘景数为$\mathbb{Z}$和$\mathbb{Z}+1/2$。考虑如下$q=-1$的顶角算符的构造：\footnote{后面提到顶角算符，都是在NOP的意义下定义的，后面省略符号$:\bullet:$。}\footnote{似乎到了RNS超弦，顶角算符鬼数明显不为$0$，这种超鬼数的非零复杂性可以从BRST算符可以分解为$Q_{0,1,2}$一瞥。但是最终可观测的关联函数保证无鬼。}
+\begin{equation}
+	\label{eq:3.30}
+	U^{(-1)}(z)=\epsilon_\mu\psi^\mu(z)\mathrm{e}^{-\phi(z)}\mathrm{e}^{ik\cdot X(z)}
+\end{equation}
+$Q_0$由于共形权为$0$自动满足，计算$Q_1$：
+\begin{equation}
+	Q_1(z)U^{(-1)}(0)\sim \epsilon\cdot k\sqrt{\frac{\alpha^\prime}{2}}\oint \frac{\mathrm{d}z}{2\pi i}\frac{\eta(0)}{z^2}:\mathrm{e}^{ik\cdot X(z)}:\Rightarrow \epsilon\cdot k = 0
+\end{equation}
+另外注意到：
+\begin{equation}
+	Q_{\mathrm{BRST}}:\mathrm{-2\phi}\partial \xi\mathrm{e}^{ik\cdot X}:\sim k_\mu:\psi^\mu\mathrm{e}^{-\phi}\mathrm{e}^{ik\cdot X}:
+\end{equation}
+所以$\epsilon\cong\epsilon+k$。同样可以验证$R$部分有顶角算符：
+\begin{equation}
+	\label{eq:3.33}
+	U^{(-\frac{1}{2})}(z)=u^\alpha S_\alpha(z)e^{-\frac{1}{2}\phi(z)}e^{ik\cdot X(z)}
+\end{equation}
+利用$\ref{eq:PCO}$可以得到更高绘景的顶角算符：
+\begin{equation}
+	\label{eq:3.34}
+	\begin{aligned}
+		U^{(+\frac{1}{2})}
+		=&[Q_1+Q_0+Q_2,2\xi U^{(-\frac{1}{2})}]\\
+		=&\frac{1}{\sqrt{\alpha^{\prime}}}u^\alpha\left\{e^{\frac{1}{2}\phi}(i\partial X^\mu+\frac{\alpha^{\prime}}{8}(k\cdot\psi)\psi^\mu)(\Gamma_\mu)_\alpha^{\dot{\beta}}S_{\dot\beta}\right\}e^{ik\cdot X}\\
+		&\eqnmarkbox[blue]{node}{-2\partial(\xi cU^{(+\frac{1}{2})})+\frac{1}{2}b\eta e^{\frac{3}{2}\phi}u^\alpha S_\alpha e^{ik\cdot X}}\\
+		\cong& U^{(-\frac12)}
+	\end{aligned}
+\end{equation}
+\annotate[yshift=0em]{below,label above}{node}{decoupled}
+
+最后两项的解耦性（至少在树图的解耦性），第一个是因为全导数在世界面积分后无贡献，第二个是因为树图不含$b$零模的插入。BRST闭要求费米子波函数满足Weyl方程$\slashed{p}u=0$。对于NS部分：
+\begin{equation}
+	\label{eq:3.35}
+	U^{(0)}=\sqrt{\frac{2}{\alpha^{\prime}}}\epsilon_\mu\left(i\partial X^\mu+\frac{\alpha^{\prime}}{2}(k\cdot\psi)\psi^\mu\right)e^{ik\cdot X}\cong U^{(-1)}
+\end{equation}
+
+式\ref{eq:3.30}，\ref{eq:3.33}，\ref{eq:3.34}以及\ref{eq:3.35}构成了树图计算所需的全部顶角算符。它们对应的无积分顶角算符可以作用$c$得到，上面推导只是左模部分，对于右模部分只需要把左右模乘起来就好了比如$U^{(-1,0)}=U^{(-1)}\otimes \tilde U^{(0)}\cong U^{(0,0)}$，对应的无积分顶角算符可以作用$c\tilde{c}$得到。而IIA型和IIB型的区别体现在左右模顶角算符费米子波函数$u_A$带的Weyl指标是相同手征还是反手征。有质量态的顶角算符构造可以在\cite{Schlotterer:2012zz}中找到。
+
+另外说一句，上面都是在升高$q$，反过来也可以问能不能找到$q<-1$，在作用绘景变换算符后得到$q\leq -1$。计算表明这样的顶角算符是解耦的，与任何物理态之间的关联函数都是0。正如前面所说$\ket{q=-1,-\frac12}$是“最高海拔”的真空。
+
+现在来讨论绘景变换算符\ref{eq:PCO}形式的原因。通过计算不难发现$q=-1,0$绘景下的$\Phi^{\text{NS}}$之间有如下OPE：
+\begin{equation}
+	G^m(z)\Phi_h^{\text{NS}}(w)\sim\frac{\frac12\Phi_{h+\frac12}^{\text{NS}}}{z-w}
+\end{equation}
+从这里可以看出$(\Phi^{\text{NS}}_h,\Phi^{\text{NS}}_{\text{NS}})$构成超对称主场对，他们由世界面超对称联系起来。提取上式的一阶极点留数有：
+\begin{equation}
+	\Phi_{h+1/2}^{\mathrm{NS}}(w)\mathrm{e}^{0\phi(w)}=2\oint\frac{\mathrm{d}z}{2\pi i}G^m(z)\Phi_h^{\mathrm{NS}}(w)=2(G^m_{-1/2}\Phi_h^{\mathrm{NS}})(w)
+\end{equation}
+所以绘景变换算符$\mathcal{P}$的作用可以看作是作用$G^m_{-r}$，R部分同样有此性质。也就是说绘景变换无非是世界面上的超对称变换，而RNS超弦天然保留世界面超对称性，所以从这个角度上不难理解不同绘景下的顶角算符在关联函数的意义上等价，所以在计算散射振幅时描述同一个物理态。也可以直接代入\ref{eq:PCO}进行验证，即证明下式：
+\begin{equation}
+		\langle\ldots V_i^{(q_i+1)}(z_i)\ldots V_j^{(q_j)}(z_j)\ldots\rangle\overset{?}{\operatorname*{\operatorname*{=}}}\langle\ldots V_i^{(q_i)}(z_i)\ldots V_j^{(q_j+1)}(z_j)\ldots\rangle
+\end{equation}
+插入绘景变换算符：
+\begin{equation}
+\begin{aligned}
+		\bigg\langle\ldots\oint_{z_i}\frac{\mathrm{d}w}{2\pi i}j_{\mathrm{B}}(w)&\xi(z_i)V_i^{(q_i)}(z_i)V_j^{(q_j)}(z_j)\ldots\bigg\rangle\\&\overset{?}{\operatorname*{=}}
+		\bigg\langle\ldots V_i^{(q_i)}(z_i)\oint_{z_j}\frac{\mathrm{d}w}{2\pi i}j_{\mathrm{B}}(w)\xi(z_j)V_j^{(q_j)}(z_j)\ldots\bigg\rangle
+\end{aligned}
+\end{equation}
+这里就相当于在\ref{}中消除$V_{\text{CKG}}$插入$c$零模的处理，只是这里插入的是$\xi_0$，类似关联函数与$c$的插入点无关，$\xi$的插入点也可以随便更换：
+\begin{equation}
+\begin{aligned}
+		\text{LHS} &= \sum_{k}\left\langle\ldots\oint_{\{z_k\neq z_i\}}\frac{\mathrm{d}w}{2\pi i}j_{\mathrm{B}}(w)V_i^{(q_i)}(z_i)\xi(z_j)V_j^{(q_j)}(z_j)\ldots\right\rangle\\
+		&=\sum_{k}\left\langle\ldots\oint_{z_j}\frac{\mathrm{d}w}{2\pi i}j_{\mathrm{B}}(w)V_i^{(q_i)}(z_i)\xi(z_j)V_j^{(q_j)}(z_j)\ldots\right\rangle=\text{RHS}\\
+\end{aligned}
+\end{equation}
+这里第一个等号利用了柯西定理更换围道，第二个等号利用了BRST闭的特性，如图\ref{fig:2}。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\linewidth]{figs/fig2.pdf}
+	\caption{围道替换}
+	\label{fig:2}
+\end{figure}
 \section{*弦理论之间的对偶关系}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -89,6 +89,12 @@ GREEN M~B, SCHWARZ J~H, WITTEN E.
 \newblock Cambridge University Press, 2012.
 \newblock DOI: \doi{10.1017/CBO9781139248570}.
 
+\bibitem[Schlotterer(2012)]{Schlotterer:2012zz}
+SCHLOTTERER O.
+\newblock {Scattering amplitudes in open superstring theory}\allowbreak[J/OL].
+\newblock Fortsch. Phys., 2012, 60: 373-691.
+\newblock DOI: \doi{10.1002/prop.201100084}.
+
 \bibitem[伊藤克司(2011)]{itocft}
 伊藤克司.
 \newblock {共形場理論 :
@@ -100,11 +106,30 @@ GREEN M~B, SCHWARZ J~H, WITTEN E.
 \newblock {特殊函数概论}\allowbreak[M].
 \newblock 北京大学出版社, 2012.
 
+\bibitem[Hirschhorn(2017)]{Hirschhorn2017}
+HIRSCHHORN M~D.
+\newblock Jacobi's ``aequatio identica satis abstrusa''\allowbreak[M/OL].
+\newblock Cham: Springer International Publishing, 2017: 169-174.
+\newblock \url{https://doi.org/10.1007/978-3-319-57762-3_19}.
+
 \bibitem[Adams et~al.(2010)Adams, Taylor, and DeWolfe]{PhysRevLett.105.071601}
 ADAMS A, TAYLOR W, DEWOLFE O.
 \newblock String universality in ten dimensions\allowbreak[J/OL].
 \newblock Phys. Rev. Lett., 2010, 105: 071601.
 \newblock \url{https://link.aps.org/doi/10.1103/PhysRevLett.105.071601}.
+
+\bibitem[Friedan et~al.(1986)Friedan, Martinec, and Shenker]{Friedan:1985ge}
+FRIEDAN D, MARTINEC E~J, SHENKER S~H.
+\newblock {Conformal invariance, supersymmetry and string
+  theory}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 1986, 271: 93-165.
+\newblock DOI: \doi{10.1016/S0550-3213(86)80006-2}.
+
+\bibitem[Knizhnik(1985)]{Knizhnik:1985ke}
+KNIZHNIK V~G.
+\newblock {Covariant Fermionic Vertex in Superstrings}\allowbreak[J/OL].
+\newblock Phys. Lett. B, 1985, 160: 403-407.
+\newblock DOI: \doi{10.1016/0370-2693(85)90009-7}.
 
 \bibitem[Berkovits(2000)]{Berkovits:2000fe}
 BERKOVITS N.
