@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{30}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -101,8 +101,8 @@ SCHLOTTERER O.
   現代数理物理の基礎として}\allowbreak[M].
 \newblock サイエンス社, 2011.
 
-\bibitem[王竹溪郭敦仁(2012)]{wzx}
-王竹溪郭敦仁.
+\bibitem[王竹溪，郭敦仁(2012)]{wzx}
+王竹溪，郭敦仁.
 \newblock {特殊函数概论}\allowbreak[M].
 \newblock 北京大学出版社, 2012.
 
@@ -130,6 +130,77 @@ KNIZHNIK V~G.
 \newblock {Covariant Fermionic Vertex in Superstrings}\allowbreak[J/OL].
 \newblock Phys. Lett. B, 1985, 160: 403-407.
 \newblock DOI: \doi{10.1016/0370-2693(85)90009-7}.
+
+\bibitem[Witten(2012)]{Witten:2012bh}
+WITTEN E.
+\newblock {Superstring Perturbation Theory Revisited}\allowbreak[A].
+\newblock 2012.
+\newblock arXiv: \eprint{https://arxiv.org/abs/1209.5461}{1209.5461}.
+
+\bibitem[Kawai et~al.(1986)Kawai, Lewellen, and Tye]{Kawai:1985xq}
+KAWAI H, LEWELLEN D~C, TYE S~H~H.
+\newblock {A Relation Between Tree Amplitudes of Closed and Open
+  Strings}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 1986, 269: 1-23.
+\newblock DOI: \doi{10.1016/0550-3213(86)90362-7}.
+
+\bibitem[Bjerrum-Bohr et~al.(2009)Bjerrum-Bohr, Damgaard, and
+  Vanhove]{Bjerrum-Bohr:2009ulz}
+BJERRUM-BOHR N~E~J, DAMGAARD P~H, VANHOVE P.
+\newblock {Minimal Basis for Gauge Theory Amplitudes}\allowbreak[J/OL].
+\newblock Phys. Rev. Lett., 2009, 103: 161602.
+\newblock DOI: \doi{10.1103/PhysRevLett.103.161602}.
+
+\bibitem[Forster(2012)]{forster2012lectures}
+FORSTER O.
+\newblock Lectures on riemann surfaces: Vol.~81\allowbreak[M].
+\newblock Springer Science \& Business Media, 2012.
+
+\bibitem[Schlichenmaier(2010)]{schlichenmaier2010introduction}
+SCHLICHENMAIER M.
+\newblock An introduction to riemann surfaces, algebraic curves and moduli
+  spaces\allowbreak[M].
+\newblock Springer Science \& Business Media, 2010.
+
+\bibitem[Griffiths et~al.(2014)Griffiths and Harris]{griffiths2014principles}
+GRIFFITHS P, HARRIS J.
+\newblock Principles of algebraic geometry\allowbreak[M].
+\newblock John Wiley \& Sons, 2014.
+
+\bibitem[Giacchetto et~al.(2024)Giacchetto and Lewa\'nski]{Giacchetto:2024aka}
+GIACCHETTO A, LEWA\'NSKI D.
+\newblock {Les Houches lecture notes on moduli spaces of Riemann
+  surfaces}\allowbreak[A].
+\newblock 2024.
+\newblock arXiv: \eprint{https://arxiv.org/abs/2410.13273}{2410.13273}.
+
+\bibitem[Staessens et~al.(2010)Staessens and Vercnocke]{Staessens:2010vi}
+STAESSENS W, VERCNOCKE B.
+\newblock {Lectures on Scattering Amplitudes in String
+  Theory}\allowbreak[C]//\allowbreak
+{5th Modave Summer School in Mathematical Physics}.
+\newblock 2010.
+
+\bibitem[Witten(2015)]{Witten:2015mec}
+WITTEN E.
+\newblock {What every physicist should know about string
+  theory}\allowbreak[J/OL].
+\newblock Phys. Today, 2015, 68\allowbreak (11): 38-43.
+\newblock DOI: \doi{10.1063/PT.3.2980}.
+
+\bibitem[Cachazo et~al.(2014)Cachazo, He, and Yuan]{Cachazo:2013iea}
+CACHAZO F, HE S, YUAN E~Y.
+\newblock {Scattering of Massless Particles: Scalars, Gluons and
+  Gravitons}\allowbreak[J/OL].
+\newblock JHEP, 2014, 07: 033.
+\newblock DOI: \doi{10.1007/JHEP07(2014)033}.
+
+\bibitem[Cachazo et~al.(2014)Cachazo, He, and Yuan]{Cachazo:2013hca}
+CACHAZO F, HE S, YUAN E~Y.
+\newblock {Scattering of Massless Particles in Arbitrary
+  Dimensions}\allowbreak[J/OL].
+\newblock Phys. Rev. Lett., 2014, 113\allowbreak (17): 171601.
+\newblock DOI: \doi{10.1103/PhysRevLett.113.171601}.
 
 \bibitem[Berkovits(2000)]{Berkovits:2000fe}
 BERKOVITS N.

@@ -51,9 +51,10 @@
 \usepackage{annotate-equations}
 \usepackage{cancel}
 \usepackage{slashed}
+\usepackage{tcolorbox}
 
 %自定义命令
-%%实现双重尖括号
+%% 实现双重尖括号
 \makeatletter
 \newsavebox{\@brx}
 \newcommand{\llangle}[1][]{\savebox{\@brx}{\(\m@th{#1\langle}\)}%
@@ -61,6 +62,23 @@
 \newcommand{\rrangle}[1][]{\savebox{\@brx}{\(\m@th{#1\rangle}\)}%
 	\mathclose{\copy\@brx\kern-0.5\wd\@brx\usebox{\@brx}}}
 \makeatother
+%% 重要定理框注
+\newenvironment{boxedtext}[1][定理] % 定义带参数的环境，参数数量为1（定理名称）
+{
+	\begin{tcolorbox}[
+		colback=gray!10,                % 灰色背景
+		colframe=black,                 % 黑色边框
+		arc=1mm,                        % 圆角弧度
+		auto outer arc,                 % 自动外弧
+		boxrule=0.5pt,                  % 边框线宽
+		title={\bfseries #1},           % 定理名称参数（加粗显示）
+		coltitle=white,                 % 标题文字白色
+		colbacktitle=black!70,          % 标题背景深灰色（非纯黑）
+		]
+	}
+	{
+	\end{tcolorbox}
+}
 
 \begin{document}
 	%生成目录

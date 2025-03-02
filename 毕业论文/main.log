@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  28 FEB 2025 14:55
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  3 MAR 2025 01:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1078,7 +1078,36 @@ Package: cancel 2013/04/12 v2.2 Cancel math terms
 (d:/texlive/2023/texmf-dist/tex/latex/carlisle/slashed.sty
 Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
 )
-\@brx=\box101
+(d:/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/07/10 version 6.3.0 text color boxes
+
+(d:/texlive/2023/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks48
+\verbatim@line=\toks49
+\verbatim@in@stream=\read3
+)
+(d:/texlive/2023/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(d:/texlive/2023/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box101
+\tcb@upperbox=\box102
+\tcb@lowerbox=\box103
+\tcb@phantombox=\box104
+\c@tcbbreakpart=\count381
+\c@tcblayer=\count382
+\c@tcolorbox@number=\count383
+\l__tcobox_tmpa_box=\box105
+\l__tcobox_tmpa_dim=\dimen342
+\tcb@temp=\box106
+\tcb@temp=\box107
+\tcb@temp=\box108
+\tcb@temp=\box109
+)
+\@brx=\box110
 
 (d:/texlive/2023/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
@@ -1154,38 +1183,38 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip114
 \bibsep=\skip115
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count381
+\c@NAT@ctr=\count384
 )) (./main.aux
 (./pages/chapter1.aux) (./pages/chapter2.aux) (./pages/chapter3.aux)
 (./pages/chapter4.aux) (./pages/chapter5.aux) (./pages/chapter6.aux)
 (./pages/appendix.aux) (./pages/acknowledgement.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-Package hyperref Info: Link coloring OFF on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+Package hyperref Info: Link coloring OFF on input line 83.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \d on input line 65.
-LaTeX Info: Redefining \partial on input line 65.
+LaTeX Info: Redefining \d on input line 83.
+LaTeX Info: Redefining \partial on input line 83.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1281,12 +1310,12 @@ t={*},ItalicFont={*}].
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
 (fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 83.
 
 (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 65.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 83.
 
 
 (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1466,7 +1495,7 @@ t={*},ItalicFont={*}].
 
 
 [11]
-Overfull \hbox (9.70357pt too wide) detected at line 326
+Overfull \hbox (9.70357pt too wide) detected at line 328
 [][][][][]
  []
 
@@ -1514,9 +1543,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [25]
 
 [26]
-
-LaTeX Warning: Reference `' on page 27 undefined on input line 280.
-
 File: figs/fig2.pdf Graphic file (type pdf)
 <use figs/fig2.pdf>
 )
@@ -1533,14 +1559,47 @@ File: figs/fig2.pdf Graphic file (type pdf)
 
 ]
 4
-)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [29]
+File: figs/fig3.pdf Graphic file (type pdf)
+<use figs/fig3.pdf>
+
+
+[30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[31]
+
+[32]
+
+[33]
+File: figs/fig4.pdf Graphic file (type pdf)
+<use figs/fig4.pdf>
+File: figs/fig5.pdf Graphic file (type pdf)
+<use figs/fig5.pdf>
+
+
+[34]
+
+[35])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[36]
+
+[37]
 \openout2 = `pages/chapter5.aux'.
 
  (./pages/chapter5.tex
 
-[30
+[38
 
 
 
@@ -1549,12 +1608,12 @@ File: figs/fig2.pdf Graphic file (type pdf)
 5
 )
 
-[31]
+[39]
 \openout2 = `pages/chapter6.aux'.
 
  (./pages/chapter6.tex
 
-[32
+[40
 
 
 
@@ -1563,9 +1622,9 @@ File: figs/fig2.pdf Graphic file (type pdf)
 6
 )
 
-[33]
+[41]
 
-[34
+[42
 
 
 
@@ -1607,12 +1666,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 )
 
-[35
+[43
 
 
 ] (./main.bbl
 
-[36
+[44
 
 
 
@@ -1621,35 +1680,38 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[37])
+[45]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[38]
+
+
+[46])
+
+[47]
 \openout2 = `pages/acknowledgement.aux'.
 
- (./pages/acknowledgement.tex)
+ (./pages/acknowledgement.tex
 
-[39
+[48
 
 
-] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
+])
+
+[49] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
 (./pages/chapter3.aux) (./pages/chapter4.aux) (./pages/chapter5.aux)
 (./pages/chapter6.aux) (./pages/appendix.aux) (./pages/acknowledgement.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2022/08/05>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 36198 strings out of 474240
- 805724 string characters out of 5745918
+ 38386 strings out of 474240
+ 863039 string characters out of 5745918
  1946560 words of memory out of 5000000
- 58129 multiletter control sequences out of 15000+600000
- 577062 words of font info for 183 fonts, out of 8000000 for 9000
+ 60294 multiletter control sequences out of 15000+600000
+ 578897 words of font info for 191 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,18n,121p,2041b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (49 pages).
+Output written on main.pdf (59 pages).

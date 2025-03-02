@@ -22,16 +22,26 @@
 \contentsline {subsection}{\numberline {3.4.2}BRST量子化}{24}{subsection.3.4.2}%
 \contentsline {section}{\numberline {3.5}*弦理论之间的对偶关系}{27}{section.3.5}%
 \contentsline {chapter}{\numberline {4\hspace {.3em}}弦微扰论}{29}{chapter.4}%
-\contentsline {chapter}{\numberline {5\hspace {.3em}}Berkovits超弦}{31}{chapter.5}%
-\contentsline {chapter}{\numberline {6\hspace {.3em}}BCJ分子的构造}{33}{chapter.6}%
-\contentsline {section}{\numberline {6.1}色-运动学对偶}{33}{section.6.1}%
-\contentsline {section}{\numberline {6.2}利用纯旋量超弦构造Yang-Mills理论的树图BCJ分子}{33}{section.6.2}%
-\contentsline {chapter}{本论文主要使用到的OPE}{35}{appendix*.8}%
-\contentsline {section}{\numberline {1}自由CFT}{35}{section.Alph0.1}%
-\contentsline {subsection}{\numberline {1.1}自由玻色CFT}{35}{subsection.Alph0.1.1}%
-\contentsline {subsection}{\numberline {1.2}$bc$鬼场}{35}{subsection.Alph0.1.2}%
-\contentsline {section}{\numberline {2}$\mathcal {N}=1$SCFT}{35}{section.Alph0.2}%
-\contentsline {subsection}{\numberline {2.1}自由费米CFT}{35}{subsection.Alph0.2.1}%
-\contentsline {subsection}{\numberline {2.2}$\beta \gamma $鬼场}{35}{subsection.Alph0.2.2}%
-\contentsline {chapter}{参考文献}{37}{appendix*.9}%
-\contentsline {chapter}{致谢}{39}{appendix*.10}%
+\contentsline {section}{\numberline {4.1}模空间测度}{29}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}黎曼曲面模空间}{29}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}FP量子化}{34}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}树级关联函数计算}{36}{section.4.2}%
+\contentsline {section}{\numberline {4.3}玻色弦振幅}{36}{section.4.3}%
+\contentsline {section}{\numberline {4.4}弦振幅之间的关系}{37}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}KLT关系}{37}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}单值关系}{37}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}RNS超弦振幅}{37}{section.4.5}%
+\contentsline {chapter}{\numberline {5\hspace {.3em}}Berkovits超弦}{39}{chapter.5}%
+\contentsline {chapter}{\numberline {6\hspace {.3em}}BCJ分子的构造}{41}{chapter.6}%
+\contentsline {section}{\numberline {6.1}色-运动学对偶}{41}{section.6.1}%
+\contentsline {section}{\numberline {6.2}利用纯旋量超弦构造Yang-Mills理论的树图BCJ分子}{41}{section.6.2}%
+\contentsline {chapter}{本论文主要使用到的算符乘积展开}{43}{appendix*.11}%
+\contentsline {section}{\numberline {1}自由CFT}{43}{section.Alph0.1}%
+\contentsline {subsection}{\numberline {1.1}自由玻色CFT}{43}{subsection.Alph0.1.1}%
+\contentsline {subsection}{\numberline {1.2}$bc$鬼场}{43}{subsection.Alph0.1.2}%
+\contentsline {section}{\numberline {2}$\mathcal {N}=1$ SCFT}{43}{section.Alph0.2}%
+\contentsline {subsection}{\numberline {2.1}自由费米CFT}{43}{subsection.Alph0.2.1}%
+\contentsline {subsection}{\numberline {2.2}$\beta \gamma $鬼场}{43}{subsection.Alph0.2.2}%
+\contentsline {section}{\numberline {3}纯旋量形式}{43}{section.Alph0.3}%
+\contentsline {chapter}{参考文献}{45}{appendix*.12}%
+\contentsline {chapter}{致谢}{49}{appendix*.13}%
