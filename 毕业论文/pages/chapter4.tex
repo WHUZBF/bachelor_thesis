@@ -158,6 +158,7 @@ $T^2 \cong  \mathbb{C}/\Gamma$，$\alpha_{1,2}\in\mathbb{C}$。不同复结构�
 \end{equation}
 由此可见固定顶角算符插入点确实相当于将无积分顶角算符换为积分顶角算符。现在对$bc$进行模展开，将上式与$bc$鬼场零模的插入联系起来。
 \begin{equation}
+	\label{eq:4.19}
 	\begin{gathered}
 		c^a(\sigma)=\sum_Jc_J\mathsf{C}_J^a(\sigma),\quad b_{ab}(\sigma)=\sum_Kb_K\mathsf{B}_{Kab}(\sigma)\\
 		P_1^TP_1\mathsf{C}_J^a=\mu_J^{2}\mathsf{C}_J^a,\quad P_1P_1^T\mathsf{B}_{Kab}=\nu_K^2\mathsf{B}_{Kab}
@@ -193,15 +194,197 @@ $\mathsf{C}_J$，$\mathsf{B}_{K}$在\ref{eq:4.17}内积的意义下正交归一�
 \section{树级关联函数计算}
 本节计算树级物质场和鬼场的关联函数，直接从路径积分出发计算，并说明此结果于OPE计算得到的结果相同。这里我们只对玻色部分物质场进行计算，本章最后计算超弦振幅时会直接使用OPE计算费米部分关联函数。
 
+观察玻色弦顶角算符，需要计算如下物质场关联函数：
+\begin{equation}
+	\label{eq:4.23}
+	\left\langle\prod_{i=1}^n:e^{ik_i\cdot X(z_i,\bar{z}_i)}:\prod_{j=1}^p\partial X^{\mu_j}(z_j^{\prime})\prod_{k=1}^q\bar{\partial}X^{\nu_k}(\bar{z}_k^{\prime\prime})\right\rangle
+\end{equation}
+注意到：
+\begin{equation}
+	\label{eq:4.24}
+	i\rho_j\cdot\partial Xe^{ik_j\cdot X(z_j)}=\left.\exp\bigg(i[k_j\cdot X(z_j)+\rho_j\cdot\partial X(z_j)]\bigg)\right|_{\text{linear in }\rho_j}
+\end{equation}
+所以我们只需要计算下面的关联函数即可得到\ref{eq:4.23}：
+\begin{equation}
+	\label{eq:4.25}
+	\left\langle\prod_i:\exp\bigg(i\left[k_{i\mu}X^\mu(z_i)+\rho_{i\mu}\partial X^\mu(z_i)\right]\bigg):\right\rangle
+\end{equation}
+不妨考虑下面更一般的配分函数计算，$J=0$时即为真空配分函数：
+\begin{equation}
+	\label{eq:4.26}
+	Z\left[J\right]=\left\langle\exp\left(i\int d^2\sigma J(\sigma)\cdot X(\sigma)\right)\right\rangle
+\end{equation}
+利用类似\ref{eq:4.19}的模展开技巧计算$\mathcal{D}X$：
+\begin{equation}
+	\begin{gathered}
+		X^\mu(\sigma)=\sum_Ix_I^\mu\mathsf{X}_I(\sigma),\quad\nabla^2\mathsf{X}_I=-\omega_I^2\mathsf{X}_I,\quad \mathsf{X}_0=\left(\int d^2\sigma g^{1/2}\right)^{-1/2}\\ \left(\mathsf{X}_I,\mathsf{X}_J\right)=\delta_{IJ},\quad
+	\mathsf{J}_I^\mu:=\int d^2\sigma J^\mu(\sigma)\mathsf{X}_I(\sigma)
+	\end{gathered}
+\end{equation}
+带入到\ref{eq:4.26}得到：
+\begin{equation}
+	\label{eq:4.28}
+\begin{aligned}
+		Z\left[J\right]=&\prod_{I,\mu}\int dx_I^\mu\exp\left(-\frac{\omega_I^2x_I^\mu x_{I\mu}}{4\pi\alpha^{\prime}}+ix_I^\mu J_{I\mu}\right)\\
+	=&i(2\pi)^d\delta^d(\mathsf{J}_0)\prod_{I\neq0}\left(\frac{4\pi^2\alpha^{\prime}}{\omega_I^2}\right)^{d/2}\exp\left(-\frac{\pi\alpha^{\prime}\mathsf{J}_I\cdot \mathsf{J}_I}{\omega_I^2}\right)\\
+	=&i(2\pi)^d\delta^d(\mathsf{J}_0)\left({\det}^{\prime}\frac{-\nabla^2}{4\pi^2\alpha^{\prime}}\right)^{-d/2}\exp\left(-\frac{1}{2}\int d^2\sigma d^2\sigma^{\prime}J(\sigma)\cdot J(\sigma^{\prime})G^{\prime}(\sigma,\sigma^{\prime})\right)
+\end{aligned}
+\end{equation}
+其中$G'$表示略去零模贡献的$X^\mu$格林函数：\footnote{对$\mathsf{X}_0$比较形象的解释源于世界面紧致，来源于传播带来的背景荷。}
+\begin{equation}
+	\label{eq:4.29}
+	\begin{gathered}
+		G^{\prime}(\sigma_1,\sigma_2)=\sum_{I\neq0}\frac{2\pi\alpha^{\prime}}{\omega_I^2}\mathsf{X}_I(\sigma_1)\mathsf{X}_I(\sigma_2)\\
+	-\frac{1}{2\pi\alpha^{\prime}}\nabla^2G^{\prime}(\sigma_1,\sigma_2)=\sum_{I\neq0}\mathsf{X}_I(\sigma_1)\mathsf{X}_I(\sigma_2)=g^{-1/2}\delta^2(\sigma_1-\sigma_2)-\mathsf{X}_0^2
+	\end{gathered}
+\end{equation}
+\ref{eq:4.28}计算中，$x^0_I$应当Wick转动到欧氏空间给出收敛的高斯积分，另外物质场零模需要单独处理，给出$\delta$函数，后面会进一步解释。注意，上面的计算结果原则上可以应用到任意世界面拓扑，只是格林函数有所不同。上式中取：
+\begin{equation}
+	\label{eq:4.30}
+	J(\sigma)=\sum_{i=1}^n\left(k_i-\rho^a_i\partial_a\right)\delta^2(\sigma-\sigma_i)
+\end{equation}
+便得到了\ref{eq:4.25}，但是去掉NOP。加上NOP的过程其实就是重整化的过程，注意到$G'(\sigma,\sigma)\to\infty$，记其不发散的全纯部分为$G^\prime_r$。\ref{eq:4.28}积分中$\sigma=\sigma'$时存在发散，将其重整化为$G^\prime_r(\sigma,\sigma)$发散便消除了。从共形场论的观点来看$G'(\sigma_i,\sigma_j)$是在计算$V_i,V_j$之间的缩并，而$G'(\sigma_i,\sigma_i)$是在计算$V_i$内部的缩并，显然发散，但顶角算符本身是定义在NOP意义下。所以把$G'$替换为$G'_r$就是将OPE重整化为NOP，去掉奇异项就是在去掉NOP内部的缩并。\footnote{回忆在计算NOP的缩并时，等价于不考虑NOP内部缩并，从而去除发散。}下面以球面上的计算为例说明这样做的后果。
 
+取共形规范，在球面上求解\ref{eq:4.29}得到：
+\begin{equation}
+\begin{gathered}
+	\label{eq:4.31}
+		G^{\prime}_{S^2}(\sigma_1,\sigma_2)=-\frac{\alpha^{\prime}}{2}\ln|z_{12}|^2+f(z_1,\bar{z}_1)+f(z_2,\bar{z}_2)\\
+	f(z,\bar{z})=\frac{\alpha^{\prime}\mathsf{X}_0^2}{4}\int d^2z^{\prime}\ln|z-z^{\prime}|^2+\mathrm{const}
+\end{gathered}
+\end{equation}
+显然$G'$被分为奇异部分和全纯部分$G'_r$，为了简单起见取$\ref{eq:4.30}$中$\rho = 0$：
+\begin{equation}
+	\label{eq:4.32}
+\begin{aligned}
+		&\left\langle:e^{ik_1\cdot X(\sigma_1)}::e^{ik_2\cdot X(\sigma_2)}:\ldots:e^{ik_n\cdot X(\sigma_n)}:\right\rangle_\mathrm{S_2}\\
+	=&iC_{S_2}^X(2\pi)^d\delta^d(\sum_ik_i)\times\exp\left(-\frac12\sum_{\substack{i,j=1\\i\neq j}}^nk_i\cdot k_jG^{\prime}(\sigma_i,\sigma_j)-\frac{1}{2}\sum_{i=1}^nk_i^2G_r^{\prime}(\sigma_i,\sigma_i)\right)
+\end{aligned}
+\end{equation}
+不难发现物质场零模积分给出的$\delta$函数正好就是动量守恒，其中归一化常数将$\delta(\mathsf{J}_0)$的Jacobi行列式吸收后定义为：
+\begin{equation}
+	C_{S_2}^X=\mathsf{X}_0^{-d}\left({\det}^{\prime}\frac{-\nabla^2}{4\pi^2\alpha^{\prime}}\right)_{S_2}^{-d/2}
+\end{equation}
+这个归一化系数一般和模空间参数有关，而树图不涉及模空间积分，所以此归一化系数连带动量守恒$i(2\pi)^d\delta^d(\sum_i k_i)$在后续计算中全部略去。再利用$\ref{eq:4.31}$不难发现$f(z,\bar z)$贡献的项都$\propto\sum_i k_i$。从这个例子可以看出，在重整化加上NOP之后，只有格林函数的奇异部分会对关联函数有贡献，且求和时抛去$\sigma=\sigma'$的奇异项。而格林函数的奇异部分又正好对应OPE，也就是说（至少对于树图）关联函数的非零模部分积分可以直接由OPE计算奇异部分给出，而非奇异部分给出动量守恒$\delta$函数。这与球面上亚纯函数只与奇异性有关相吻合。前面计算是左右模共同的结果，球面上左右模独立传播，取全纯部分给出\ref{eq:4.25}结果：
+\begin{equation}
+	\label{eq:4.34}
+	\prod_{i<j}(z_i-z_j)^{\frac{\alpha^{\prime}}{2}k_i\cdot k_j}\exp\left\{\frac{\alpha^{\prime}}{2}\sum_{i<j}\frac{\rho_i\cdot\rho_j}{(z_i-z_j)^2}+\frac{\alpha^{\prime}}{2}\sum_{i\neq j}\frac{k_j\cdot\rho_i}{(z_i-z_j)}\right\}
+\end{equation}
+乘上厄米共轭便得到左右模共同贡献，即关联函数：
+\begin{equation}
+	\left\langle\prod_i:\exp\bigg(i\left[k_{i\mu}X^\mu(z_i,\bar z_i)+\rho_{i\mu}\partial X^\mu(z_i)+\bar\rho_{i\mu}\bar\partial X^\mu(\bar z_i)\right]\bigg):\right\rangle
+\end{equation}
+利用\ref{eq:4.24}的技巧便可以得到振幅计算中物质场关联函数。同样的思路，下面考虑盘面情况。现在需要在有$\operatorname{Im} z = 0$的边界范围内求解\ref{eq:4.29}，可以利用电像法求解，$\mathsf{X}_0$零模只贡献给非奇异部分，对最终关联函数无影响，可以扔掉：\footnote{这里使用$\sim$是为了指出格林函数原本应当还包含非奇异部分。}
+\begin{equation}
+	G^{\prime}_{D^2}(\sigma_1,\sigma_2)\sim-\frac{\alpha^{\prime}}{2}\ln|z_1-z_2|^2-\frac{\alpha^{\prime}}{2}\ln|z_1-\overline{z}_2|^2\overset{\operatorname{Im} z = 0}{\sim} -2\alpha^\prime \ln|y_1-y_2|
+\end{equation}
+\begin{figure}[htbp]
+	\centering
+	\caption{电像法计算格林函数}
+	\label{fig:6}
+\end{figure}
+类似\ref{eq:4.32}的计算并注意到顶角算符均在实轴上插入：
+\begin{equation}
+	\label{eq:4.37}
+	\begin{aligned}
+		&\left\langle\prod_{i=1}^n :\exp\bigg(i\left[k_i\cdot X(y_i)+\rho_{i\mu}\partial X^{\mu}(y_i)\right]\bigg):\right\rangle_{D_2}\\
+	=&\prod_{i<j}(y_i-y_j)^{2{\alpha^{\prime}}k_i\cdot k_j}\exp\left\{2{\alpha^{\prime}}\sum_{i<j}\frac{\rho_i\cdot\rho_j}{(y_i-y_j)^2}+2\alpha^{\prime}\sum_{i\neq j}\frac{k_j\cdot\rho_i}{(y_i-y_j)}\right\}
+	\end{aligned}
+\end{equation}
+和\ref{eq:4.34}差别仅是$\alpha^\prime\to4\alpha^\prime$，$z\to y$。\ref{eq:4.34}和\ref{eq:4.37}指数项前面的因子是单纯平面波插入的关联函数，称为Koba-Nielsen因子。正如前面强调的，这些关联函数也可以直接从OPE出发计算。
 
-不难发现上面直接从路径积分得到的结果正好是OPE给出的关联函数奇异部分，实际上这并不是巧合，在树图层面上亚纯函数就是只依赖于奇异性。在后面处理纯旋量超弦的关联函数时会较多使用OPE方法。
-
-\ref{eq:4.21}就是在算剩下的鬼场关联函数，涉及到的就是零模积分。OPE对应零模计算，物质场零模没有，剩下的鬼场零模要额外计算。
+剩下的就是鬼场关联函数，其实\ref{eq:4.21}就是在算剩下的鬼场关联函数，虽然从OPE来看非零模部分（如果没有$b$插入）无贡献，但是零模部分贡献非平凡。球面上\ref{eq:4.21}第一项由于模空间平凡所以无贡献，第三项是个归一化系数，记作$C^g_{S^2}$，所以只有$c$鬼场零模有贡献：
+\begin{equation}
+\begin{aligned}
+		&\left\langle c(z_1)c(z_2)c(z_3)\tilde{c}(\bar{z}_4)\tilde{c}(\bar{z}_5)\tilde{c}(\bar{z}_6)\right\rangle_{S_2}\\
+	\sim&\det\begin{vmatrix}1&1&1\\z_1&z_2&z_3\\z_1^2&z_2^2&z_3^2\end{vmatrix}\det\begin{vmatrix}1&1&1\\\bar{z}_4&\bar{z}_5&\bar{z}_6\\\bar{z}_4^2&\bar{z}_5^2&\bar{z}_6^2\end{vmatrix}=z_{12}z_{13}z_{23}\bar{z}_{45}\bar{z}_{46}\bar{z}_{56}
+\end{aligned}
+\end{equation}
+上式可推广到球面上任意多个$b,c$鬼场插入：
+\begin{equation}
+	\left\langle\prod_{i=1}^{p+3}c(z_i)\prod_{j=1}^pb(z_j^{\prime})\cdot\widetilde{(\bullet)}\right\rangle_{S_2}=C^g_{S^2}\prod_{\substack{i,i^{\prime}=1\\i<i^{\prime}}}^{p+3}z_{ii^{\prime}}\prod_{\substack{j,j^{\prime}=1\\j<j^{\prime}}}^pz_{jj^{\prime}}^{\prime}\prod_{i=1}^{p+3}\prod_{j=1}^p(z_i-z_j^{\prime})^{-1}
+\end{equation}
+不难看到分母对应OPE给出非零模积分贡献，分子则来源于$c$鬼场零模贡献。对于开弦，左右模非独立传播，取上式的全纯部分即可。至此，我们已得到计算树级玻色弦振幅所需的所有关联函数，而超弦树级振幅关联函数可利用OPE直接进行计算，零模贡献是平凡的。
 \section{玻色弦振幅}
-稍微详细讲一下盘面振幅固定三个点之后注意顺序
+下文中用$\mathcal{A}$表示开弦树级振幅，$A$表示其色序振幅，$\mathcal{M}$表示闭弦树级振幅。类似Yang-Mills理论，Chan-Paton因子给出开弦树级振幅的色分解：
+\begin{equation}
+	\mathcal{A}_n=\sum_{\rho\in S_{n-1}}\mathrm{Tr}(\lambda^{a_{\rho(1)}}\lambda^{a_{\rho(2)}}\ldots \lambda^{a_{\rho(n-1)}}\lambda^{a_{n}})\times A(\rho(1),\rho(2),\ldots,\rho(n-1),n)
+\end{equation}
+色排序振幅指对世界面坐标积分时的某个顺序的贡献，比如$A(1,2,\ldots,n)$就代表$z_1<z_2<\cdots<z_n$的积分贡献。后面我们取规范固定$\{z_1,z_{n-1},z_n\}=\{0,1,\infty\}$，但是这不足以在$SL(2,\mathbb{R})$变换后得到所有色序，因为$SL(2,\mathbb{R})$变换保色序。比如上面的规范固定就一定是$z_1<z_{n-1}<z_n$\footnote{注意由于积分在盘面上，而不是真正在实轴上积分，或者说积分是在一维实射影空间中进行，所有的$<$都要在模去轮换的意义下理解。}。但显然还有$z_{n-1}<z_1<z_n$这种顺序，在这种色序下，取规范固定$\{z_1,z_{n-1},z_n\}=\{1,0,\infty\}$。闭弦规范固定就不涉及到这种顺序性，直接取$\{z_1,z_{n-1},z_n\}=\{0,1,\infty\}$即可。
+\subsection{Veneziano 振幅}
+考虑四快子振幅，其包含六个色序，如图\ref{fig:7}：
+\begin{figure}[htbp]
+	\centering
+	\includegraphics{figs/fig7.pdf}
+	\caption{Veneziano振幅的六种色排序，上面三种取$\{z_1,z_{3},z_4\}=\{0,1,\infty\}$，下面三种取$\{z_1,z_3,z_4\}=\{1,0,\infty\}$。箭头方向表示正方向，越过$4$时由$+\infty\to - \infty$}
+	\label{fig:7}
+\end{figure}
+\begin{equation}
+\begin{aligned}
+		&\mathcal{A}_4(\{T,a\}) \sim \left\langle\prod_{i=1,3,4}: c(y_i)e^{ik_i\cdot X(y_i)}:\int dy_2 e^{ik_2\cdot X(y_2)}\right\rangle\otimes \text{Chan-Paton}\\
+	\sim&\int_{0}^1dy_2\mathcal{K}(\{0,1,\infty\};y_2)\operatorname{Tr}\left(\lambda^{a_1a_2a_3a_4}\right)+\int_{1}^\infty dy_2\mathcal{K}(\{0,1,\infty\};y_2)\operatorname{Tr}\left(\lambda^{a_1a_3a_2a_4}\right)\\
+	&+\int_{-\infty}^0dy_2\mathcal{K}(\{0,1,\infty\};y_2)\operatorname{Tr}\left(\lambda^{a_2a_1a_3a_4}\right)+\int_{-\infty}^0 dy_2\mathcal{K}(\{1,0,\infty\};y_2)\operatorname{Tr}\left(\lambda^{a_2a_3a_1a_4}\right)\\
+	&+\int_{0}^1dy_2\mathcal{K}(\{1,0,\infty\};y_2)\operatorname{Tr}\left(\lambda^{a_2a_3a_1a_4}\right)+\int_{1}^\infty dy_2\mathcal{K}(\{1,0,\infty\};y_2)\operatorname{Tr}\left(\lambda^{a_3a_1a_2a_4}\right)\\
+\end{aligned}
+\end{equation}
+其中$\lambda^{abcd}:=\lambda^a\lambda^b\lambda^c\lambda^d$：
+\begin{equation}
+	\mathcal{K}(\{a_1,a_2,a_3\};y_2):=\lim_{\{y_1,y_3,y_4\}\to\{a_1,a_2,a_3\}}|y_{13}y_{14}y_{34}|\prod_{i<j}|y_{ij}|^{2\alpha^{\prime}k_i\cdot k_j}
+\end{equation}
+代入规范固定直接计算得到：
+\begin{equation}
+	\label{Veneziano}
+\begin{aligned}
+		\mathcal{A}_4(\{T,a\}) \sim&
+	\operatorname{Tr}\left(\lambda^{a_1}\lambda^{a_2}\lambda^{a_4}\lambda^{a_3}+\lambda^{a_1}\lambda^{a_3}\lambda^{a_4}\lambda^{a_2}\right)B(-\alpha_0(s),-\alpha_0(t))\\
+	&+\operatorname{Tr}\left(\lambda^{a_1}\lambda^{a_3}\lambda^{a_2}\lambda^{a_4}+\lambda^{a_1}\lambda^{a_4}\lambda^{a_2}\lambda^{a_3}\right)B(-\alpha_0(t),-\alpha_0(u))\\
+	&+\operatorname{Tr}\left(\lambda^{a_1}\lambda^{a_2}\lambda^{a_3}\lambda^{a_4}+\lambda^{a_1}\lambda^{a_4}\lambda^{a_3}\lambda^{a_2}\right)B(-\alpha_0(s),-\alpha_0(u))
+\end{aligned}
+\end{equation}
+其中$B$是Beta函数：
+\begin{equation}
+\begin{gathered}
+		B(a,b)=\int_0^1dyy^{a-1}(1-y)^{b-1},\quad \alpha_o(x):= 1+\alpha' x\\
+	s=-(k_1+k_2)^2,\quad t=-(k_1+k_3)^2,\quad u=-(k_1+k_4)^2
+\end{gathered}
+\end{equation}
+\ref{Veneziano}就是Veneziano振幅\footnote{原始版本的不带色序，上式中所有迹贡献$1$。}。它是弦理论的第一个公式，原本是强相互作用的经验公式，后面才发现与快子振幅相关\cite{limiao}。早期这个公式有一个与场振幅截然不同的性质，对场振幅而言，四点树级振幅应当是s，t，u三个衰变道的求和。但弦振幅中不涉及到这种求和，换句话说，\ref{Veneziano}可以按照s，t或u的极点展开，极点位置正好是中间传播子在壳即满足\ref{eq:2.16}。但这三个道的展开是一样的，并不像场论中是不一样的展开，求和之后才是完整的振幅。所以弦振幅计算免去了场振幅中对所有费曼图求和的步骤，或者说弦振幅只需要计算一张图就可以了\footnote{当然这张图的计算麻烦得多。}，一张图就包含了低能有效场论所有费曼图求和的信息。自然弦振幅也不涉及到场振幅中不同费曼图之间紫外发散的抵消。
+\subsection{Virasoro-Shapiro振幅}
+Virasoro-Shapiro振幅就是闭弦四快子振幅：
+\begin{equation}
+	\mathcal{M}_4(\{T\}) \sim \frac{2\pi\Gamma(\frac{s}{4}-1)\Gamma(\frac{t}{4}-1)\Gamma(\frac{u}{4}-1)}{\Gamma(2-\frac{s}{4})\Gamma(2-\frac{t}{4})\Gamma(2-\frac{u}{4})}
+\end{equation}
+计算中需要用到如下公式：
+\begin{equation}
+	\int d^2_\mathbb{C}z|z|^{2a-2}|1-z|^{2b-2}=\frac{2\pi\Gamma(a)\Gamma(b)\Gamma(c)}{\Gamma(1-a)\Gamma(1-b)\Gamma(1-c)},\quad a+b+c=1
+\end{equation}
+
+现实世界不存在快子态，第一个非平凡的例子是三胶子振幅，其$\operatorname{Tr}(\lambda^{a_1}\lambda^{a_2}\lambda^{a_3})$的色序振幅有如下形式：
+\begin{equation}
+	\label{eq:4.47}
+	A_3^{\text{gluon}}(1,2,3)\sim[(\varepsilon_1\cdot\varepsilon_2)(\varepsilon_3\cdot p_1)+\operatorname{cyc}(1,2,3)]+2\alpha^{\prime}(\varepsilon_1\cdot p_2)(\varepsilon_2\cdot p_3)(\varepsilon_3\cdot p_1)
+\end{equation}
+显然在$\alpha'\to 0$时就是Yang-Mills理论中（色序）三顶角费曼规则，$\alpha'$的存在暗示弦论的低能有效作用量中存在$\operatorname{Tr}(F^{n>2})$的高阶相互作用量。利用振幅的$\alpha'$展开计算弦论低能有效作用量也是目前弦振幅研究的重要前沿问题。而且由于弦振幅涉及到众多解析数论中的特殊函数，所以这一研究也和数学有很深刻的联系\cite{}。
+
+%% 弦振幅低能展开的参考文献
+
+类似的，也可以有开弦闭弦混合振幅，开弦顶角算符在盘面边界圆周上插入，闭弦顶角算符在盘面内部插入，内部插入点积分范围为$|z|<1$。本文主要考虑纯开弦或纯闭弦振幅。文献\cite{dyj,Stieberger:2009hq}考虑了盘面开弦闭弦混合振幅及其与纯开弦振幅的关系。
+
 \section{弦振幅之间的关系}
 \subsection{KLT关系}
-\subsection{单值关系}
+无论是闭弦谱和开弦谱之间的关系，还是格林函数由于电像法带来的双倍关系。都不禁让人思考开弦与闭弦振幅之间是否存在联系？实际上，在树图层面上闭弦球面振幅和开弦盘面振幅之间由下面的KLT关系联系：
+\begin{equation}
+	1
+\end{equation}
+文献\cite{Kawai:1985xq}中特别对四点情况进行了详细论证。这里$S[\sigma|\tau]$称为KLT核或动量核，
+KLT关系实际上依赖于球面上左右模独立传播的特性，这一点在$\mathbb{RP}^2$上并不成立，所以无法分解为盘面振幅。\cite{dyj}
 
+用shapiro和veneziano振幅说明KLT关系确实成立
+\subsection{单值关系}
+开弦的色序振幅显然有轮换对称性以及：
+\begin{equation}
+	A_n^{\text{tree}}(1,2,\ldots,n)=(-1)^nA_n^{\text{tree}}(n,\ldots,2,1)
+\end{equation}
+本节的目的是给出非平凡的色序振幅之间的关系。
 \section{RNS超弦振幅}
+超弦振幅简单的原因，从超对称可以去掉抵消项的观点来讲，引用yutin huang

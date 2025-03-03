@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  3 MAR 2025 01:42
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  3 MAR 2025 22:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1495,7 +1495,7 @@ t={*},ItalicFont={*}].
 
 
 [11]
-Overfull \hbox (9.70357pt too wide) detected at line 328
+Overfull \hbox (9.70357pt too wide) detected at line 329
 [][][][][]
  []
 
@@ -1587,33 +1587,58 @@ File: figs/fig5.pdf Graphic file (type pdf)
 
 [34]
 
-[35])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+[35]
 
 [36]
 
 [37]
+
+[38]
+
+[39]
+File: figs/fig7.pdf Graphic file (type pdf)
+<use figs/fig7.pdf>
+
+Overfull \hbox (0.10228pt too wide) detected at line 329
+[][][][][]
+ []
+
+
+
+[40]
+
+Package natbib Warning: Citation `limiao' on page 41 undefined on input line 35
+1.
+
+
+Overfull \hbox (1.79587pt too wide) in paragraph at lines 362--363
+[]\TU/SimSun(0)/m/n/12.045 现 实 世 界 不 存 在 快 子 态，|  第 一 个 非 平 凡 的 例 子 是 三 胶 子 振 幅
+，|  其 $[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^U[]^^U[]^^U[]\OT1/cmr/m/n/
+12.045 )$
+ []
+
+
+
+[41])
+
+[42]
 \openout2 = `pages/chapter5.aux'.
 
  (./pages/chapter5.tex
+5
+)
 
-[38
+[43
 
 
 
 
 ]
-5
-)
-
-[39]
 \openout2 = `pages/chapter6.aux'.
 
  (./pages/chapter6.tex
 
-[40
+[44
 
 
 
@@ -1622,9 +1647,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 6
 )
 
-[41]
+[45]
 
-[42
+[46
 
 
 
@@ -1666,12 +1691,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 )
 
-[43
+[47
 
 
 ] (./main.bbl
 
-[44
+[48
 
 
 
@@ -1680,38 +1705,42 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[45]
+[49]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[46])
+[50])
 
-[47]
+[51]
 \openout2 = `pages/acknowledgement.aux'.
 
  (./pages/acknowledgement.tex
 
-[48
+[52
 
 
 ])
 
-[49] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
-(./pages/chapter3.aux) (./pages/chapter4.aux) (./pages/chapter5.aux)
-(./pages/chapter6.aux) (./pages/appendix.aux) (./pages/acknowledgement.aux))
+[53]
+
+Package natbib Warning: There were undefined citations.
+
+(./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux) (./pages/chapter3.aux
+) (./pages/chapter4.aux) (./pages/chapter5.aux) (./pages/chapter6.aux)
+(./pages/appendix.aux) (./pages/acknowledgement.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 38386 strings out of 474240
- 863039 string characters out of 5745918
- 1946560 words of memory out of 5000000
- 60294 multiletter control sequences out of 15000+600000
- 578897 words of font info for 191 fonts, out of 8000000 for 9000
+ 38444 strings out of 474240
+ 864560 string characters out of 5745918
+ 1947560 words of memory out of 5000000
+ 60350 multiletter control sequences out of 15000+600000
+ 579505 words of font info for 194 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,18n,121p,2041b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (59 pages).
+Output written on main.pdf (63 pages).

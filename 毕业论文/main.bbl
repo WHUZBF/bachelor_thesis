@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -201,6 +201,17 @@ CACHAZO F, HE S, YUAN E~Y.
   Dimensions}\allowbreak[J/OL].
 \newblock Phys. Rev. Lett., 2014, 113\allowbreak (17): 171601.
 \newblock DOI: \doi{10.1103/PhysRevLett.113.171601}.
+
+\bibitem[杜一剑(2010)]{dyj}
+杜一剑.
+\newblock 弦论盘面振幅关系及其场论近似\allowbreak[D].
+\newblock 浙江大学, 2010.
+
+\bibitem[Stieberger(2009)]{Stieberger:2009hq}
+STIEBERGER S.
+\newblock {Open \& Closed vs. Pure Open String Disk Amplitudes}\allowbreak[A].
+\newblock 2009.
+\newblock arXiv: \eprint{https://arxiv.org/abs/0907.2211}{0907.2211}.
 
 \bibitem[Berkovits(2000)]{Berkovits:2000fe}
 BERKOVITS N.
