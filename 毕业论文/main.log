@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  3 MAR 2025 22:44
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  6 MAR 2025 03:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1107,11 +1107,27 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@temp=\box108
 \tcb@temp=\box109
 )
+(d:/texlive/2023/texmf-dist/tex/latex/shuffle/shuffle.sty
+Package: shuffle 2008/10/27 Shuffle product symbol
+\symShuffle=\mathgroup6
+)
+(d:/texlive/2023/texmf-dist/tex/latex/simpler-wick/simpler-wick.sty
+Package: simpler-wick 2015/12/11 Simpler Wick contractions
+
+(d:/texlive/2023/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks50
+\pgfopts@list@add@b@toks=\toks51
+)
+(d:/texlive/2023/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibraryex
+ternal.code.tex
+(d:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzex
+ternalshared.code.tex)))
 \@brx=\box110
 
 (d:/texlive/2023/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup6
+\symrsfs=\mathgroup7
 )
 
 Package fontspec Info: 
@@ -1190,31 +1206,31 @@ LaTeX Info: Redefining \cite on input line 694.
 (./pages/appendix.aux) (./pages/acknowledgement.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-Package hyperref Info: Link coloring OFF on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+Package hyperref Info: Link coloring OFF on input line 85.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \d on input line 83.
-LaTeX Info: Redefining \partial on input line 83.
+LaTeX Info: Redefining \d on input line 85.
+LaTeX Info: Redefining \partial on input line 85.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1310,16 +1326,22 @@ t={*},ItalicFont={*}].
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
 (fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 83.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
 
 (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 83.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
 
 
 (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+shuffle on input line
+ 85.
+
+(d:/texlive/2023/texmf-dist/tex/latex/shuffle/Ushuffle.fd
+File: Ushuffle.fd 
 )
 
 [1
@@ -1596,22 +1618,24 @@ File: figs/fig5.pdf Graphic file (type pdf)
 [38]
 
 [39]
-File: figs/fig7.pdf Graphic file (type pdf)
-<use figs/fig7.pdf>
-
-Overfull \hbox (0.10228pt too wide) detected at line 329
+Overfull \hbox (11.82118pt too wide) detected at line 324
 [][][][][]
  []
 
 
 
 [40]
+File: figs/fig7.pdf Graphic file (type pdf)
+<use figs/fig7.pdf>
 
-Package natbib Warning: Citation `limiao' on page 41 undefined on input line 35
-1.
+Overfull \hbox (0.10228pt too wide) detected at line 347
+[][][][][]
+ []
 
 
-Overfull \hbox (1.79587pt too wide) in paragraph at lines 362--363
+
+[41]
+Overfull \hbox (1.79587pt too wide) in paragraph at lines 382--383
 []\TU/SimSun(0)/m/n/12.045 现 实 世 界 不 存 在 快 子 态，|  第 一 个 非 平 凡 的 例 子 是 三 胶 子 振 幅
 ，|  其 $[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^U[]^^U[]^^U[]\OT1/cmr/m/n/
 12.045 )$
@@ -1619,16 +1643,87 @@ Overfull \hbox (1.79587pt too wide) in paragraph at lines 362--363
 
 
 
-[41])
-
 [42]
+
+[43]
+Overfull \hbox (24.65535pt too wide) in paragraph at lines 438--440
+\TU/SimSun(0)/m/n/12.045 在 弦 论 也 类 似，|  可 以 用 $\OML/cmm/m/it/12.045 ^^K[]$\TU/T
+imesNewRoman(0)/m/n/12.045 -\TU/SimSun(0)/m/n/12.045 修 正 的 双 自 伴 随 标 量 场 计 算 \T
+U/TimesNewRoman(0)/m/n/12.045 KLT \TU/SimSun(0)/m/n/12.045 核 的 逆 矩 阵 $\OML/cmm/
+m/it/12.045 m[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^K\OMS/cmsy/m/n/12.04
+5 j\OML/cmm/m/it/12.045 ^^L\OT1/cmr/m/n/12.045 )$$[]$\TU/SimSun(0)/m/n/12.045 。
+|
+ []
+
+File: figs/eqfig1.pdf Graphic file (type pdf)
+<use figs/eqfig1.pdf>
+
+
+[44]
+File: figs/m-123456-126345.pdf Graphic file (type pdf)
+<use figs/m-123456-126345.pdf>
+File: figs/m-123456-126345-small.pdf Graphic file (type pdf)
+<use figs/m-123456-126345-small.pdf>
+File: figs/wrapping.pdf Graphic file (type pdf)
+<use figs/wrapping.pdf>
+File: figs/m-12345-12345.pdf Graphic file (type pdf)
+<use figs/m-12345-12345.pdf>
+File: figs/m-12345-12345-a.pdf Graphic file (type pdf)
+<use figs/m-12345-12345-a.pdf>
+File: figs/m-12345-12345-b.pdf Graphic file (type pdf)
+<use figs/m-12345-12345-b.pdf>
+File: figs/m-12345-12345-c.pdf Graphic file (type pdf)
+<use figs/m-12345-12345-c.pdf>
+File: figs/m-12345-12345-d.pdf Graphic file (type pdf)
+<use figs/m-12345-12345-d.pdf>
+File: figs/m-12345-12345-e.pdf Graphic file (type pdf)
+<use figs/m-12345-12345-e.pdf>
+File: figs/m-12345-12345-f.pdf Graphic file (type pdf)
+<use figs/m-12345-12345-f.pdf>
+
+Overfull \hbox (11.58041pt too wide) detected at line 465
+[][][][][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[45]
+File: figs/m-vertex.pdf Graphic file (type pdf)
+<use figs/m-vertex.pdf>
+
+
+[46]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[47]
+
+[48]
+Overfull \hbox (27.04587pt too wide) detected at line 559
+[][][][][]
+ []
+
+
+
+[49]
+
+Package natbib Warning: Citation `Elvang:2015rqa' on page 50 undefined on input
+ line 563.
+
+)
+
+[50]
 \openout2 = `pages/chapter5.aux'.
 
  (./pages/chapter5.tex
 5
 )
 
-[43
+[51
 
 
 
@@ -1638,7 +1733,7 @@ Overfull \hbox (1.79587pt too wide) in paragraph at lines 362--363
 
  (./pages/chapter6.tex
 
-[44
+[52
 
 
 
@@ -1647,9 +1742,9 @@ Overfull \hbox (1.79587pt too wide) in paragraph at lines 362--363
 6
 )
 
-[45]
+[53]
 
-[46
+[54
 
 
 
@@ -1691,12 +1786,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 )
 
-[47
+[55
 
 
 ] (./main.bbl
 
-[48
+[56
 
 
 
@@ -1705,24 +1800,33 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[49]
+[57]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[50])
+[58]
+Underfull \hbox (badness 3158) in paragraph at lines 211--217
+[]\TU/TimesNewRoman(0)/m/n/12.045 SCHLOTTERER O.  The number theory of superstr
+ing amplitudes[C]//
+ []
 
-[51]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[59])
+
+[60]
 \openout2 = `pages/acknowledgement.aux'.
 
- (./pages/acknowledgement.tex
+ (./pages/acknowledgement.tex)
 
-[52
+[61
 
 
-])
-
-[53]
+]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1735,12 +1839,12 @@ L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 38444 strings out of 474240
- 864560 string characters out of 5745918
- 1947560 words of memory out of 5000000
- 60350 multiletter control sequences out of 15000+600000
- 579505 words of font info for 194 fonts, out of 8000000 for 9000
+ 39199 strings out of 474240
+ 885861 string characters out of 5745918
+ 1948560 words of memory out of 5000000
+ 61066 multiletter control sequences out of 15000+600000
+ 579753 words of font info for 202 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 118i,18n,121p,2041b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,19n,121p,2041b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (63 pages).
+Output written on main.pdf (71 pages).

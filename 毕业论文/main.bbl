@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{45}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -202,6 +202,25 @@ CACHAZO F, HE S, YUAN E~Y.
 \newblock Phys. Rev. Lett., 2014, 113\allowbreak (17): 171601.
 \newblock DOI: \doi{10.1103/PhysRevLett.113.171601}.
 
+\bibitem[李淼.(2016)]{limiao}
+李淼.
+\newblock 超弦史话\allowbreak[M].
+\newblock 北京大学出版社, 2016.
+
+\bibitem[Schlotterer(2020)]{10.1007/978-3-030-37031-2_4}
+SCHLOTTERER O.
+\newblock The number theory of superstring
+  amplitudes\allowbreak[C]//\allowbreak
+BURGOS~GIL J~I, EBRAHIMI-FARD K, GANGL H.
+\newblock Periods in Quantum Field Theory and Arithmetic.
+\newblock Cham: Springer International Publishing, 2020: 77-103.
+
+\bibitem[Stieberger(2016)]{Stieberger:2016xhs}
+STIEBERGER S.
+\newblock {Periods and Superstring Amplitudes}\allowbreak[A/OL].
+\newblock 2016.
+\newblock arXiv: \eprint{https://arxiv.org/abs/1605.03630}{1605.03630}.
+
 \bibitem[杜一剑(2010)]{dyj}
 杜一剑.
 \newblock 弦论盘面振幅关系及其场论近似\allowbreak[D].
@@ -212,6 +231,73 @@ STIEBERGER S.
 \newblock {Open \& Closed vs. Pure Open String Disk Amplitudes}\allowbreak[A].
 \newblock 2009.
 \newblock arXiv: \eprint{https://arxiv.org/abs/0907.2211}{0907.2211}.
+
+\bibitem[Kleiss et~al.(1989)Kleiss and Kuijf]{Kleiss:1988ne}
+KLEISS R, KUIJF H.
+\newblock {Multi - Gluon Cross-sections and Five Jet Production at Hadron
+  Colliders}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 1989, 312: 616-644.
+\newblock DOI: \doi{10.1016/0550-3213(89)90574-9}.
+
+\bibitem[Del~Duca et~al.(2000)Del~Duca, Dixon, and Maltoni]{DelDuca:1999rs}
+DEL~DUCA V, DIXON L~J, MALTONI F.
+\newblock {New color decompositions for gauge amplitudes at tree and loop
+  level}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 2000, 571: 51-70.
+\newblock DOI: \doi{10.1016/S0550-3213(99)00809-3}.
+
+\bibitem[Bern et~al.(2008)Bern, Carrasco, and Johansson]{Bern:2008qj}
+BERN Z, CARRASCO J~J~M, JOHANSSON H.
+\newblock {New Relations for Gauge-Theory Amplitudes}\allowbreak[J/OL].
+\newblock Phys. Rev. D, 2008, 78: 085011.
+\newblock DOI: \doi{10.1103/PhysRevD.78.085011}.
+
+\bibitem[Britto et~al.(2005)Britto, Cachazo, and Feng]{Britto:2004ap}
+BRITTO R, CACHAZO F, FENG B.
+\newblock {New recursion relations for tree amplitudes of
+  gluons}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 2005, 715: 499-522.
+\newblock DOI: \doi{10.1016/j.nuclphysb.2005.02.030}.
+
+\bibitem[Britto et~al.(2005)Britto, Cachazo, Feng, and Witten]{Britto:2005fq}
+BRITTO R, CACHAZO F, FENG B, et~al.
+\newblock {Direct proof of tree-level recursion relation in Yang-Mills
+  theory}\allowbreak[J/OL].
+\newblock Phys. Rev. Lett., 2005, 94: 181602.
+\newblock DOI: \doi{10.1103/PhysRevLett.94.181602}.
+
+\bibitem[Chen et~al.(2011)Chen, Du, and Feng]{Chen:2011jxa}
+CHEN Y~X, DU Y~J, FENG B.
+\newblock {A Proof of the Explicit Minimal-basis Expansion of Tree Amplitudes
+  in Gauge Field Theory}\allowbreak[J/OL].
+\newblock JHEP, 2011, 02: 112.
+\newblock DOI: \doi{10.1007/JHEP02(2011)112}.
+
+\bibitem[Cachazo et~al.(2014)Cachazo, He, and Yuan]{Cachazo:2013gna}
+CACHAZO F, HE S, YUAN E~Y.
+\newblock {Scattering equations and Kawai-Lewellen-Tye
+  orthogonality}\allowbreak[J/OL].
+\newblock Phys. Rev. D, 2014, 90\allowbreak (6): 065001.
+\newblock DOI: \doi{10.1103/PhysRevD.90.065001}.
+
+\bibitem[Mizera(2017)]{Mizera:2016jhj}
+MIZERA S.
+\newblock {Inverse of the String Theory KLT Kernel}\allowbreak[J/OL].
+\newblock JHEP, 2017, 06: 084.
+\newblock DOI: \doi{10.1007/JHEP06(2017)084}.
+
+\bibitem[Mizera(2017)]{Mizera:2017cqs}
+MIZERA S.
+\newblock {Combinatorics and Topology of Kawai-Lewellen-Tye
+  Relations}\allowbreak[J/OL].
+\newblock JHEP, 2017, 08: 097.
+\newblock DOI: \doi{10.1007/JHEP08(2017)097}.
+
+\bibitem[Massidda(2024)]{Massidda:2024krv}
+MASSIDDA A.
+\newblock {A modern approach to String Amplitudes and Intersection
+  Theory}\allowbreak[D].
+\newblock 2024.
 
 \bibitem[Berkovits(2000)]{Berkovits:2000fe}
 BERKOVITS N.
