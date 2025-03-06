@@ -1,4 +1,4 @@
-\begin{thebibliography}{45}
+\begin{thebibliography}{60}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -299,11 +299,103 @@ MASSIDDA A.
   Theory}\allowbreak[D].
 \newblock 2024.
 
+\bibitem[H\"artl(2011)]{Hartl:2011tza}
+H\"ARTL D.
+\newblock {Correlators of Ramond-Neveu-Schwarz Fields in String
+  Theory}\allowbreak[D].
+\newblock Munich U., 2011.
+
+\bibitem[Haertl(2011)]{Haertl:2011yvw}
+HAERTL D.
+\newblock {Spin field correlators in various dimensions}\allowbreak[J/OL].
+\newblock Nucl. Phys. B Proc. Suppl., 2011, 216: 231-233.
+\newblock DOI: \doi{10.1016/j.nuclphysbps.2011.04.165}.
+
+\bibitem[Elvang et~al.(2015)Elvang and Huang]{Elvang:2015rqa}
+ELVANG H, HUANG Y~T.
+\newblock {Scattering Amplitudes in Gauge Theory and Gravity}\allowbreak[M].
+\newblock Cambridge University Press, 2015.
+
 \bibitem[Berkovits(2000)]{Berkovits:2000fe}
 BERKOVITS N.
 \newblock {Super Poincare covariant quantization of the
   superstring}\allowbreak[J/OL].
 \newblock JHEP, 2000, 04: 018.
 \newblock DOI: \doi{10.1088/1126-6708/2000/04/018}.
+
+\bibitem[Green et~al.(1984)Green and Schwarz]{Green:1983wt}
+GREEN M~B, SCHWARZ J~H.
+\newblock {Covariant Description of Superstrings}\allowbreak[J/OL].
+\newblock Phys. Lett. B, 1984, 136: 367-370.
+\newblock DOI: \doi{10.1016/0370-2693(84)92021-5}.
+
+\bibitem[Green et~al.(1984)Green and Schwarz]{Green:1983sg}
+GREEN M~B, SCHWARZ J~H.
+\newblock {Properties of the Covariant Formulation of Superstring
+  Theories}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 1984, 243: 285-306.
+\newblock DOI: \doi{10.1016/0550-3213(84)90030-0}.
+
+\bibitem[Siegel(1986)]{Siegel:1985xj}
+SIEGEL W.
+\newblock {Classical Superstring Mechanics}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 1986, 263: 93-104.
+\newblock DOI: \doi{10.1016/0550-3213(86)90029-5}.
+
+\bibitem[Berkovits(2003)]{Berkovits:2002zk}
+BERKOVITS N.
+\newblock {ICTP lectures on covariant quantization of the
+  superstring}\allowbreak[J].
+\newblock ICTP Lect. Notes Ser., 2003, 13: 57-107.
+
+\bibitem[Mafra(2008)]{Mafra:2008gkx}
+MAFRA C~R.
+\newblock {Superstring Scattering Amplitudes with the Pure Spinor
+  Formalism}\allowbreak[D].
+\newblock Sao Paulo, IFT, 2008.
+
+\bibitem[Berkovits et~al.(2017)Berkovits and Gomez]{Berkovits:2017ldz}
+BERKOVITS N, GOMEZ H.
+\newblock {An Introduction to Pure Spinor Superstring
+  Theory}\allowbreak[C/OL]//\allowbreak
+Mathematical Physics Studies: {9th Summer School on Geometric, Algebraic and
+  Topological Methods for Quantum Field Theory}.
+\newblock 2017: 221-246.
+\newblock DOI: \doi{10.1007/978-3-319-65427-0_6}.
+
+\bibitem[Mafra et~al.(2023)Mafra and Schlotterer]{Mafra:2022wml}
+MAFRA C~R, SCHLOTTERER O.
+\newblock {Tree-level amplitudes from the pure spinor
+  superstring}\allowbreak[J/OL].
+\newblock Phys. Rept., 2023, 1020: 1-162.
+\newblock DOI: \doi{10.1016/j.physrep.2023.04.001}.
+
+\bibitem[Brink et~al.(1981)Brink and Schwarz]{Brink:1981nb}
+BRINK L, SCHWARZ J~H.
+\newblock {Quantum Superspace}\allowbreak[J/OL].
+\newblock Phys. Lett. B, 1981, 100: 310-312.
+\newblock DOI: \doi{10.1016/0370-2693(81)90093-9}.
+
+\bibitem[Ferber(1978)]{Ferber:1977qx}
+FERBER A.
+\newblock {Supertwistors and Conformal Supersymmetry}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 1978, 132: 55-64.
+\newblock DOI: \doi{10.1016/0550-3213(78)90257-2}.
+
+\bibitem[Freedman et~al.(2012)Freedman and Van~Proeyen]{Freedman:2012zz}
+FREEDMAN D~Z, VAN~PROEYEN A.
+\newblock {Supergravity}\allowbreak[M/OL].
+\newblock Cambridge, UK: Cambridge Univ. Press, 2012.
+\newblock DOI: \doi{10.1017/CBO9781139026833}.
+
+\bibitem[梁灿彬，周彬(2009)]{lcb}
+梁灿彬，周彬.
+\newblock {微分几何入门与广义相对论（下册）}\allowbreak[M].
+\newblock 科学出版社, 2009.
+
+\bibitem[狄拉克(1986)]{dirac}
+狄拉克.
+\newblock {狄拉克量子力学演讲集}\allowbreak[M].
+\newblock 科学出版社, 1986.
 
 \end{thebibliography}

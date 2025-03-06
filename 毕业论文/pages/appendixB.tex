@@ -1,0 +1,71 @@
+\chapter{一些常用的$\gamma$矩阵计算恒等式}
+本附录默认$D=10$，且所有指标置换操作定义本身不带有$k!$因子。首先是一些符号约定：
+\begin{equation}
+\begin{aligned}
+		\gamma^{\mu_1\mu_2...\mu_n} = \frac{1}{n!} \gamma^{[\mu_1} \gamma^{\mu_2} \cdots \gamma^{\mu_n]}\\
+	\delta_{b_1b_2...b_n}^{a_1a_2...a_n}=\frac{1}{n!}\delta_{b_1}^{[a_1}\delta_{b_2}^{a_2}\cdots\delta_{b_n}^{a_n]}\\
+	\epsilon_{01...9}=1,\quad\epsilon^{01...9}=-1
+\end{aligned}
+\end{equation}
+Fierz恒等式为：
+\begin{align}
+		\psi^\alpha \chi^\beta &= \frac{1}{16} \gamma_{\mu_1}^{\alpha\beta} (\psi \gamma^{\mu_1} \chi) + \frac{1}{96} (\gamma_{\mu_1...\mu_3})^{\alpha\beta} (\psi \gamma^{\mu_1...\mu_3} \chi) + \frac{1}{3840} (\gamma_{\mu_1...\mu_5})^{\alpha\beta} (\psi \gamma^{\mu_1...\mu_5} \chi) \\
+		\psi_\alpha \chi^\beta &= \frac{1}{16} \delta_\alpha^\beta (\psi \chi) + \frac{1}{32} (\gamma_{\mu_1\mu_2})_\alpha^\beta (\psi \gamma^{\mu_1\mu_2} \chi) + \frac{1}{384} (\gamma_{\mu_1...\mu_4})_\alpha^\beta (\psi \gamma^{\mu_1...\mu_4} \chi)
+\end{align}
+利用$\theta$的反对易性和$\lambda$的纯旋量性，上式有特殊情况：
+\begin{equation}
+	\lambda^\alpha \lambda^\beta = \frac{1}{3840} (\lambda \gamma^{\mu\nu\rho\sigma\tau} \lambda) \gamma_{\mu\nu\rho\sigma\tau}^{\alpha\beta}, \quad \theta^\alpha \theta^\beta = \frac{1}{96} (\theta \gamma^{\mu\nu\rho} \theta) \gamma_{\mu\nu\rho}^{\alpha\beta}
+\end{equation}
+$\gamma$矩阵的迹：
+\begin{equation}
+	\mathrm{Tr}\left(\gamma^P\gamma_Q\right)=16\delta^{p,q}\left[p!\delta_{Q^T}^P+\delta^{p,5}\epsilon_Q^P\right],\quad|P|:=p,\quad|Q|:=q
+\end{equation}
+对偶性：
+\begin{equation}
+	\begin{aligned}
+		(\gamma^{\mu_1...\mu_5})_{\alpha\beta} 
+		&= \frac{1}{5!} \epsilon^{\mu_1...\mu_5\nu_1...\nu_5} (\gamma_{\nu_1...\nu_5})_{\alpha\beta}, 
+		& (\gamma^{\mu_1...\mu_5})^{\alpha\beta} 
+		&= -\frac{1}{5!} \epsilon^{\mu_1...\mu_5\nu_1...\nu_5} (\gamma_{\nu_1...\nu_5})^{\alpha\beta}, \\
+		(\gamma^{\mu_1...\mu_6})_{\alpha}^{\beta} 
+		&= \frac{1}{4!} \epsilon^{\mu_1...\mu_6\nu_1...\nu_4} (\gamma_{\nu_1...\nu_4})_{\alpha}^{\beta}, 
+		& (\gamma^{\mu_1...\mu_6})^{\alpha}_{\beta} 
+		&= -\frac{1}{4!} \epsilon^{\mu_1...\mu_6\nu_1...\nu_4} (\gamma_{\nu_1...\nu_4})^{\alpha}_{\beta}, \\
+		(\gamma^{\mu_1...\mu_7})_{\alpha\beta} 
+		&= -\frac{1}{3!} \epsilon^{\mu_1...\mu_7\nu_1...\nu_3} (\gamma_{\nu_1...\nu_3})_{\alpha\beta}, 
+		& (\gamma^{\mu_1...\mu_7})^{\alpha\beta} 
+		&= \frac{1}{3!} \epsilon^{\mu_1...\mu_7\nu_1...\nu_3} (\gamma_{\nu_1...\nu_3})^{\alpha\beta}, \\
+		(\gamma^{\mu_1...\mu_8})_{\alpha}^{\beta} 
+		&= -\frac{1}{2!} \epsilon^{\mu_1...\mu_8\nu_1\nu_2} (\gamma_{\nu_1\nu_2})_{\alpha}^{\beta}, 
+		& (\gamma^{\mu_1...\mu_8})^{\alpha}_{\beta} 
+		&= \frac{1}{2!} \epsilon^{\mu_1...\mu_8\nu_1\nu_2} (\gamma_{\nu_1\nu_2})^{\alpha}_{\beta}, \\
+		(\gamma^{\mu_1...\mu_9})_{\alpha\beta} 
+		&= \epsilon^{\mu_1...\mu_9\nu_1} (\gamma_{\nu_1})_{\alpha\beta}, 
+		& (\gamma^{\mu_1...\mu_9})^{\alpha\beta} 
+		&= -\epsilon^{\mu_1...\mu_9\nu_1} (\gamma_{\nu_1})^{\alpha\beta}, \\
+		(\gamma^{\mu_1...\mu_{10}})_{\alpha}^{\beta} 
+		&= \epsilon^{\mu_1...\mu_{10}} \delta_{\alpha}^{\beta}, 
+		& (\gamma^{\mu_1...\mu_{10}})^{\alpha}_{\beta} 
+		&= -\epsilon^{\mu_1...\mu_{10}} \delta_{\beta}^{\alpha}.
+	\end{aligned}
+\end{equation}
+$\gamma$矩阵的乘积：
+\begin{equation}
+	\gamma_{\mu_1\mu_2\ldots\mu_p} \gamma^{\nu_1\nu_2\ldots\nu_q} = \sum_{k=0}^{\min(p,q)} k! \binom{p}{k} \binom{q}{k} \delta_{[\mu_p}^{[\nu_1} \delta_{\mu_{p-1}}^{\nu_2} \cdots \delta_{\mu_{p-k+1}}^{\nu_k} {\gamma_{\mu_1\ldots\mu_{p-k}]}}^{\nu_{k+1}\ldots\nu_q]}
+\end{equation}
+其它常用等式：
+\begin{align}
+		\gamma_{\alpha(\beta}^\mu \gamma_{\gamma\delta)}^\mu &= 0, \\
+		\gamma_{\alpha[\beta}^{\mu\nu\rho} \gamma_{\gamma\delta]}^{\mu\nu\rho} &= 0, \\
+		\gamma_{\mu\nu\rho}^{\alpha\beta} \gamma_{\gamma\delta}^{\mu\nu\rho} &= 48 \left( \delta_\gamma^\alpha \delta_\delta^\beta - \delta_\gamma^\beta \delta_\delta^\alpha \right), \\
+		\gamma_{\alpha\beta}^{\mu\nu\rho} \gamma_{\gamma\delta}^{\mu\nu\rho} &= 12 \left( \gamma_{\alpha\delta}^\mu \gamma_{\beta\gamma}^\mu - \gamma_{\alpha\gamma}^\mu \gamma_{\beta\delta}^\mu \right), \\
+		\gamma_{\alpha\beta}^\mu \gamma_{\delta\sigma}^\mu &= -\frac{1}{2} \gamma_{\alpha\delta}^\mu \gamma_{\beta\sigma}^\mu - \frac{1}{24} \gamma_{\alpha\delta}^{\mu\nu\rho} \gamma_{\beta\sigma}^{\mu\nu\rho}, \\
+		\gamma_{\alpha\beta}^{\mu\nu\rho} \gamma_{\delta\sigma}^{\mu\nu\rho} &= -18 \gamma_{\alpha\delta}^\mu \gamma_{\beta\sigma}^\mu + \frac{1}{2} \gamma_{\alpha\delta}^{\mu\nu\rho} \gamma_{\beta\sigma}^{\mu\nu\rho}, \\
+		\gamma_{\alpha\beta}^{\mu\nu\rho} \gamma_{\delta\sigma}^{\mu\nu\rho} &= -12 \gamma_{\alpha\beta}^\mu \gamma_{\delta\sigma}^\mu - 24 \gamma_{\alpha\delta}^\mu \gamma_{\beta\sigma}^\mu, \\
+		(\gamma^{\mu\nu})_\alpha^\delta (\gamma_{\mu\nu})_\beta^\sigma &= -8 \delta_\alpha^\sigma \delta_\beta^\delta - 2 \delta_\alpha^\delta \delta_\beta^\sigma + 4 \gamma_{\alpha\beta}^\mu \gamma_\mu^{\delta\sigma}, \\
+		(\gamma^{\mu\nu\rho\sigma})_\alpha^\beta (\gamma_{\mu\nu\rho\sigma})_\sigma^\delta &= 315 \delta_{\alpha}^{\delta} \delta_{\sigma}^{\beta} + \frac{21}{2} (\gamma^{\mu\nu})_{\alpha}{}^{\delta} (\gamma_{\mu\nu})_{\sigma}{}^{\beta} + \frac{1}{8} (\gamma^{\mu\nu\rho\sigma})_{\alpha}{}^{\delta} (\gamma_{\mu\nu\rho\sigma})_{\sigma}{}^{\beta}, \\
+		(\gamma^{\mu\nu\rho\sigma})_{\alpha}^{\beta} (\gamma_{\mu\nu\rho\sigma})_{\sigma}^{\delta} &= -48 \delta_\alpha^\beta \delta_\sigma^\delta + 288 \delta_\alpha^\delta \delta_\sigma^\beta + 48 \gamma_{\alpha\sigma}^\mu \gamma_\mu^{\beta\delta},\\
+		\gamma_{\alpha\beta}^{\mu\nu\rho\sigma\tau} \gamma_{\delta\sigma}^{\mu\nu\rho\sigma\tau} &= 0, \\
+		(\lambda \gamma^\mu)_\alpha (\lambda \gamma_\mu)_\beta &= 0, \\
+		(\lambda \gamma_\mu)_\alpha (\lambda \gamma^{\mu\nu\rho\sigma\tau} \lambda) &= 0.
+\end{align}

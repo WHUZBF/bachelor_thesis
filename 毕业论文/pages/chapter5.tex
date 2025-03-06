@@ -1,2 +1,172 @@
 \chapter{Berkovits超弦}
-本节介绍靶空间超对称的纯旋量超弦，由Berkovits在2000年发现\cite{Berkovits:2000fe}。从历史上看最早试图从靶空间超对称引入超弦的形式是Green-Schwarz超弦，但是只能在非协变的光锥坐标下量子化。后来Siegle改进了这一形式但存在共形反常且与RNS形式不等价等诸多问题。Berkovits在Siegle的研究基础之上进行改进得到了纯旋量超弦。我们不打算沿用历史性的介绍（引用mafra），而改用自上而下的方式。本节首先从更简单的超对称点粒子模型出发，然后推广得到纯旋量超弦的作用量，更多细节详见（）。
+本节介绍靶空间超对称的纯旋量超弦，由Berkovits在2000年发现\cite{Berkovits:2000fe}。从历史上看最早试图从靶空间超对称引入超弦的形式是Green-Schwarz超弦\cite{Green:1983wt,Green:1983sg}，但是只能在非协变的光锥坐标下量子化。后来Siegle改进了这一形式但存在共形反常且与RNS形式不等价等诸多问题\cite{Siegel:1985xj}。Berkovits在Siegle的研究基础之上进行改进得到了纯旋量超弦。我们不打算沿用历史性的介绍\cite{Berkovits:2002zk,Mafra:2008gkx}，而改用自上而下的方式。本章首先从更简单的超对称点粒子模型出发，然后推广得到纯旋量超弦的作用量，更多细节详见\cite{Berkovits:2017ldz,Mafra:2022wml}。
+
+\section{Brink-Schwarz 超粒子}
+本节目的是说明在引入靶空间旋量进行超对称化，会导致体系无法协变量子化，以更简单的点粒子模型来说明，弦论类似。靶空间超对称粒子作用量：\cite{Brink:1981nb,Ferber:1977qx}
+\begin{equation}
+	\label{eq:5.1}
+	S_{\text{BS}}=\int d\tau\left(\Pi^\mu P_\mu+eP^\mu P_\mu\right),\quad\Pi^\mu:=\dot{X}^\mu-\frac{1}{2}\dot{\theta}^\alpha\gamma_{\alpha\beta}^\mu\theta^\beta
+\end{equation}
+这里旋量都是十维靶空间旋量，选取了Weyl基底\ref{eq:4.65}，$P$是$X$共轭动量，且看作独立变量。$\mathcal{N}=1$超对称以及对应的超荷为：
+\begin{equation}
+	\label{eq:5.2}
+	\begin{gathered}
+		\delta\theta^\alpha=\epsilon^\alpha,\quad\delta X^\mu=\frac{1}{2}\theta^\alpha\gamma_{\alpha\beta}^\mu\epsilon^\beta,\quad\delta P^\mu=\delta e=0\\
+		Q_\alpha:=p_\alpha-\frac{1}{2}\gamma_{\alpha\beta}^\mu\theta^\beta P_\mu,\quad p_\alpha:=\frac{\partial L}{\partial\dot{\theta}^\alpha}=-\frac{1}{2}\gamma_{\alpha\beta}^\mu\theta^\beta P_\mu
+	\end{gathered}
+\end{equation}
+这一作用量其实是GS形式弦理论的无质量点粒子极限，GS形式下有额外的格拉斯曼奇的规范对称性，称为$\kappa$对称性：
+\begin{equation}
+	\delta\theta^\alpha=P^\mu\gamma_\mu^{\alpha\beta}\kappa_\beta,\quad\delta X^\mu=-\frac{1}{2}\theta^\alpha\gamma_{\alpha\beta}^\mu\delta\theta^\beta,\quad\delta P^\mu=0,\quad\delta e=\dot{\theta}^\alpha\kappa_\alpha
+\end{equation}
+再来看下该体系的约束，首先是$\delta S/\delta e$给出$P^2=0$的无质量约束，这类似前面能动张量给出的约束。另外引入了两对共轭变量$\{X,P\}$和$\{\theta,p\}$，前面一对可以看作是独立的，但是从$\ref{eq:5.2}$不难看出$p$的定义本身包含$\theta$，所以并不能看作完全独立，而是要求有下面的约束条件：
+\begin{equation}
+	d_\alpha:=p_\alpha+\frac{1}{2}\gamma_{\alpha\beta}^\mu\theta^\beta P_\mu=0
+\end{equation}
+利用共轭变量之间的泊松括号得到约束条件满足的代数结构：
+\begin{equation}
+	\label{eq:5.4}
+	\{d_\alpha,d_\beta\}_{\mathrm{PB}}=-\gamma_{\alpha\beta}^\mu P_\mu
+\end{equation}
+对于无质量粒子取小群表示$P^\mu=(E,0,\ldots,E)$，并且取$X,P,\gamma$的光锥坐标得到：
+\begin{equation}
+	\label{eq:5.5}
+	\{d_\alpha,d_\beta\}_{\mathrm{PB}}=-\gamma_{\alpha\beta}^-P^+\propto\begin{pmatrix}{1}_{8\times8}&{0}_{8\times8}\\{0}_{8\times8}&{0}_{8\times8}\end{pmatrix}
+\end{equation}
+由此发现\ref{eq:5.4}给出的约束条件包含八个第一类约束和八个第二类约束，而且只有在不协变的光锥规范下，两类约束才不会混合在一起。所以GS形式只能在光锥坐标下进行量子化。
+
+第一类约束比如前面玻色弦和RNS超弦量子化中能动张量给出的约束可以在协变量子化框架中将约束看作是\ref{eq:2.23}来解决，但是第二类约束需要用到$\S$\ref{sec:5.2}中的式\ref{2nd}先替换掉泊松括号，然后再进行正则量子化。下面我们直接选取规范固定将第一类约束解除，然后处理第二类约束。
+
+在光锥规范下可以固定$\kappa$规范对称性为$(\gamma^+\theta)_\alpha=0$，在这一规范固定下，作用量\ref{eq:5.1}改写为：\footnote{计算需要利用靶空间Majorana-Weyl旋量性质$\dot{\theta}\gamma^+\theta=\dot{\theta}\gamma^i\theta=0$。}
+\begin{equation}
+S_{\text{BS}}=\int d\tau\left(\dot{X}^\mu P_\mu-\frac{1}{2}\dot{S}_aS_a+eP^\mu P_\mu\right),\quad S^a:=2^{1/4}\sqrt{P^+}\theta^a
+\end{equation}
+这里利用了十维Weyl旋量可以进一步分解为Weyl和反Weyl旋量，$\theta$规范固定后还剩下一半的分量：\footnote{这是将十维Weyl旋量分解为了两个八维Weyl旋量，而且八维Weyl旋量升降指标的度量矩阵是$\delta^{ab}$单位阵，一般情况下利用荷共轭矩阵的分量来升降指标\cite{Freedman:2012zz}，比如四维情况下一般取基底使得升降矩阵为Levi-Civita张量$\varepsilon^{ab}$。}
+\begin{equation}
+	\theta^\alpha=\begin{pmatrix}\theta^a\\\theta^{\dot{a}}\end{pmatrix},\quad a,\dot{a}=1,2,\ldots,8
+\end{equation}
+在这一规范固定下\ref{eq:5.5}剩下八个第二类约束：
+\begin{equation}
+	p_a:=\frac{\partial L}{\partial\dot{S}^a}=-\frac{1}{2}S_a,\quad \{d_a,d_b\}_{\mathrm{PB}}=-\delta_{ab}
+\end{equation}
+利用\ref{eq:2nd}得到：
+\begin{equation}
+	\label{eq:5.10}
+	\begin{aligned}
+		\{S_a,S_b\}_\mathrm{DB}&=\{S_a,S_b\}_{\mathrm{PB}}-\{S_a,d_c\}_{\mathrm{PB}}\{d^c,d^e\}_{\mathrm{PB}}^{-1}\{d_e,S_b\}_{\mathrm{PB}}\\&=0-(-\delta_{ac})(-\delta_{ce})(-\delta_{eb})\\&=\delta_{ab}
+	\end{aligned}
+\end{equation}
+这正是$SO(8)$ Clifford代数，其存在八维Weyl旋量表示和八维矢量表示，正好对于十维SYM的八个胶子自由度和八个胶伴子自由度。
+\section{*约束体系量子化}
+\label{sec:5.2}
+本节简要介绍约束体系正则量子化方法，更多细节详见\cite{lcb,dirac}。
+\subsection{经典约束系统}
+
+\subsection{量子化}
+\begin{equation}
+	\label{eq:2nd}
+	1
+\end{equation}
+\section{纯旋量超弦}
+\subsection{超对称点粒子作用量}
+Berkovits发现，可以通过引入额外的一组费米的共轭变量$(\theta^\alpha,p_\alpha)$\footnote{这里的记号有点容易混淆，这里$\theta$和$p$与前文提到的毫无关系，完全是新的独立变量，用这个记号主要是为了后续与文献中常用的纯旋量超弦的记号接轨。}使约束变为第一类：
+\begin{equation}
+\begin{gathered}
+		S=\int d\tau\left(\dot{X}^\mu P_\mu-\frac{1}{2}\dot{S}_aS_a+eP^\mu P_\mu+\dot{\theta}^\alpha p_\alpha+f^\alpha\hat{d}_\alpha\right)\\
+	\hat{d}_\alpha:=d_\alpha+\frac{1}{\sqrt{P^+}}P_\mu(\gamma^\mu\gamma^+S)_\alpha,\quad d_\alpha:=p_\alpha+\frac{1}{2}P_\mu(\gamma^\mu\theta)_\alpha
+\end{gathered}
+\end{equation}
+利用\ref{eq:5.10}不难发现$\hat{d}_\alpha$满足代数结构：
+\begin{equation}
+	\{\hat{d}_\alpha,\hat{d}_\beta\}=-\frac{1}{2P^+}P^2(\gamma^+)_{\alpha\beta}\approx 0
+\end{equation}
+所以确实是第一类约束，第一类约束对应体系有规范对称性，可以利用引入鬼场消去。上式中有$e$和$f$两个拉格朗日乘子，$e$对应diff对称性可以直接通过引入$bc$鬼场消去，剩下的$f$对应的规范对称性可以通过引入玻色的鬼场$\{\hat\lambda,\hat w\}$消去：
+\begin{equation}
+	\label{eq:5.14}
+	S=\int d\tau\left(\dot{X}^\mu P_\mu-\frac{1}{2}\dot{S}_aS_a-\frac{1}{2}P^\mu P_\mu+\dot{\theta}^\alpha p_\alpha+\dot{c}b-\dot{\hat{\lambda}}^\alpha\hat{w}_\alpha\right)
+\end{equation}
+纯旋量形式量子化最常用的方法是BRST量子化，上面作用量的BRST荷为：
+\begin{equation}
+	\hat{Q}_B=\hat{\lambda}^\alpha\hat{d}_\alpha+cP^2+\frac{i}{4P^+}b(\hat{\lambda}\gamma^+\hat{\lambda})
+\end{equation}
+可以证明这个复杂的BRST上同调等价于下面的BRST算符的上同调：
+\begin{equation}
+	\label{eq:5.16}
+	Q_B=\lambda^\alpha d_\alpha, \quad \lambda\gamma^\mu\lambda = 0
+\end{equation}
+$\lambda\gamma^\mu\lambda = 0$就是纯旋量条件。而且注意到，$Q_B$和$S_a,c$无关，也就是说最后量子化得到的结果与$bc$鬼场和$S_a$是否存在无关，所以\ref{eq:5.14}可以写作下面更加简单的形式：
+\begin{equation}
+	\label{eq:5.17}
+	S_{\mathrm{PS}}=\int d\tau\left(\dot{X}^\mu P_\mu-\frac{1}{2}P^\mu P_\mu+\dot{\theta}^\alpha p_\alpha-\dot{\lambda}^\alpha w_\alpha\right)
+\end{equation}
+不同于RNS形式中的$bc$和$\beta\gamma$两套鬼场，纯旋量形式现在只剩下了一套$\lambda w$鬼场。剩下就是标准BRST量子化的方法，类似\ref{eq:4.75}将超多重态编码至一个超波函数中描述：
+\begin{equation}
+	\Omega(X,\theta,\lambda)=C(X,\theta)+\lambda^\alpha A_\alpha(X,\theta)+(\lambda\gamma^{\mu_1,\ldots,\mu_5}\lambda)A_{\mu_1,\ldots,\mu_5}^*(X,\theta)+\lambda^\alpha\lambda^\beta\lambda^\gamma C_{\alpha\beta\gamma}^*(X,\theta)+\cdots
+\end{equation}
+BRST算符作用在波函数上可以用正则量子化表示为算符：
+\begin{equation}
+	\label{eq:5.19}
+	d_\alpha=p_\alpha+\frac{1}{2}P_\mu(\gamma^\mu\theta)_\alpha\to D_\alpha=\frac1i\frac{\partial}{\partial\theta^\alpha}+\frac{1}{2}(\gamma^\mu\theta)_\alpha\frac1i\frac{\partial}{\partial X^\mu}
+\end{equation}
+然后BRST闭给出超多重态中的胶子和胶伴子波函数满足十维SYM运动方程，BRST恰当给出超规范对称性。
+\subsection{超弦作用量}
+利用$P^\mu$运动方程将\ref{eq:5.17}中的$P^\mu$提前积分掉得到：
+\begin{equation}
+	S_{\mathrm{PS}}=\int d\tau\left(\frac{1}{2}\dot{X}^\mu\dot{X}_\mu+\dot{\theta}^\alpha p_\alpha-\dot{\lambda}^\alpha w_\alpha\right)
+\end{equation}
+推广到弦只需要将世界线坐标扩充到世界面坐标，场算符因此扩充为左右模各一个：
+\begin{equation}
+	\begin{aligned}(\tau)&\to(z,\bar{z}),\\\{X(\tau),\theta(\tau),p(\tau),\lambda(\tau),w(\tau)\}&\to\{X(z,\overline{z}),\theta(z,\overline{z}),p(z,\overline{z}),\lambda(z,\overline{z}),w(z,\overline{z})\}\end{aligned}
+\end{equation}
+\begin{equation}
+	\boxed{
+	S_{\mathrm{PS}}=\frac{1}{2\pi\alpha^{\prime}}\int d^2z\left(\frac{1}{2}\partial X^\mu\overline{\partial}X_\mu+p_\alpha\overline{\partial}\theta^\alpha-w_\alpha\overline{\partial}\lambda^\alpha+\tilde{p}_\alpha\partial\tilde{\theta}^\alpha-\tilde{w}_\alpha\partial\tilde{\lambda}^\alpha\right)
+}
+\end{equation}
+这里$\alpha$都是十维Weyl旋量指标，共$2^{\frac{10}{2}-1}=16$个分量，而左右模旋量的手征是否相同反映了II A/B型闭弦理论。对于开弦，边界条件同样同RNS超弦一样，在实轴上左右模相等，所以利用加倍技巧之后对于开弦我们只需要关注上式中不含右模的部分：
+\begin{equation}
+	\label{eq:5.23}
+	S_{\mathrm{PS}}=\frac{1}{\pi}\int d^2z\left(\frac{1}{2}\partial X^\mu\overline{\partial}X_\mu+p_\alpha\overline{\partial}\theta^\alpha-w_\alpha\overline{\partial}\lambda^\alpha\right)
+\end{equation}
+这里以及之后的计算中，我们都假设闭弦$\alpha' = 2$，开弦$\alpha'=\frac12$，利用下面的质量量纲可以很快补写出任何等式中的$\alpha'$：
+\begin{equation}
+	[\alpha^{\prime}]=2,\quad[X^\mu]=1,\quad[\theta^\alpha]=[\lambda^\alpha]=\frac{1}{2},\quad[p_\alpha]=[w_\alpha]=-\frac{1}{2}
+\end{equation}
+同样有\ref{eq:5.19}的定义：
+\begin{equation}
+	\Pi^\mu=\partial X^\mu+\frac{1}{2}(\theta\gamma^\mu\partial\theta),\quad d_\alpha=p_\alpha-\frac{1}{2}{\left(\partial X^\mu+\frac{1}{4}(\theta\gamma^\mu\partial\theta)\right)}(\gamma_\mu\theta)_\alpha
+\end{equation}
+附录中给了纯旋量形式计算中的OPE。利用BRST量子化，BRST算符依旧有\ref{eq:5.16}的形式：
+\begin{equation}
+	Q_B:=\oint dz\left(\lambda^\alpha d_\alpha\right),\quad \lambda\gamma^\mu\lambda=0
+\end{equation}
+利用BRST量子化以及$Q_B U = \partial V$可以给出无质量多重态的积分顶角算符$U$和无积分顶角算符$V$：
+\begin{equation}
+	U(z)=\partial\theta^\alpha A_\alpha(X,\theta)+A_\mu(X,\theta)\Pi^\mu+d_\alpha W^\alpha(X,\theta)+\frac{1}{2}N_{\mu\nu}F^{\mu\nu}(X,\theta)
+\end{equation}
+\begin{equation}
+	V=\lambda^\alpha A_\alpha(X,\theta)
+\end{equation}
+注意这里就不像RNS超弦一样要区分玻色和费米部分了，所以纯旋量超弦直接计算的就是超振幅。另外由于保证了靶空间超对称，所以也不需要GSO投影。这里$A,W,F$都是十维SYM的线性化超场。
+
+
+\subsection{十维超对称Yang-Mills理论}
+本节对上一节最后提到的十维SYM超场特别是其展开式进行一些总结。
+\subsection{*$U(5)$分解}
+纯旋量约束导致纯旋量表述下的OPE不是自由的，比如：\footnote{关于式子中每项的解释请见\cite{Berkovits:2000fe}。}
+\begin{equation}
+	w_\alpha(y)\lambda^\beta(z)\sim(y-z)^{-1}\delta_\alpha^\beta-\frac{1}{2}(y-z)^{-1}\gamma_m^{\beta+}\xi e^{-\phi}(\gamma^m\lambda)_\alpha
+\end{equation}
+前面纯旋量的约束条件之间其实不是独立的，$U(5)$分解可以完全提取$\lambda^\alpha$的相互之间独立的分量，从而解掉纯旋量约束得到自由的CFT。但这么做也破坏了协变性，所以实践中很少用。但是在纯旋量理论本身的发展中是必不可少的，Berkovits就是利用$U(5)$分解构造OPE改进了Siegle方法才得到纯旋量超弦。这里我们对$U(5)$分解本身做一些介绍。
+
+
+\section{纯旋量超弦振幅}
+下面OPE说明$\{ \partial\theta^\alpha,\, \Pi^\mu,\, d_\alpha,\, N^{\mu\nu} \}$都是共形权为$1$的初级场：
+\begin{equation}
+	T_{\mathrm{PS}}(z) \left\{ \partial\theta^{\alpha},\, \Pi^{\mu},\, d_{\alpha},\, N^{\mu\nu} \right\}(w) \sim \frac{\left\{ \partial\theta^{\alpha},\, \Pi^{\mu},\, d_{\alpha},\, N^{\mu\nu} \right\}(w)}{(z-w)^{2}} + \frac{\partial \left\{ \partial\theta^{\alpha},\, \Pi^{\mu},\, d_{\alpha},\, N^{\mu\nu} \right\}(w)}{z-w}
+\end{equation}
+它们在球面上没有零模，所以非零模的计算可以完全由OPE进行，关联函数完全由OPE缩并得来的奇异性决定，不过这里涉及到OPE之后不是常数（非自由）的情况，所以缩并时要小心一些，这里给一个计算例子。
+
+从背景鬼数的补偿来看
+
+\section{*非最小纯旋量超弦}

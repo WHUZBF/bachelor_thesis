@@ -1,0 +1,71 @@
+% 附录
+
+\chapter{本论文主要使用到的算符乘积展开}
+\label{appendix:A}
+本附录给出一些振幅计算中经常用到的OPE以及能动张量等CFT相关约定，以供查阅。
+\section{自由CFT}
+本节对应玻色弦世界面CFT。
+\subsection{自由玻色CFT}
+$XX$包含四项
+
+另外，根据加倍技巧，对于BCFT，左右模之间的OPE不是$0$：
+\begin{equation}
+	X^\mu(z_1)\tilde X^\nu(\bar z_2)\sim X^\mu(z_1)X^\nu(z'_2)\sim -\frac{\alpha^{\prime}}{2}\ln|z_1-\overline{z}_2|
+\end{equation}
+不过弦论中开弦BCFT计算只涉及到实轴上插入，所以不必过于在意上式。而在实轴上源点及其镜像重合，所以左右模OPE和纯左模OPE都会贡献：
+\begin{equation}
+	 X^\mu (y_1) X^\nu(y_2) \sim -2\alpha'\ln |y_1-y_2|
+\end{equation}
+这从\ref{eq:4.36}也能直接看出来，这也印证了$\alpha'_{\text{cl}}\sim4\alpha'_{\text{op}}$。
+\subsection{$bc$鬼场}
+\section{$\mathcal{N}=1$ SCFT}
+本节对应RNS超弦世界面CFT，玻色场OPE与上一节相同。
+\subsection{自由费米CFT}
+
+\subsection{$\beta\gamma$鬼场}
+
+\section{纯旋量形式}
+这里只讨论左模，作用量见\ref{eq:5.23}，能动张量以及对应的超流（费米Lorentz流）：
+\begin{equation}
+	T_{\mathrm{PS}} = -\frac{1}{2} \Pi^\mu \Pi_\mu - d_\alpha \partial \theta^\alpha + w_\alpha \partial \lambda^\alpha, \quad M^{\mu\nu} = \Sigma^{\mu\nu} + N^{\mu\nu} = -\frac{1}{2} (p \gamma^{\mu\nu} \theta) + \frac{1}{2} (w \gamma^{\mu\nu} \lambda)
+\end{equation}
+由于纯旋量约束，这并不是一个自由CFT：
+\begin{equation}
+	\begin{aligned}
+		X^\mu(z,\overline{z}) X^\nu(w,\overline{w}) 
+		&\sim -\eta^{\mu\nu} \ln|z-w|^2, 
+		& d_\alpha(z) \theta^\beta(w) 
+		&\sim \frac{\delta_\alpha^\beta}{z-w}, \\
+		d_\alpha(z) d_\beta(w) 
+		&\sim -\frac{\gamma_{\alpha\beta}^\mu \Pi_\mu(w)}{z-w}, 
+		& d_\alpha(z) \Pi^\mu(w) 
+		&\sim \frac{(\gamma^\mu \partial\theta(w))_\alpha}{z-w}, \\
+		\Pi^\mu(z) \Pi^\nu(w) 
+		&\sim -\frac{\eta^{\mu\nu}}{(z-w)^2},&
+		\partial\theta^\alpha(z) \{ \partial\theta^\beta(w),\Pi^\mu(w),&N^{\mu\nu}(w) \} \sim \mathrm{regular}
+	\end{aligned}
+\end{equation}
+对于任意的不显含$X,\theta$导数项的超场$K(X,\theta)$：\footnote{平面波就是一个最简单的例子。}
+\begin{equation}
+	\begin{aligned}
+		d_\alpha(z) K\left(X(w,\overline{w}), \theta(w)\right) 
+		&\sim \frac{D_\alpha K\left(X(w,\overline{w}), \theta(w)\right)}{z-w}, \\
+		\Pi^\mu(z) K\left(X(w,\overline{w}), \theta(w)\right) 
+		&\sim -\frac{\partial^\mu K\left(X(w,\overline{w}), \theta(w)\right)}{z-w}.
+	\end{aligned}
+\end{equation}
+其中超对称协变导数为：
+\begin{equation}
+	D_\alpha=\frac{\partial}{\partial\theta^\alpha}+\frac{1}{2}(\gamma^\mu\theta)_\alpha\partial_\mu
+\end{equation}
+还有一些有关超流的OPE：
+\begin{equation}
+	\begin{aligned}
+		M^{\mu\nu}(z) M^{\rho\sigma}(w) 
+		&\sim \frac{\eta^{\rho[\mu} M^{\nu]\sigma}(w) - \eta^{\sigma[\mu} M^{\nu]\rho}(w)}{z-w} + \frac{\eta^{\mu[\sigma} \eta^{\rho]\nu}}{(z-w)^2}, \\
+		N^{\mu\nu}(z) N^{\rho\sigma}(w) 
+		&\sim \frac{\eta^{\rho[\mu} N^{\nu]\sigma}(w) - \eta^{\sigma[\mu} N^{\nu]\rho}(w)}{z-w} - 3 \frac{\eta^{\mu[\sigma} \eta^{\rho]\nu}}{(z-w)^2}, \\
+		N^{\mu\nu}(z) \lambda^\alpha(w) 
+		&\sim \frac{1}{2} \frac{(\gamma^{\mu\nu})^\alpha{}_\beta \lambda^\beta(w)}{z-w}.
+	\end{aligned}
+\end{equation}
