@@ -53,20 +53,90 @@ S_{\text{BS}}=\int d\tau\left(\dot{X}^\mu P_\mu-\frac{1}{2}\dot{S}_aS_a+eP^\mu P
 \begin{equation}
 	\label{eq:5.10}
 	\begin{aligned}
-		\{S_a,S_b\}_\mathrm{DB}&=\{S_a,S_b\}_{\mathrm{PB}}-\{S_a,d_c\}_{\mathrm{PB}}\{d^c,d^e\}_{\mathrm{PB}}^{-1}\{d_e,S_b\}_{\mathrm{PB}}\\&=0-(-\delta_{ac})(-\delta_{ce})(-\delta_{eb})\\&=\delta_{ab}
+		\{S_a,S_b\}_*&=\{S_a,S_b\}_{\mathrm{PB}}-\{S_a,d_c\}_{\mathrm{PB}}\{d^c,d^e\}_{\mathrm{PB}}^{-1}\{d_e,S_b\}_{\mathrm{PB}}\\&=0-(-\delta_{ac})(-\delta_{ce})(-\delta_{eb})\\&=\delta_{ab}
 	\end{aligned}
 \end{equation}
-这正是$SO(8)$ Clifford代数，其存在八维Weyl旋量表示和八维矢量表示，正好对于十维SYM的八个胶子自由度和八个胶伴子自由度。
-\section{*约束体系量子化}
+这正是$SO(8)$ Clifford代数，其存在八维Weyl旋量表示和八维矢量表示，正好对于十维SYM的八个胶子自由度和八个胶微子自由度。
+\section{*约束哈密顿体系量子化}
 \label{sec:5.2}
 本节简要介绍约束体系正则量子化方法，更多细节详见\cite{lcb,dirac}。
 \subsection{经典约束系统}
+我们这里所说的约束并非$f(q,t)=0$的情况，这称为完整约束，这种约束总可以通过引入独立的广义坐标消去。从体系拉格朗日量出发：
+\begin{equation}
+	L=L(q,\dot q),\quad p:=\frac{\partial L}{\partial \dot q}
+\end{equation}
+为了正则量子化需要勒让德变换到哈密顿量，如果利用$p:={\partial L}/{\partial \dot q}$可以完全反解出$\dot q = \dot q(q,p)$，那么就称为正规哈密顿体系，哈密顿量和运动方程为：
+\begin{equation}
+	H(q,p) := p\dot{q}-L(q,\dot{q}),\quad \{f,H\}_{text{PB}} = \frac{\mathrm{d} f}{\mathrm{d} t}
+\end{equation}
+这种体系可以直接进行正则量子化：
+\begin{equation}
+	\label{canonical}
+	f\mapsto \hat f,\quad \{\bullet,\bullet\}_{\text{PB}}\mapsto \frac{1}{i\hbar} [\bullet,\bullet]^{\pm}_{\text{DB}}
+\end{equation}
+但是如果不能完全反解出$\dot q$，那么这时就称为约束哈密顿体系，这对应下面的雅可比矩阵$\rank J := R<N$，$N$是体系自由度：
+\begin{equation}
+	J_{ij}:=\frac{\partial P_i}{\partial \dot{q}^i}:=\frac{partial^2 L}{\partial \dot{q}^i\partial \dot{q}^j}
+\end{equation}
+这时$N$个$\dot{q}^i$中只有$R$个可以被反解为$\dot{q}^i=\dot{q}^i(q,p;\dot{q}^j)$，$dot{q}^j$表示剩下的$N-R$个广义坐标，剩下的信息以约束的形式体现为：
+\begin{equation}
+	\phi_m(q,p)=0,\quad m = 1,\ldots,N-R 
+\end{equation}
+但是在变分原理导出哈密顿正则方程时需要$q,p$独立，现在不独立了，所以正则方程失效，需要用拉格朗日乘子法表达为：
+\begin{equation}
+	\frac{\mathrm{d}f}{\mathrm{d}t} = \{f,H\}_{\text{PB}}+\{f,\phi_m\}_{\text{PB}}\lambda^m,\quad 	\phi_m(q,p)\approx0
+\end{equation}
+这里$\lambda^m$是待定的拉格朗日乘子，注意上面我们对约束使用了$\approx$，这其实意味着它们是弱方程，这是为了强调只在约束面上为$0$，但计算与$f$的泊松括号时涉及到求导，也就是切空间上运算，所以只有在计算完全体泊松括号后才能用约束条件。
 
+取上式中$f=\phi_m$得到：
+\begin{equation}
+	\label{consist}
+	0\approx\dot{\phi}_m=\{\phi_m,H\}_{\text{PB}}+\{\phi_m,\phi_n\}_{\text{PB}}\lambda^n
+\end{equation}
+第一个弱等号是因为在壳演化时，必须时时刻刻有$\phi_m = 0$，所以演化自洽性要求$\dot{\phi}_m\approx 0$。而上式是个自洽方程，给了$\lambda$约束，也暗含对$H$选取时的约束，约束哈密顿体系的$H$实则不唯一，我们假设已经做到了这一点，否则无论$\lambda^m(t)$如何选取都无法满足自洽方程：
+\begin{equation}
+	\Phi_{mn}:=\{\phi_m,\phi_n\}_{\text{PB}},\quad h_m:=-\{\phi_m,H\}_{\text{PB}}\Rightarrow \Phi_{mn}\lambda^n\approx h_m
+\end{equation} 
+如果$\Phi$可逆，则$\lambda^m$完全被约束确定，并非自由。更常见的情况是不可逆，我们考虑下面的极端情况：
+\begin{equation}
+	\label{consist2}
+	\Phi_{mn}\overset{\Gamma_1}{\approx} 0,\quad h_{mn}\overset{\Gamma_1}{\approx} 0
+\end{equation}
+这里$\Gamma_1\Gamma$，表示体系相空间$\Gamma$被约束到一个子流形上。这时无论$\lambda^m(t)$是怎样的函数，自洽方程\ref{consist}始终被满足，任意选取一个$\lambda^m(t)$后代入\ref{eq:5.16}得到唯一解$f(t)$，不同的$\lambda^m$给出不同的相空间演化曲线，他们应当解释为描述同一个体系同一个演化，只是不同规范下的相空间轨迹，也就是说$\lambda^m$这时可以被解释为规范自由度。
+
+但是\ref{consist2}完全可以要求$h_{mn}\overset{\Gamma_2\subset\Gamma_1}{\approx} 0$。这个时候自洽性意味着相空间被约束到更小的流形$\Gamma_2$，这相当于引入了新的约束，而且注意到由于自洽方程本身是从在壳运动方程得来的，所以这种约束是在壳后才来的约束，表明$\Gamma_1$上并非所有点都有演化曲线经过。这种约束我们称为次级约束，而原先的$\Phi_{mn}\overset{\Gamma_1}{\approx} 0$称为初级约束。次级约束又会产生类似\ref{consist}的新的约束条件，而约束条件又会带来新的次级约束，如此反复，最终相空间被约束在$\Gamma'\subset \Gamma$上。
+
+但是在量子化时，我们并不需要深究初级约束和次级约束的区别，把他们统称为约束。但是如果某个约束与其它所有约束的泊松括号都（弱）为$0$，那么就称为第一类约束，否则称为第二类约束。
 \subsection{量子化}
+从\ref{consist2}的讨论大致清楚第一类约束对应规范自由度，比如$P^2=\frac12\{P,P\}\approx 0$在壳约束就是第一类约束，这类约束量子化并不复杂，正如协变量子化那里做的一样，他们无非是在正则量子化\ref{canonical}后，额外对态空间施加算符约束：
+\begin{equation}
+	\label{eq:1st}
+	\hat{\phi}_m\ket{\text{phys}} = 0
+\end{equation}
+第二类约束其实意味着某些自由度在体系的描述中是无关紧要的，但是在经典理论中，定义泊松括号是需要对所有的自由度求导来定义的，所以我们需要修改经典理论的泊松括号，使得其自然丢掉那些无关紧要的自由度，Dirac发现下面的修正：
 \begin{equation}
 	\label{eq:2nd}
-	1
+	\{f,g\}_{*}:=\{f,g\}_{\mathrm{PB}}-\{f,\chi_m\}_{\mathrm{PB}}C_{mn}^{-1}\{\chi_n,g\}_{\mathrm{PB}},\quad C_{mn}:=\{\chi_m,\chi_n\}_\text{PB}
 \end{equation}
+这里$\chi_m$表示那些第二类约束。而且可以证明上式依然满足泊松括号所满足的李代数结构。考虑上式下面的特殊情况：
+\begin{equation}
+\begin{aligned}
+		\{f,\chi_k\}_{*} &= \{f,\chi_k\}_{\mathrm{PB}} -\{f,\chi_m\}_{\mathrm{PB}}C_{mn}^{-1}\{\chi_n,\chi_k\}_{\mathrm{PB}}\\
+	&=\{f,\chi_k\}_{\mathrm{PB}} -\{f,\chi_k\}_{\mathrm{PB}}=0
+\end{aligned}
+\end{equation}
+这意味着在新的泊松括号定义下，约束$\chi_m$不再是弱方程，而是在可以求出泊松括号前就认为是$0$的强方程：
+\begin{equation}
+	\label{2nd}
+	\chi_m = 0
+\end{equation}
+至此，我们可以给出约束哈密顿体系的量子化步骤：
+\begin{itemize}
+	\item[1.] 首先对约束$\phi_m$进行线性组合，使得尽可能多的约束落入第一类；
+	\item[2.] 利用剩下的第二类约束$\chi_m$，修改经典泊松括号为\ref{eq:2nd}；
+	\item[3.] 采用标准的正则量子化步骤\ref{canonical}，但是用修改后的泊松括号$\{\bullet,\bullet\}_*$代替$\{\bullet,\bullet\}_{\mathrm{PB}}$；
+	\item[4.] 第一类约束的弱方程看作是加在态空间上的辅助方程\ref{eq:1st}，而第二类约束的强方程\ref{2nd}看作是算符需要满足的方程$\hat{\chi}_m =0$。
+\end{itemize}
 \section{纯旋量超弦}
 \subsection{超对称点粒子作用量}
 Berkovits发现，可以通过引入额外的一组费米的共轭变量$(\theta^\alpha,p_\alpha)$\footnote{这里的记号有点容易混淆，这里$\theta$和$p$与前文提到的毫无关系，完全是新的独立变量，用这个记号主要是为了后续与文献中常用的纯旋量超弦的记号接轨。}使约束变为第一类：
@@ -80,7 +150,7 @@ Berkovits发现，可以通过引入额外的一组费米的共轭变量$(\theta
 \begin{equation}
 	\{\hat{d}_\alpha,\hat{d}_\beta\}=-\frac{1}{2P^+}P^2(\gamma^+)_{\alpha\beta}\approx 0
 \end{equation}
-所以确实是第一类约束，第一类约束对应体系有规范对称性，可以利用引入鬼场消去。上式中有$e$和$f$两个拉格朗日乘子，$e$对应diff对称性可以直接通过引入$bc$鬼场消去，剩下的$f$对应的规范对称性可以通过引入玻色的鬼场$\{\hat\lambda,\hat w\}$消去：
+所以确实是第一类约束，第一类约束对应体系有规范对称性，可以利用引入鬼场消去。上式中有$e$和$f$两个拉格朗日乘子，$e$对应diff对称性可以直接通过引入$bc$鬼场消去，剩下的$f$对应的规范对称性可以通过引入玻色的鬼场$\{\hat\lambda,\hat w\}$消去，他们是十维Weyl旋量：
 \begin{equation}
 	\label{eq:5.14}
 	S=\int d\tau\left(\dot{X}^\mu P_\mu-\frac{1}{2}\dot{S}_aS_a-\frac{1}{2}P^\mu P_\mu+\dot{\theta}^\alpha p_\alpha+\dot{c}b-\dot{\hat{\lambda}}^\alpha\hat{w}_\alpha\right)
@@ -108,7 +178,7 @@ BRST算符作用在波函数上可以用正则量子化表示为算符：
 	\label{eq:5.19}
 	d_\alpha=p_\alpha+\frac{1}{2}P_\mu(\gamma^\mu\theta)_\alpha\to D_\alpha=\frac1i\frac{\partial}{\partial\theta^\alpha}+\frac{1}{2}(\gamma^\mu\theta)_\alpha\frac1i\frac{\partial}{\partial X^\mu}
 \end{equation}
-然后BRST闭给出超多重态中的胶子和胶伴子波函数满足十维SYM运动方程，BRST恰当给出超规范对称性。
+然后BRST闭给出超多重态中的胶子和胶微子波函数满足十维SYM运动方程，BRST恰当给出超规范对称性。
 \subsection{超弦作用量}
 利用$P^\mu$运动方程将\ref{eq:5.17}中的$P^\mu$提前积分掉得到：
 \begin{equation}
@@ -136,37 +206,318 @@ BRST算符作用在波函数上可以用正则量子化表示为算符：
 \begin{equation}
 	\Pi^\mu=\partial X^\mu+\frac{1}{2}(\theta\gamma^\mu\partial\theta),\quad d_\alpha=p_\alpha-\frac{1}{2}{\left(\partial X^\mu+\frac{1}{4}(\theta\gamma^\mu\partial\theta)\right)}(\gamma_\mu\theta)_\alpha
 \end{equation}
-附录中给了纯旋量形式计算中的OPE。利用BRST量子化，BRST算符依旧有\ref{eq:5.16}的形式：
+附录中给了纯旋量形式计算中的OPE。与RNS超弦对比，鬼场对应$\lambda w$，世界面上旋量$\psi$改为了与靶空间坐标$X$对应的超靶空间坐标$\theta$。利用BRST量子化，BRST算符依旧有\ref{eq:5.16}的形式：
 \begin{equation}
 	Q_B:=\oint dz\left(\lambda^\alpha d_\alpha\right),\quad \lambda\gamma^\mu\lambda=0
 \end{equation}
 利用BRST量子化以及$Q_B U = \partial V$可以给出无质量多重态的积分顶角算符$U$和无积分顶角算符$V$：
 \begin{equation}
+	\label{eq:5.39}
 	U(z)=\partial\theta^\alpha A_\alpha(X,\theta)+A_\mu(X,\theta)\Pi^\mu+d_\alpha W^\alpha(X,\theta)+\frac{1}{2}N_{\mu\nu}F^{\mu\nu}(X,\theta)
 \end{equation}
 \begin{equation}
+	\label{eq:5.40}
 	V=\lambda^\alpha A_\alpha(X,\theta)
 \end{equation}
-注意这里就不像RNS超弦一样要区分玻色和费米部分了，所以纯旋量超弦直接计算的就是超振幅。另外由于保证了靶空间超对称，所以也不需要GSO投影。这里$A,W,F$都是十维SYM的线性化超场。
+注意这里就不像RNS超弦一样要区分玻色和费米部分了，所以纯旋量超弦直接计算的就是超振幅。另外由于保证了靶空间超对称，所以也不需要GSO投影。这里$A,W,F$都是十维SYM的线性化超场。对于闭弦则有：\footnote{这里使用$\otimes$而不是$\times$是为了提醒平面波不需要双复制，比如$V(z,\overline{z})=\mathrm{e}^{ik\cdot X}\lambda^\alpha\overline{\lambda}^\beta A_\alpha(\theta)\overline{A}_\beta(\theta)$}
+\begin{equation}
+	V(z,\bar z) = V(z)\otimes \tilde V(\bar z), U(z,\bar z) = U(z)\otimes \tilde U(\bar z)
+\end{equation}
 
 
 \subsection{十维超对称Yang-Mills理论}
-本节对上一节最后提到的十维SYM超场特别是其展开式进行一些总结。
+本节对上一节最后提到的十维SYM超场特别是其展开式进行一些总结。十维SYM粒子谱中只有胶子$\mathbb{A}_\alpha=\mathbb{A}_\alpha(X,\theta)$和胶微子$\mathbb{A}_\mu=\mathbb{A}_\mu(X,\theta)$，定义超协变导数和超空间导数：
+\begin{equation}
+	\nabla_\alpha = D_\alpha - \mathbb{A}_\alpha, \quad
+	\nabla_\mu = \partial_\mu - \mathbb{A}_\mu, \quad
+	D_\alpha = \frac{\partial}{\partial\theta^\alpha} + \frac{1}{2} (\gamma^\mu \theta)_\alpha \partial_\mu
+\end{equation}
+十维SYM场的运动方程可以表达为：
+\begin{equation}
+	\begin{aligned}
+		\left\{\nabla_\alpha, \nabla_\beta\right\} 
+		&= \gamma_{\alpha\beta}^\mu \nabla_\mu, \quad 
+		& \left\{\nabla_\alpha, \nabla_\mu\right\} 
+		&= -(\gamma_\mu \mathbb{W})_\alpha, \\
+		\left\{\nabla_\alpha, \mathbb{W}^\beta\right\} 
+		&= \frac{1}{4} (\gamma^{\mu\nu})_\alpha{}^\beta \mathbb{F}_{\mu\nu}, 
+		& \left[\nabla_\alpha, \mathbb{F}^{\mu\nu}\right] 
+		&= (\mathbb{W}^{[\mu} \gamma^{\nu]})_\alpha
+	\end{aligned}
+\end{equation}
+其中：
+\begin{equation}
+		\mathbb{F}_{\mu\nu} := -\left[\nabla_\mu, \nabla_\nu\right], \quad \mathbb{W}_\mu^\alpha := \left[\nabla_\mu, \mathbb{W}^\alpha\right]
+\end{equation}
+丢去上面公式的所有非线性部分得到线性化超场的运动方程：
+\begin{equation}
+\begin{aligned}
+	D_\alpha A_\beta^i + D_\beta A_\alpha^i 
+	&= \gamma_{\alpha\beta}^\mu A_\mu^i, \quad 
+	& D_\alpha A_\mu^i 
+	&= (\gamma_\mu W_i)_\alpha + \partial_\mu A_\alpha^i, \\
+	D_\alpha W_i^\beta 
+	&= \frac{1}{4} (\gamma^{\mu\nu})_\alpha{}^\beta F_{\mu\nu}^i, \quad 
+	& D_\alpha F_{\mu\nu}^i 
+	&= \partial_{[\mu} (\gamma_{\nu]} W_i)_\alpha
+\end{aligned}
+\end{equation}
+这里指标$i$是用来标记外腿粒子，对SYM超场本身来说这无关紧要，但后面会推广到多个粒子对应的超场。选取Harnad–Shnider规范$\theta^\alpha A_{\alpha} = 0$，求解上面的线性化超场运动方程得到\footnote{这里我们使用$\chi$而不是前面所用的$u$表示胶微子波函数}：\cite{Policastro:2006vt}
+\begin{equation}
+	\begin{aligned}
+		&A_\alpha^{(n)} = \frac{1}{n+1} (\gamma^\mu \theta)_\alpha A_\mu^{(n-1)}, \\
+		&A_\mu^{(n)} = \frac{1}{n} (\theta \gamma_\mu W^{(n-1)}), \\
+		&W^{\alpha(n)} = -\frac{1}{2n} (\gamma^{\mu\nu} \theta)^\alpha \partial_\mu A_\nu^{(n-1)}
+	\end{aligned}
+\end{equation}
+这里$K=\sum_n K^{(n)}$，比如：
+\begin{equation}
+	A_i^\mu(X,\theta)=\left\{{(\cosh\sqrt{O})^\mu}_\nu e_i^\nu+{\left(\frac{\sinh\sqrt{O}}{\sqrt{O}}\right)^m}_\nu(\theta\gamma^\nu\chi_i)\right\}e^{i k_i\cdot X},\quad {\mathcal{O}^\mu}_\nu=\frac{i}{2}(\theta{\gamma^\mu}_{\nu\rho}\theta)k_i^\rho
+\end{equation}
+对于纯旋量超弦的计算，只需要知道$\mathcal{O}(\theta^{n\leq 4})$的项，显式写出为：\footnote{一些纯旋量超弦相关的文献喜欢将叙虚数因子吸收进$k$中，我们不采用这种记号，文献中的记号只需要做替换$k\mapsto i k$和$s_{ij}\mapsto s_{jk}$就可以回到这里的记号。}
+\begin{equation}
+	\label{eq:5.48}
+\begin{aligned}
+		A_\alpha^i&(X,\theta)=\left\{\frac{1}{2}(\theta\gamma_\mu)_\alpha e_i^\mu+\frac{1}{3}(\theta\gamma_\mu)_\alpha(\theta\gamma^\mu\chi_i)-\frac{i}{32}(\theta\gamma^\mu)^\alpha(\theta\gamma_{\mu\nu\rho}\theta)f_i^{\nu\rho}\right.\\
+	&\left.+\frac{i}{60}(\theta\gamma^\mu)_\alpha(\theta\gamma_{\mu\nu\rho}\theta)k_i^\nu(\chi_i\gamma^\rho\theta)-\frac{1}{1152}(\theta\gamma^\mu)_\alpha(\theta\gamma_{\mu\nu\rho}\theta)(\theta{\gamma^\rho}_{\sigma\tau}\theta)k_i^\nu f_i^{\sigma\tau}+\cdots\right\}e^{ik_i\cdot X}
+\end{aligned}
+\end{equation}
+\begin{equation}
+	\label{eq:5.49}
+	\begin{aligned}
+		A_i^\mu&(X,\theta)=\left\{e_i^\mu+(\theta\gamma^\mu\chi_i)-\frac{i}{8}(\theta{\gamma^\mu}_{\nu\rho}\theta)f_i^{\nu\rho}+\frac{i}{12}(\theta{\gamma^\mu}_{\nu\rho}\theta)k_i^\nu(\chi_i\gamma^\rho\theta)\right.\\
+		&\left.-\frac{1}{192}(\theta{\gamma^\mu}_{\nu\sigma}\theta)(\theta{\gamma^\sigma}_{\rho\tau}\theta)k_i^\nu f_i^{\rho\tau}+\frac{1}{480}(\theta{\gamma^\mu}_{\nu\sigma}\theta)(\theta{\gamma^\sigma}_{\rho\tau}\theta)k_i^\nu k_i^\rho(\chi_i\gamma^\tau\theta)+\cdots\right\}e^{ik_i\cdot X}
+	\end{aligned}
+\end{equation}
+\begin{equation}
+	\label{eq:5.50}
+	\begin{aligned}
+		&W_i^\alpha (X, \theta) =
+		\left\{
+		\chi_i^\alpha
+		+ \frac{i}{4} (\theta \gamma_{\mu\nu})^\alpha f_i^{\mu\nu}
+		- \frac{i}{4} (\theta \gamma_{\mu\nu})^\alpha k_i^\mu (\chi_i \gamma^\nu \theta)+\frac{1}{48}(\theta{\gamma_\mu}^\sigma)^\alpha(\theta\gamma_{\sigma\nu\rho}\theta)k^\mu_i f^{\nu\rho}_i\right.\\
+		& \left.- \frac{1}{96} (\theta \gamma_\mu^{\phantom{\mu} \sigma})^\alpha (\theta \gamma_{\sigma\nu\rho} \theta) k_i^\mu k_i^\nu (\chi_i \gamma^\rho \theta)
+		+ \frac{i}{1920} (\theta \gamma_\mu^{\phantom{\mu} \tau})^\alpha (\theta \gamma_{\nu\tau}^{\phantom{\nu\tau} \sigma} \theta) (\theta \gamma_{\sigma\rho\kappa} \theta) k_i^\mu k_i^\nu f_i^{\rho\kappa}
+		+ \cdots
+		\right\} e^{ik_i \cdot X}
+	\end{aligned}
+\end{equation}
+\begin{equation}
+	\label{eq:5.51}
+	\begin{aligned}
+		F_i^{\mu\nu} &(X, \theta) = i
+		\left\{
+		f_i^{\mu\nu}
+		- k_i^{[\mu} (\chi_i \gamma^{\nu]} \theta)
+		- \frac{1}{8} (\theta \gamma_{\rho\sigma}^{\phantom{\rho\sigma} [\mu} \theta) k_i^{\nu]} k_i^\rho f_i^{\rho\sigma}
+		+ \frac{1}{12} (\theta \gamma_{\rho\sigma}^{\phantom{\rho\sigma} [\mu} \theta) k_i^{\nu]} k_i^\rho k_i^\sigma (\chi_i \gamma^\sigma \theta)\right.\\
+		&\left.+\frac{1}{192}(\theta{\gamma_{\rho\phi}}^{[\mu}\theta)k_i^{\nu]}k_i^\rho f_i^{\sigma\tau}(\theta{\gamma^\phi}_{\sigma\tau}\theta)
+		- \frac{1}{480} (\theta \gamma_{\rho\phi}^{\phantom{\rho\phi} [\mu} \theta) k_i^{\nu]} k_i^\rho k_i^\sigma(\chi_i\gamma^\tau\theta) (\theta \gamma_{\sigma\tau}^{\phantom{\sigma\tau} \phi} \theta)
+		+ \cdots
+		\right\} e^{ik_i \cdot X}
+	\end{aligned}
+\end{equation}
+其中定义：
+\begin{equation}
+	f_i^{\mu\nu}:=k_i^\mu e_i^\nu-k_i^\nu e_i^\mu
+\end{equation}
+这些线性超场有如下的质量量纲：
+\begin{equation}
+	[A_\alpha]=\frac{1}{2},\quad[A_\mu]=0,\quad[W^\alpha]=-\frac{1}{2},\quad[F_{\mu\nu}]=-1
+\end{equation}
 \subsection{*$U(5)$分解}
 纯旋量约束导致纯旋量表述下的OPE不是自由的，比如：\footnote{关于式子中每项的解释请见\cite{Berkovits:2000fe}。}
 \begin{equation}
 	w_\alpha(y)\lambda^\beta(z)\sim(y-z)^{-1}\delta_\alpha^\beta-\frac{1}{2}(y-z)^{-1}\gamma_m^{\beta+}\xi e^{-\phi}(\gamma^m\lambda)_\alpha
 \end{equation}
-前面纯旋量的约束条件之间其实不是独立的，$U(5)$分解可以完全提取$\lambda^\alpha$的相互之间独立的分量，从而解掉纯旋量约束得到自由的CFT。但这么做也破坏了协变性，所以实践中很少用。但是在纯旋量理论本身的发展中是必不可少的，Berkovits就是利用$U(5)$分解构造OPE改进了Siegle方法才得到纯旋量超弦。这里我们对$U(5)$分解本身做一些介绍。
+前面纯旋量的约束条件之间其实不是独立的，$U(5)$分解可以完全提取$\lambda^\alpha$的相互之间独立的分量，从而解掉纯旋量约束得到自由的CFT。但这么做也破坏了协变性，所以实践中很少直接用来计算。但是在纯旋量理论本身的发展中是必不可少的，Berkovits就是利用$U(5)$分解构造OPE改进了Siegle方法才得到纯旋量超弦。这里我们对$U(5)$分解本身做一些介绍。
 
-
-\section{纯旋量超弦振幅}
-下面OPE说明$\{ \partial\theta^\alpha,\, \Pi^\mu,\, d_\alpha,\, N^{\mu\nu} \}$都是共形权为$1$的初级场：
+OPE中涉及到的那些场都是$SO(1,9)$的矢量表示或旋量表示，假设我们做了Wick转动到$SO(10)$\footnote{这也是不少文献喜欢将$\eta^{\mu\nu}$写作$\delta^{mn}$的原因。}，$U(5)\cong SU(5)\otimes U(1)$作为$SO(10)$的子群，我们希望计算$SO(10)$表示在其子群$U(5)$上的分导表示。在粒子物理唯象学上的大统一理论（Grand Unified Theory）其实就涉及到这种分解：\cite{Georgi:2000vve,Zee:2016fuk}
 \begin{equation}
-	T_{\mathrm{PS}}(z) \left\{ \partial\theta^{\alpha},\, \Pi^{\mu},\, d_{\alpha},\, N^{\mu\nu} \right\}(w) \sim \frac{\left\{ \partial\theta^{\alpha},\, \Pi^{\mu},\, d_{\alpha},\, N^{\mu\nu} \right\}(w)}{(z-w)^{2}} + \frac{\partial \left\{ \partial\theta^{\alpha},\, \Pi^{\mu},\, d_{\alpha},\, N^{\mu\nu} \right\}(w)}{z-w}
+	E_8\to SO(16)\to SO(10)\to SU(5)\to SU(3)\otimes SU(2)\otimes U(1)
 \end{equation}
-它们在球面上没有零模，所以非零模的计算可以完全由OPE进行，关联函数完全由OPE缩并得来的奇异性决定，不过这里涉及到OPE之后不是常数（非自由）的情况，所以缩并时要小心一些，这里给一个计算例子。
 
-从背景鬼数的补偿来看
+分导表示的计算可以通过\texttt{Mathematica}程序包\texttt{LieART}\cite{FEGER2020107490}进行，比如一阶二阶张量分解：
+\begin{equation}
+	\begin{aligned}
+		V^{m}&\to\upsilon^{a}\oplus\upsilon_{a}\quad&M^{mn}&\to m^{ab}\oplus m_{ab}\oplus m_{b}^{a}\oplus m\mathrm{~,}\\
+		\mathbf{10}&\to\mathbf{5}_{-1}\oplus\mathbf{\overline{5}}_{1}\quad&\mathbf{45}&\to\mathbf{10}_{-2}\oplus\mathbf{\overline{10}}_{2}\oplus\mathbf{24}_{0}\oplus\mathbf{1}_{0}
+		\end{aligned}
+\end{equation}
+这可以通过选取Cartan-Weyl基底具体实现：\cite{Nekrasov:2005wg}
+\begin{equation}
+	v^a=\frac{1}{\sqrt{2}}\left(V^a+iV^{a+5}\right),\quad v_a=\frac{1}{\sqrt{2}}\left(V^a-iV^{a+5}\right),\quad a=1,\ldots,5
+\end{equation}
+\begin{equation}
+	\begin{aligned}
+		m^{ab}&=\frac{1}{2}\left(M^{ab}+iM^{a(b+5)}+iM^{(a+5)b}-M^{(a+5)(b+5)}\right)\\
+		m_{ab}&=\frac{1}{2}\left(M^{ab}-iM^{a(b+5)}-iM^{(a+5)b}-M^{(a+5)(b+5)}\right)\\
+		m_b^a&=\frac{1}{2}\left(M^{ab}-iM^{a(b+5)}+iM^{(a+5)b}+M^{(a+5)(b+5)}\right)\\
+		m&=\sum_{a=1}^5m_a^a=i\sum_{a=1}^5M^{(a+5)a}
+	\end{aligned}
+\end{equation}
+对于旋量表示，这里考虑十维Weyl旋量，取：
+\begin{equation}
+	b^a=\frac{1}{2}\left(\Gamma^a+i\Gamma^{a+5}\right),\quad b_a=\frac{1}{2}\left(\Gamma^a-i\Gamma^{a+5}\right)
+\end{equation}
+在Cliford代数下$b$有下面的海森堡代数：
+\begin{equation}
+	\{b_a,b^b\}=\delta_a^b,\quad\{b_a,b_b\}=\{b^a,b^b\}=0
+\end{equation}
+那么左手（$\Gamma_{11}=-1$）Weyl旋量$\ket{\lambda}$和右手（$\Gamma_{11}=+1$）Weyl旋量$\ket{\Omega}$可以用下面的式子生成：
+\begin{equation}
+	\begin{aligned}
+		\left|\lambda\right\rangle&=\lambda^+|0\rangle+\frac{1}{2}\lambda_{ab}b^bb^a|0\rangle+\frac{1}{4!}\lambda^a\epsilon_{abcde}b^eb^db^cb^b|0\rangle,\\\left|{\Omega}\right\rangle&=\frac{1}{5!}\omega_+\varepsilon_{abcde}b^ab^bb^cb^db^e\ket{0}+\frac{1}{2!3!}\omega^{ab}\varepsilon_{abcde}b^cb^db^e\ket{0}+\omega_ab^a\ket{0}
+	\end{aligned}
+\end{equation}
+\begin{equation}
+	\begin{aligned}
+		\lambda^\alpha&\to(\lambda^+,\lambda_{ab},\lambda^a),\quad&\omega_{\dot\alpha}\to(\omega_+,\omega^{ab},\omega_a)\\\mathbf{16}&\to(\mathbf{1},\mathbf{\overline{10}},\mathbf{5}),\quad&\mathbf{16}^{\prime}\to(\mathbf{1},\mathbf{10},\mathbf{\overline{5}})
+	\end{aligned}
+\end{equation}
+$U(5)$分解下荷共轭矩阵以及$\Gamma_{11}$可以表达为：
+\begin{equation}
+	\mathcal{C}=\prod_{i=1}^{5}\Gamma_i=\prod_{a=1}^5(b_a+b^a),\quad\Gamma_{11}=\prod_{a=1}^5(b^ab_a-b_ab^a)
+\end{equation}
+左手Weyl旋量的纯旋量约束$\lambda \gamma^\mu \lambda = 0$是在$16\times 16$的Weyl基底下写的，补写成$32\times 32$的Dirac旋量有形式：
+\begin{equation}
+	\Lambda^T\mathcal{C}\Gamma^m\Lambda=0,\quad \Gamma_{11}\Lambda=-\Lambda
+\end{equation}
+上式在$U(5)$分解的记号下可以表达为：
+\begin{equation}
+	\label{eq:5.64}
+	\llangle\lambda|\mathcal{C}b^a|\lambda\rangle=0,\quad\llangle\lambda|\mathcal{C}b_a|\lambda\rangle=0,\quad a=1,\ldots 5
+\end{equation}
+注意，这里$\bra{\lambda}:=\ket{\lambda}^\dagger$，$\llangle{\lambda}|:=\ket{\lambda}^T$，利用$\Gamma$矩阵的下列性质：
+\begin{equation}
+	\Gamma_m^T=\begin{cases}-\Gamma_m,&m=1,\ldots,5\\+\Gamma_m,&m=6,\ldots,10\end{cases},\quad \Gamma_m^\dagger =\Gamma_m,\quad \mathcal{C}\Gamma_m=-\Gamma_m^T\mathcal{C}
+\end{equation}
+对应得到$b^a$的性质：
+\begin{equation}
+	b_a^\dagger=b^a,\quad(b^a)^\dagger=b_a,\quad b_a^T=-b^a,\quad(b^a)^T=-b_a,\quad \mathcal{C}b_a=b^a\mathcal{C},\quad \mathcal{C}b^a=b_a\mathcal{C}
+\end{equation}
+所以：\footnote{$\llangle{0}|=\bra{0}$}
+\begin{equation}
+	\llangle\lambda|=\langle0|\lambda_++\frac{1}{2}\langle0|b_ab_b\lambda_{ab}+\frac{1}{24}\langle0|b_bb_cb_db_e\lambda^a\epsilon_{abcde}
+\end{equation}
+带入到\ref{eq:5.64}纯旋量条件后计算得到：
+\begin{equation}
+	2\lambda^+\lambda^a-\frac{1}{4}\epsilon^{abcde}\lambda_{bc}\lambda_{de}=0,\quad \langle0|Cb_b|0\rangle=2\lambda^a\lambda_{ab}
+\end{equation}
+注意第二个约束由第一个约束隐含，所以看似纯旋量约束有$10$个分量，但在$U(5)$分解下看到其独立分量只有五个，所以纯旋量有$11$个自由度。
+\section{纯旋量超弦振幅}
+选取规范固定$(z_1,z_{n-1},z_n)\to(0,1,\infty)\text{ or }(1,0,\infty)$，类似在$\S$\ref{sec:4.3}做的，上面两种选取分别对应外腿奇偶两种排序，使得盘面顺序自洽。纯旋量形式下的盘面色序超振幅形式为：
+\begin{equation}
+	A_n(P)=\int_{\partial D}dz_2\mathrm{~}dz_3\ldots dz_{n-2}\llangle V_1(z_1)U_2(z_2)U_3(z_3)\ldots U_{n-2}(z_{n-2})V_{n-1}(z_{n-1})V_n(z_n)\rrangle
+\end{equation}
+这里$\llangle\bullet\rrangle$表示需要零模和非零模两重计算。下面的OPE说明$\{ \partial\theta^\alpha, \Pi^\mu,d_\alpha, N^{\mu\nu} \}$都是共形权为$1$的初级场：
+\begin{equation}
+	T_{\mathrm{PS}}(z) \left\{ \partial\theta^{\alpha}, \Pi^{\mu}, d_{\alpha}, N^{\mu\nu} \right\}(w) \sim \frac{\left\{ \partial\theta^{\alpha}, \Pi^{\mu}, d_{\alpha}, N^{\mu\nu} \right\}(w)}{(z-w)^{2}} + \frac{\partial \left\{ \partial\theta^{\alpha}, \Pi^{\mu}, d_{\alpha}, N^{\mu\nu} \right\}(w)}{z-w}
+\end{equation}
+它们在球面上没有零模，所以非零模的计算可以完全由OPE进行，关联函数完全由OPE缩并得来的奇异性决定\cite{Berkovits:2004px}，不过这里涉及到OPE之后不是常数（非自由）的情况，所以缩并时要小心一些，这里给一个四点球面振幅的计算例子，\ref{eq:5.39}中有四项，第一项由于$V$中没有$d_\alpha$项和$\partial\theta$缩并给出非平凡OPE所以为$0$，第二项涉及到下面OPE：\footnote{为了后面表达式书写的方便，这里暂时取$z_{1,2,3}$的规范固定。}
+\begin{equation}
+	\begin{aligned}
+		&\left\langle :A_\mu^4(\theta)\Pi^\mu(z_4)\mathrm{e}^{ik_4\cdot X(z_4,\overline{z}_4)}:\prod_{j=1}^3:(\lambda A^j(\theta))\mathrm{e}^{ik_4\cdot X(z_j,\overline{z}_j)}:\right\rangle\\
+		=&\sum_{j=1}^3\left\langle(\lambda A^1(\theta))(\lambda A^2(\theta))(\lambda A^3(\theta))A_\mu^4(\theta)\wick{\c\Pi^\mu(z_4)\c{:\mathrm{e}^{ik_j\cdot X_j}:}}\times \text{other plan waves}\right\rangle\\
+		=& \sum_{j=1}^3\frac{ik_j^\mu}{z_j-z_4}\langle(\lambda A^1)(\lambda A^2)(\lambda A^3)A_\mu^4\rangle
+	\end{aligned}
+\end{equation}
+这里由于$\Pi$和超场缩并涉及到的是普通导数，所以我们将$A(X,\theta)$的平面波部分单独提取出来和$\Pi$缩并，剩下的部分记作$A(\theta)$。上式无非是在用OPE计算$z_4\to z_1,z_2,z_3$的奇异行为，然后把他们全部加起来。事实上这就是对非零模积分的过程。奇异性就足以确定整个关联函数的非零模部分。第三项由于OPE涉及超导数，所以不能提取平面波因子：
+\begin{equation}
+	\begin{aligned}
+		&\left\langle(\lambda A^1)(\lambda A^2)(\lambda A^3):d_\alpha W_4^\alpha:(z_4)\right\rangle\\
+		=&\wick{\left\langle(\lambda \c A^1)(\lambda A^2)(\lambda A^3): \c d_\alpha W_4^\alpha:\right\rangle}+\wick{\left\langle(\lambda  A^1)(\lambda\c A^2)(\lambda A^3): \c d_\alpha W_4^\alpha:\right\rangle}\\
+		&+\wick{\left\langle(\lambda  A^1)(\lambda A^2)(\lambda\c A^3):\c d_\alpha  W_4^\alpha:\right\rangle}\\
+		=&\frac{1}{z_1-z_4}\langle D_\alpha(\lambda A^1)(\lambda A^2)(\lambda A^3)W_4^\alpha\rangle-(1\leftrightarrow2)+(1\leftrightarrow3)
+	\end{aligned}
+\end{equation}
+同理，第四项为：
+\begin{equation}
+	\label{eq:5.74}
+	\begin{aligned}
+		\frac{1}{2}\big\langle(\lambda A^1)(\lambda A^2)(\lambda A^3)(N^{\mu\nu}F_{\mu\nu}^4)\big\rangle
+		= \frac{1}{4(z_1-z_4)}\big\langle(\lambda\gamma^{\mu\nu}A^1)(\lambda A^2)(\lambda A^3)F_{\mu\nu}^4\big\rangle + \text{perms}
+	\end{aligned}
+\end{equation}
+注意到线性超场运动方程给出$D_\alpha(\lambda A)=-(\lambda D)A_\alpha+(\lambda\gamma^\mu)_\alpha A_\mu$：
+\begin{equation}
+	\begin{aligned}
+		\left\langle D_\alpha(\lambda A^1)(\lambda A^2)(\lambda A^3)W_4^\alpha\right\rangle=-\langle(\lambda DA_\alpha^1)(\lambda A^2)(\lambda A^3)W_4^\alpha\rangle+\langle A_\mu^1(\lambda A^2)(\lambda A^3)(\lambda\gamma^\mu W^4)\rangle
+	\end{aligned}
+\end{equation}
+接下来就是非常有技巧性的化简，可以证明上式中的第一项与$\ref{eq:5.74}$之间只相差包含BRST恰当项的关联函数，所以自然差值就是$0$。这种化简技巧对一般盘面振幅的构造是极其重要的，下一章我们会系统地处理这些OPE计算。合并起来，并考虑到左模的贡献，最终得到：
+\begin{equation}
+	\begin{aligned}
+		M_4=\int_\mathbb{C} d^2z_4\left(\frac{\mathcal{F}_{12}}{z_4}+\frac{\mathcal{F}_{21}}{1-z_4}\right)\left(\frac{\overline{\mathcal{F}}_{12}}{\overline{z}_4}+\frac{\overline{\mathcal{F}}_{21}}{1-\overline{z}_4}\right)|z_4|^{-\frac{1}{2}\alpha^{\prime}t}|1-z_4|^{-\frac{1}{2}\alpha^{\prime}u}
+	\end{aligned}
+\end{equation}
+其中：
+\begin{equation}
+	\mathcal{F}_{12} := i k_1^\mu \big\langle (\lambda A^1(\theta))(\lambda A^2(\theta))(\lambda A^3(\theta)) A_\mu^4(\theta) \big\rangle + \big\langle A_\mu^1(\theta) (\lambda A^2(\theta))(\lambda A^3(\theta))(\lambda \gamma^\mu W^4(\theta)) \big\rangle
+\end{equation}
+$\mathcal{F}_{21}$由上式$1\leftrightarrow 2$得到。在对非零模积分之后，剩下的关联函数是零模积分，这些关联函数是和世界面坐标无关的，所有世界面坐标依赖都已经利用OPE进行非零模积分给出了。所以$\mathcal{F}$都不包含世界面坐标依赖，积分后得到：
+\begin{equation}
+		M_4=-2\pi K_0\overline{K}_0\frac{\Gamma(-\frac{\alpha^{\prime}t}{4})\Gamma(-\frac{\alpha^{\prime}u}{4})\Gamma(-\frac{\alpha^{\prime}s}{4})}{\Gamma(1+\frac{\alpha^{\prime}t}{4})\Gamma(1+\frac{\alpha^{\prime}u}{4})\Gamma(1+\frac{\alpha^{\prime}s}{4})},\quad 
+		K_0:=\frac{1}{2}(uF_{12}+tF_{21})
+\end{equation}
+剩下的是鬼场零模积分。首先利用超场$K(\theta)$的展开式\ref{eq:5.48}，\ref{eq:5.49}，\ref{eq:5.50}和\ref{eq:5.51}，最终的形式为$\sum_{n}\langle{\lambda^3\theta^m}\rangle$\footnote{只有三个固定的无积分顶角算符能贡献$\lambda$。}。$\lambda w$鬼场同样有$U(1)$对称性生成鬼场流：
+\begin{equation}
+	J_{\text{PS}}(z):=:\lambda^\alpha w_{\alpha}:(z)
+\end{equation}
+$\lambda$鬼数为$+1$，$w$鬼数为$-1$。下面的OPE表明其只是个准初级场，存在共形反常：
+\begin{equation}
+	\begin{aligned}
+		T_{\text{PS}}(z)J_{\text{PS}}(y)\sim-\frac{8}{(z-y)^3}+\frac{1}{(z-y)^2}J_{\text{PS}}(y)+\frac{1}{(z-y)}\partial J_{\text{PS}}(y)
+	\end{aligned}
+\end{equation}
+与前面接触过的$bc$鬼场和$\beta\gamma$鬼场完全类似，路径积分应当插入鬼数$+8$来平衡背景鬼数。$h(w_\alpha) = +1$故$w_\alpha$路径积分中不包含零模：
+\begin{equation}
+	[\mathcal{D}\lambda][\mathcal{D}\omega]\to[d\lambda_0^\alpha]\prod_{i=1}[d\lambda_i^\alpha][d\omega_\beta^i]
+\end{equation}
+后面的非零模鬼数贡献抵消，也就是说$[d\lambda_0^\alpha]$贡献鬼数$+8$。由于纯旋量空间是$16$维复流形的$11$维子流形，在纯旋量空间中积分应当构造下面的顶微分形式：
+\begin{equation}
+	\epsilon_{\alpha_1...\alpha_5\beta_1...\beta_{11}}d\lambda^{\beta_1}\wedge\cdots\wedge d\lambda^{\beta_{11}}=?
+\end{equation}
+其鬼数为$11$，但三个无积分顶角算符贡献的$\lambda^3$和$[d\lambda_0^\alpha]$合在一起正好贡献$11$的鬼数，再加上旋量指标全反对称的要求给出下面的测度定义：
+\begin{equation}
+	[d\lambda^\alpha](\lambda\gamma^{\mu_1})_{\alpha_1}(\lambda\gamma^{\mu_2})_{\alpha_2}(\lambda\gamma^{\mu_3})_{\alpha_3}(\gamma_{\mu_1\mu_2\mu_3})_{\alpha_4\alpha_5}=\epsilon_{\alpha_1...\alpha_5\beta_1...\beta_{11}}d\lambda^{\beta_1}\wedge\cdots\wedge d\lambda^{\beta_{11}}
+\end{equation}
+将剩下的旋量指标与$\theta$缩并，给出零模关联函数计算测度：
+\begin{equation}
+	\label{eq:5.84}
+	\boxed{
+	\left\langle(\lambda^3\theta^5)\right\rangle:=\left\langle((\lambda\gamma^\mu\theta)(\lambda\gamma^\nu\theta)(\lambda\gamma^\sigma\theta)(\theta\gamma_{\mu\nu\sigma}\theta)\right\rangle = 2880
+	}
+\end{equation}
+这里的$2880$完全只是一个人为约定，如此奇怪是因为代入后刚好和RNS超弦计算结果一致。可以证明\ref{eq:5.84}BRST闭且不恰当，而且是所有$\lambda^3\theta^5$形式能构造出来的唯一$SO(10)$标量，也就是说$\lambda^3\theta^5$最终都能约化为和\ref{eq:5.84}成正比，比如：
+\begin{equation}
+	\label{eq:5.85}
+	\begin{aligned}
+		&\langle(\lambda\gamma^m\theta)(\lambda\gamma^s\theta)(\lambda\gamma^u\theta)(\theta\gamma_{fgh}\theta)\rangle=24\delta_{fgh}^{msu},\\&\langle(\lambda\gamma_m\theta)(\lambda\gamma_s\theta)(\lambda\gamma^{ptu}\theta)(\theta\gamma_{fgh}\theta)\rangle=\frac{288}{7}\delta_{[m}^{[p}\eta_{s][f}\delta_g^t\delta_{h]}^{u]}
+	\end{aligned}
+\end{equation}
+附录中给出了更多例子。利用\texttt{FORM}计算软件可实现自动化计算。\cite{Mafra:2010pn}
 
+最后，再来看一个三点超振幅计算的例子。只有无积分顶角算符插入，不需要计算OPE，只需要展开超场算零模就好了。由于纯旋量超弦直接计算的就是超振幅，但是从超场展开式可以看出$A_\alpha$的$\theta^{2k}$分量代表胶微子，$\theta^{2k-1}$分量代表胶子，通过这种方式便可以提取分量振幅\ref{eq:4.71}和\ref{eq:4.74}。比如三胶子振幅有三项：\footnote{由于三点特殊的运动学性质，不难发现Koba-Nielsen因子为$1$。}
+\begin{equation}
+		A_{3}(\epsilon_1,\epsilon_2,\epsilon_3) \sim -\frac{1}{64} \left( k_{\mu}^{3} \epsilon_{\sigma}^{1} \epsilon_{\tau}^{2} \epsilon_{\nu}^{3} - k_{\mu}^{2} \epsilon_{\sigma}^{1} \epsilon_{\nu}^{2} \epsilon_{\tau}^{3} + k_{\mu}^{1} \epsilon_{\nu}^{1} \epsilon_{\sigma}^{2} \epsilon_{\tau}^{3} \right) \big\langle (\lambda \gamma^{\sigma} \theta)(\lambda \gamma^{\tau} \theta)(\lambda \gamma_{\rho} \theta)(\theta \gamma^{\rho\mu\nu} \theta) \big\rangle
+\end{equation}
+比如第一项就来源于$A^1_\alpha$和$A^2_\alpha$贡献$\theta^1$，$A^3_\alpha$贡献$\theta^3$。再利用\ref{eq:5.85}即可得到\ref{eq:4.71}。同理\ref{eq:4.74}一个胶子两个胶微子振幅也可以用类似方法计算，其来源$A^1_\alpha$贡献$\theta^1$，$A^2_\alpha$和$A^3_\alpha$贡献$\theta^2$：\footnote{似乎少了电荷共轭矩阵，但这只是基底选取的不同。}
+\begin{equation}
+	\begin{aligned}
+		A_{3}(\epsilon_1,u_2,u_3) 
+		\sim -10 \epsilon_{\nu_1}^1 (u^2 \gamma^\sigma u^3) \big\langle (\lambda \gamma^{\nu} \theta)(\lambda \gamma^{\mu} \theta)(\lambda \gamma^{\rho} \theta)(\theta \gamma_{\mu\sigma\rho} \theta) \big\rangle 
+		= \epsilon_\mu^1 (u^2 \gamma^\mu u^3)
+	\end{aligned}
+\end{equation}
+从树图就能看出纯旋量形式计算振幅要麻烦不少，但这只是暂时的，因为RNS形式计算圈级振幅格外复杂，比如D'Hoker和Phong的一系列工作\cite{DHoker:2001kkt,DHoker:2001qqx,DHoker:2001foj,DHoker:2001jaf,DHoker:2005dys,DHoker:2005vch,DHoker:2002hof}，相较而言纯旋量形式就轻松不少\cite{Berkovits:2005df,Berkovits:2005ng}。
 \section{*非最小纯旋量超弦}
+纯旋量超弦可以通过多引入一组费米鬼场$(r_\alpha,s^\beta)$和玻色鬼场$(\hat\lambda^\alpha,\hat w_\beta)$等价描述，只考虑左模的开弦作用量为：\cite{Berkovits:2005bt}
+\begin{equation}
+	S_{\mathrm{NMPS}}=\frac{1}{\pi}\int d^2z(\frac{1}{2}\partial x^m\overline{\partial}x_m+p_\alpha\overline{\partial}\theta^\alpha-w_\alpha\overline{\partial}\lambda^\alpha-\hat{w}^\alpha\overline{\partial}\hat{\lambda}_\alpha+s^\alpha\overline{\partial}r_\alpha)
+\end{equation}
+另外还要额外附加约束：
+\begin{equation}
+	(\overline{\lambda}\gamma^mr)=0
+\end{equation}

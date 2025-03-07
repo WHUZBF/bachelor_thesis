@@ -1,5 +1,5 @@
 \chapter{一些常用的$\gamma$矩阵计算恒等式}
-本附录默认$D=10$，且所有指标置换操作定义本身不带有$k!$因子。首先是一些符号约定：
+本附录默认$D=10$，除非特殊说明所有指标置换操作定义本身不带有$1/k!$因子。首先是一些符号约定：
 \begin{equation}
 \begin{aligned}
 		\gamma^{\mu_1\mu_2...\mu_n} = \frac{1}{n!} \gamma^{[\mu_1} \gamma^{\mu_2} \cdots \gamma^{\mu_n]}\\
@@ -69,3 +69,25 @@ $\gamma$矩阵的乘积：
 		(\lambda \gamma^\mu)_\alpha (\lambda \gamma_\mu)_\beta &= 0, \\
 		(\lambda \gamma_\mu)_\alpha (\lambda \gamma^{\mu\nu\rho\sigma\tau} \lambda) &= 0.
 \end{align}
+利用前面的恒等式，任何纯旋量空间关联函数都可以分解为下面三个：
+\begin{equation}
+	\begin{aligned}
+		\langle(\lambda\gamma^{mnpqr}\lambda)(\lambda\gamma^s\theta)(\theta\gamma_{fgh}\theta)&(\theta\gamma_{jkl}\theta)\rangle=\frac{1152}7\delta_f^m\delta_g^n\delta_j^h\delta_k^p\delta_l^q\delta_s^r-\frac{2304}7\delta_f^m\delta_g^n\delta_h^p\delta_j^q\delta_k^r\delta_l^s\\&+\frac1{120}\epsilon^{mnpqr}_{abcde}\left[\frac{1152}7\delta_f^a\delta_g^b\delta_j^h\delta_k^c\delta_l^d\delta_s^e-\frac{2304}7\delta_f^a\delta_g^b\delta_h^c\delta_j^d\delta_k^e\delta_l^s\right]\\&+[mnpqr][fgh][jkl]+(fgh\leftrightarrow jkl)
+	\end{aligned}
+\end{equation}
+\begin{equation}
+	\begin{aligned}
+		\langle(\lambda\gamma^{mnpqr}\lambda)(\lambda\gamma^{stu}\theta)(\theta\gamma_{fgh}\theta)&(\theta\gamma_{jkl}\theta)\rangle=\frac{6917}7{\left[\delta_s^v\delta_f^t\delta_u^m\delta_g^n\delta_j^h\delta_k^p\delta_l^q\delta_v^r-\delta_f^s\delta_g^t\delta_u^m\delta_h^n\delta_j^p\delta_k^q\delta_l^r\right]}\\&+\frac{3456}{1125}\epsilon^{mnpqr}_{abcde}\left[\delta_s^v\delta_f^t\delta_u^a\delta_g^b\delta_j^h\delta_k^c\delta_l^d\delta_v^e-\delta_f^s\delta_g^t\delta_u^a\delta_h^b\delta_j^c\delta_k^d\delta_l^e\right]\\&+[mnpqr][stu][fgh][jkl]+(fgh\leftrightarrow jkl)
+	\end{aligned}
+\end{equation}
+\begin{equation}
+	\begin{aligned}
+		\langle\lambda\gamma^{mnpqr}\lambda)(\lambda\gamma^{stuvx}\theta)(\theta\gamma^{fgh}\theta)&(\theta\gamma^{jkl}\theta)\rangle=2880\Big[\frac87\delta_s^m\delta_t^n\delta_f^p\delta_g^q\delta_h^r\delta_j^u\delta_k^v\delta_l^x-\frac87\delta_s^m\delta_t^n\delta_u^p\delta_f^q\delta_g^r\delta_j^v\delta_k^x\delta_l^h\\&+\frac{16}7\delta_s^m\delta_t^n\delta_u^p\delta_f^q\delta_j^r\delta_g^v\delta_k^x\delta_l^h-\frac{24}7\delta_s^m\delta_t^n\delta_f^p\delta_g^q\delta_j^r\delta_h^u\delta_k^v\delta_l^x\Big]\\&+24\epsilon^{mnpqr}{}_{abcde}{\Big[\frac87\delta_s^a\delta_t^b\delta_f^c\delta_g^d\delta_h^e\delta_j^u\delta_k^v\delta_l^x-\frac87\delta_s^a\delta_t^b\delta_u^c\delta_f^d\delta_g^e\delta_j^v\delta_k^x\delta_l^h}\\&+\frac{16}7\delta_s^a\delta_t^b\delta_u^c\delta_f^d\delta_j^e\delta_g^v\delta_k^x\delta_l^h-\frac{24}7\delta_s^a\delta_t^b\delta_f^c\delta_g^d\delta_j^e\delta_h^u\delta_k^v\delta_l^x\Big]\\&+[mnpqr][stuvx][fgh][jkl]+(fgh\leftrightarrow jkl)
+	\end{aligned}
+\end{equation}
+这里$[\mathcal{I}]$表示对指标集$\mathcal{I}$取全反对称，而且这里的定义是含$1/k!$因子的。比如利用$\gamma^m\gamma^{np}=\gamma^{mnp}+\eta^{mn}\gamma^p-\eta^{mp}\gamma^n$可以进行下面的分解：
+\begin{equation}
+	\begin{aligned}
+		\langle(\lambda\gamma^m\theta)(\lambda\gamma^n\gamma^{rs}\theta)(\lambda\gamma^p\gamma^{tu}\theta)(\theta\gamma_{fgh}\theta)\rangle=&\langle(\lambda\gamma^m\theta)(\lambda\gamma^{nrs}\theta)(\lambda\gamma^{ptu}\theta)(\theta\gamma_{fgh}\theta)\rangle\\&+2\langle(\lambda\gamma^m\theta)\eta^{n[r}(\lambda\gamma^{s]}\theta)(\lambda\gamma^{ptu}\theta)(\theta\gamma_{fgh}\theta)\rangle\\&+2\langle(\lambda\gamma^m\theta)(\lambda\gamma^{nrs}\theta)\eta^{p[t}(\lambda\gamma^{u]}\theta)(\theta\gamma_{fgh}\theta)\rangle\\&+4\langle(\lambda\gamma^m\theta)\eta^{n[r}(\lambda\gamma^{s]}\theta)\eta^{p[t}(\lambda\gamma^{u]}\theta)(\theta\gamma_{fgh}\theta)\rangle
+	\end{aligned}
+\end{equation}

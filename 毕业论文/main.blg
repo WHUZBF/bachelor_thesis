@@ -8,7 +8,8 @@ A level-1 auxiliary file: pages/chapter3.aux
 A level-1 auxiliary file: pages/chapter4.aux
 A level-1 auxiliary file: pages/chapter5.aux
 A level-1 auxiliary file: pages/chapter6.aux
-A level-1 auxiliary file: pages/appendix.aux
+A level-1 auxiliary file: pages/appendixA.aux
+A level-1 auxiliary file: pages/appendixB.aux
 A level-1 auxiliary file: pages/acknowledgement.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 150 items from 100.
@@ -23,44 +24,46 @@ Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ref/bachelor-refs.bib
-You've used 60 entries,
+Warning--empty author in FEGER2020107490
+You've used 77 entries,
             5374 wiz_defined-function locations,
-            1471 strings with 17014 characters,
-and the built_in function-call counts, 379565 in all, are:
-= -- 9697
-> -- 40752
-< -- 51865
-+ -- 14894
-- -- 2633
-* -- 3298
-:= -- 53169
-add.period$ -- 225
-call.type$ -- 60
-change.case$ -- 365
-chr.to.int$ -- 12800
-cite$ -- 60
-duplicate$ -- 1496
-empty$ -- 6155
-format.name$ -- 1312
-if$ -- 99003
+            1587 strings with 19655 characters,
+and the built_in function-call counts, 483748 in all, are:
+= -- 12577
+> -- 51720
+< -- 65707
++ -- 18824
+- -- 3335
+* -- 4331
+:= -- 67702
+add.period$ -- 291
+call.type$ -- 77
+change.case$ -- 464
+chr.to.int$ -- 16160
+cite$ -- 79
+duplicate$ -- 1923
+empty$ -- 8146
+format.name$ -- 1626
+if$ -- 126208
 int.to.chr$ -- 1
-int.to.str$ -- 61
+int.to.str$ -- 78
 missing$ -- 0
-newline$ -- 362
-num.names$ -- 181
-pop$ -- 18466
+newline$ -- 462
+num.names$ -- 229
+pop$ -- 23285
 preamble$ -- 1
-purify$ -- 60
+purify$ -- 77
 quote$ -- 0
-skip$ -- 39269
+skip$ -- 50359
 stack$ -- 0
-substring$ -- 19543
-swap$ -- 65
-text.length$ -- 1105
+substring$ -- 25177
+swap$ -- 82
+text.length$ -- 1395
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 576
-warning$ -- 0
-while$ -- 1215
+type$ -- 755
+warning$ -- 1
+while$ -- 1542
 width$ -- 0
-write$ -- 876
+write$ -- 1134
+(There was 1 warning)

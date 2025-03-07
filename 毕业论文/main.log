@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  7 MAR 2025 05:06
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  8 MAR 2025 05:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1636,14 +1636,14 @@ Overfull \hbox (11.82118pt too wide) detected at line 325
 File: figs/fig7.pdf Graphic file (type pdf)
 <use figs/fig7.pdf>
 
-Overfull \hbox (0.10228pt too wide) detected at line 348
+Overfull \hbox (0.10228pt too wide) detected at line 349
 [][][][][]
  []
 
 
 
 [41]
-Overfull \hbox (1.79587pt too wide) in paragraph at lines 383--384
+Overfull \hbox (1.79587pt too wide) in paragraph at lines 384--385
 []\TU/SimSun(0)/m/n/12.045 现 实 世 界 不 存 在 快 子 态，|  第 一 个 非 平 凡 的 例 子 是 三 胶 子 振 幅
 ，|  其 $[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^U[]^^U[]^^U[]\OT1/cmr/m/n/
 12.045 )$
@@ -1654,7 +1654,7 @@ Overfull \hbox (1.79587pt too wide) in paragraph at lines 383--384
 [42]
 
 [43]
-Overfull \hbox (24.65535pt too wide) in paragraph at lines 439--441
+Overfull \hbox (24.65535pt too wide) in paragraph at lines 440--442
 \TU/SimSun(0)/m/n/12.045 在 弦 论 也 类 似，|  可 以 用 $\OML/cmm/m/it/12.045 ^^K[]$\TU/T
 imesNewRoman(0)/m/n/12.045 -\TU/SimSun(0)/m/n/12.045 修 正 的 双 自 伴 随 标 量 场 计 算 \T
 U/TimesNewRoman(0)/m/n/12.045 KLT \TU/SimSun(0)/m/n/12.045 核 的 逆 矩 阵 $\OML/cmm/
@@ -1689,7 +1689,7 @@ File: figs/m-12345-12345-e.pdf Graphic file (type pdf)
 File: figs/m-12345-12345-f.pdf Graphic file (type pdf)
 <use figs/m-12345-12345-f.pdf>
 
-Overfull \hbox (11.58041pt too wide) detected at line 466
+Overfull \hbox (11.58041pt too wide) detected at line 467
 [][][][][]
  []
 
@@ -1711,7 +1711,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [47]
 
 [48]
-Overfull \hbox (27.04587pt too wide) detected at line 562
+Overfull \hbox (27.04587pt too wide) detected at line 564
 [][][][][]
  []
 
@@ -1733,14 +1733,14 @@ Overfull \hbox (27.04587pt too wide) detected at line 562
 
 ]
 
-LaTeX Warning: Reference `2nd' on page 52 undefined on input line 38.
-
-
-
 [52]
 
 [53]
-Overfull \hbox (21.82251pt too wide) detected at line 105
+
+[54]
+
+[55]
+Overfull \hbox (21.82251pt too wide) detected at line 175
 [][][]\OT1/cmr/m/n/12.045 
 (\OML/cmm/m/it/12.045 X; ^^R; ^^U\OT1/cmr/m/n/12.045 ) = \OML/cmm/m/it/12.045 C
 \OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 X; ^^R\OT1/cmr/m/n/12.045 ) + \OML/cm
@@ -1753,30 +1753,119 @@ t/12.045 X; ^^R\OT1/cmr/m/n/12.045 ) + []
 
 
 
-[54]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 155.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 155.
-
-
-Overfull \hbox (17.71768pt too wide) detected at line 167
-[][][]\OML/cmm/m/it/12.045 T[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 z\OT1/c
-mr/m/n/12.045 ) [] (\OML/cmm/m/it/12.045 w\OT1/cmr/m/n/12.045 ) \OMS/cmsy/m/n/1
-2.045 ^^X [] \OT1/cmr/m/n/12.045 + []
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 222--222
+[][][][]\TU/SimSun(0)/m/n/10.53937 这 里 使 用 $\OMS/cmsy/m/n/10.53937 
+$ \TU/SimSun(0)/m/n/10.53937 而 不 是 $\OMS/cmsy/m/n/10.53937 ^^B$ \TU/SimSun(0)/m
+/n/10.53937 是 为 了 提 醒 平 面 波 不 需 要 双 复 制，|  比 如 $\OML/cmm/m/it/10.53937 V\OT1/cm
+r/m/n/10.53937 (\OML/cmm/m/it/10.53937 z; []\OT1/cmr/m/n/10.53937 ) =
  []
 
 
 
-[55])
+[57]
+Overfull \hbox (12.13605pt too wide) detected at line 276
+[][][]\OML/cmm/m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 X; ^^R\
+OT1/cmr/m/n/12.045 ) = [] \OML/cmm/m/it/12.045 e[];  [][] \OT1/cmr/m/n/12.045 =
+ [](\OML/cmm/m/it/12.045 ^^R[][]^^R\OT1/cmr/m/n/12.045 )\OML/cmm/m/it/12.045 k[
+]
+ []
 
-[56]
+
+
+[58]
+Overfull \hbox (4.60686pt too wide) detected at line 284
+[][][][][]
+ []
+
+
+Overfull \hbox (23.46817pt too wide) detected at line 305
+[][][][][]
+ []
+
+
+Overfull \hbox (33.00641pt too wide) detected at line 320
+[][][][][]
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 329.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 329.
+
+
+
+[59]
+
+[60]
+
+[61]
+Overfull \hbox (5.66498pt too wide) detected at line 413
+[][][]\OML/cmm/m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 P\OT1/c
+mr/m/n/12.045 ) = [][] \OML/cmm/m/it/12.045 dz[][]dz[] [] dz[][]V[]\OT1/cmr/m/n
+/12.045 (\OML/cmm/m/it/12.045 z[]\OT1/cmr/m/n/12.045 )\OML/cmm/m/it/12.045 U[]\
+OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 z[]\OT1/cmr/m/n/12.045 )\OML/cmm/m/it/
+12.045 U[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 z[]\OT1/cmr/m/n/12.045 ) []
+ \OML/cmm/m/it/12.045 U[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 z[]\OT1/cmr/
+m/n/12.045 )\OML/cmm/m/it/12.045 V[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 z
+[]\OT1/cmr/m/n/12.045 )\OML/cmm/m/it/12.045 V[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/
+it/12.045 z[]\OT1/cmr/m/n/12.045 )[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[62]
+Overfull \hbox (15.43799pt too wide) detected at line 448
+[][][][][]
+ []
+
+
+Overfull \hbox (11.41612pt too wide) detected at line 458
+[][][]\OMS/cmsy/m/n/12.045 F[] \OT1/cmr/m/n/12.045 := \OML/cmm/m/it/12.045 ik[]
+[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^UA[]\OT1/cmr/m/n/12.045 (\OML/cmm
+/m/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))(\OML/cmm/m/it/12.045 ^^UA[]\OT1/cmr/m/n/
+12.045 (\OML/cmm/m/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))(\OML/cmm/m/it/12.045 ^^U
+A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))\OML/cmm/
+m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^R\OT1/cmr/m/n/12.045
+ )[] + []\OML/cmm/m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^R\
+OT1/cmr/m/n/12.045 )(\OML/cmm/m/it/12.045 ^^UA[]\OT1/cmr/m/n/12.045 (\OML/cmm/m
+/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))(\OML/cmm/m/it/12.045 ^^UA[]\OT1/cmr/m/n/12
+.045 (\OML/cmm/m/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))(\OML/cmm/m/it/12.045 ^^U^^
+M[]W[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))[]
+ []
+
+
+
+[63]
+Overfull \hbox (10.0966pt too wide) detected at line 505
+[][][]\OML/cmm/m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^O[]; 
+^^O[]; ^^O[]\OT1/cmr/m/n/12.045 ) \OMS/cmsy/m/n/12.045 ^^X ^^@[] [] []\OT1/cmr/
+m/n/12.045 (\OML/cmm/m/it/12.045 ^^U^^M[]^^R\OT1/cmr/m/n/12.045 )(\OML/cmm/m/it
+/12.045 ^^U^^M[]^^R\OT1/cmr/m/n/12.045 )(\OML/cmm/m/it/12.045 ^^U^^M[]^^R\OT1/c
+mr/m/n/12.045 )(\OML/cmm/m/it/12.045 ^^R^^M[]^^R\OT1/cmr/m/n/12.045 )[]
+ []
+
+
+
+[64])
+
+[65]
 \openout2 = `pages/chapter6.aux'.
 
  (./pages/chapter6.tex
+
+[66
+
+
+
+
+]
 6
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1788,14 +1877,9 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 )
 
-[57
+[67]
 
-
-
-
-]
-
-[58
+[68
 
 
 
@@ -1836,13 +1920,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 25.
 
 
+Overfull \hbox (7.11964pt too wide) detected at line 31
+[][][]\OML/cmm/m/it/12.045 T[] \OT1/cmr/m/n/12.045 =: \OMS/cmsy/m/n/12.045 ^^@[
+]\OT1/cmr/m/n/12.045 ^^E[]^^E[] \OMS/cmsy/m/n/12.045 ^^@ \OML/cmm/m/it/12.045 d
+[] @  []^^R[] \OT1/cmr/m/n/12.045 + \OML/cmm/m/it/12.045 w[] @  []^^U[] \OT1/cm
+r/m/n/12.045 :\OML/cmm/m/it/12.045 ;  M[] \OT1/cmr/m/n/12.045 = ^^F[] + \OML/cm
+m/m/it/12.045 N[] \OT1/cmr/m/n/12.045 =: \OMS/cmsy/m/n/12.045 ^^@[]\OT1/cmr/m/n
+/12.045 (\OML/cmm/m/it/12.045 p^^M[]^^R\OT1/cmr/m/n/12.045 ) + [](\OML/cmm/m/it
+/12.045 w^^M[]^^U\OT1/cmr/m/n/12.045 ) :
+ []
 
-[59
+
+
+[69
 
 
 ])
 
-[60]
+[70]
 \openout2 = `pages/appendixB.aux'.
 
  (./pages/appendixB.tex
@@ -1860,19 +1955,31 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[61
+[71
 
 
 
 
-])
+]
+Overfull \hbox (1.24109pt too wide) detected at line 82
+[][][][][]
+ []
 
-[62] (./main.bbl
+
+Overfull \hbox (30.3315pt too wide) detected at line 87
+[][][][][]
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[63
+[72])
+
+[73] (./main.bbl
+
+[74
 
 
 
@@ -1881,7 +1988,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[64]
+[75]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[76]
 Underfull \hbox (badness 3158) in paragraph at lines 211--217
 []\TU/TimesNewRoman(0)/m/n/12.045 SCHLOTTERER O.  The number theory of superstr
 ing amplitudes[C]//
@@ -1892,24 +2004,34 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[65]
+[77]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[66])
+[78]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[67]
+
+
+[79]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[80])
+
+[81]
 \openout2 = `pages/acknowledgement.aux'.
 
  (./pages/acknowledgement.tex
 
-[68
+[82
 
 
 ])
 
-[69] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
+[83] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
 (./pages/chapter3.aux) (./pages/chapter4.aux) (./pages/chapter5.aux)
 (./pages/chapter6.aux) (./pages/appendixA.aux) (./pages/appendixB.aux)
 (./pages/acknowledgement.aux))
@@ -1917,18 +2039,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2022/08/05>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 39329 strings out of 474240
- 888262 string characters out of 5745918
- 1948560 words of memory out of 5000000
- 61187 multiletter control sequences out of 15000+600000
+ 39453 strings out of 474240
+ 890574 string characters out of 5745918
+ 1949560 words of memory out of 5000000
+ 61311 multiletter control sequences out of 15000+600000
  584927 words of font info for 223 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,19n,121p,2041b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (81 pages).
+Output written on main.pdf (95 pages).

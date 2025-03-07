@@ -1,4 +1,4 @@
-\begin{thebibliography}{60}
+\begin{thebibliography}{77}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -397,5 +397,119 @@ FREEDMAN D~Z, VAN~PROEYEN A.
 狄拉克.
 \newblock {狄拉克量子力学演讲集}\allowbreak[M].
 \newblock 科学出版社, 1986.
+
+\bibitem[Policastro et~al.(2006)Policastro and Tsimpis]{Policastro:2006vt}
+POLICASTRO G, TSIMPIS D.
+\newblock {R**4, purified}\allowbreak[J/OL].
+\newblock Class. Quant. Grav., 2006, 23: 4753-4780.
+\newblock DOI: \doi{10.1088/0264-9381/23/14/012}.
+
+\bibitem[Georgi(2000)]{Georgi:2000vve}
+GEORGI H.
+\newblock {Lie Algebras In Particle Physics : from Isospin To Unified
+  Theories}\allowbreak[M/OL].
+\newblock Boca Raton: Taylor \& Francis, 2000.
+\newblock DOI: \doi{10.1201/9780429499210}.
+
+\bibitem[Zee(2016)]{Zee:2016fuk}
+ZEE A.
+\newblock {Group Theory in a Nutshell for Physicists}\allowbreak[M].
+\newblock USA: Princeton University Press, 2016.
+
+\bibitem[FEG(2020)]{FEGER2020107490}
+Lieart 2.0 – a mathematica application for lie algebras and representation
+  theory\allowbreak[J/OL].
+\newblock Computer Physics Communications, 2020, 257: 107490.
+\newblock
+  \url{https://www.sciencedirect.com/science/article/pii/S0010465520302290}.
+\newblock DOI: \doi{https://doi.org/10.1016/j.cpc.2020.107490}.
+
+\bibitem[Nekrasov(2005)]{Nekrasov:2005wg}
+NEKRASOV N~A.
+\newblock {Lectures on curved beta-gamma systems, pure spinors, and
+  anomalies}\allowbreak[A].
+\newblock 2005.
+\newblock arXiv: \eprint{https://arxiv.org/abs/hep-th/0511008}{hep-th/0511008}.
+
+\bibitem[Berkovits(2004)]{Berkovits:2004px}
+BERKOVITS N.
+\newblock {Multiloop amplitudes and vanishing theorems using the pure spinor
+  formalism for the superstring}\allowbreak[J/OL].
+\newblock JHEP, 2004, 09: 047.
+\newblock DOI: \doi{10.1088/1126-6708/2004/09/047}.
+
+\bibitem[Mafra(2010)]{Mafra:2010pn}
+MAFRA C~R.
+\newblock {PSS: A FORM Program to Evaluate Pure Spinor Superspace
+  Expressions}\allowbreak[A].
+\newblock 2010.
+\newblock arXiv: \eprint{https://arxiv.org/abs/1007.4999}{1007.4999}.
+
+\bibitem[D'Hoker et~al.(2002)D'Hoker and Phong]{DHoker:2001kkt}
+D'HOKER E, PHONG D~H.
+\newblock {Two loop superstrings. 1. Main formulas}\allowbreak[J/OL].
+\newblock Phys. Lett. B, 2002, 529: 241-255.
+\newblock DOI: \doi{10.1016/S0370-2693(02)01255-8}.
+
+\bibitem[D'Hoker et~al.(2002)D'Hoker and Phong]{DHoker:2001qqx}
+D'HOKER E, PHONG D~H.
+\newblock {Two loop superstrings. 2. The Chiral measure on moduli
+  space}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 2002, 636: 3-60.
+\newblock DOI: \doi{10.1016/S0550-3213(02)00431-5}.
+
+\bibitem[D'Hoker et~al.(2002)D'Hoker and Phong]{DHoker:2001foj}
+D'HOKER E, PHONG D~H.
+\newblock {Two loop superstrings. 3. Slice independence and absence of
+  ambiguities}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 2002, 636: 61-79.
+\newblock DOI: \doi{10.1016/S0550-3213(02)00432-7}.
+
+\bibitem[D'Hoker et~al.(2002)D'Hoker and Phong]{DHoker:2001jaf}
+D'HOKER E, PHONG D~H.
+\newblock {Two loop superstrings 4: The Cosmological constant and modular
+  forms}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 2002, 639: 129-181.
+\newblock DOI: \doi{10.1016/S0550-3213(02)00516-3}.
+
+\bibitem[D'Hoker et~al.(2005)D'Hoker and Phong]{DHoker:2005dys}
+D'HOKER E, PHONG D~H.
+\newblock {Two-loop superstrings. V. Gauge slice independence of the N-point
+  function}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 2005, 715: 91-119.
+\newblock DOI: \doi{10.1016/j.nuclphysb.2005.02.042}.
+
+\bibitem[D'Hoker et~al.(2005)D'Hoker and Phong]{DHoker:2005vch}
+D'HOKER E, PHONG D~H.
+\newblock {Two-loop superstrings VI: Non-renormalization theorems and the
+  4-point function}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 2005, 715: 3-90.
+\newblock DOI: \doi{10.1016/j.nuclphysb.2005.02.043}.
+
+\bibitem[D'Hoker et~al.(2002)D'Hoker and Phong]{DHoker:2002hof}
+D'HOKER E, PHONG D~H.
+\newblock {Lectures on two loop superstrings}\allowbreak[J].
+\newblock Conf. Proc. C, 2002, 0208124: 85-123.
+
+\bibitem[Berkovits(2006)]{Berkovits:2005df}
+BERKOVITS N.
+\newblock {Super-Poincare covariant two-loop superstring
+  amplitudes}\allowbreak[J/OL].
+\newblock JHEP, 2006, 01: 005.
+\newblock DOI: \doi{10.1088/1126-6708/2006/01/005}.
+
+\bibitem[Berkovits et~al.(2006)Berkovits and Mafra]{Berkovits:2005ng}
+BERKOVITS N, MAFRA C~R.
+\newblock {Equivalence of two-loop superstring amplitudes in the pure spinor
+  and RNS formalisms}\allowbreak[J/OL].
+\newblock Phys. Rev. Lett., 2006, 96: 011602.
+\newblock DOI: \doi{10.1103/PhysRevLett.96.011602}.
+
+\bibitem[Berkovits(2005)]{Berkovits:2005bt}
+BERKOVITS N.
+\newblock {Pure spinor formalism as an N=2 topological
+  string}\allowbreak[J/OL].
+\newblock JHEP, 2005, 10: 089.
+\newblock DOI: \doi{10.1088/1126-6708/2005/10/089}.
 
 \end{thebibliography}

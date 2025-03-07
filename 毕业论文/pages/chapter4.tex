@@ -325,6 +325,7 @@ $\mathsf{C}_J$，$\mathsf{B}_{K}$在\ref{eq:4.17}内积的意义下正交归一�
 \end{equation}
 差一个归一化常数，只需要更改一下真空归一化即可，这是无关紧要的。
 \section{玻色弦振幅}
+\label{sec:4.3}
 下文中用$\mathcal{A}$表示开弦树级振幅，$A$表示其色序振幅，$\mathcal{M}$表示闭弦树级振幅。类似Yang-Mills理论，Chan-Paton因子给出开弦树级振幅的色分解：
 \begin{equation}
 	\mathcal{A}_n=\sum_{\rho\in S_{n-1}}\mathrm{Tr}(\lambda^{a_{\rho(1)}}\lambda^{a_{\rho(2)}}\ldots \lambda^{a_{\rho(n-1)}}\lambda^{a_{n}})\times A(\rho(1),\rho(2),\ldots,\rho(n-1),n)
@@ -490,7 +491,7 @@ KLT关系实际上依赖于球面上左右模独立传播的特性，这一点�
 	\label{eq:4.65}
 	S_A=\begin{pmatrix}S_\alpha\\S^{\dot{\alpha}}\end{pmatrix},\quad(\Gamma^\mu)_A{}^B=\begin{pmatrix}0&\gamma_{\alpha\dot{\beta}}^\mu\\\bar{\gamma}^{\mu\dot{\alpha}\beta}&0\end{pmatrix},\quad \mathcal{C}_{AB}=\begin{pmatrix}0&{C_{\alpha}}^{\dot{\beta}}\\{C^{\dot{\alpha}}}_{\beta}&0\end{pmatrix}
 \end{equation}
-后面开弦计算只会用到其中一个手性，比如$S_\alpha$，$\gamma^\mu_{\alpha\dot\beta}$和$C_{\alpha}^{\dot\beta}$。我们以四点为例说明如何计算球面上的关联函数。首先根据其指标结构可以写下一般的拟设：
+后面开弦计算只会用到其中一个手性，比如$S_\alpha$，$\gamma^\mu_{\alpha\dot\beta}$和${C_{\alpha}}^{\dot\beta}$。我们以四点为例说明如何计算球面上的关联函数。首先根据其指标结构可以写下一般的拟设：
 \begin{equation}
 	\langle\psi^\mu(z_1)\psi^n(z_2)S_A(z_3)S_B(z_4)\rangle=\eta^{\mu\nu}\mathcal{C}_{AB}f(\mathbf{z})+\frac{1}{2}(\Gamma^\mu\Gamma^\nu\mathcal{C})_{AB}g(\mathbf{z})
 \end{equation}
@@ -541,8 +542,9 @@ KLT关系实际上依赖于球面上左右模独立传播的特性，这一点�
 \begin{equation}
 	S_{\mathrm{SYM}}[A,\chi]\sim\int d^{10}X\operatorname{Tr}\left\{\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+\chi^\alpha(\gamma^\mu C)_{\alpha\beta}[D_\mu,\chi^\beta]\right\}
 \end{equation}
-再比如一个胶子两个胶伴子的振幅：
+再比如一个胶子两个胶微子（gluino）的振幅：
 \begin{equation}
+	\label{eq:4.74}
 	\begin{aligned}
 		A_3(\epsilon_{1},u_{2},u_{3})\sim&|z_{12}z_{13}z_{23}|\langle U^{(-1)}(z_{1})U^{(-1/2)}(z_{2})U^{(-1/2)}(z_{3})\rangle\\
 		=&|z_{12}z_{13}z_{23}|\langle:e^{-\phi(z_1)}::e^{-\phi(z_2)/2}::e^{-\phi(z_3)/2}:\rangle\langle\prod_{j=1}^3:e^{ip_j\cdot X(z_j)}:\rangle\\
@@ -561,6 +563,6 @@ KLT关系实际上依赖于球面上左右模独立传播的特性，这一点�
 \end{gathered}
 \end{equation}
 
-因为胶子与胶伴子共同构成一个超多重态，而前面计算那些振幅都应当是整个超振幅的某个分量振幅。但是由于RNS形式没有靶空间超对称，所以没办法直接计算超振幅。而且从前面三点振幅计算也能看出，超弦振幅和SYM振幅之间无论取外腿为超多重态中的哪一个态（胶子/胶伴子），振幅之间的关系是不变的。而纯旋量超旋顶角算符直接对超多重态定义，所以可以直接计算得到超振幅，后面我们会用纯旋量超弦形式将任意多点盘面超弦超振幅表达为SYM超振幅。
+因为胶子与胶微子共同构成一个超多重态，而前面计算那些振幅都应当是整个超振幅的某个分量振幅。但是由于RNS形式没有靶空间超对称，所以没办法直接计算超振幅。而且从前面三点振幅计算也能看出，超弦振幅和SYM振幅之间无论取外腿为超多重态中的哪一个态（胶子/胶微子），振幅之间的关系是不变的。而纯旋量超旋顶角算符直接对超多重态定义，所以可以直接计算得到超振幅，后面我们会用纯旋量超弦形式将任意多点盘面超弦超振幅表达为SYM超振幅。
 
 另外对比玻色弦胶子振幅\ref{eq:4.47}和超弦胶子振幅\ref{eq:4.71}，发现超弦振幅竟然更加简单，少了$\propto\alpha'$的项。缺少某一项从低能场论上看相当于低能场论缺少某个相互作用顶点。在场论中，超对称的引入一般能较好地改善理论的紫外行为，体现在超对称会直接否定某些抵消项的存在，比如在七圈以下修正，$\mathcal{N}=8$超引力只允许存在抵消项$R^4$，$D^4R^4$，$D^6R^4$\cite{Elvang:2015rqa}。这也是超弦振幅更加简单一些的一种解释。
