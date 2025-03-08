@@ -182,8 +182,11 @@ $\mathsf{C}_J$，$\mathsf{B}_{K}$在\ref{eq:4.17}内积的意义下正交归一�
 \end{equation}
 第二个等号利用了格拉斯曼变量积分的性质，只有在被积函数为积分变量的最高形式时才不为零。最后一个等号中${\det}^\prime$表示不考虑零模贡献，否则显然$\det=0$。由上式不难看出规范固定的过程正是插入$bc$鬼场零模，而Riemann-Sroch定理$\mu-\kappa$给出的正是鬼数补偿，其正好补偿背景鬼数\ref{eq:2.66}。
 
-虽然鬼场方法是极具物理思想的方法，但是其推导出来的结果右有非常清晰的物理解释。\ref{eq:4.21}中第三项可以看作是一个归一化系数不用过多考虑，第二项$c$鬼场零模正好对应CKG生成元，第一项在数学上相当于插入一些Beltrami微分，是复结构的体现。而且，单纯从形式上来说\ref{eq:4.18}有下面更简单的形式：
-
+虽然鬼场方法是极具物理思想的方法，但是其推导出来的结果右有非常清晰的物理解释。\ref{eq:4.21}中第三项可以看作是一个归一化系数不用过多考虑，第二项$c$鬼场零模正好对应CKG生成元，第一项在数学上相当于插入一些Beltrami微分，是复结构的体现。而且，单纯从形式上来说\ref{eq:4.18}有下面更简单的形式：\footnote{Beltrami微分定义为$\mu_{ka}^b:=\frac{1}{2}\hat{g}^{bc}\partial_k\hat{g}_{ac}$}
+\begin{equation}
+	\label{eq:4.22}
+	S(1;\ldots;n)=\sum_{\substack{\text{worldsheet}\\\text{topologies}}}e^{-\lambda\chi}\int_F\frac{d^mt}{n_R}\left\langle\prod_{k=1}^m\frac{1}{2\pi}(b,\mu_k)\prod_{i=1}^nc\tilde{c}V\right\rangle
+\end{equation}
 注意我们将所有的顶角算符插入点全部固定，而增加了Beltrami微分，这也是鬼数补偿的要求。相当于考虑亏格相同，但是固定点更多的模空间：
 \begin{equation}
 	\mathfrak{M}_{g,n+n_c+n_o},\quad \dim\mathfrak{M} = -\frac32 \chi + \frac12 n_o+n_c
@@ -281,6 +284,7 @@ $\mathsf{C}_J$，$\mathsf{B}_{K}$在\ref{eq:4.17}内积的意义下正交归一�
 \end{equation}
 \begin{figure}[htbp]
 	\centering
+	\includegraphics[width=0.8\linewidth]{figs/fig6.pdf}
 	\caption{电像法计算格林函数}
 	\label{fig:6}
 \end{figure}

@@ -206,7 +206,7 @@ BRST算符作用在波函数上可以用正则量子化表示为算符：
 \begin{equation}
 	\Pi^\mu=\partial X^\mu+\frac{1}{2}(\theta\gamma^\mu\partial\theta),\quad d_\alpha=p_\alpha-\frac{1}{2}{\left(\partial X^\mu+\frac{1}{4}(\theta\gamma^\mu\partial\theta)\right)}(\gamma_\mu\theta)_\alpha
 \end{equation}
-附录中给了纯旋量形式计算中的OPE。与RNS超弦对比，鬼场对应$\lambda w$，世界面上旋量$\psi$改为了与靶空间坐标$X$对应的超靶空间坐标$\theta$。利用BRST量子化，BRST算符依旧有\ref{eq:5.16}的形式：
+附录\ref{appendix:A}中给了纯旋量形式计算中的OPE。与RNS超弦对比，鬼场对应$\lambda w$，世界面上旋量$\psi$改为了与靶空间坐标$X$对应的超靶空间坐标$\theta$。利用BRST量子化，BRST算符依旧有\ref{eq:5.16}的形式：
 \begin{equation}
 	Q_B:=\oint dz\left(\lambda^\alpha d_\alpha\right),\quad \lambda\gamma^\mu\lambda=0
 \end{equation}
@@ -497,7 +497,7 @@ $\lambda$鬼数为$+1$，$w$鬼数为$-1$。下面的OPE表明其只是个准初
 		&\langle(\lambda\gamma^m\theta)(\lambda\gamma^s\theta)(\lambda\gamma^u\theta)(\theta\gamma_{fgh}\theta)\rangle=24\delta_{fgh}^{msu},\\&\langle(\lambda\gamma_m\theta)(\lambda\gamma_s\theta)(\lambda\gamma^{ptu}\theta)(\theta\gamma_{fgh}\theta)\rangle=\frac{288}{7}\delta_{[m}^{[p}\eta_{s][f}\delta_g^t\delta_{h]}^{u]}
 	\end{aligned}
 \end{equation}
-附录中给出了更多例子。利用\texttt{FORM}计算软件可实现自动化计算。\cite{Mafra:2010pn}
+附录\ref{appendix:B}中给出了更多例子。利用\texttt{FORM}计算软件可实现自动化计算。\cite{Mafra:2010pn}
 
 最后，再来看一个三点超振幅计算的例子。只有无积分顶角算符插入，不需要计算OPE，只需要展开超场算零模就好了。由于纯旋量超弦直接计算的就是超振幅，但是从超场展开式可以看出$A_\alpha$的$\theta^{2k}$分量代表胶微子，$\theta^{2k-1}$分量代表胶子，通过这种方式便可以提取分量振幅\ref{eq:4.71}和\ref{eq:4.74}。比如三胶子振幅有三项：\footnote{由于三点特殊的运动学性质，不难发现Koba-Nielsen因子为$1$。}
 \begin{equation}
@@ -521,3 +521,47 @@ $\lambda$鬼数为$+1$，$w$鬼数为$-1$。下面的OPE表明其只是个准初
 \begin{equation}
 	(\overline{\lambda}\gamma^mr)=0
 \end{equation}
+新引入变量有如下OPE：
+\begin{equation}
+	\overline{\lambda}_\alpha(z)\overline{w}^\beta(y)\sim\frac{\delta_\alpha^\beta}{z-y},\quad s^\alpha(z)r_\beta(w)\sim\frac{\delta_\beta^\alpha}{z-w}
+\end{equation}
+类似有能动张量鬼数流和Lorentz流的定义：
+\begin{equation}
+		\hat{N}_{mn} = \frac{1}{2} \left( \hat{w} \gamma_{mn} \hat{\lambda} - s \gamma_{mn} r \right), \quad
+		\hat{J}_{\hat{\lambda}} = \hat{w}^\alpha \hat{\lambda}_\alpha - s^\alpha r_\alpha, \quad 
+		T_{\hat{\lambda}} = \hat{w}^\alpha \partial \hat{\lambda}_\alpha - s^\alpha \partial r_\alpha.
+\end{equation}
+BRST荷为：
+\begin{equation}
+	\hat Q_B=\int dz(\lambda^\alpha d_\alpha+\hat{w}^\alpha r_\alpha)\cong Q_B
+\end{equation}
+$\hat Q_B$和$Q_B$的上同调相同意味着顶角算符总能找到不含额外变量的表示，而这个表示正是前面求出的\ref{eq:5.39}和\ref{eq:5.40}。非最小纯旋量形式对树级振幅的求解与纯旋量形式是一致的。圈级振幅计算重点是找到Beltrami微分插入的类似项，而非最小纯旋量形式正好能找到$b$鬼场的类似物：
+\begin{equation}
+	\label{eq:5.94}
+	\begin{aligned}
+		b =&  s^\alpha \partial \overline{\lambda}_\alpha + \frac{1}{4(\overline{\lambda}\lambda)} \left[ 2\Pi^\mu (\overline{\lambda}\gamma_\mu d) - N_{\mu\nu} (\overline{\lambda}\gamma^{\mu\nu} \partial\theta) - J_\lambda (\overline{\lambda}\partial\theta) - (\overline{\lambda}\partial^2\theta) \right] \\
+		&+ \frac{(\overline{\lambda}\gamma^{\mu\nu\rho} r)(d\gamma_{\mu\nu\rho}d + 24N_{\mu\nu}\Pi_\rho)}{192(\overline{\lambda}\lambda)^2} - \frac{(r\gamma_{\mu\nu\rho}r)(\overline{\lambda}\gamma^\mu d)N^{\nu\rho}}{16(\overline{\lambda}\lambda)^3} 
+		+ \frac{(r\gamma_{\mu\nu\rho}r)(\overline{\lambda}\gamma^{\rho\sigma\tau}r)N^{\mu\nu}N_{\sigma\tau}}{128(\overline{\lambda}\lambda)^4}
+	\end{aligned}
+\end{equation}
+从而可以把振幅写成类似\ref{eq:4.18}和\ref{eq:4.22}的形式：
+\begin{equation}
+	\label{eq:5.95}
+	\mathcal{A}=\int d^{3g-3}\tau\llangle[\Bigg]\mathcal{N}(y)\prod_{i=1}^{3g-3}(\int dw_i\mu_i(w_j)b(w_j))\prod_{j=1}^N\int dz_jU(z_j)\rrangle[\Bigg]
+\end{equation}
+上式非零模积分可以用OPE进行，但是共形权为$1$的场在亏格$g$黎曼面上有$g$个零模，共形权为$0$的则有一个，而$\mathcal{N}$是正规化因子。本文并不去详细探讨这些细节，因为弦振幅任何圈级计算都会大大超出本文讨论范围。文献\cite{Berkovits:2006bk}中给出了更多利用非最小纯旋量形式计算圈级弦振幅的例子。
+
+虽然\ref{eq:5.95}看起来以及极其复杂，但若是使用纯旋量形式计算会碰见更加复杂的式子：
+\begin{equation}
+\begin{aligned}
+		A=&\int d^2\tau_1\ldots d^2\tau_{3\boldsymbol{g}-3}\llangle[\Bigg]\left|\prod_{P=1}^{3\boldsymbol{g}-3}\int d^2u_P\mu_P(u_P)\tilde{b}_{B_P}(u_P,z_P)\prod_{P=3g-2}^{10g}Z_{B_P}(z_P)\right.\\
+	&\times\left.\prod_{R=1}^gZ_J(v_R)\prod_{I=1}^{11}Y_{C_I}(y_I)\right|^2\prod_{T=1}^N\int d^2t_TU_T(t_T)\rrangle[\Bigg]
+\end{aligned}
+\end{equation}
+其中：
+\begin{equation}
+	Y_C = C_\alpha \theta^\alpha \delta(C_\beta \lambda^\beta), \quad 
+	Z_B = \frac{1}{2} B_{\mu\nu} (\lambda \gamma^{\mu\nu} d) \delta(B^{\rho\sigma} N_{\rho\sigma}), \quad 
+	Z_J = (\lambda^\alpha d_\alpha) \delta(J_{\text{PS}})
+\end{equation}
+其中最为关键的$\tilde{b}$的构造更是比\ref{eq:5.94}复杂得多，其详细表达式和相关细节请见\cite{Berkovits:2004px,Oda:2005sd,Oda:2004bg}。

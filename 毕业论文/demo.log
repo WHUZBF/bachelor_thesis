@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  9 MAR 2025 01:51
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  9 MAR 2025 00:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**demo.tex
+(./demo.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
 (./whu-thesis.cls (d:/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -965,169 +965,64 @@ Package: ulem 2019/11/18
 \c@claim=\count378
 \c@remark=\count379
 )
-(d:/texlive/2023/texmf-dist/tex/latex/physics/physics.sty
-Package: physics 
-)
-(d:/texlive/2023/texmf-dist/tex/latex/extarrows/extarrows.sty
-Package: extarrows 2020/03/12 v1.2.0 Some extensible arrows
-)
-(d:/texlive/2023/texmf-dist/tex/latex/annotate-equations/annotate-equations.sty
-Package: annotate-equations 2023/05/06 v0.2.2 easily annotate equations using T
-ikZ
-(d:/texlive/2023/texmf-dist/tex/generic/iftex/ifluatex.sty
-Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-)
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarybackgrounds.code.tex
-File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@layerbox@background=\box79
-\pgf@layerboxsaved@background=\box80
-)
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(./module/module.algorithm2e.tex
+(d:/texlive/2023/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Invalid UTF-8 byte or sequence at line 284 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 299 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 550 replaced by U+FFFD.
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count380
 
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen337
+(d:/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip114
+
+(d:/texlive/2023/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(d:/texlive/2023/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip115
+\skiplinenumber=\skip116
+\skiprule=\skip117
+\skiphlne=\skip118
+\skiptext=\skip119
+\skiplength=\skip120
+\algomargin=\skip121
+\skipalgocfslide=\skip122
+\algowidth=\dimen337
+\inoutsize=\dimen338
+\inoutindent=\dimen339
+\interspacetitleruled=\dimen340
+\interspacealgoruled=\dimen341
+\interspacetitleboxruled=\dimen342
+\algocf@ruledwidth=\skip123
+\algocf@inoutbox=\box79
+\algocf@inputbox=\box80
+\AlCapSkip=\skip124
+\AlCapHSkip=\skip125
+\algoskipindent=\skip126
+\algocf@nlbox=\box81
+\algocf@hangingbox=\box82
+\algocf@untilbox=\box83
+\algocf@skipuntil=\skip127
+\algocf@capbox=\box84
+\algocf@lcaptionbox=\skip128
+\algoheightruledefault=\skip129
+\algoheightrule=\skip130
+\algotitleheightruledefault=\skip131
+\algotitleheightrule=\skip132
+\c@algocfline=\count381
+\c@algocfproc=\count382
+\c@algocf=\count383
+\algocf@algoframe=\box85
+\algocf@algobox=\box86
 ))
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshapes.code.tex
-File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.g
-eometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshapes.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
-isc.code.tex
-File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshapes.symbols.code.tex
-File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.s
-ymbols.code.tex
-File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshapes.arrows.code.tex
-File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.a
-rrows.code.tex
-File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshapes.callouts.code.tex
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.c
-allouts.code.tex))
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshapes.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
-ultipart.code.tex
-File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodepartlowerbox=\box81
-\pgfnodeparttwobox=\box82
-\pgfnodepartthreebox=\box83
-\pgfnodepartfourbox=\box84
-\pgfnodeparttwentybox=\box85
-\pgfnodepartnineteenbox=\box86
-\pgfnodeparteighteenbox=\box87
-\pgfnodepartseventeenbox=\box88
-\pgfnodepartsixteenbox=\box89
-\pgfnodepartfifteenbox=\box90
-\pgfnodepartfourteenbox=\box91
-\pgfnodepartthirteenbox=\box92
-\pgfnodeparttwelvebox=\box93
-\pgfnodepartelevenbox=\box94
-\pgfnodeparttenbox=\box95
-\pgfnodepartninebox=\box96
-\pgfnodeparteightbox=\box97
-\pgfnodepartsevenbox=\box98
-\pgfnodepartsixbox=\box99
-\pgfnodepartfivebox=\box100
-)))
-(d:/texlive/2023/texmf-dist/tex/latex/tikzmark/tikzlibrarytikzmark.code.tex
-File: tikzlibrarytikzmark.code.tex 2022/08/24 v1.15 TikZ library for marking po
-sitions in a document
-\l__sn_x_dim=\dimen338
-\l__sn_y_dim=\dimen339
-\l__sn_xa_dim=\dimen340
-\l__sn_ya_dim=\dimen341
-)
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-\c@eqnannotatenode=\count380
-) (d:/texlive/2023/texmf-dist/tex/latex/cancel/cancel.sty
-Package: cancel 2013/04/12 v2.2 Cancel math terms
-)
-(d:/texlive/2023/texmf-dist/tex/latex/carlisle/slashed.sty
-Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
-)
-(d:/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2024/07/10 version 6.3.0 text color boxes
-
-(d:/texlive/2023/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks48
-\verbatim@line=\toks49
-\verbatim@in@stream=\read3
-)
-(d:/texlive/2023/texmf-dist/tex/latex/environ/environ.sty
-Package: environ 2014/05/04 v0.3 A new way to define environments
-
-(d:/texlive/2023/texmf-dist/tex/latex/trimspaces/trimspaces.sty
-Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-))
-\tcb@titlebox=\box101
-\tcb@upperbox=\box102
-\tcb@lowerbox=\box103
-\tcb@phantombox=\box104
-\c@tcbbreakpart=\count381
-\c@tcblayer=\count382
-\c@tcolorbox@number=\count383
-\l__tcobox_tmpa_box=\box105
-\l__tcobox_tmpa_dim=\dimen342
-\tcb@temp=\box106
-\tcb@temp=\box107
-\tcb@temp=\box108
-\tcb@temp=\box109
-)
-(d:/texlive/2023/texmf-dist/tex/latex/shuffle/shuffle.sty
-Package: shuffle 2008/10/27 Shuffle product symbol
-\symShuffle=\mathgroup6
-)
-(d:/texlive/2023/texmf-dist/tex/latex/simpler-wick/simpler-wick.sty
-Package: simpler-wick 2015/12/11 Simpler Wick contractions
-
-(d:/texlive/2023/texmf-dist/tex/latex/pgfopts/pgfopts.sty
-Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks50
-\pgfopts@list@add@b@toks=\toks51
-)
-(d:/texlive/2023/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibraryex
-ternal.code.tex
-(d:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzex
-ternalshared.code.tex)))
-\@brx=\box110
-
 (d:/texlive/2023/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup7
+\symrsfs=\mathgroup6
 )
 
 Package fontspec Info: 
@@ -1196,41 +1091,38 @@ Package: gbt7714 2022/10/03 v2.1.5 GB/T 7714 BibTeX Style
 
 (d:/texlive/2023/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip114
-\bibsep=\skip115
+\bibhang=\skip133
+\bibsep=\skip134
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count384
-)) (./main.aux
-(./pages/chapter1.aux) (./pages/chapter2.aux) (./pages/chapter3.aux)
-(./pages/chapter4.aux) (./pages/chapter5.aux) (./pages/chapter6.aux)
-(./pages/acknowledgement.aux) (./pages/appendixA.aux) (./pages/appendixB.aux))
-\openout1 = `main.aux'.
+)) (./demo.aux)
+\openout1 = `demo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-Package hyperref Info: Link coloring OFF on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+Package hyperref Info: Link coloring OFF on input line 45.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \d on input line 85.
-LaTeX Info: Redefining \partial on input line 85.
+LaTeX Info: Redefining \d on input line 45.
+LaTeX Info: Redefining \partial on input line 45.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1326,33 +1218,20 @@ t={*},ItalicFont={*}].
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
 (fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
 
 (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
 
 
 (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+shuffle on input line
- 85.
-
-(d:/texlive/2023/texmf-dist/tex/latex/shuffle/Ushuffle.fd
-File: Ushuffle.fd 
-)
 
 [1
 
-
-]
-File: ./logo/whu-logo.pdf Graphic file (type pdf)
-<use ./logo/whu-logo.pdf>
-
-
-[2
 
 ]
 
@@ -1383,13 +1262,12 @@ t={*},ItalicFont={*}].
 
 
 
-[3]
-
-[4
+[2
 
 ] (./pages/abstract.tex)
 
 [1
+
 
 ]
 
@@ -1401,101 +1279,24 @@ t={*},ItalicFont={*}].
 
 [4
 
-] (./main.toc
+] (./demo.toc)
+\tf@toc=\write4
+\openout4 = `demo.toc'.
+
+
 
 [5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
+[6
 
-
-[6])
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
-
+]
 
 [7]
 
 [8
 
 ]
-\openout2 = `pages/chapter1.aux'.
-
- (./pages/chapter1.tex
 1
-)
-
-[1
-
-
-]
-\openout2 = `pages/chapter2.aux'.
-
- (./pages/chapter2.tex
-
-[2
-
-
-
-
-]
-2
-
-
-[3]
-
-Package fontspec Info: 
-(fontspec)             Font family 'LibertinusSerif-Regular.otf(0)' created
-(fontspec)             for font 'LibertinusSerif-Regular.otf' with options [].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[LibertinusSerif-Regular.otf]/OT:script=latn;languag
-e=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->"[LibertinusSerif-Regular.otf]/OT:script=latn;languag
-e=dflt;+smcp;"
-
-LaTeX Font Info:    Trying to load font information for U+euf on input line 59.
-
- (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
-
-[4]
-
-Package amsmath Warning: Bracket group [x^-,p^+] at formula start!
-(amsmath)                It could be a misspelled positional argument.
-(amsmath)                If it belongs to the formula add a \relax in
-(amsmath)                front to hide it on input line 86.
-
-
-Package amsmath Warning: Bracket group [x^i,p^j] at formula start!
-(amsmath)                It could be a misspelled positional argument.
-(amsmath)                If it belongs to the formula add a \relax in
-(amsmath)                front to hide it on input line 91.
-
-
-
-[5]
-
-[6]
-
-[7]
-
-[8]
-File: figs/fig1.pdf Graphic file (type pdf)
-<use figs/fig1.pdf>
-
-Underfull \vbox (badness 2635) has occurred while \output is active []
-
-
-
-[9]
-
-[10]
 
 Package fontspec Info: 
 (fontspec)             Could not resolve font "FangSong/B" (it probably
@@ -1523,540 +1324,163 @@ t={*},ItalicFont={*}].
 (fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
 
 
+Package fontspec Info: 
+(fontspec)             Font family 'LibertinusSerif-Regular.otf(0)' created
+(fontspec)             for font 'LibertinusSerif-Regular.otf' with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[LibertinusSerif-Regular.otf]/OT:script=latn;languag
+e=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"[LibertinusSerif-Regular.otf]/OT:script=latn;languag
+e=dflt;+smcp;"
+
+
+
+[1
+
+]
+
+Package natbib Warning: Citation `whu-bachelor:1' on page 2 undefined on input 
+line 138.
+
+
+Package natbib Warning: Citation `whu-bachelor:2' on page 2 undefined on input 
+line 138.
+
+
+Package natbib Warning: Citation `whu-bachelor:3' on page 2 undefined on input 
+line 138.
+
+
+Package natbib Warning: Citation `whu-bachelor:5' on page 2 undefined on input 
+line 138.
+
+
+Package natbib Warning: Citation `whu-bachelor:7' on page 2 undefined on input 
+line 138.
+
+
+Package natbib Warning: Citation `whu-bachelor:1' on page 2 undefined on input 
+line 140.
+
+
+Package natbib Warning: Citation `whu-bachelor:2' on page 2 undefined on input 
+line 140.
+
+
+Package natbib Warning: Citation `whu-bachelor:3' on page 2 undefined on input 
+line 140.
+
+
+Package natbib Warning: Citation `whu-bachelor:7' on page 2 undefined on input 
+line 140.
+
+File: logo/whu-logo.pdf Graphic file (type pdf)
+<use logo/whu-logo.pdf>
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
+nput line 192.
+
+
+[2]
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
+t line 197.
+Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
+t line 210.
+Package hyperref Info: bookmark level for unknown property defaults to 0 on inp
+ut line 214.
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
+input line 218.
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
+put line 222.
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
+line 226.
+Package hyperref Info: bookmark level for unknown axiom defaults to 0 on input 
+line 230.
+Package hyperref Info: bookmark level for unknown counterexample defaults to 0 
+on input line 234.
+Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on i
+nput line 238.
+Package hyperref Info: bookmark level for unknown question defaults to 0 on inp
+ut line 242.
+Package hyperref Info: bookmark level for unknown claim defaults to 0 on input 
+line 246.
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
+ line 250.
+
+
+[3]
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <12.045> not 
+available
+(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on inpu
+t line 297.
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12.045> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 306.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <12.045> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 306.
+
+
+[4]
+
+[5]
+
+[6
+
+]
+2
+(./demo.bbl
+
+[7]
+
+[8
+
+]
+
+Package natbib Warning: Empty `thebibliography' environment on input line 14.
+
+)
+
+[9]
+
+[10
+
+]
 
 [11]
-Overfull \hbox (9.70357pt too wide) detected at line 329
-[][][][][]
- []
 
-
-
-[12]
-
-[13]
-
-[14]
-
-[15])
-
-[16]
-\openout2 = `pages/chapter3.aux'.
-
- (./pages/chapter3.tex
-3
-
-
-[17
-
-
-
-
-]
-
-[18]
-
-[19]
-
-[20]
-
-[21]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[22]
-
-[23]
-
-[24]
-
-[25]
-
-[26]
-File: figs/fig2.pdf Graphic file (type pdf)
-<use figs/fig2.pdf>
-)
-
-[27]
-\openout2 = `pages/chapter4.aux'.
-
- (./pages/chapter4.tex
-
-[28
-
-
-
-
-]
-4
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[29]
-File: figs/fig3.pdf Graphic file (type pdf)
-<use figs/fig3.pdf>
-
-
-[30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[31]
-
-[32]
-
-[33]
-File: figs/fig4.pdf Graphic file (type pdf)
-<use figs/fig4.pdf>
-File: figs/fig5.pdf Graphic file (type pdf)
-<use figs/fig5.pdf>
-
-
-[34]
-
-[35]
-
-[36]
-
-[37]
-
-[38]
-File: figs/fig6.pdf Graphic file (type pdf)
-<use figs/fig6.pdf>
-
-
-[39]
-Overfull \hbox (11.82118pt too wide) detected at line 329
-[][][][][]
- []
-
-
-
-[40]
-File: figs/fig7.pdf Graphic file (type pdf)
-<use figs/fig7.pdf>
-
-Overfull \hbox (0.10228pt too wide) detected at line 353
-[][][][][]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[41]
-
-[42]
-Overfull \hbox (1.79587pt too wide) in paragraph at lines 388--389
-[]\TU/SimSun(0)/m/n/12.045 现 实 世 界 不 存 在 快 子 态，|  第 一 个 非 平 凡 的 例 子 是 三 胶 子 振 幅
-，|  其 $[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^U[]^^U[]^^U[]\OT1/cmr/m/n/
-12.045 )$
- []
-
-
-Underfull \vbox (badness 1342) has occurred while \output is active []
-
-
-
-[43]
-
-[44]
-Overfull \hbox (24.65535pt too wide) in paragraph at lines 444--446
-\TU/SimSun(0)/m/n/12.045 在 弦 论 也 类 似，|  可 以 用 $\OML/cmm/m/it/12.045 ^^K[]$\TU/T
-imesNewRoman(0)/m/n/12.045 -\TU/SimSun(0)/m/n/12.045 修 正 的 双 自 伴 随 标 量 场 计 算 \T
-U/TimesNewRoman(0)/m/n/12.045 KLT \TU/SimSun(0)/m/n/12.045 核 的 逆 矩 阵 $\OML/cmm/
-m/it/12.045 m[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^K\OMS/cmsy/m/n/12.04
-5 j\OML/cmm/m/it/12.045 ^^L\OT1/cmr/m/n/12.045 )$$[]$\TU/SimSun(0)/m/n/12.045 。
-|
- []
-
-File: figs/eqfig1.pdf Graphic file (type pdf)
-<use figs/eqfig1.pdf>
-File: figs/m-123456-126345.pdf Graphic file (type pdf)
-<use figs/m-123456-126345.pdf>
-File: figs/m-123456-126345-small.pdf Graphic file (type pdf)
-<use figs/m-123456-126345-small.pdf>
-
-
-[45]
-File: figs/wrapping.pdf Graphic file (type pdf)
-<use figs/wrapping.pdf>
-File: figs/m-12345-12345.pdf Graphic file (type pdf)
-<use figs/m-12345-12345.pdf>
-File: figs/m-12345-12345-a.pdf Graphic file (type pdf)
-<use figs/m-12345-12345-a.pdf>
-File: figs/m-12345-12345-b.pdf Graphic file (type pdf)
-<use figs/m-12345-12345-b.pdf>
-File: figs/m-12345-12345-c.pdf Graphic file (type pdf)
-<use figs/m-12345-12345-c.pdf>
-File: figs/m-12345-12345-d.pdf Graphic file (type pdf)
-<use figs/m-12345-12345-d.pdf>
-File: figs/m-12345-12345-e.pdf Graphic file (type pdf)
-<use figs/m-12345-12345-e.pdf>
-File: figs/m-12345-12345-f.pdf Graphic file (type pdf)
-<use figs/m-12345-12345-f.pdf>
-
-Overfull \hbox (11.58041pt too wide) detected at line 471
-[][][][][]
- []
-
-File: figs/m-vertex.pdf Graphic file (type pdf)
-<use figs/m-vertex.pdf>
-
-
-[46]
-
-[47]
-
-[48]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[49]
-Overfull \hbox (27.04587pt too wide) detected at line 568
-[][][][][]
- []
-
-)
-
-[50]
-\openout2 = `pages/chapter5.aux'.
-
- (./pages/chapter5.tex
-5
-
-
-[51
-
-
-
-
-]
-
-[52]
-
-[53]
-
-[54]
-
-[55]
-Overfull \hbox (21.82251pt too wide) detected at line 175
-[][][]\OT1/cmr/m/n/12.045 
-(\OML/cmm/m/it/12.045 X; ^^R; ^^U\OT1/cmr/m/n/12.045 ) = \OML/cmm/m/it/12.045 C
-\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 X; ^^R\OT1/cmr/m/n/12.045 ) + \OML/cm
-m/m/it/12.045 ^^U[]A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 X; ^^R\OT1/cmr/
-m/n/12.045 ) + (\OML/cmm/m/it/12.045 ^^U^^M[]^^U\OT1/cmr/m/n/12.045 )\OML/cmm/m
-/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 X; ^^R\OT1/cmr/m/n/12.0
-45 ) + \OML/cmm/m/it/12.045 ^^U[]^^U[]^^U[]C[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/i
-t/12.045 X; ^^R\OT1/cmr/m/n/12.045 ) + []
- []
-
-
-
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 222--222
-[][][][]\TU/SimSun(0)/m/n/10.53937 这 里 使 用 $\OMS/cmsy/m/n/10.53937 
-$ \TU/SimSun(0)/m/n/10.53937 而 不 是 $\OMS/cmsy/m/n/10.53937 ^^B$ \TU/SimSun(0)/m
-/n/10.53937 是 为 了 提 醒 平 面 波 不 需 要 双 复 制，|  比 如 $\OML/cmm/m/it/10.53937 V\OT1/cm
-r/m/n/10.53937 (\OML/cmm/m/it/10.53937 z; []\OT1/cmr/m/n/10.53937 ) =
- []
-
-
-
-[57]
-Overfull \hbox (12.13605pt too wide) detected at line 276
-[][][]\OML/cmm/m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 X; ^^R\
-OT1/cmr/m/n/12.045 ) = [] \OML/cmm/m/it/12.045 e[];  [][] \OT1/cmr/m/n/12.045 =
- [](\OML/cmm/m/it/12.045 ^^R[][]^^R\OT1/cmr/m/n/12.045 )\OML/cmm/m/it/12.045 k[
-]
- []
-
-
-
-[58]
-Overfull \hbox (4.60686pt too wide) detected at line 284
-[][][][][]
- []
-
-
-Overfull \hbox (23.46817pt too wide) detected at line 305
-[][][][][]
- []
-
-
-Overfull \hbox (33.00641pt too wide) detected at line 320
-[][][][][]
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 329.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 329.
-
-
-
-[59]
-
-[60]
-
-[61]
-Overfull \hbox (5.66498pt too wide) detected at line 413
-[][][]\OML/cmm/m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 P\OT1/c
-mr/m/n/12.045 ) = [][] \OML/cmm/m/it/12.045 dz[][]dz[] [] dz[][]V[]\OT1/cmr/m/n
-/12.045 (\OML/cmm/m/it/12.045 z[]\OT1/cmr/m/n/12.045 )\OML/cmm/m/it/12.045 U[]\
-OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 z[]\OT1/cmr/m/n/12.045 )\OML/cmm/m/it/
-12.045 U[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 z[]\OT1/cmr/m/n/12.045 ) []
- \OML/cmm/m/it/12.045 U[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 z[]\OT1/cmr/
-m/n/12.045 )\OML/cmm/m/it/12.045 V[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 z
-[]\OT1/cmr/m/n/12.045 )\OML/cmm/m/it/12.045 V[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/
-it/12.045 z[]\OT1/cmr/m/n/12.045 )[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[62]
-Overfull \hbox (15.43799pt too wide) detected at line 448
-[][][][][]
- []
-
-
-Overfull \hbox (11.41612pt too wide) detected at line 458
-[][][]\OMS/cmsy/m/n/12.045 F[] \OT1/cmr/m/n/12.045 := \OML/cmm/m/it/12.045 ik[]
-[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^UA[]\OT1/cmr/m/n/12.045 (\OML/cmm
-/m/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))(\OML/cmm/m/it/12.045 ^^UA[]\OT1/cmr/m/n/
-12.045 (\OML/cmm/m/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))(\OML/cmm/m/it/12.045 ^^U
-A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))\OML/cmm/
-m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^R\OT1/cmr/m/n/12.045
- )[] + []\OML/cmm/m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^R\
-OT1/cmr/m/n/12.045 )(\OML/cmm/m/it/12.045 ^^UA[]\OT1/cmr/m/n/12.045 (\OML/cmm/m
-/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))(\OML/cmm/m/it/12.045 ^^UA[]\OT1/cmr/m/n/12
-.045 (\OML/cmm/m/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))(\OML/cmm/m/it/12.045 ^^U^^
-M[]W[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))[]
- []
-
-
-
-[63]
-Overfull \hbox (10.0966pt too wide) detected at line 505
-[][][]\OML/cmm/m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^O[]; 
-^^O[]; ^^O[]\OT1/cmr/m/n/12.045 ) \OMS/cmsy/m/n/12.045 ^^X ^^@[] [] []\OT1/cmr/
-m/n/12.045 (\OML/cmm/m/it/12.045 ^^U^^M[]^^R\OT1/cmr/m/n/12.045 )(\OML/cmm/m/it
-/12.045 ^^U^^M[]^^R\OT1/cmr/m/n/12.045 )(\OML/cmm/m/it/12.045 ^^U^^M[]^^R\OT1/c
-mr/m/n/12.045 )(\OML/cmm/m/it/12.045 ^^R^^M[]^^R\OT1/cmr/m/n/12.045 )[]
- []
-
-
-
-[64]
-Overfull \hbox (18.35793pt too wide) detected at line 546
-[][][][][]
- []
-
-
-
-[65])
-
-[66]
-\openout2 = `pages/chapter6.aux'.
-
- (./pages/chapter6.tex
-6
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 7.
-
-)
-
-[67
-
-
-
-
-] (./main.bbl
-
-[68
-
-
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[69]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[70]
-Underfull \hbox (badness 3158) in paragraph at lines 211--217
-[]\TU/TimesNewRoman(0)/m/n/12.045 SCHLOTTERER O.  The number theory of superstr
-ing amplitudes[C]//
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[71]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[72]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[73]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[74])
-
-[75]
-\openout2 = `pages/acknowledgement.aux'.
-
- (./pages/acknowledgement.tex
-
-[76
-
-
-])
-
-[77]
-\openout2 = `pages/appendixA.aux'.
-
- (./pages/appendixA.tex
-
-[78
-
-
-
+[12
 
 ]
 附录 A
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 20.
 
+[13]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 20.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 21.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 21.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 25.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 25.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gamma' on input line 25.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 25.
-
-
-Overfull \hbox (7.11964pt too wide) detected at line 31
-[][][]\OML/cmm/m/it/12.045 T[] \OT1/cmr/m/n/12.045 =: \OMS/cmsy/m/n/12.045 ^^@[
-]\OT1/cmr/m/n/12.045 ^^E[]^^E[] \OMS/cmsy/m/n/12.045 ^^@ \OML/cmm/m/it/12.045 d
-[] @  []^^R[] \OT1/cmr/m/n/12.045 + \OML/cmm/m/it/12.045 w[] @  []^^U[] \OT1/cm
-r/m/n/12.045 :\OML/cmm/m/it/12.045 ;  M[] \OT1/cmr/m/n/12.045 = ^^F[] + \OML/cm
-m/m/it/12.045 N[] \OT1/cmr/m/n/12.045 =: \OMS/cmsy/m/n/12.045 ^^@[]\OT1/cmr/m/n
-/12.045 (\OML/cmm/m/it/12.045 p^^M[]^^R\OT1/cmr/m/n/12.045 ) + [](\OML/cmm/m/it
-/12.045 w^^M[]^^U\OT1/cmr/m/n/12.045 ) :
- []
-
-
-
-[79])
-
-[80]
-\openout2 = `pages/appendixB.aux'.
-
- (./pages/appendixB.tex
-附录 B
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gamma' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-
-[81
-
-
-
+[14
 
 ]
-Overfull \hbox (1.24109pt too wide) detected at line 83
-[][][][][]
- []
+附录 B
 
-
-Overfull \hbox (30.3315pt too wide) detected at line 88
-[][][][][]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package natbib Warning: There were undefined citations.
 
 
 
-[82])
-
-[83] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
-(./pages/chapter3.aux) (./pages/chapter4.aux) (./pages/chapter5.aux)
-(./pages/chapter6.aux) (./pages/acknowledgement.aux) (./pages/appendixA.aux)
-(./pages/appendixB.aux))
+[15] (./demo.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 39488 strings out of 474240
- 891137 string characters out of 5745918
- 1949560 words of memory out of 5000000
- 61341 multiletter control sequences out of 15000+600000
- 586763 words of font info for 229 fonts, out of 8000000 for 9000
+ 33006 strings out of 474240
+ 715000 string characters out of 5745918
+ 1938560 words of memory out of 5000000
+ 55064 multiletter control sequences out of 15000+600000
+ 569276 words of font info for 154 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 118i,19n,121p,2041b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,15n,121p,2041b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (95 pages).
+Output written on demo.pdf (25 pages).

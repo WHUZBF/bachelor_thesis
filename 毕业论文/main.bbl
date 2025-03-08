@@ -1,4 +1,4 @@
-\begin{thebibliography}{77}
+\begin{thebibliography}{80}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -511,5 +511,26 @@ BERKOVITS N.
   string}\allowbreak[J/OL].
 \newblock JHEP, 2005, 10: 089.
 \newblock DOI: \doi{10.1088/1126-6708/2005/10/089}.
+
+\bibitem[Berkovits et~al.(2006)Berkovits and Mafra]{Berkovits:2006bk}
+BERKOVITS N, MAFRA C~R.
+\newblock {Some Superstring Amplitude Computations with the Non-Minimal Pure
+  Spinor Formalism}\allowbreak[J/OL].
+\newblock JHEP, 2006, 11: 079.
+\newblock DOI: \doi{10.1088/1126-6708/2006/11/079}.
+
+\bibitem[Oda et~al.(2005)Oda and Tonin]{Oda:2005sd}
+ODA I, TONIN M.
+\newblock {Y-formalism in pure spinor quantization of
+  superstrings}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 2005, 727: 176-195.
+\newblock DOI: \doi{10.1016/j.nuclphysb.2005.08.031}.
+
+\bibitem[Oda et~al.(2005)Oda and Tonin]{Oda:2004bg}
+ODA I, TONIN M.
+\newblock {On the b-antighost in the pure spinor quantization of
+  superstrings}\allowbreak[J/OL].
+\newblock Phys. Lett. B, 2005, 606: 218-222.
+\newblock DOI: \doi{10.1016/j.physletb.2004.11.077}.
 
 \end{thebibliography}
