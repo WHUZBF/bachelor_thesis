@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  9 MAR 2025 01:51
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  10 MAR 2025 02:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1629,7 +1629,7 @@ File: figs/fig6.pdf Graphic file (type pdf)
 
 
 [39]
-Overfull \hbox (11.82118pt too wide) detected at line 329
+Overfull \hbox (11.82118pt too wide) detected at line 330
 [][][][][]
  []
 
@@ -1639,7 +1639,7 @@ Overfull \hbox (11.82118pt too wide) detected at line 329
 File: figs/fig7.pdf Graphic file (type pdf)
 <use figs/fig7.pdf>
 
-Overfull \hbox (0.10228pt too wide) detected at line 353
+Overfull \hbox (0.10228pt too wide) detected at line 354
 [][][][][]
  []
 
@@ -1651,7 +1651,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [41]
 
 [42]
-Overfull \hbox (1.79587pt too wide) in paragraph at lines 388--389
+Overfull \hbox (1.79587pt too wide) in paragraph at lines 389--390
 []\TU/SimSun(0)/m/n/12.045 现 实 世 界 不 存 在 快 子 态，|  第 一 个 非 平 凡 的 例 子 是 三 胶 子 振 幅
 ，|  其 $[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^U[]^^U[]^^U[]\OT1/cmr/m/n/
 12.045 )$
@@ -1665,7 +1665,7 @@ Underfull \vbox (badness 1342) has occurred while \output is active []
 [43]
 
 [44]
-Overfull \hbox (24.65535pt too wide) in paragraph at lines 444--446
+Overfull \hbox (24.65535pt too wide) in paragraph at lines 453--455
 \TU/SimSun(0)/m/n/12.045 在 弦 论 也 类 似，|  可 以 用 $\OML/cmm/m/it/12.045 ^^K[]$\TU/T
 imesNewRoman(0)/m/n/12.045 -\TU/SimSun(0)/m/n/12.045 修 正 的 双 自 伴 随 标 量 场 计 算 \T
 U/TimesNewRoman(0)/m/n/12.045 KLT \TU/SimSun(0)/m/n/12.045 核 的 逆 矩 阵 $\OML/cmm/
@@ -1700,7 +1700,7 @@ File: figs/m-12345-12345-e.pdf Graphic file (type pdf)
 File: figs/m-12345-12345-f.pdf Graphic file (type pdf)
 <use figs/m-12345-12345-f.pdf>
 
-Overfull \hbox (11.58041pt too wide) detected at line 471
+Overfull \hbox (11.58041pt too wide) detected at line 480
 [][][][][]
  []
 
@@ -1718,7 +1718,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [49]
-Overfull \hbox (27.04587pt too wide) detected at line 568
+Overfull \hbox (27.04587pt too wide) detected at line 577
 [][][][][]
  []
 
@@ -1872,24 +1872,47 @@ Overfull \hbox (18.35793pt too wide) detected at line 546
 
  (./pages/chapter6.tex
 6
+File: figs/fig8.pdf Graphic file (type pdf)
+<use figs/fig8.pdf>
+File: figs/eq_feyn.pdf Graphic file (type pdf)
+<use figs/eq_feyn.pdf>
+File: figs/fig9.pdf Graphic file (type pdf)
+<use figs/fig9.pdf>
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 7.
-
-)
 
 [67
 
 
 
 
-] (./main.bbl
+]
+File: figs/fig10.pdf Graphic file (type pdf)
+<use figs/fig10.pdf>
 
-[68
+
+[68]
+File: figs/fig11.pdf Graphic file (type pdf)
+<use figs/fig11.pdf>
+File: figs/fig12.pdf Graphic file (type pdf)
+<use figs/fig12.pdf>
+
+
+[69]
+
+[70]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 121.
+
+)
+
+[71] (./main.bbl
+
+[72
 
 
 
@@ -1898,12 +1921,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[69]
+[73]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[70]
+[74]
 Underfull \hbox (badness 3158) in paragraph at lines 211--217
 []\TU/TimesNewRoman(0)/m/n/12.045 SCHLOTTERER O.  The number theory of superstr
 ing amplitudes[C]//
@@ -1914,39 +1937,42 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[71]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[72]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[73]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[74])
-
 [75]
-\openout2 = `pages/acknowledgement.aux'.
-
- (./pages/acknowledgement.tex
-
-[76
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-])
+
+[76]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [77]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[78]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[79])
+
+[80]
+\openout2 = `pages/acknowledgement.aux'.
+
+ (./pages/acknowledgement.tex)
+
+[81
+
+
+]
 \openout2 = `pages/appendixA.aux'.
 
  (./pages/appendixA.tex
 
-[78
+[82
 
 
 
@@ -1998,9 +2024,9 @@ m/m/it/12.045 N[] \OT1/cmr/m/n/12.045 =: \OMS/cmsy/m/n/12.045 ^^@[]\OT1/cmr/m/n
 
 
 
-[79])
+[83])
 
-[80]
+[84]
 \openout2 = `pages/appendixB.aux'.
 
  (./pages/appendixB.tex
@@ -2019,7 +2045,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[81
+[85
 
 
 
@@ -2039,9 +2065,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[82])
+[86])
 
-[83] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
+[87] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
 (./pages/chapter3.aux) (./pages/chapter4.aux) (./pages/chapter5.aux)
 (./pages/chapter6.aux) (./pages/acknowledgement.aux) (./pages/appendixA.aux)
 (./pages/appendixB.aux))
@@ -2051,12 +2077,12 @@ L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 39488 strings out of 474240
- 891137 string characters out of 5745918
+ 39600 strings out of 474240
+ 894343 string characters out of 5745918
  1949560 words of memory out of 5000000
- 61341 multiletter control sequences out of 15000+600000
+ 61447 multiletter control sequences out of 15000+600000
  586763 words of font info for 229 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,19n,121p,2041b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (95 pages).
+Output written on main.pdf (99 pages).

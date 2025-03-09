@@ -1,0 +1,23 @@
+% !TeX program = lualatex
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{tikz-feynman}% 绘制费曼图 要使用LuaTex编译
+\usepackage{geometry}
+\geometry{a4paper, scale=0.8}
+\begin{document}
+\begin{equation}
+	\feynmandiagram [horizontal=i1 to f2,layered layout,inline=(a)] [small,edges=gluon] {
+		{i1[particle=\(2\)], i2[particle=\(4\)]} -- a  -- {f1[particle=\(1\)], f2[particle=\(3\)]},
+	};
+	\sim\quad
+	\frac{(k_1+k_2)^2}{(k_1+k_2)^2}
+	\feynmandiagram [horizontal=i1 to f2,layered layout,inline=(a)] [small,edges=gluon] {
+		{i1[particle=\(2\)], i2[particle=\(4\)]} -- a  -- {f1[particle=\(1\)], f2[particle=\(3\)]},
+	};
+	\sim\quad
+	(k_1+k_2)^2
+	\feynmandiagram [horizontal=a to b,layered layout,inline=(a.base)] [small,edges=gluon] {
+		{i1[particle=\(1\)], i2[particle=\(2\)]} -- a -- b -- {f1[particle=\(3\)], f2[particle=\(4\)]},
+	};
+\end{equation}
+\end{document}

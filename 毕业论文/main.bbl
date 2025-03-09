@@ -1,4 +1,4 @@
-\begin{thebibliography}{80}
+\begin{thebibliography}{86}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -532,5 +532,50 @@ ODA I, TONIN M.
   superstrings}\allowbreak[J/OL].
 \newblock Phys. Lett. B, 2005, 606: 218-222.
 \newblock DOI: \doi{10.1016/j.physletb.2004.11.077}.
+
+\bibitem[Bern et~al.(2010)Bern, Dennen, Huang, and Kiermaier]{Bern:2010yg}
+BERN Z, DENNEN T, HUANG Y~T, et~al.
+\newblock {Gravity as the Square of Gauge Theory}\allowbreak[J/OL].
+\newblock Phys. Rev. D, 2010, 82: 065003.
+\newblock DOI: \doi{10.1103/PhysRevD.82.065003}.
+
+\bibitem[Bern et~al.(2010)Bern, Carrasco, and Johansson]{Bern:2010ue}
+BERN Z, CARRASCO J~J~M, JOHANSSON H.
+\newblock {Perturbative Quantum Gravity as a Double Copy of Gauge
+  Theory}\allowbreak[J/OL].
+\newblock Phys. Rev. Lett., 2010, 105: 061602.
+\newblock DOI: \doi{10.1103/PhysRevLett.105.061602}.
+
+\bibitem[Bern et~al.(2012)Bern, Carrasco, Dixon, Johansson, and
+  Roiban]{Bern:2012uf}
+BERN Z, CARRASCO J~J~M, DIXON L~J, et~al.
+\newblock {Simplifying Multiloop Integrands and Ultraviolet Divergences of
+  Gauge Theory and Gravity Amplitudes}\allowbreak[J/OL].
+\newblock Phys. Rev. D, 2012, 85: 105014.
+\newblock DOI: \doi{10.1103/PhysRevD.85.105014}.
+
+\bibitem[Bern et~al.(2024)Bern, Carrasco, Chiodaroli, Johansson, and
+  Roiban]{Bern:2019prr}
+BERN Z, CARRASCO J~J, CHIODAROLI M, et~al.
+\newblock {The duality between color and kinematics and its
+  applications}\allowbreak[J/OL].
+\newblock J. Phys. A, 2024, 57\allowbreak (33): 333002.
+\newblock DOI: \doi{10.1088/1751-8121/ad5fd0}.
+
+\bibitem[Adamo et~al.(2022)Adamo, Carrasco, Carrillo-Gonz\'alez, Chiodaroli,
+  Elvang, Johansson, O'Connell, Roiban, and Schlotterer]{Adamo:2022dcm}
+ADAMO T, CARRASCO J~J~M, CARRILLO-GONZ\'ALEZ M, et~al.
+\newblock {Snowmass White Paper: the Double Copy and its
+  Applications}\allowbreak[C]//\allowbreak
+{Snowmass 2021}.
+\newblock 2022.
+
+\bibitem[Bern et~al.(2022)Bern, Carrasco, Chiodaroli, Johansson, and
+  Roiban]{Bern:2022wqg}
+BERN Z, CARRASCO J~J, CHIODAROLI M, et~al.
+\newblock {The SAGEX review on scattering amplitudes Chapter 2: An invitation
+  to color-kinematics duality and the double copy}\allowbreak[J/OL].
+\newblock J. Phys. A, 2022, 55\allowbreak (44): 443003.
+\newblock DOI: \doi{10.1088/1751-8121/ac93cf}.
 
 \end{thebibliography}

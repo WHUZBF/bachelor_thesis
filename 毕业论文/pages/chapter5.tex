@@ -67,7 +67,7 @@ S_{\text{BS}}=\int d\tau\left(\dot{X}^\mu P_\mu-\frac{1}{2}\dot{S}_aS_a+eP^\mu P
 \end{equation}
 为了正则量子化需要勒让德变换到哈密顿量，如果利用$p:={\partial L}/{\partial \dot q}$可以完全反解出$\dot q = \dot q(q,p)$，那么就称为正规哈密顿体系，哈密顿量和运动方程为：
 \begin{equation}
-	H(q,p) := p\dot{q}-L(q,\dot{q}),\quad \{f,H\}_{text{PB}} = \frac{\mathrm{d} f}{\mathrm{d} t}
+	H(q,p) := p\dot{q}-L(q,\dot{q}),\quad \{f,H\}_{\text{PB}} = \frac{\mathrm{d} f}{\mathrm{d} t}
 \end{equation}
 这种体系可以直接进行正则量子化：
 \begin{equation}
@@ -76,7 +76,7 @@ S_{\text{BS}}=\int d\tau\left(\dot{X}^\mu P_\mu-\frac{1}{2}\dot{S}_aS_a+eP^\mu P
 \end{equation}
 但是如果不能完全反解出$\dot q$，那么这时就称为约束哈密顿体系，这对应下面的雅可比矩阵$\rank J := R<N$，$N$是体系自由度：
 \begin{equation}
-	J_{ij}:=\frac{\partial P_i}{\partial \dot{q}^i}:=\frac{partial^2 L}{\partial \dot{q}^i\partial \dot{q}^j}
+	J_{ij}:=\frac{\partial P_i}{\partial \dot{q}^i}:=\frac{\partial^2 L}{\partial \dot{q}^i\partial \dot{q}^j}
 \end{equation}
 这时$N$个$\dot{q}^i$中只有$R$个可以被反解为$\dot{q}^i=\dot{q}^i(q,p;\dot{q}^j)$，$dot{q}^j$表示剩下的$N-R$个广义坐标，剩下的信息以约束的形式体现为：
 \begin{equation}
@@ -221,7 +221,7 @@ BRST算符作用在波函数上可以用正则量子化表示为算符：
 \end{equation}
 注意这里就不像RNS超弦一样要区分玻色和费米部分了，所以纯旋量超弦直接计算的就是超振幅。另外由于保证了靶空间超对称，所以也不需要GSO投影。这里$A,W,F$都是十维SYM的线性化超场。对于闭弦则有：\footnote{这里使用$\otimes$而不是$\times$是为了提醒平面波不需要双复制，比如$V(z,\overline{z})=\mathrm{e}^{ik\cdot X}\lambda^\alpha\overline{\lambda}^\beta A_\alpha(\theta)\overline{A}_\beta(\theta)$}
 \begin{equation}
-	V(z,\bar z) = V(z)\otimes \tilde V(\bar z), U(z,\bar z) = U(z)\otimes \tilde U(\bar z)
+	V(z,\bar z) = V(z)\otimes \tilde V(\bar z),\quad U(z,\bar z) = U(z)\otimes \tilde U(\bar z)
 \end{equation}
 
 
@@ -490,7 +490,7 @@ $\lambda$鬼数为$+1$，$w$鬼数为$-1$。下面的OPE表明其只是个准初
 	\left\langle(\lambda^3\theta^5)\right\rangle:=\left\langle((\lambda\gamma^\mu\theta)(\lambda\gamma^\nu\theta)(\lambda\gamma^\sigma\theta)(\theta\gamma_{\mu\nu\sigma}\theta)\right\rangle = 2880
 	}
 \end{equation}
-这里的$2880$完全只是一个人为约定，如此奇怪是因为代入后刚好和RNS超弦计算结果一致。可以证明\ref{eq:5.84}BRST闭且不恰当，而且是所有$\lambda^3\theta^5$形式能构造出来的唯一$SO(10)$标量，也就是说$\lambda^3\theta^5$最终都能约化为和\ref{eq:5.84}成正比，比如：
+这里的$2880$完全只是一个人为约定，如此奇怪是因为代入后刚好和RNS超弦计算结果一致。这个式子的作用其实就相当于$bc$鬼场\ref{eq:bc_norm}的作用。可以证明\ref{eq:5.84}BRST闭且不恰当，而且是所有$\lambda^3\theta^5$形式能构造出来的唯一$SO(10)$标量，也就是说$\lambda^3\theta^5$最终都能约化为和\ref{eq:5.84}成正比，比如：
 \begin{equation}
 	\label{eq:5.85}
 	\begin{aligned}

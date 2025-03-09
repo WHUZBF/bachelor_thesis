@@ -24,46 +24,50 @@ Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ref/bachelor-refs.bib
+Repeated entry---line 1939 of file ref/bachelor-refs.bib
+ : @article{DelDuca:1999rs
+ :                        ,
+I'm skipping whatever remains of this entry
 Warning--empty author in FEGER2020107490
-You've used 80 entries,
+You've used 86 entries,
             5374 wiz_defined-function locations,
-            1608 strings with 20121 characters,
-and the built_in function-call counts, 505188 in all, are:
-= -- 13185
-> -- 53979
-< -- 68549
-+ -- 19629
-- -- 3476
-* -- 4555
-:= -- 70715
-add.period$ -- 303
-call.type$ -- 80
-change.case$ -- 485
-chr.to.int$ -- 16851
-cite$ -- 82
-duplicate$ -- 2001
-empty$ -- 8550
-format.name$ -- 1698
-if$ -- 131782
+            1655 strings with 21464 characters,
+and the built_in function-call counts, 574339 in all, are:
+= -- 14628
+> -- 61979
+< -- 78501
++ -- 22362
+- -- 4012
+* -- 5031
+:= -- 80300
+add.period$ -- 326
+call.type$ -- 86
+change.case$ -- 543
+chr.to.int$ -- 19291
+cite$ -- 88
+duplicate$ -- 2157
+empty$ -- 9252
+format.name$ -- 1931
+if$ -- 149709
 int.to.chr$ -- 1
-int.to.str$ -- 81
+int.to.str$ -- 87
 missing$ -- 0
-newline$ -- 480
-num.names$ -- 238
-pop$ -- 24338
+newline$ -- 516
+num.names$ -- 256
+pop$ -- 27798
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 86
 quote$ -- 0
-skip$ -- 52565
+skip$ -- 59959
 stack$ -- 0
-substring$ -- 26363
-swap$ -- 85
-text.length$ -- 1455
+substring$ -- 29830
+swap$ -- 91
+text.length$ -- 1611
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 788
+type$ -- 854
 warning$ -- 1
-while$ -- 1610
+while$ -- 1776
 width$ -- 0
-write$ -- 1182
-(There was 1 warning)
+write$ -- 1276
+(There was 1 error message)
