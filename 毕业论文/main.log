@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  10 MAR 2025 02:09
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  12 MAR 2025 04:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1206,31 +1206,31 @@ LaTeX Info: Redefining \cite on input line 694.
 (./pages/acknowledgement.aux) (./pages/appendixA.aux) (./pages/appendixB.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-Package hyperref Info: Link coloring OFF on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+Package hyperref Info: Link coloring OFF on input line 88.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \d on input line 85.
-LaTeX Info: Redefining \partial on input line 85.
+LaTeX Info: Redefining \d on input line 88.
+LaTeX Info: Redefining \partial on input line 88.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1326,19 +1326,19 @@ t={*},ItalicFont={*}].
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
 (fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 88.
 
 (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 88.
 
 
 (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+shuffle on input line
- 85.
+ 88.
 
 (d:/texlive/2023/texmf-dist/tex/latex/shuffle/Ushuffle.fd
 File: Ushuffle.fd 
@@ -1404,7 +1404,7 @@ t={*},ItalicFont={*}].
 ] (./main.toc
 
 [5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7944) has occurred while \output is active []
 
 
 
@@ -1600,7 +1600,7 @@ File: figs/fig3.pdf Graphic file (type pdf)
 
 
 [30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1454) has occurred while \output is active []
 
 
 
@@ -1769,7 +1769,7 @@ r/m/n/10.53937 (\OML/cmm/m/it/10.53937 z; []\OT1/cmr/m/n/10.53937 ) =
 
 
 [57]
-Overfull \hbox (12.13605pt too wide) detected at line 276
+Overfull \hbox (12.13605pt too wide) detected at line 278
 [][][]\OML/cmm/m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 X; ^^R\
 OT1/cmr/m/n/12.045 ) = [] \OML/cmm/m/it/12.045 e[];  [][] \OT1/cmr/m/n/12.045 =
  [](\OML/cmm/m/it/12.045 ^^R[][]^^R\OT1/cmr/m/n/12.045 )\OML/cmm/m/it/12.045 k[
@@ -1779,27 +1779,27 @@ OT1/cmr/m/n/12.045 ) = [] \OML/cmm/m/it/12.045 e[];  [][] \OT1/cmr/m/n/12.045 =
 
 
 [58]
-Overfull \hbox (4.60686pt too wide) detected at line 284
+Overfull \hbox (4.60686pt too wide) detected at line 286
 [][][][][]
  []
 
 
-Overfull \hbox (23.46817pt too wide) detected at line 305
+Overfull \hbox (23.46817pt too wide) detected at line 307
 [][][][][]
  []
 
 
-Overfull \hbox (33.00641pt too wide) detected at line 320
+Overfull \hbox (33.00641pt too wide) detected at line 322
 [][][][][]
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 329.
+(hyperref)                removing `math shift' on input line 333.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 329.
+(hyperref)                removing `math shift' on input line 333.
 
 
 
@@ -1808,7 +1808,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [60]
 
 [61]
-Overfull \hbox (5.66498pt too wide) detected at line 413
+Overfull \hbox (5.66498pt too wide) detected at line 418
 [][][]\OML/cmm/m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 P\OT1/c
 mr/m/n/12.045 ) = [][] \OML/cmm/m/it/12.045 dz[][]dz[] [] dz[][]V[]\OT1/cmr/m/n
 /12.045 (\OML/cmm/m/it/12.045 z[]\OT1/cmr/m/n/12.045 )\OML/cmm/m/it/12.045 U[]\
@@ -1826,12 +1826,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [62]
-Overfull \hbox (15.43799pt too wide) detected at line 448
+Overfull \hbox (15.43799pt too wide) detected at line 453
 [][][][][]
  []
 
 
-Overfull \hbox (11.41612pt too wide) detected at line 458
+Overfull \hbox (11.41612pt too wide) detected at line 463
 [][][]\OMS/cmsy/m/n/12.045 F[] \OT1/cmr/m/n/12.045 := \OML/cmm/m/it/12.045 ik[]
 []\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^UA[]\OT1/cmr/m/n/12.045 (\OML/cmm
 /m/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))(\OML/cmm/m/it/12.045 ^^UA[]\OT1/cmr/m/n/
@@ -1848,7 +1848,7 @@ M[]W[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))[]
 
 
 [63]
-Overfull \hbox (10.0966pt too wide) detected at line 505
+Overfull \hbox (10.0966pt too wide) detected at line 510
 [][][]\OML/cmm/m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^O[]; 
 ^^O[]; ^^O[]\OT1/cmr/m/n/12.045 ) \OMS/cmsy/m/n/12.045 ^^X ^^@[] [] []\OT1/cmr/
 m/n/12.045 (\OML/cmm/m/it/12.045 ^^U^^M[]^^R\OT1/cmr/m/n/12.045 )(\OML/cmm/m/it
@@ -1859,7 +1859,7 @@ mr/m/n/12.045 )(\OML/cmm/m/it/12.045 ^^R^^M[]^^R\OT1/cmr/m/n/12.045 )[]
 
 
 [64]
-Overfull \hbox (18.35793pt too wide) detected at line 546
+Overfull \hbox (18.35793pt too wide) detected at line 551
 [][][][][]
  []
 
@@ -1900,19 +1900,70 @@ File: figs/fig12.pdf Graphic file (type pdf)
 [69]
 
 [70]
+Overfull \hbox (3.53009pt too wide) detected at line 133
+[][][][][]
+ []
+
+
+Overfull \hbox (5.39966pt too wide) detected at line 150
+[][][][][]
+ []
+
+
+
+[71]
+
+[72]
+Underfull \vbox (badness 5022) has occurred while \output is active []
+
+
+
+[73]
+
+Package amsmath Warning: Bracket group [A\otimes B,Q] at formula start!
+(amsmath)                It could be a misspelled positional argument.
+(amsmath)                If it belongs to the formula add a \relax in
+(amsmath)                front to hide it on input line 217.
+
+
+
+[74]
+Underfull \vbox (badness 5519) has occurred while \output is active []
+
+
+
+[75]
+
+Package amsmath Warning: Bracket group [[12,34] at formula start!
+(amsmath)                It could be a misspelled positional argument.
+(amsmath)                If it belongs to the formula add a \relax in
+(amsmath)                front to hide it on input line 296.
+
+
+
+[76]
+
+LaTeX Warning: Reference `fig6.7' on page 77 undefined on input line 321.
+
+
+
+[77]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 121.
+(hyperref)                removing `math shift' on input line 366.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 121.
+(hyperref)                removing `math shift' on input line 366.
 
 )
 
-[71] (./main.bbl
+[78] (./main.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[72
+
+
+[79
 
 
 
@@ -1921,13 +1972,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[73]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[74]
-Underfull \hbox (badness 3158) in paragraph at lines 211--217
+[80]
+Underfull \hbox (badness 3158) in paragraph at lines 217--223
 []\TU/TimesNewRoman(0)/m/n/12.045 SCHLOTTERER O.  The number theory of superstr
 ing amplitudes[C]//
  []
@@ -1937,42 +1983,49 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[75]
+[81]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[76]
+[82]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[77]
+[83]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[78]
+[84]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[79])
+[85]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[80]
+
+
+[86])
+
+[87]
 \openout2 = `pages/acknowledgement.aux'.
 
- (./pages/acknowledgement.tex)
+ (./pages/acknowledgement.tex
 
-[81
+[88
 
 
-]
+])
+
+[89]
 \openout2 = `pages/appendixA.aux'.
 
  (./pages/appendixA.tex
 
-[82
+[90
 
 
 
@@ -2024,9 +2077,9 @@ m/m/it/12.045 N[] \OT1/cmr/m/n/12.045 =: \OMS/cmsy/m/n/12.045 ^^@[]\OT1/cmr/m/n
 
 
 
-[83])
+[91])
 
-[84]
+[92]
 \openout2 = `pages/appendixB.aux'.
 
  (./pages/appendixB.tex
@@ -2045,7 +2098,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[85
+[93
 
 
 
@@ -2065,9 +2118,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[86])
+[94])
 
-[87] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
+[95] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
 (./pages/chapter3.aux) (./pages/chapter4.aux) (./pages/chapter5.aux)
 (./pages/chapter6.aux) (./pages/acknowledgement.aux) (./pages/appendixA.aux)
 (./pages/appendixB.aux))
@@ -2075,14 +2128,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2022/08/05>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 39600 strings out of 474240
- 894343 string characters out of 5745918
+ 39707 strings out of 474240
+ 898385 string characters out of 5745918
  1949560 words of memory out of 5000000
- 61447 multiletter control sequences out of 15000+600000
+ 61554 multiletter control sequences out of 15000+600000
  586763 words of font info for 229 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 118i,19n,121p,2041b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,19n,121p,2041b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (99 pages).
+Output written on main.pdf (107 pages).

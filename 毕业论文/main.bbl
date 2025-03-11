@@ -1,4 +1,4 @@
-\begin{thebibliography}{86}
+\begin{thebibliography}{99}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -56,6 +56,12 @@ BLUMENHAGEN R, PLAUSCHINN E.
 \newblock 2009.
 \newblock DOI: \doi{10.1007/978-3-642-00450-6}.
 
+\bibitem[Peskin et~al.(1995)Peskin and Schroeder]{Peskin:1995ev}
+PESKIN M~E, SCHROEDER D~V.
+\newblock {An Introduction to quantum field theory}\allowbreak[M/OL].
+\newblock Reading, USA: Addison-Wesley, 1995.
+\newblock DOI: \doi{10.1201/9780429503559}.
+
 \bibitem[Weinberg(2013)]{Weinberg:1996kr}
 WEINBERG S.
 \newblock {The quantum theory of fields. Vol. 2: Modern
@@ -101,8 +107,8 @@ SCHLOTTERER O.
   現代数理物理の基礎として}\allowbreak[M].
 \newblock サイエンス社, 2011.
 
-\bibitem[王竹溪，郭敦仁(2012)]{wzx}
-王竹溪，郭敦仁.
+\bibitem[王竹溪\ 等(2012)王竹溪 and 郭敦仁]{wzx}
+王竹溪, 郭敦仁.
 \newblock {特殊函数概论}\allowbreak[M].
 \newblock 北京大学出版社, 2012.
 
@@ -388,8 +394,8 @@ FREEDMAN D~Z, VAN~PROEYEN A.
 \newblock Cambridge, UK: Cambridge Univ. Press, 2012.
 \newblock DOI: \doi{10.1017/CBO9781139026833}.
 
-\bibitem[梁灿彬，周彬(2009)]{lcb}
-梁灿彬，周彬.
+\bibitem[梁灿彬\ 等(2009)梁灿彬 and 周彬]{lcb}
+梁灿彬, 周彬.
 \newblock {微分几何入门与广义相对论（下册）}\allowbreak[M].
 \newblock 科学出版社, 2009.
 
@@ -577,5 +583,86 @@ BERN Z, CARRASCO J~J, CHIODAROLI M, et~al.
   to color-kinematics duality and the double copy}\allowbreak[J/OL].
 \newblock J. Phys. A, 2022, 55\allowbreak (44): 443003.
 \newblock DOI: \doi{10.1088/1751-8121/ac93cf}.
+
+\bibitem[Mafra et~al.(2013)Mafra, Schlotterer, and Stieberger]{Mafra:2011nv}
+MAFRA C~R, SCHLOTTERER O, STIEBERGER S.
+\newblock {Complete N-Point Superstring Disk Amplitude I. Pure Spinor
+  Computation}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 2013, 873: 419-460.
+\newblock DOI: \doi{10.1016/j.nuclphysb.2013.04.023}.
+
+\bibitem[Mafra et~al.(2013)Mafra, Schlotterer, and Stieberger]{Mafra:2011nw}
+MAFRA C~R, SCHLOTTERER O, STIEBERGER S.
+\newblock {Complete N-Point Superstring Disk Amplitude II. Amplitude and
+  Hypergeometric Function Structure}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 2013, 873: 461-513.
+\newblock DOI: \doi{10.1016/j.nuclphysb.2013.04.022}.
+
+\bibitem[Reutenauer(2003)]{REUTENAUER2003887}
+REUTENAUER C.
+\newblock Free lie algebras\allowbreak[M/OL]//\allowbreak
+HAZEWINKEL M.
+\newblock North-Holland, 2003: 887-903.
+\newblock
+  \url{https://www.sciencedirect.com/science/article/pii/S157079540380075X}.
+\newblock DOI: \doi{https://doi.org/10.1016/S1570-7954(03)80075-X}.
+
+\bibitem[Reutenauer(1993)]{free_lie}
+REUTENAUER C.
+\newblock {Free lie algebras}\allowbreak[M].
+\newblock Oxford University Press, 1993.
+
+\bibitem[Lothaire(1997)]{lothaire1997combinatorics}
+LOTHAIRE M.
+\newblock Combinatorics on words: Vol.~17\allowbreak[M].
+\newblock Cambridge university press, 1997.
+
+\bibitem[Frost et~al.(2023)Frost, Mafra, and Mason]{Frost:2020eoa}
+FROST H, MAFRA C~R, MASON L.
+\newblock {A Lie Bracket for the Momentum Kernel}\allowbreak[J/OL].
+\newblock Commun. Math. Phys., 2023, 402\allowbreak (2): 1307-1343.
+\newblock DOI: \doi{10.1007/s00220-023-04748-z}.
+
+\bibitem[Bridges et~al.(2019)Bridges and Mafra]{Bridges:2019siz}
+BRIDGES E, MAFRA C~R.
+\newblock {Algorithmic construction of SYM multiparticle superfields in the BCJ
+  gauge}\allowbreak[J/OL].
+\newblock JHEP, 2019, 10: 022.
+\newblock DOI: \doi{10.1007/JHEP10(2019)022}.
+
+\bibitem[Berends et~al.(1988)Berends and Giele]{Berends:1987me}
+BERENDS F~A, GIELE W~T.
+\newblock {Recursive Calculations for Processes with n
+  Gluons}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 1988, 306: 759-808.
+\newblock DOI: \doi{10.1016/0550-3213(88)90442-7}.
+
+\bibitem[Dixon(1996)]{Dixon:1996wi}
+DIXON L~J.
+\newblock {Calculating scattering amplitudes
+  efficiently}\allowbreak[C]//\allowbreak
+{Theoretical Advanced Study Institute in Elementary Particle Physics (TASI 95):
+  QCD and Beyond}.
+\newblock 1996: 539-584.
+
+\bibitem[Mangano et~al.(1991)Mangano and Parke]{Mangano:1990by}
+MANGANO M~L, PARKE S~J.
+\newblock {Multiparton amplitudes in gauge theories}\allowbreak[J/OL].
+\newblock Phys. Rept., 1991, 200: 301-367.
+\newblock DOI: \doi{10.1016/0370-1573(91)90091-Y}.
+
+\bibitem[Mizera et~al.(2018)Mizera and Skrzypek]{Mizera:2018jbh}
+MIZERA S, SKRZYPEK B.
+\newblock {Perturbiner Methods for Effective Field Theories and the Double
+  Copy}\allowbreak[J/OL].
+\newblock JHEP, 2018, 10: 018.
+\newblock DOI: \doi{10.1007/JHEP10(2018)018}.
+
+\bibitem[Lee et~al.(2016)Lee, Mafra, and Schlotterer]{Lee:2015upy}
+LEE S, MAFRA C~R, SCHLOTTERER O.
+\newblock {Non-linear gauge transformations in $D=10$ SYM theory and the BCJ
+  duality}\allowbreak[J/OL].
+\newblock JHEP, 2016, 03: 090.
+\newblock DOI: \doi{10.1007/JHEP03(2016)090}.
 
 \end{thebibliography}

@@ -116,8 +116,253 @@
 \end{equation}
 树图的BCJ双复制关系已经得到证明\cite{Bern:2010yg}，但目前对于圈图BCJ分子的构造仍是一个未解之谜，不过已经构造出了不少例子\cite{Bern:2010ue,Bern:2012uf}，这也让我们相信色-运动学对偶猜想的正确性。近年来，双复制关系也被用在引力波求解等问题上，详见综述\cite{Bern:2019prr,Adamo:2022dcm,Bern:2022wqg}。
 
-\section{SYM振幅的超旋量空间表述}
+\section{SYM振幅的纯旋量超空间上同调表述}
+纯旋量形式计算涉及到OPE计算以及展开超场后计算鬼场零模，本章我们不去关注后面一部分，而关注如何计算OPE。从$\S$\ref{sec:5.4}可以看出如果直接使用$\partial\theta$，$\Pi$，$d$，$N$的OPE计算会非常复杂，我们试图把顶角算符本身作为一个整体来计算OPE，比如:
+\begin{equation}
+	V_1(z_1)V_2(z_2)\sim 0
+\end{equation}
+\begin{equation}
+	\label{eq:6.17}
+	V_1(z_1)U_2(z_2)\sim z_{12}^{-k_1\cdot k_2}\frac{L_{12}(z_2)}{z_{12}},\quad L_{12}:=-A_2^m(\lambda\gamma_mW_1)-V_2(k_2\cdot A_1)+Q(A_2W_1)
+\end{equation}
+\begin{equation}
+	\label{eq:6.18}
+	\begin{aligned}
+		U_1(z_1)U_2&(z_2)\sim z_{12}^{-k_1\cdot k_2-1}\left(\partial\theta^\alpha\Big[(k_1\cdot A_2)A_\alpha^1-(k_2\cdot A_1)A_\alpha^2+D_\alpha A_\beta^2W_1^\beta-D_\alpha A_\beta^1W_2^\beta\Big]\right.\\&+\Pi^m\Big[(k_1\cdot A_2)A_m^1-(k_2\cdot A_1)A_m^2+k_m^2(A_2W_1)-k_m^1(A_1W_2)-(W_1\gamma_mW_2)\\&+d_\alpha\left[(k_1\cdot A_2)W_1^\alpha-(k_2\cdot A_1)W_2^\alpha+\frac14(\gamma^{mn}W_1)^\alpha F_{mn}^2-\frac14(\gamma^{mn}W_2)^\alpha F_{mn}^1\right]\\&+\frac12N^{mn}\Big[(k_1\cdot A_2)F_{mn}^1-(k_2\cdot A_1)F_{mn}^2-2k_m^{12}(W_1\gamma_nW_2)+2F_{ma}^1F_{na}^2\Big]\Big)\\&+(1+k_1\cdot k_2)z_{12}^{-k_1\cdot k_2-2}\left[(A_1W_2)+(A_2W_1)-(A_1\cdot A_2)\right]
+	\end{aligned}
+\end{equation}
+其中$Q$是BRST荷，利用$d_\alpha$和超场的OPE，后面的计算可以将$Q$看作是$\lambda^\alpha D_\alpha$。计算中涉及到对超场求导，而平面波求导会出现$ik$因子，为了避免频繁出现虚数单位，我们选取约定$ik\to k$，从而Mandelstam变量与惯用的也相差$-1$。另外，我们隐藏$A^\mu$和$A_\alpha$指标，用$\cdot$表示矢量指标求和，旋量指标求和则不加任何标记。而且假设所有的超场都是$K(\theta)$，已经分离平面波。乍看之下似乎看不出规律，但倘若定义：
+\begin{equation}
+	\label{eq:6.19}
+	\begin{aligned}
+		&A_\alpha^{12}=\frac{1}{2}\left[A_\alpha^2(k_2\cdot A_1)+A_2^m(\gamma_mW_1)_\alpha-(1\leftrightarrow2)\right]
+		\\&A_{12}^m=\frac{1}{2}\left[A_2^m(k_2\cdot A_1)+A_p^1F_2^{pm}+(W_1\gamma^mW_2)-(1\leftrightarrow2)\right]
+		\\&W_{12}^{\alpha}=\frac{1}{4}(\gamma_{mn}W_2)^\alpha F_1^{mn}+W_2^\alpha(k_2\cdot A_1)-(1\leftrightarrow2)
+		\\&F_{12}^{mn}=F_2^{mn}(k_2\cdot A_1)+\frac{1}{2}F_2^{[m}F_1^{n]p}+k_1^{[m}(W_1\gamma^{n]}W_2)-(1\leftrightarrow2)
+	\end{aligned}
+\end{equation}
+\ref{eq:6.18}变成：
+\begin{equation}
+	\label{eq:6.20}
+	\begin{aligned}
+		&U_1(z_1)U_2(z_2)\sim-z_{12}^{-k_1\cdot k_2-1}\left(\partial\theta^\alpha A_\alpha^{12}+\Pi^mA_m^{12}+d_\alpha W_{12}^\alpha+\frac{1}{2}N^{mn}F_{mn}^{12}\right)\\&+\partial_1\left(z_{12}^{-k_1\cdot k_2-1}\left[\frac{1}{2}(A_1\cdot A_2)-(A_1W_2)\right]\right)-\partial_2\left(z_{12}^{-k_1\cdot k_2-1}\left[\frac{1}{2}(A_1\cdot A_2)-(A_2W_1)\right]\right)
+	\end{aligned}
+\end{equation}
+注意到$U$是积分顶角算符，可以预料到这些全导数项应当能够忽略，得到下面的等效OPE：\footnote{\ref{eq:6.20}中的$z_{12}^{-k_1\cdot k_2}$因子来源于平面波给出的Koba-Nielsen因子，注意这里我们已经假设所有的超场都是不带平面波因子的，这从运动方程就能看出来这一约定。最后计算振幅只需要补上Koba-Nielsen因子即可。}\footnote{似乎在OPE之后还会剩下$\partial\theta,\Pi,\ldots$，并非超场零模积分，但注意到盘面振幅始终存在无积分顶角算符插入，所以最终振幅一定可以用$\langle V_P\rangle$表示。}
+\begin{equation}
+	U_1(z_1)U_2(z_2)\cong \frac{U_{12}(z_2)}{z_{12}}, \quad U_{12}:=\partial\theta^\alpha A_\alpha^{12}+\Pi^mA_m^{12}+d_\alpha W_{12}^\alpha+\frac{1}{2}N^{mn}F_{mn}^{12}
+\end{equation}
+同理，注意到下式BRST恰当：
+\begin{equation}
+	L_{21}+L_{12}=Q\left[(A_1W_2)+(A_2W_1)-(A_1\cdot A_2)\right]
+\end{equation}
+所以$L_{12}$的对称部分应当和体系解耦，利用\ref{eq:6.17}以及\ref{eq:6.19}不难验算在去除掉所有BRST恰当的项之后有如下等效OPE：
+\begin{equation}
+	V_1(z_1)U_2(z_2)\cong \frac{V_{12}(z_2)}{z_{12}},\quad
+	V_{12} := \lambda^\alpha A_\alpha^{12}
+\end{equation}
+代入\ref{eq:5.45}得到新定义的包含多个指标的超场（多粒子超场）满足：
+\begin{equation}
+	\begin{aligned}
+		D_\alpha A_\beta^{12}+D_\beta A_\alpha^{12}&=\gamma_{\alpha\beta}^mA_m^{12}{\color{blue}+(k_1\cdot k_2)(A_\alpha^1A_\beta^2+A_\beta^1A_\alpha^2)}
+		\\D_\alpha A_{12}^m&=\gamma_{\alpha\beta}^mW_{12}^\beta{+\color{blue}k_{12}^mA_\alpha^{12}+(k_1\cdot k_2)(A_\alpha^1A_2^m-A_\alpha^2A_1^m)}
+		\\D_\alpha W_{12}^\beta&=\frac{1}{4}(\gamma_{mn})_\alpha^\beta F_{12}^{mn}{\color{blue}+(k_1\cdot k_2)(A_\alpha^1W_2^\beta-A_\alpha^2W_1^\beta)}
+		\\D_\alpha F_{12}^{mn}&=k_{12}^{[m}(\gamma^{n]}W_{12})_\alpha{\color{blue}+(k_1\cdot k_2)\left[A_\alpha^1F_2^{mn}+A_1^{[n}(\gamma^{m]})W_2)_\alpha-(1\leftrightarrow2)\right]}
+	\end{aligned}
+\end{equation}
+\begin{equation}
+	F_{12}^{mn}=k_{12}^mA_{12}^n-k_{12}^nA_{12}^m{\color{blue}-(k_1\cdot k_2)(A_1^mA_2^n-A_1^nA_2^m)}
+\end{equation}
+不难发现相比于\ref{eq:5.45}多了蓝色标出的“接触项”，同样的，多粒子顶角算符也会多出一些接触项，而不是简单的BRST闭：
+\begin{equation}
+	\label{eq:6.26}
+	\begin{aligned}
+		QV_{12}&={\color{blue}(k_1\cdot k_2)V_1V_2}\\
+		QU_{12}&=\partial V_{12}{\color{blue}+(k_1\cdot k_2)(V_1U_2-V_2U_1)}
+	\end{aligned}
+\end{equation}
+但倘若我们能找到接触项的一般表达式，解相应的场方程找到多粒子超场类似单粒子超场的$\theta$展开，那么我们就能利用OPE的规律很快解决振幅计算问题。Mafra和Schlotterer正是利用这一点得到了超弦无质量态$n$点盘面振幅的一般公式\cite{Mafra:2011nv,Mafra:2011nw}，接下来我们先来研究一般的多粒子超场。
+\subsection{多粒子超场}
+前面两个顶角算符的缩并我们改为使用$V_{[1,2]}$表示，不难发现$V_{12} = -V_{21}$确实有李括号带来的反对易性。类似的，还会有多个缩并，比如$U_1(z_1)U_2(z_2)U_3(z_3)$：
+\begin{equation}
+	U_{[[1,2],3]}(z_3),\quad U_{[1,[2,3]]}(z_3),\quad U_{[1,[2,3]]}(z_3)
+\end{equation}
+这种下标称为李多项式\footnote{之后大写字母$P,Q,\ldots$表示李多项式或者字词，从上下文不至于混淆。}，数学方面的介绍可见\cite{REUTENAUER2003887, free_lie,lothaire1997combinatorics}，更偏向物理的介绍可见\cite{Frost:2020eoa}。使用这种下标的好处是显现出了最终我们得到的多粒子超场/顶角算符关于指标的对称性，后面我们会尽可能构造超场使得其拥有李多项式所满足的对称性，这是本文后面用于构建BCJ分子的核心。现在我们期望多个顶角算符缩并得到的$U_\Gamma$和$V_{\Gamma}$仍像上一节一样可以通过定义对应的$A^\Gamma$，$W^\Gamma$和$F^\Gamma$得到类似顶角算符的形式。后面定义多粒子超场都是在李多项式的意义下定义的，对下指标做线性扩张便可得到对字词定义的多粒子超场。比如$V_{12}$\footnote{不要与上一小节中的$V_{12}$弄混。}就是$V_{[1,2]}$的对称部分。
+
+由于多粒子超场本身来源于单粒子超场，而单粒子超场本身是离壳的，也就是说存在规范对称性。比如展开单粒子超场时就使用的是Harnad–Shnider规范。所以多粒子场本身也应当有这种规范选取带来的不唯一性，下面逐一讨论。
+\subsubsection{Lorenz规范}
+最早在Lorenz规范$\partial\cdot A^P = 0 $下找到了多粒子超场满足的递推公式：
+\begin{equation}
+	\begin{aligned}
+	\hat{A}_\alpha^{[P,Q]}&=\frac{1}{2}\left[\hat{A}_\alpha^Q(k_Q\cdot\hat{A}_P)+\hat{A}Q^m(\gamma_m\hat{W}_P)\alpha-(P\leftrightarrow Q)\right]\\
+	\hat{A}_{[P,Q]}^m&=\frac{1}{2}\left[\hat{A}_Q^m(k_Q\cdot\hat{A}_P)+\hat{A}_n^P\hat{F}_Q^{nm}+(\hat{W}_P\gamma^m\hat{W}_Q)-(P\leftrightarrow Q)\right]\\
+	\hat{W}_{[P,Q]}^{\alpha}&=\frac{1}{4}\hat{F}_P^{rs}(\gamma_{rs}\hat{W}_Q)^\alpha+\frac{1}{2}(k_Q\cdot\hat{A}_P)\hat{W}_Q^\alpha+\frac{1}{2}\hat{W}_Q^{m\alpha}\hat{A}_m^P-(P\leftrightarrow Q)\\
+	\hat{F}_{[P,Q]}^{mn}&=\frac{1}{2}{\left[\hat{F}_Q^{mn}(k_Q\cdot\hat{A}_P)+\hat{F}_Q^{p|mn}\hat{A}_p^p+\hat{F}_Q^{[m}\hat{F}_P^{n]r}-2\gamma_{\alpha\beta}^{[m}\hat{W}_P^{n]\alpha}\hat{W}_Q^\beta-(P\leftrightarrow Q)\right]}
+\end{aligned}
+\end{equation}
+递推初始项来源于$\hat K_i = K_i$，动量应当理解为无视李括号，比如$k_{[1,[2,3]]}:=k_{123}:=\sum_{i=1}^3k_i$。其中：
+\begin{equation}
+\begin{aligned}
+		\hat{W}_{[P,Q]}^{m\alpha} &= k_{PQ}^m \hat{W}_{[P,Q]}^\alpha - (\hat{A}^m \otimes \hat{W}^\alpha)_{C([P,Q])} \\
+	\hat{F}_{[P,Q]}^{m|pq} &= k_{PQ}^m \hat{F}_{[P,Q]}^{pq} - (\hat{A}^m \otimes \hat{F}^{pq})_{C([P,Q])}
+\end{aligned}
+\end{equation}
+这里我们引入了接触项算符$C$，递归定义为，$C(i):= 0 $：
+\begin{equation}
+	C([P,Q]):=[C(P),Q]+[P,C(Q)]+(k_P\cdot k_Q)(P\otimes Q-Q\otimes P)
+\end{equation}
+张量积满足莱布尼茨律：
+\begin{equation}
+\begin{aligned}
+		[A\otimes B,Q]:=[A,Q]\otimes B+A\otimes[B,Q]\\
+	[P,A\otimes B]:=[P,A]\otimes B+A\otimes[P,B]
+\end{aligned}
+\end{equation}
+后面还会用到反对易楔积的定义：
+\begin{equation}
+	P\wedge Q:=P\otimes Q-Q\otimes P
+\end{equation}
+且依照线性扩张定义：
+\begin{equation}
+	(K\otimes T)_{P\otimes Q}:=K_PT_Q,\quad(K\wedge T)_{P\wedge Q}:=K_PT_Q
+\end{equation}
+把$C$称为接触项算符是有原因的，超场运动方程的接触项恰好是由$C[P,Q]$生成的：
+\begin{equation}
+\begin{aligned}
+	D_{(\alpha}\hat{A}_{\beta)}^{[P,Q]}&=\gamma_{\alpha\beta}^m\hat{A}_m^{[P, {Q}]}{\color{blue}+(\hat{A}_\alpha\otimes\hat{A}_\beta)_{ {C}([P, {Q}])}}
+	\\D_\alpha\hat{A}_m^{[P,Q]}&=(\gamma_m\hat{W}^{[P, {Q}]})_\alpha+k_m^{ {PQ}}\hat{A}_\alpha^{[P, {Q}]}{\color{blue}+(\hat{A}_\alpha\otimes\hat{A}^m)_{ {C}([P, {Q}])}}
+	\\D_\alpha\hat{W}_{[P, {Q}]}^\beta&=\frac{1}{4}(\gamma^{mn})_\alpha^\beta\hat{F}_{mn}^{[P,Q]}{\color{blue}+(\hat{A}_\alpha\otimes\hat{W}^\beta)_{C([P,Q])}}
+	\\D_\alpha\hat{F}_{[P,Q]}&=\left(\hat{W}_{[P,Q]}^{[m}\gamma^{n]}\right)_\alpha{\color{blue}+(\hat{A}_\alpha\otimes\hat{F}^{mn})_{ {C}([P,Q])}}
+\end{aligned}
+\end{equation}
+\begin{equation}
+	\label{eq:6.35}
+	\hat{F}_{[P,Q]}^{mn}=k_{PQ}^m\hat{A}_{[P,Q]}^n-k_{PQ}^m\hat{A}_{[P,Q]}^m{\color{blue}-(\hat{A}^m\otimes\hat{A}^n)_{C([P,Q])}}
+\end{equation}
+\subsubsection{混合（hybrid）规范}
+Dynkin括号递归定义为：
+\begin{equation}
+	\ell(123\ldots n):=[\ell(123\ldots n-1),n]
+\end{equation}
+其满足下面的Baker恒等式：
+\begin{equation}
+	\ell(P\ell(Q))=[\ell(P),\ell(Q)]
+\end{equation}
+显然$A\ell(B)+B\ell(A)\in\ker\ell$，而且由$\ell$的递归定义知$\forall Q$，$\ell(P) = 0\Rightarrow \ell(PQ)=0$。前面说过我们希望多粒子超场的定义尽可能展现出李多项式本身的对称性，那么如果$K\approx \ell$，也就是说满足下面的广义BCJ恒等式：
+\begin{equation}
+	K_{A\ell(B)C}+K_{B\ell(A)C}=0,\quad A,B\neq\varnothing,\quad\forall C
+\end{equation}
+这样的超场被称作处在BCJ规范的超场，不加任何符号以区分Lorenz等规范下超场。本节要介绍的混合规范本身并不是计算上会用到的规范，更应该看作是为了构造BCJ规范超场的一种定义：
+\begin{equation}
+	\begin{aligned}
+		\check{A}_\alpha^{[P,  {Q}]}&=\frac{1}{2}[A_\alpha^  {Q}(k_Q\cdot A_P)+A_Q^m(\gamma_mW_P)_\alpha-(P\leftrightarrow Q)]
+		\\\check{A}_{[P,  {Q}]}^m&=\frac{1}{2}[A_Q^m(k_Q\cdot A_P)+A_n^PF_Q^{nm}+(W_P\gamma^mW_Q)-(P\leftrightarrow Q)]\\
+		\check{W}_{[P,  {Q}]}^\alpha&=\frac{1}{4}F_P^{rs}(\gamma_{rs}W_Q)^\alpha+\frac{1}{2}(k_Q\cdot A_P)W_Q^\alpha+\frac{1}{2}W_Q^{m\alpha}A_P^m-(P\leftrightarrow Q)\\
+		\check{F}_{[P,  {Q}]}^m&=\frac{1}{2}{\left[F_Q^{mn}(k_Q\cdot A_P)+F_Q^{r|mn}A_r^P+F_Q^{[m}{}_rF_P^{n]r}-2\gamma_{\alpha\beta}^{[m}W_P^{n]\alpha}W_Q^\beta-(P\leftrightarrow Q)\right]}\\
+		W_{[P,Q]}^{m\alpha}&:=k_{PQ}^mW_{[P,Q]}^\alpha-(A^m\otimes W^\alpha)_{C([P,Q])}\\
+		F_{[P,Q]}^{m|pq}&:=k_{PQ}^mF_{[P,Q]}^{pq}-(A^m\otimes F^{pq})_{C([P,Q])}
+	\end{aligned}
+\end{equation}
+这并非递归的定义，因为等式右边不是$\check K$，而是BCJ规范下的超场。
+\subsubsection{BCJ规范}
+利用上一小节给出的混合规范，可以构造BCJ规范下的超场：
+\begin{equation}
+	\begin{aligned}
+		K_{[P,Q]}&:=\check{K}_{[P,Q]}-\sum_{\delta(Y)=R\otimes S}(k_X\cdot k_j)\left[H_{[XR,Q]}K_{jS}-(X\leftrightarrow j)\right]\\&+\sum_{\substack{  {Q}=  {X}j  {Y}\\{{\delta(Y)=R\otimes S}}}}(k_X\cdot k_j)\left[H_{[XR,P]}K_{jS}-(X\leftrightarrow j)\right]-\begin{cases}D_\alpha H_{[P,  {Q}]}&:K=A_\alpha\\k_{{  {P}  {Q}}}^mH_{[P,  {Q}]}&:K=A^m\\0&:K=W^\alpha\end{cases}
+	\end{aligned}
+\end{equation}
+其中：
+\begin{equation}
+	H_{[i,j]}=0,\quad H_{[A,B]}=(-1)^{|B|}\frac{|A|}{|A|+|B|}\sum_{XjY=\dot{a}\tilde{B}}(-1)^{|Y|}H_{\tilde{Y},j,X}^{\prime}-(A\leftrightarrow B)
+\end{equation}
+\begin{equation}
+	\begin{aligned}
+		H_{A,B,C}^{\prime}:=&H_{A,B,C}+\left[\frac{1}{2}H_{[A,B]}(k_{AB}\cdot A_C)+\operatorname{cyc}(A,B,C)\right]\\&-\left[\sum_{\substack{XjY=A\\{\delta(Y)=R\otimes S}}}(k_X\cdot k_j)[H_{[XR,B]}H_{[jS,C]}-(X\leftrightarrow j)\right]+\operatorname{cyc}(A,B,C)
+		\\H_{A,B,C}:=&-\frac{1}{4}A_A^mA_B^nF_C^{mn}+\frac{1}{2}(W_A\gamma_mW_B)A_C^m+\operatorname{cyc}(A,B,C).\end{aligned}
+\end{equation}
+然后是一些组合学上的记号，洗牌序$\shuffle$对应的反运算$\delta$定义为：
+\begin{equation}
+	\delta(P)=\sum_{X,Y}\langle P,X\shuffle Y\rangle X\otimes Y
+\end{equation}
+其中内积定义为：
+\begin{equation}
+	\langle{A,B}\rangle:=\delta_{A,B}
+\end{equation}
+$\tilde B$意思为反序，$\dot a$表示$A$的字符化，比如$12\mapsto (12)$，在后面的计算中$(12)$作为一个整体不能分开，比如$XY=(12)$是无解的，而不像$XY=12$有一个解为$X=1$，$Y=2$。
+
+现在回到最初对两个顶角算符OPE的研究，那里我们将$V_{[1,2]}=V_{\ell(12)}$记为$V_{12}$，这是有原因的。由于BCJ规范下超场的构造在数学上相当于$\ell\leftrightarrow K$，注意到$\ell\circ\ell(P) = |P|\ell (P)$，对应到超场有$K_{\ell(P)} = |P|K_P$仅仅只相差一个常数，而且由于最终的目的是计算OPE缩并，所以我们不会使用到单个单词对应的超场，都是李多项式对应的超场，所以我们干脆取符号约定$K_{\ell(P)} := K_P$，这个意思是把所有超场下标中连续的单词都看作嵌套括号，比如$K_{123}:=K_{\ell(123)}$，$K_{[12,34]}:=K_{[\ell(12),\ell(34)]}$。再注意利用Baker恒等式总可以将任意的$K_\Gamma$写成$K_{1P}$的线性组合，比如：
+\begin{equation}
+	\begin{aligned}
+		[[12,34],[5,67]]:=&[[\ell(12),\ell(34)],[\ell(5),\ell(67)]]=[\ell(12\ell(34)),\ell(5\ell(67))]\\
+		=&\ell([12\ell(34)\ell(5\ell(67))]):=[12\ell(34)\ell(5\ell(67))]\\
+		=&1234567-1234576-1234675+1234765-1243567\\
+		&+1243576+1243675-1243765
+	\end{aligned}
+\end{equation}
+翻译成超场满足方程：
+\begin{align*}
+	K_{[[12,34],[5,67]]}=&K_{1234567}-K_{1234576}-K_{1234675}+K_{1234765}-K_{1243567}\\
+	&+K_{1243576}+K_{1243675}-K_{1243765}
+\end{align*}
+后面涉及到BCJ规范下的超场我们都选取$P\cong\ell(P)$的符号约定。所以本节最开始我们便记$V_{[1,2]}$为$V_{12}$。
+
+BCJ规范下的超场满足下面的场方程，这里我们利用$Q=\lambda D$以及$V=\lambda A$去写场方程，这样还能顺便给出\ref{eq:6.26}的推广：
+\begin{equation}
+	\begin{aligned}
+		QU_{[P,Q]}&=\partial V_{[P,Q]}{\color{blue}+(V\otimes U)_{C([P,Q])}}\\
+		QV_{[R,S]}&={\color{blue}\frac{1}{2}(V\otimes V)_{  {C}([R,S])}}
+		\\QA_{[R,S]}^m&=(\lambda\gamma^mW_{[R,S]})+k_{RS}^mV_{[R,S]}{\color{blue}+(V\otimes A^m)_{C([R,S])}}
+		\\QW_{[R,S]}^{\beta}&=\frac{1}{4}(\lambda\gamma_{mn})^\beta F_{[R,S]}^{mn}{\color{blue}+(V\otimes W^\beta)_{C([R,S])}}
+		\\QF_{[R,S]}^{mn}&=\left(\lambda W_{[R,S]}^{[m}\gamma^{n]}\right){\color{blue}+(V\otimes F^{mn})_{  {C}([R,S])}}
+	\end{aligned}
+\end{equation}
+同样，接触项完全由$C$算符控制，BCJ规范下场强满足和Lorenz规范相同的关系\ref{eq:6.35}。虽然从混合规范出发构造BCJ规范已经如此复杂，但是直接从Lorenz规范出发更加复杂\cite{Bridges:2019siz}。由于BCJ规范下超场有非常丰富的对称性，所以后续计算都在BCJ规范下进行。
+\subsection{Berends–Giele流}
+不同于现代散射振幅理论使用在壳BCFW递推高效计算振幅，最早的振幅递推计算，即所谓离壳递推是基于Berends-Giele流技术\cite{Berends:1987me}。这一思想十分简单，如图\ref{fig:6.6}所示将$n+1$条外腿的散射振幅$\mathcal{A}_{n+1}$变成离壳传播子，这样就定义了$n$点BG流。显然其可以用更少点BG流递推构造，如图\ref{fig6.7}。
+\begin{figure}[htbp]
+	\centering
+	
+	\caption{BG流的定义}
+	\label{fig:6.6}
+\end{figure}
+\begin{figure}[htbp]
+	\centering
+	
+	\caption{BG流的递推关系}
+	\label{fig:6.7}
+\end{figure}
+从BG流的定义可以直接得到：
+\begin{equation}
+	\mathcal{A}_{n+1} =\lim_{k^2_{n+1}=0} \epsilon^\mu_{n+1}s_{1\cdots n}J_n
+\end{equation}
+
+所以只要通过离壳递推的方式计算出BG流，就能计算出振幅本身，类似的也可以定义色序振幅BG流。显然，这种递推是极其低效的，尽管如此这种方法还是率先用于计算得到了$n$点胶子MHV振幅的Park-Taylor公式\cite{Dixon:1996wi,Mangano:1990by}。场论树级振幅本质上是在求解经典运动方程，所以BG流应当也可以从经典运动方程求解得到，这发展成了Perturbiner方法，文献\cite{Mizera:2018jbh}中有不错的介绍。
+
+比如对于Yang-Mills理论，考虑色序振幅BG流，Yang-Mills方程为：
+\begin{equation}
+	\square\mathbb{A}^{\mu}=[\mathbb{A}_{\nu},\partial^{\nu}\mathbb{A}^{\mu}+\mathbb{F}^{\nu\mu}]
+\end{equation}
+然后取拟设：
+\begin{equation}
+	\mathbb{A}^\mu(x):=\sum_PA_P^\mu T^Pe^{k_P\cdot x}=\sum_iA_i^\mu T^{a_i}e^{k_i\cdot x}+\sum_{i,j}A_{ij}^\mu T^{a_i}T^{a_j}e^{k_{ij}\cdot x}+\ldots
+\end{equation}
+从物理上看无非就是在壳粒子取平面波拟设，$T$是在壳粒子带的色因子，而前面的$A$便是一条外腿离壳得来的平面波。所以可以通过平面波拟设解方程的方式得到BG流。
+
+用同样的方法解（非线性）超场方程\ref{eq:5.43}可以得到SYM的BG流：\cite{Lee:2015upy}
+\begin{equation}
+	\begin{aligned}
+		&\mathcal{A}_{\alpha}^{[P,Q]}=\frac{1}{2}\left[\mathcal{A}_\alpha^  {Q}(k_Q\cdot\mathcal{A}_P)+\mathcal{A}_  {Q}^m(\gamma_m\mathcal{W}_P)_\alpha-(P\leftrightarrow  {Q})\right],\\&\mathcal{A}_{[P,  {Q}]}^m=\frac{1}{2}\left[\mathcal{A}_Q^m(k_Q\cdot\mathcal{A}_P)+\mathcal{A}_n^Q\mathcal{F}_P^{mn}+(\mathcal{W}_P\gamma^m\mathcal{W}_  {Q})-(P\leftrightarrow  Q)\right],\\&\mathcal{W}_{[P,  {Q}]}^{\alpha}=\frac{1}{2}\left[\mathcal{W}_Q^\alpha(k_Q\cdot\mathcal{A}_P)+\mathcal{W}_Q^{m\alpha}\mathcal{A}_P^m+\frac{1}{2}\mathcal{F}_P^{rs}(\gamma_{rs}\mathcal{W}_Q)^\alpha-(P\leftrightarrow  Q)\right],\\&\mathcal{F}_{[  {P},  {Q}]}^{mn}=\frac{1}{2}\left[\mathcal{F}_{  {Q}}^{mn}(k_{  {Q}}\cdot\mathcal{A}_{  {P}})+\mathcal{F}_{  {Q}}^{p|mn}\mathcal{A}_{p}^{p}+\mathcal{F}_{  {Q}}^{[m}{}_{r}\mathcal{F}_{P}^{n]r}+2(\mathcal{W}_{  {Q}}\gamma^{[m}\mathcal{W}_{P}^{n]})-(P\leftrightarrow  Q)\right]
+	\end{aligned}
+\end{equation}
+递推起点为$\mathcal{K}_i = K_i$。而且可以自然退化到YM理论的BG流$\mathcal{A}_{P}^{m}(\theta=0)|_{\chi_{i}=0}=J_{P}^{m}$。但是后面构造SYM振幅并不用这个BG流构造，而是利用纯旋量空间的类似物：
+\begin{equation}
+	M_P=\lambda^\alpha\mathcal{A}_\alpha^P
+\end{equation}
+这个是后面递推会用到的BG流。
+\subsection{自由李代数对称性}
+
+\subsection{SYM振幅的构造}
 
 \section{超弦无质量态$n$点盘面振幅}
 
-\section{利用纯旋量超弦构造Yang-Mills理论的树图BCJ分子}
+\section{利用纯旋量超弦构造Super-Yang-Mills理论的树图BCJ分子}

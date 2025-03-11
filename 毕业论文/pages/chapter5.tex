@@ -234,6 +234,7 @@ BRST算符作用在波函数上可以用正则量子化表示为算符：
 \end{equation}
 十维SYM场的运动方程可以表达为：
 \begin{equation}
+	\label{eq:5.43}
 	\begin{aligned}
 		\left\{\nabla_\alpha, \nabla_\beta\right\} 
 		&= \gamma_{\alpha\beta}^\mu \nabla_\mu, \quad 
@@ -251,6 +252,7 @@ BRST算符作用在波函数上可以用正则量子化表示为算符：
 \end{equation}
 丢去上面公式的所有非线性部分得到线性化超场的运动方程：
 \begin{equation}
+	\label{eq:5.45}
 \begin{aligned}
 	D_\alpha A_\beta^i + D_\beta A_\alpha^i 
 	&= \gamma_{\alpha\beta}^\mu A_\mu^i, \quad 
@@ -274,7 +276,7 @@ BRST算符作用在波函数上可以用正则量子化表示为算符：
 \begin{equation}
 	A_i^\mu(X,\theta)=\left\{{(\cosh\sqrt{O})^\mu}_\nu e_i^\nu+{\left(\frac{\sinh\sqrt{O}}{\sqrt{O}}\right)^m}_\nu(\theta\gamma^\nu\chi_i)\right\}e^{i k_i\cdot X},\quad {\mathcal{O}^\mu}_\nu=\frac{i}{2}(\theta{\gamma^\mu}_{\nu\rho}\theta)k_i^\rho
 \end{equation}
-对于纯旋量超弦的计算，只需要知道$\mathcal{O}(\theta^{n\leq 4})$的项，显式写出为：\footnote{一些纯旋量超弦相关的文献喜欢将叙虚数因子吸收进$k$中，我们不采用这种记号，文献中的记号只需要做替换$k\mapsto i k$和$s_{ij}\mapsto s_{jk}$就可以回到这里的记号。}
+对于纯旋量超弦的计算，只需要知道$\mathcal{O}(\theta^{n\leq 4})$的项，显式写出为：
 \begin{equation}
 	\label{eq:5.48}
 \begin{aligned}
@@ -326,6 +328,8 @@ BRST算符作用在波函数上可以用正则量子化表示为算符：
 \begin{equation}
 	[A_\alpha]=\frac{1}{2},\quad[A_\mu]=0,\quad[W^\alpha]=-\frac{1}{2},\quad[F_{\mu\nu}]=-1
 \end{equation}
+
+这些线性超场的作用就相当于Yang-Mills理论中极化矢量的作用，费米子计算中费米波函数$u$的作用，从他们展开的最低阶也确实能看出这一点。
 \subsection{*$U(5)$分解}
 纯旋量约束导致纯旋量表述下的OPE不是自由的，比如：\footnote{关于式子中每项的解释请见\cite{Berkovits:2000fe}。}
 \begin{equation}
@@ -407,6 +411,7 @@ $U(5)$分解下荷共轭矩阵以及$\Gamma_{11}$可以表达为：
 \end{equation}
 注意第二个约束由第一个约束隐含，所以看似纯旋量约束有$10$个分量，但在$U(5)$分解下看到其独立分量只有五个，所以纯旋量有$11$个自由度。
 \section{纯旋量超弦振幅}
+\label{sec:5.4}
 选取规范固定$(z_1,z_{n-1},z_n)\to(0,1,\infty)\text{ or }(1,0,\infty)$，类似在$\S$\ref{sec:4.3}做的，上面两种选取分别对应外腿奇偶两种排序，使得盘面顺序自洽。纯旋量形式下的盘面色序超振幅形式为：
 \begin{equation}
 	A_n(P)=\int_{\partial D}dz_2\mathrm{~}dz_3\ldots dz_{n-2}\llangle V_1(z_1)U_2(z_2)U_3(z_3)\ldots U_{n-2}(z_{n-2})V_{n-1}(z_{n-1})V_n(z_n)\rrangle
@@ -432,7 +437,7 @@ $U(5)$分解下荷共轭矩阵以及$\Gamma_{11}$可以表达为：
 		=&\frac{1}{z_1-z_4}\langle D_\alpha(\lambda A^1)(\lambda A^2)(\lambda A^3)W_4^\alpha\rangle-(1\leftrightarrow2)+(1\leftrightarrow3)
 	\end{aligned}
 \end{equation}
-同理，第四项为：
+注意负号来源于$d_\alpha$和$A_\alpha$的费米性。同理，第四项为：
 \begin{equation}
 	\label{eq:5.74}
 	\begin{aligned}

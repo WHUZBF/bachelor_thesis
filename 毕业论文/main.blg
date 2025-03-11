@@ -29,45 +29,48 @@ Repeated entry---line 1939 of file ref/bachelor-refs.bib
  :                        ,
 I'm skipping whatever remains of this entry
 Warning--empty author in FEGER2020107490
-You've used 86 entries,
+`booktitle' is a missing field, not a string, for entry REUTENAUER2003887
+while executing---line 2449 of file gbt7714-numerical.bst
+Warning--empty booktitle in REUTENAUER2003887
+You've used 99 entries,
             5374 wiz_defined-function locations,
-            1655 strings with 21464 characters,
-and the built_in function-call counts, 574339 in all, are:
-= -- 14628
-> -- 61979
-< -- 78501
-+ -- 22362
-- -- 4012
-* -- 5031
-:= -- 80300
-add.period$ -- 326
-call.type$ -- 86
-change.case$ -- 543
-chr.to.int$ -- 19291
-cite$ -- 88
-duplicate$ -- 2157
-empty$ -- 9252
-format.name$ -- 1931
-if$ -- 149709
+            1753 strings with 23684 characters,
+and the built_in function-call counts, 674383 in all, are:
+= -- 17096
+> -- 73000
+< -- 92255
++ -- 26196
+- -- 4737
+* -- 5886
+:= -- 94223
+add.period$ -- 376
+call.type$ -- 99
+change.case$ -- 631
+chr.to.int$ -- 22642
+cite$ -- 102
+duplicate$ -- 2503
+empty$ -- 10750
+format.name$ -- 2257
+if$ -- 175738
 int.to.chr$ -- 1
-int.to.str$ -- 87
+int.to.str$ -- 100
 missing$ -- 0
-newline$ -- 516
-num.names$ -- 256
-pop$ -- 27798
+newline$ -- 594
+num.names$ -- 296
+pop$ -- 32921
 preamble$ -- 1
-purify$ -- 86
+purify$ -- 99
 quote$ -- 0
-skip$ -- 59959
+skip$ -- 70323
 stack$ -- 0
-substring$ -- 29830
-swap$ -- 91
-text.length$ -- 1611
+substring$ -- 35036
+swap$ -- 107
+text.length$ -- 1881
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 854
-warning$ -- 1
-while$ -- 1776
+type$ -- 985
+warning$ -- 2
+while$ -- 2072
 width$ -- 0
-write$ -- 1276
-(There was 1 error message)
+write$ -- 1474
+(There were 2 error messages)

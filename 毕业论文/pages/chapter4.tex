@@ -17,7 +17,7 @@
 其中$\mathbb{H}$是上半复平面。
 \end{boxedtext}
 
-但是我们真正希望考虑的是复结构，复结构对黎曼曲面的刻画比全纯同构细的多。或者说不同的复结构之间可以是全纯同构的。而复结构的刻画就依赖于黎曼曲面的模空间，记为$\mathfrak{M}_g$，下标$g$表示亏格。而亏格为$g$的黎曼面上的所有度量结构记作$\mathcal{M}_g$。
+虽然显著减少了需要讨论的黎曼面的数目，但是上面定理对复结构本身的刻画程度还不够好，比如$\hat M = \mathbb{C}$，$\pi_1(M)=\mathbb{Z}\oplus \mathbb{Z}$的情况对应环面。但是后面将会看到环面上可以有全纯不同构的不同复结构。单值化定理只是笼统地说肯定会全纯同构于其中的某个复结构，但是对于复结构本身我们还需要更细致的刻画。而复结构的刻画就依赖于黎曼曲面的模空间，记为$\mathfrak{M}_g$，下标$g$表示亏格。而亏格为$g$的黎曼面上的所有度量结构记作$\mathcal{M}_g$。
 
 上面的叙述似乎较为抽象，更加具体的方法是利用复结构与$[g]$的一一对应：
 \begin{equation}
@@ -185,7 +185,7 @@ $\mathsf{C}_J$，$\mathsf{B}_{K}$在\ref{eq:4.17}内积的意义下正交归一�
 虽然鬼场方法是极具物理思想的方法，但是其推导出来的结果右有非常清晰的物理解释。\ref{eq:4.21}中第三项可以看作是一个归一化系数不用过多考虑，第二项$c$鬼场零模正好对应CKG生成元，第一项在数学上相当于插入一些Beltrami微分，是复结构的体现。而且，单纯从形式上来说\ref{eq:4.18}有下面更简单的形式：\footnote{Beltrami微分定义为$\mu_{ka}^b:=\frac{1}{2}\hat{g}^{bc}\partial_k\hat{g}_{ac}$}
 \begin{equation}
 	\label{eq:4.22}
-	S(1;\ldots;n)=\sum_{\substack{\text{worldsheet}\\\text{topologies}}}e^{-\lambda\chi}\int_F\frac{d^mt}{n_R}\left\langle\prod_{k=1}^m\frac{1}{2\pi}(b,\mu_k)\prod_{i=1}^nc\tilde{c}V\right\rangle
+	S(1;\ldots;n)=\sum_{\substack{\text{worldsheet}\\\text{topologies}}}e^{-\lambda\chi}\int_{\mathfrak{M}}\frac{d^mt}{n_R}\left\langle\prod_{k=1}^m\frac{1}{2\pi}(b,\mu_k)\prod_{i=1}^nc\tilde{c}V\right\rangle
 \end{equation}
 注意我们将所有的顶角算符插入点全部固定，而增加了Beltrami微分，这也是鬼数补偿的要求。相当于考虑亏格相同，但是固定点更多的模空间：
 \begin{equation}
