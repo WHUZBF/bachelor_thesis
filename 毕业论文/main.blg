@@ -32,45 +32,45 @@ Warning--empty author in FEGER2020107490
 `booktitle' is a missing field, not a string, for entry REUTENAUER2003887
 while executing---line 2449 of file gbt7714-numerical.bst
 Warning--empty booktitle in REUTENAUER2003887
-You've used 99 entries,
+You've used 102 entries,
             5374 wiz_defined-function locations,
-            1753 strings with 23684 characters,
-and the built_in function-call counts, 674383 in all, are:
-= -- 17096
-> -- 73000
-< -- 92255
-+ -- 26196
-- -- 4737
-* -- 5886
-:= -- 94223
-add.period$ -- 376
-call.type$ -- 99
-change.case$ -- 631
-chr.to.int$ -- 22642
-cite$ -- 102
-duplicate$ -- 2503
-empty$ -- 10750
-format.name$ -- 2257
-if$ -- 175738
+            1773 strings with 24309 characters,
+and the built_in function-call counts, 703775 in all, are:
+= -- 17654
+> -- 76391
+< -- 96547
++ -- 27371
+- -- 4920
+* -- 6079
+:= -- 98268
+add.period$ -- 388
+call.type$ -- 102
+change.case$ -- 655
+chr.to.int$ -- 23694
+cite$ -- 105
+duplicate$ -- 2578
+empty$ -- 11067
+format.name$ -- 2344
+if$ -- 183394
 int.to.chr$ -- 1
-int.to.str$ -- 100
+int.to.str$ -- 103
 missing$ -- 0
-newline$ -- 594
-num.names$ -- 296
-pop$ -- 32921
+newline$ -- 612
+num.names$ -- 305
+pop$ -- 34489
 preamble$ -- 1
-purify$ -- 99
+purify$ -- 102
 quote$ -- 0
-skip$ -- 70323
+skip$ -- 73405
 stack$ -- 0
-substring$ -- 35036
-swap$ -- 107
-text.length$ -- 1881
+substring$ -- 36464
+swap$ -- 110
+text.length$ -- 1945
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 985
+type$ -- 1018
 warning$ -- 2
-while$ -- 2072
+while$ -- 2141
 width$ -- 0
-write$ -- 1474
+write$ -- 1520
 (There were 2 error messages)

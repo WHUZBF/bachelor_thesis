@@ -1,4 +1,4 @@
-\begin{thebibliography}{99}
+\begin{thebibliography}{102}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -664,5 +664,28 @@ LEE S, MAFRA C~R, SCHLOTTERER O.
   duality}\allowbreak[J/OL].
 \newblock JHEP, 2016, 03: 090.
 \newblock DOI: \doi{10.1007/JHEP03(2016)090}.
+
+\bibitem[Mafra(2020)]{Mafra:2020qst}
+MAFRA C~R.
+\newblock {Planar binary trees in scattering amplitudes}\allowbreak[A/OL].
+\newblock 2020.
+\newblock arXiv: \eprint{https://arxiv.org/abs/2011.14413}{2011.14413}.
+
+\bibitem[Carrasco et~al.(2017)Carrasco, Mafra, and
+  Schlotterer]{Carrasco:2016ldy}
+CARRASCO J~J~M, MAFRA C~R, SCHLOTTERER O.
+\newblock {Abelian Z-theory: NLSM amplitudes and $\alpha$'-corrections from the
+  open string}\allowbreak[J/OL].
+\newblock JHEP, 2017, 06: 093.
+\newblock DOI: \doi{10.1007/JHEP06(2017)093}.
+
+\bibitem[Badger et~al.(2013)Badger, Biedermann, Hackl, Plefka, Schuster, and
+  Uwer]{Badger:2012uz}
+BADGER S, BIEDERMANN B, HACKL L, et~al.
+\newblock {Comparing efficient computation methods for massless QCD tree
+  amplitudes: Closed analytic formulas versus Berends-Giele
+  recursion}\allowbreak[J/OL].
+\newblock Phys. Rev. D, 2013, 87\allowbreak (3): 034011.
+\newblock DOI: \doi{10.1103/PhysRevD.87.034011}.
 
 \end{thebibliography}

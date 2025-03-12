@@ -116,7 +116,7 @@
 \end{equation}
 树图的BCJ双复制关系已经得到证明\cite{Bern:2010yg}，但目前对于圈图BCJ分子的构造仍是一个未解之谜，不过已经构造出了不少例子\cite{Bern:2010ue,Bern:2012uf}，这也让我们相信色-运动学对偶猜想的正确性。近年来，双复制关系也被用在引力波求解等问题上，详见综述\cite{Bern:2019prr,Adamo:2022dcm,Bern:2022wqg}。
 
-\section{SYM振幅的纯旋量超空间上同调表述}
+\section{纯旋量超弦关联函数计算}
 纯旋量形式计算涉及到OPE计算以及展开超场后计算鬼场零模，本章我们不去关注后面一部分，而关注如何计算OPE。从$\S$\ref{sec:5.4}可以看出如果直接使用$\partial\theta$，$\Pi$，$d$，$N$的OPE计算会非常复杂，我们试图把顶角算符本身作为一个整体来计算OPE，比如:
 \begin{equation}
 	V_1(z_1)V_2(z_2)\sim 0
@@ -250,6 +250,7 @@ Dynkin括号递归定义为：
 \end{equation}
 显然$A\ell(B)+B\ell(A)\in\ker\ell$，而且由$\ell$的递归定义知$\forall Q$，$\ell(P) = 0\Rightarrow \ell(PQ)=0$。前面说过我们希望多粒子超场的定义尽可能展现出李多项式本身的对称性，那么如果$K\approx \ell$，也就是说满足下面的广义BCJ恒等式：
 \begin{equation}
+	\label{eq:6.38}
 	K_{A\ell(B)C}+K_{B\ell(A)C}=0,\quad A,B\neq\varnothing,\quad\forall C
 \end{equation}
 这样的超场被称作处在BCJ规范的超场，不加任何符号以区分Lorenz等规范下超场。本节要介绍的混合规范本身并不是计算上会用到的规范，更应该看作是为了构造BCJ规范超场的一种定义：
@@ -290,7 +291,7 @@ Dynkin括号递归定义为：
 \end{equation}
 $\tilde B$意思为反序，$\dot a$表示$A$的字符化，比如$12\mapsto (12)$，在后面的计算中$(12)$作为一个整体不能分开，比如$XY=(12)$是无解的，而不像$XY=12$有一个解为$X=1$，$Y=2$。
 
-现在回到最初对两个顶角算符OPE的研究，那里我们将$V_{[1,2]}=V_{\ell(12)}$记为$V_{12}$，这是有原因的。由于BCJ规范下超场的构造在数学上相当于$\ell\leftrightarrow K$，注意到$\ell\circ\ell(P) = |P|\ell (P)$，对应到超场有$K_{\ell(P)} = |P|K_P$仅仅只相差一个常数，而且由于最终的目的是计算OPE缩并，所以我们不会使用到单个单词对应的超场，都是李多项式对应的超场，所以我们干脆取符号约定$K_{\ell(P)} := K_P$，这个意思是把所有超场下标中连续的单词都看作嵌套括号，比如$K_{123}:=K_{\ell(123)}$，$K_{[12,34]}:=K_{[\ell(12),\ell(34)]}$。再注意利用Baker恒等式总可以将任意的$K_\Gamma$写成$K_{1P}$的线性组合，比如：
+现在回到最初对两个顶角算符OPE的研究，那里我们将$V_{[1,2]}=V_{\ell(12)}$记为$V_{12}$，这是有原因的。由于BCJ规范下超场的构造在数学上相当于$\ell\leftrightarrow K$，注意到$\ell\circ\ell(P) = |P|\ell (P)$，对应到超场有$K_{\ell(P)} = |P|K_P$仅仅只相差一个常数，而且由于最终的目的是计算OPE缩并，所以我们不会使用到单个单词对应的超场，都是李多项式对应的超场，所以我们干脆取符号约定$K_{\ell(P)} := K_P$，这个意思是把所有超场下标中连续的单词都看作嵌套括号，比如$K_{123}:=K_{\ell(123)}$，$K_{[12,34]}:=K_{[\ell(12),\ell(34)]}$。在这一符号约定下，依然满足广义BCJ恒等式\ref{eq:6.38}。再注意利用Baker恒等式总可以将任意的$K_\Gamma$写成$K_{1P}$的线性组合，比如：
 \begin{equation}
 	\begin{aligned}
 		[[12,34],[5,67]]:=&[[\ell(12),\ell(34)],[\ell(5),\ell(67)]]=[\ell(12\ell(34)),\ell(5\ell(67))]\\
@@ -308,6 +309,7 @@ $\tilde B$意思为反序，$\dot a$表示$A$的字符化，比如$12\mapsto (12
 
 BCJ规范下的超场满足下面的场方程，这里我们利用$Q=\lambda D$以及$V=\lambda A$去写场方程，这样还能顺便给出\ref{eq:6.26}的推广：
 \begin{equation}
+	\label{eq:6.46}
 	\begin{aligned}
 		QU_{[P,Q]}&=\partial V_{[P,Q]}{\color{blue}+(V\otimes U)_{C([P,Q])}}\\
 		QV_{[R,S]}&={\color{blue}\frac{1}{2}(V\otimes V)_{  {C}([R,S])}}
@@ -321,13 +323,13 @@ BCJ规范下的超场满足下面的场方程，这里我们利用$Q=\lambda D$�
 不同于现代散射振幅理论使用在壳BCFW递推高效计算振幅，最早的振幅递推计算，即所谓离壳递推是基于Berends-Giele流技术\cite{Berends:1987me}。这一思想十分简单，如图\ref{fig:6.6}所示将$n+1$条外腿的散射振幅$\mathcal{A}_{n+1}$变成离壳传播子，这样就定义了$n$点BG流。显然其可以用更少点BG流递推构造，如图\ref{fig6.7}。
 \begin{figure}[htbp]
 	\centering
-	
+	\includegraphics{figs/fig15.pdf}
 	\caption{BG流的定义}
 	\label{fig:6.6}
 \end{figure}
 \begin{figure}[htbp]
 	\centering
-	
+	\includegraphics{figs/fig15.pdf}
 	\caption{BG流的递推关系}
 	\label{fig:6.7}
 \end{figure}
@@ -354,15 +356,326 @@ BCJ规范下的超场满足下面的场方程，这里我们利用$Q=\lambda D$�
 		&\mathcal{A}_{\alpha}^{[P,Q]}=\frac{1}{2}\left[\mathcal{A}_\alpha^  {Q}(k_Q\cdot\mathcal{A}_P)+\mathcal{A}_  {Q}^m(\gamma_m\mathcal{W}_P)_\alpha-(P\leftrightarrow  {Q})\right],\\&\mathcal{A}_{[P,  {Q}]}^m=\frac{1}{2}\left[\mathcal{A}_Q^m(k_Q\cdot\mathcal{A}_P)+\mathcal{A}_n^Q\mathcal{F}_P^{mn}+(\mathcal{W}_P\gamma^m\mathcal{W}_  {Q})-(P\leftrightarrow  Q)\right],\\&\mathcal{W}_{[P,  {Q}]}^{\alpha}=\frac{1}{2}\left[\mathcal{W}_Q^\alpha(k_Q\cdot\mathcal{A}_P)+\mathcal{W}_Q^{m\alpha}\mathcal{A}_P^m+\frac{1}{2}\mathcal{F}_P^{rs}(\gamma_{rs}\mathcal{W}_Q)^\alpha-(P\leftrightarrow  Q)\right],\\&\mathcal{F}_{[  {P},  {Q}]}^{mn}=\frac{1}{2}\left[\mathcal{F}_{  {Q}}^{mn}(k_{  {Q}}\cdot\mathcal{A}_{  {P}})+\mathcal{F}_{  {Q}}^{p|mn}\mathcal{A}_{p}^{p}+\mathcal{F}_{  {Q}}^{[m}{}_{r}\mathcal{F}_{P}^{n]r}+2(\mathcal{W}_{  {Q}}\gamma^{[m}\mathcal{W}_{P}^{n]})-(P\leftrightarrow  Q)\right]
 	\end{aligned}
 \end{equation}
-递推起点为$\mathcal{K}_i = K_i$。而且可以自然退化到YM理论的BG流$\mathcal{A}_{P}^{m}(\theta=0)|_{\chi_{i}=0}=J_{P}^{m}$。但是后面构造SYM振幅并不用这个BG流构造，而是利用纯旋量空间的类似物：
+递推起点为$\mathcal{K}_i = K_i$，同样BG流由于是离壳的，所以也涉及到规范的选取，如果递推起点改为$\mathcal{K}_i = \hat{K}_i$就是在Lorenz规范下的BG流。而且可以自然退化到YM理论的BG流$\mathcal{A}_{P}^{m}(\theta=0)|_{\chi_{i}=0}=J_{P}^{m}$。利用上面的递推式计算前三个BG流得到：\footnote{注意我们只是对BCJ超场取了$\ell(P):= P$的符号约定，这里BG流的下标只是单独的一个字词。}
+\begin{equation}
+	\begin{aligned}
+		\mathcal{ K}_{12}^{m}&=\frac{ K_{[1,2]}^m}{s_{12}}\\
+		\mathcal{ K}_{123}^{m}&=\frac{ K_{[[1,2],3]}^m}{s_{12}s_{123}}+\frac{ K_{[1,[2,3]]}^m}{s_{123}s_{23}}\\
+		\mathcal{ K}_{1234}^m&=\frac{ K_{[[[1,2],3],4]}^m}{s_{12}s_{123}s_{1234}}+\frac{ K_{[[1,[2,3]],4]}^m}{s_{123}s_{1234}s_{23}}+\frac{ K_{[[1,2],[3,4]]}^m}{s_{12}s_{1234}s_{34}}+\frac{ K_{[1,[[2,3],4]]}^m}{s_{1234}s_{23}s_{234}}+\frac{ K_{[1,[2,[3,4]]]}^m}{s_{1234}s_{234}s_{34}}
+	\end{aligned}
+\end{equation}
+递归定义平面二叉树求和\cite{Mafra:2020qst}，示例见图\ref{fig:6.8}：\footnote{$s_P:=\frac12 k_P^2$，注意我们本章选取了$ik\to k$的符号约定，所以后面计算结果中$s_P\to -s_P$才得到保留虚数单位时的符号约定。}
+%% 在后面也要写一下
+\begin{equation}
+	b(P):=\frac{1}{s_P}\sum_{XY=P}[b(X),b(Y)],\quad b(i):=i,\quad b(\varnothing):=0
+\end{equation}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\linewidth]{figs/fig15.pdf}
+	\caption{平面二叉树求和}
+	\label{fig:6.8}
+\end{figure}
+所以BG流和超场之间可以用下面的等式联系：
+\begin{equation}
+	\boxed{
+		\mathcal{K}_P=K_{b(P)}
+	}
+\end{equation}
+同理对Lorenz规范有$\mathcal{K}_P=K_{b(P)}$，这不仅能简化计算，后面会看到BG流的对称性可以从$b$算符本身的对称性很快得出。
+
+但是后面构造SYM振幅并不用超场对应的这个BG流$\mathcal{K}$构造，而是利用纯旋量空间的类似物：
 \begin{equation}
 	M_P=\lambda^\alpha\mathcal{A}_\alpha^P
 \end{equation}
-这个是后面递推会用到的BG流。
+这个是后面递推会用到的BG流。同理有$M_P=V_{b(P)}$。
 \subsection{自由李代数对称性}
+平面二叉树映射有个很重要的性质是自伴性：
+\begin{equation}
+	\label{eq:6.55}
+	\langle b(P),Q\rangle=\langle P,b(Q)\rangle
+\end{equation}
+其证明只要注意到：
+\begin{equation}
+\begin{gathered}
+		\langle b(P),Q\rangle=\frac{1}{s_P}\sum_{XY=P}\langle b(X)b(Y),Q\rangle-(X\leftrightarrow Y)\\
+	\langle AB,RS\rangle=\langle A,R\rangle\langle B,S\rangle,\quad|A|=|R|,\quad|B|=|S|
+\end{gathered}
+\end{equation}
+然后对$|P|$进行数学归纳便可得证，洗牌序有下面的重要定理：
+\begin{boxedtext}[Ree定理]
+	任取非空字词$\Gamma$，$R$和$S$，满足下式：
+	\begin{equation}
+		\langle\Gamma,R\shuffle S\rangle=0,\quad R,S\neq\varnothing
+	\end{equation}
+\end{boxedtext}
+利用\ref{eq:6.55}以及Ree定理立刻得到：
+\begin{equation}
+\begin{aligned}
+	\label{eq:6.58}
+		&0=\langle b(P),R\shuffle S\rangle=\langle P,b(R\shuffle S)\rangle,\quad R,S\neq\emptyset,\quad\forall P\\
+	\Rightarrow &b(A\shuffle B)=0,\quad\forall A,B\neq\emptyset
+\end{aligned}
+\end{equation}
+这意味着BG流有下面的对称性：
+\begin{equation}
+	\mathcal{K}_{A\shuffle B}=0,\quad\forall A,B\neq\varnothing
+\end{equation}
+这是BG流非常重要的对称性，从这里看来只是自由李代数的简单应用，文献\cite{Frost:2020eoa}中有更多类似的讨论，其中$S$括号$\{\bullet,\bullet\}$的定义比较有用：
+\begin{equation}
+	\{P,Q\}=\sum_{\substack{XiY=P\\{ { {RjS=Q}}}}}k_i\cdot k_j(X \shuffle\tilde{Y})ij(\tilde{R} \shuffle S)(-1)^{|Y|+|R|}
+\end{equation}
+注意$S$括号定义在$\mathcal{L}^*\times \mathcal{L}^*\to\mathcal{L}^*$，$\mathcal{L}$是李多项式所在的线性空间$\mathcal{L}^*$是其对偶空间，在这里我们可以理解为商空间$\mathcal{L}/\sim$，其中：
+\begin{equation}
+	A\sim B\Leftrightarrow A=B+\sum R\shuffle  S,R,S\neq\varnothing
+\end{equation}
+$S$括号有下面的性质：
+\begin{equation}
+	\{A\shuffle B,C\}=0,\quad b(\{P,Q\})=[b(P),b(Q)],\quad \sum_{XY=P}\{X,Y\}\sim s_PP
+\end{equation}
+而且$S$括号实际上是$C$映射的伴随算子：
+\begin{equation}
+	\langle P\otimes Q,C(\Gamma)\rangle=\langle\{P,Q\},\Gamma\rangle
+\end{equation}
+$C$映射有下面重要的恒等式：
+\begin{align}
+	C(\ell(P))&=\sum_{\substack{XjY=P\\\delta(Y)=R\otimes S}}(k_X\cdot k_j)\left[\ell(XR)\otimes\ell(jS)-\ell(jR)\otimes\ell(XS)\right]\notag\\
+	&=\sum_{\substack{XjY=P\\\delta(Y)=R\otimes S}}(k_X\cdot k_j)\ell(XR)\wedge\ell(jS)\\
+	C(P\wedge Q)&=C(P)\wedge Q-P\wedge C(Q)\\
+	\label{eq:6.66}
+	C\left(b(P)\right)&=\sum_{XY=P}\left(b(X)\otimes b(Y)-b(Y)\otimes b(X)\right):=\sum_{XY=P}b(X)\wedge b(Y)
+\end{align}
+利用第上面第一个等式：
+\begin{equation}
+	C(\ell(123))=(k_1\cdot k_2)\left(\ell(1)\wedge\ell(23)+\ell(13)\wedge\ell(2)\right)+(k_{12}\cdot k_3)\ell(12)\wedge\ell(3)
+\end{equation}
+再利用\ref{eq:6.46}，并且注意到$V_P:=V_{\ell(P)}$：
+\begin{equation}
+	QV_{123}=(k_1\cdot k_2)\left(V_1V_{23}+V_{13}V_2\right)+(k_{12}\cdot k_3)V_{12}V_3
+\end{equation}
+可以看到两式数学结构完全一致！$VV$之间的OPE乘法在自由李代数中被替换为了反对易的$\wedge$，而$V$恰好是费米算符！而且从组合学上可以证明$C^2=0$。结合前面所有的讨论，我们可以断言超场之于下标的作用正如$C$，$\ell$和$b$之于字词的作用：
+\begin{equation}
+	\label{eq:6.69}
+	\boxed{
+		C\leftrightarrow Q_{\mathrm{BRST}},\quad\ell(P)\leftrightarrow V_P/K_P,\quad b(P)\leftrightarrow M_P/\mathcal{K}_P
+	}
+\end{equation}
+这就是BG流/多粒子超场和自由李代数之间的深刻关联。对于$\ell(P)$形式的多粒子顶角算符，\ref{eq:6.46}其实可以改写为：
+\begin{equation}
+	QV_\Gamma:=QV_\ell(\Gamma)=(V\wedge V)_{\mathbb{C}(\Gamma)}
+\end{equation}
+现在利用\ref{eq:6.66}得到：
+\begin{equation}
+	\label{eq:6.71}
+\begin{aligned}
+		QM_P&=QV_{b(P)}=(V\wedge V)_{C(b(P))}=\sum_{XY=P}(V\wedge V)_{b(X)\wedge b(Y)}=\sum_{XY=P}V_{b(X)}V_{b(Y)}\\
+	&=\sum_{XY=P}M_XM_Y
+\end{aligned}
+\end{equation}
+还有一个比较重要的KLT映射，我们用$\mathcal{S}:\mathcal{L}\to\mathcal{L}^*$表示，他的定义是将所有$\Gamma$中的李括号$[\bullet,\bullet]$改为$S$括号$\{\bullet,\bullet\}$，变换后的李多项式记作$\{\Gamma\}$。由此定义广义KLT核：
+\begin{equation}
+	\mathcal{S}^\ell(P| Q)=\langle\{\ell(P)\},\ell( Q)\rangle
+\end{equation}
+KLT关系中的固定$i,n-1,n$三条外腿的KLT核是上面的特殊形式：
+\begin{equation}
+	S(P|Q)_i=S^\ell(iP|iQ)
+\end{equation}
+其满足下面的递推式：\cite{Carrasco:2016ldy}
+\begin{equation}
+	S(Aj|BjC)_i=k_j\cdot k_{iB}S(A|BC)_i,\quad S(\varnothing|\varnothing)_i:=1
+\end{equation}
+KLT映射和$b$映射之间互逆，也就是说
+\begin{equation}
+	\label{eq:6.75}
+	\mathcal{S}\circ b = \mathrm{id}_{\mathcal{L}^*},\quad b\circ \mathcal{S} = \mathrm{id}_{\mathcal{L}}
+\end{equation}
+一个词$P$称为是Lyndon的当且仅当在所有的$\mathrm{cyc}(P)$中$P$在字典序的意义下最小。Lyndon词可以作为$\mathcal{L}^*$的一组基底，$\ell(P)$则是$\mathcal{L}$的一组自然基底。所以$\{\ell(P)\}$可以在Lyndon基底下展开：\footnote{严格来说因为$\mathcal{L}^*$是在商空间的意义下定义的，下面的$=$应当替换为$\sim$。}
+\begin{equation}
+	\label{eq:6.76}
+	\{\ell( {P})\}=\sum_{ {Q}\in \mathrm{Lyndon}}\langle\{\ell( {P})\},\ell( {Q})\rangle {Q}
+\end{equation}
+等式两边作用$b$映射并利用\ref{eq:6.75}得到：
+\begin{equation}
+	\ell(P)=b(\{\ell(  {P})\})=\sum_{  {Q}\in\mathrm{Lyndon}}\langle\{\ell(  {P})\},\ell(  {Q})\rangle b(  {Q})=\sum_QS^\ell(P|iQ)b(iQ)
+\end{equation}
+这里最后一个等号利用KLT核只有在$P$和$Q$中元素相同时不为零简化了求和计算，$i$是$P$中最小的字，$Q$表示$P/\{i\}$的字组成的词。把$P$也改写为$iP$ Lyndon词的形式，并利用\ref{eq:6.69}给出的对应得到：
+\begin{equation}
+	\label{eq:6.78}
+	V_{iP}=\sum_{Q}S(P|Q)_iM_{iQ},\quad K_{iP}=\sum_{Q}S(P|Q)_i\mathcal{K}_{iQ}
+\end{equation}
+同样利用\ref{eq:6.76}类似的基底展开式可以证明下面的Schocker恒等式：
+\begin{equation}
+	B i A \sim (-1)^{|B|} i A \shuffle\tilde{B}
+\end{equation}
+再利用\ref{eq:6.69}的对应，只有$b$才能除去等价模掉的$R\shuffle S$的影响（\ref{eq:6.58}），给出：
+\begin{equation}
+	\label{schocker}
+	\mathcal{K}_{B1A}=(-1)^{|B|}\mathcal{K}_{1(A\shuffle\tilde{B})}
+\end{equation}
+对$M$也同样成立。
 
-\subsection{SYM振幅的构造}
+回到一开始为了简化OPE的想法，我们研究了这么多多粒子超场的性质，都是为了顶角算符OPE变得有规律些：
+\begin{equation}
+	\label{eq:6.79}
+	V_A(z_a)U_B(z_b)\to\frac{V_{[A,B]}(z_b)}{z_{ab}},\quad U_A(z_a)U_B(z_b)\to\frac{U_{[A,B]}(z_b)}{z_{ab}}
+\end{equation}
+这种简化后的OPE使得超弦$n$点盘面振幅计算变得可能。
 
 \section{超弦无质量态$n$点盘面振幅}
+取$z_n=\infty$的约定，现在利用\ref{eq:6.79}进行类似$\S$\ref{sec:5.4}的计算，只是顶角算符被看作了一个整体，比如四点OPE：
+\begin{equation}
+	\label{eq:6.80}
+	\begin{aligned}
+		V_1(z_1)U_2(z_2)V_3(z_3)V_4(\infty)&=\wick{\c V_1\c U_2V_3V_4}+\wick{ V_1\c U_2\c V_3V_4}+\wick{V_1\c U_2V_3\c V_4}\\
+		&\cong\frac{V_{[1,2]}(z_1)}{z_{12}}V_3(z_3)V_4(\infty)+V_1(z_1)\frac{V_{[2,3]}(z_3)}{z_{23}}V_4(\infty)\\&\cong\frac{V_{12}V_3V_4}{z_{12}}+\frac{V_1V_{32}V_4}{z_{32}}
+	\end{aligned}
+\end{equation}
+第二步利用了$z_4\to\infty$，所以任何与$V_4$的OPE均会被压低，第三步利用了$VV$之间OPE平凡。类似的对$n$点情况计算得到OPE：
+\begin{equation}
+	V_1\cdots U_i\cdots V_{n-1}V_n\cong\sum_{AB=23...n-2}(V_{1A}\mathcal{Z}_{1A})(V_{n-1,\tilde{B}}\mathcal{Z}_{n-1,\tilde{B}})V_n+\mathrm{perm}(2,3,...,n-2)
+\end{equation}
+其中Park-Taylor因子定义为：
+\begin{equation}
+	\mathcal{Z}_{123...p}:=\frac{1}{z_{12}z_{23}\ldots z_{p-1,p}}
+\end{equation}
+类似在RNS超弦振幅计算中所做的，对关联函数取不同盘面顺序积分得到相应的色序振幅，只不过我们这里还需要额外对零模积分：
+\begin{equation}
+	\label{eq:6.85}
+\boxed{
+		\mathcal{A}_n(P)=(2\alpha^{\prime})^{n-3}\int d\mu_P^n\sum_{AB=23...n-2}\langle\left(V_{1A}\mathcal{Z}_{1A}\right)(V_{n-1,\tilde{B}}\mathcal{Z}_{n-1,\tilde{B}})V_n\rangle+\mathrm{perm}(23\ldots n-2)
+}
+\end{equation}
+这里积分测度为带Koba-Nielsen因子的$SL(2,\mathbb{C})$不变测度：\footnote{似乎和前面$\S$4计算出来的KN因子不同，这是因为我们选取了$ik\to k$的符号约定，所以$s\to -s$。}
+\begin{equation}
+	\int d\mu_P^n:=\int_{D(P)}dz_2dz_3\cdots dz_{n-2}\prod_{1\leq i<j}^{n-1}|z_{ij}|^{-2\alpha^{\prime}s_{ij}}
+\end{equation}
+同样$z_1$和$z_{n-1}$的坐标约定选取$\{0,1\}$或$\{1,0\}$应当与排序$P$相容。比如利用\ref{eq:6.80}，四点振幅为：
+\begin{equation}
+	\begin{aligned}
+		\mathcal{A}(1,2,3,4)&=2\alpha^{\prime}\int_0^1dz_2\left(\frac{\langle V_{12}V_3V_4\rangle}{z_{12}}+\frac{\langle V_1V_{32}V_4\rangle}{z_{32}}\right)|z_{12}|^{-2\alpha^{\prime}s_{12}}|z_{23}|^{-2\alpha^{\prime}s_{23}}\\&=\left(\frac{\langle V_{12}V_3V_4\rangle}{s_{12}}+\frac{\langle V_1V_{23}V_4\rangle}{s_{23}}\right)\frac{\Gamma(1-2\alpha^{\prime}s_{12})\Gamma(1-2\alpha^{\prime}s_{23})}{\Gamma(1-2\alpha^{\prime}s_{12}-2\alpha^{\prime}s_{23})}
+	\end{aligned}
+\end{equation}
+定义一个同样对下标满足广义BCJ恒等式\ref{eq:6.38}的变量：
+\begin{equation}
+	X_{P}:=\frac{1}{|P|}\sum_{ {Q}}S^{\ell}(P| {Q})\mathcal{Z}_{ {Q}}=\prod_{j=2}^{|P|}\sum_{i=1}^{j-1}\frac{s_{p_ip_j}}{z_{p_ip_j}}
+\end{equation}
+其满足下面的积分恒等式：
+\begin{equation}
+	\label{eq:6.87}
+	\int d\mu_P^nX_{1A}X_{(n-1)\tilde{B}}=(-1)^{|B|}\int d\mu_P^nX_{1AB}
+\end{equation}
+我们举五点的例子来说明，首先注意到由于KN因子包含每两个点坐标之差，所以有：
+\begin{equation}
+	\int_{z_a}^{z_b}dz_k\frac{\partial}{\partial z_k}\frac{\prod_{1\leq i<j}^{n-1}|z_{ij}|^{-2\alpha^{\prime}s_{ij}}}{z_{i_1j_1}\cdots z_{i_{n-4}j_{n-4}}}=0
+\end{equation}
+考虑$z_k$不在分母中出现的特殊情况，比如五点情况作用$\partial_{z_3}$得到：
+\begin{equation}
+	\int_{D(P)}dz_2dz_3\prod_{1\leq i<j}^4|z_{ij}|^{-2\alpha^{\prime}s_{ij}}
+	\eqnmarkbox[blue]{node1}{\frac{s_{12}}{z_{12}}\left(\frac{s_{13}}{z_{13}}+\frac{s_{23}}{z_{23}}\right)}
+	=\int_{D(P)}dz_2dz_3\prod_{1\leq i<j}^4|z_{ij}|^{-2\alpha^{\prime}s_{ij}}
+	\eqnmarkbox[red]{node2}{\frac{s_{12}}{z_{12}}\frac{s_{34}}{z_{34}}}
+\end{equation}
+\annotate[yshift=0em]{below,left}{node1}{$X_{123}$}
+\annotate[yshift=+0.5em]{above,left}{node2}{$X_{12}\cdot X_{34}$}
+将\ref{eq:6.87}与\ref{schocker}结合得到：
+\begin{equation}
+	\int d\mu_P^n(M_{1A}X_{1A})(M_{n-1\tilde{B}}X_{(n-1)\tilde{B}})=\int d\mu_P^nX_{1AB}M_{1A}M_{B(n-1)}
+\end{equation}
+另外从\ref{eq:6.78}可以看到：
+\begin{equation}
+	\sum_AV_{iA}Z_{iA}=\sum_AM_{iA}X_{iA}
+\end{equation}
+利用这两个式子就能将\ref{eq:6.85}改用$M_P$表达，比如四点情况：
+\begin{equation}
+\begin{aligned}
+		\mathcal{A}_4(P)&=2\alpha^{\prime}\int d\mu_P^4\left\langle V_{12}\mathcal{Z}_{12}V_3V_4+V_1V_{32}\mathcal{Z}_{32}V_4\right\rangle\\
+	&=2\alpha^{\prime}\int d\mu_{P}^{4}\left\langle X_{12}M_{12}M_{3}M_{4}+X_{32}M_{1}M_{32}M_{4}\right\rangle\\
+	&=2\alpha^{\prime}\int d\mu_P^4X_{12}\langle M_{12}M_3M_4+M_1M_{23}M_4\rangle
+\end{aligned}
+\end{equation}
+对于任意点有：
+\begin{equation}
+\boxed{
+		\mathcal{A}_n(P)=(2\alpha^{\prime})^{n-3}\int d\mu_P^n\left[\prod_{k=2}^{n-2}\sum_{m=1}^{k-1}\frac{s_{mk}}{z_{mk}}A_n(1,2,\ldots,n)+\mathrm{perm}(2,3,\ldots,n-2)\right]
+}
+\end{equation}
+其中：
+\begin{equation}
+	\label{eq:6.96}
+\boxed{
+		A_n(P,n):=\sum_{XY=P}\langle M_XM_YM_n\rangle
+}
+\end{equation}
+考虑固定三个外腿顺序的情况：
+\begin{equation}
+	\mathcal{A}_n(1,R,n-1,n;\alpha^{\prime})=\sum_{{Q}\in S_{n-3}}{{F}_R}^{Q}(\alpha^{\prime})A_n(1,{Q},n-1,n)
+\end{equation}
+其中：
+\begin{equation}
+\begin{aligned}
+	\label{eq:6.98}
+		{F_R}^Q(\alpha^{\prime}):=&(2\alpha^{\prime})^{n-3}\int d\mu_R^n\frac{s_{1q_2}}{z_{1q_2}}\left(\frac{s_{1q_3}}{z_{1q_3}}+\frac{s_{q_2q_3}}{z_{q_2q_3}}\right)
+	\times\left(\frac{s_{1q_4}}{z_{1q_4}}+\frac{s_{q_2q_4}}{z_{q_2q_4}}+\frac{s_{q_3q_4}}{z_{q_3q_4}}\right)\cdots\\
+	&\times\left(\frac{s_{1q_{n-2}}}{z_{1q_{n-2}}}+\frac{s_{q_2q_{n-2}}}{z_{q_2q_{n-2}}}+\cdots+\frac{s_{q_{n-3}q_{n-2}}}{z_{q_{n-3}q_{n-2}}}\right)
+\end{aligned}
+\end{equation}
+\section{SYM振幅的纯旋量超空间上同调表述}
+利用下面$\alpha'\to 0$的展开式：
+\begin{equation}
+	\log\Gamma(1-z)=\gamma z+\sum_{n=2}^\infty\frac{z^n}{n}\zeta_n
+\end{equation}
+$\gamma$是Euler常数，$\zeta$是黎曼$\zeta$函数，对四点情况展开\ref{eq:6.98}：
+\begin{equation}
+\begin{aligned}
+		{F_2}^2&=\frac{\Gamma(1-2\alpha^{\prime}s_{12})\Gamma(1-2\alpha^{\prime}s_{23})}{\Gamma(1-2\alpha^{\prime}s_{12}-2\alpha^{\prime}s_{23})}=\exp\left(\sum_{n=2}^\infty\frac{\zeta_n}{n}(2\alpha^{\prime})^n\left[s_{12}^n+s_{23}^n-(s_{12}+s_{23})^n\right]\right)\\
+	&=1-(2\alpha^{\prime})^2\zeta_2s_{12}s_{23}+\cdots
+\end{aligned}
+\end{equation}
+其实，对于一般情况有：
+\begin{equation}
+	{F_P}^{Q}(\alpha^{\prime})=\delta_P^{Q}+\mathcal{O}({\alpha'}^2)
+\end{equation}
+这就说明\ref{eq:6.96}就是弦振幅的低能展开，也就是固定一个外腿$n$的SYM色序振幅！前面我们将$M_P$解释为纯旋量空间BG流的类似物，所以这里对SYM振幅的构造完全可以解释为用BG流拼凑得来，如图\ref{fig:6.9}。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figs/fig16.pdf}
+	\caption{SYM振幅的纯旋量超空间上同调形式}
+	\label{fig:6.9}
+\end{figure}
+注意到$QM_n=QV_n=0$，以及：
+\begin{equation}
+	\begin{aligned}
+		\sum_{XY=P}Q(M_XM_Y)&=\sum_{XY=P}\sum_{RS=X}M_RM_SM_Y-\sum_{XY=P}\sum_{RS=Y}M_XM_RM_S\\&=\sum_{RSY=P}\left(M_RM_SM_Y-M_RM_SM_Y\right)=0
+	\end{aligned}
+\end{equation}
+所以\ref{eq:6.96}是闭的，虽然看似根据\ref{eq:6.71}$\sum_{XY=P}M_XM_Y$是恰当的，但是由于$M_P$本身的定义包含$s_P$因子，所以对于这里$s_P=k_n^2=0$，也就是在壳时\ref{eq:6.71}不是良定义的，所以在壳时无法将$\sum_{XY=P}M_XM_Y$看作是恰当的，但离壳时可以。所以用\ref{eq:6.96}形式写下的算符明显地存在于纯旋量超空间的上同调群中。但是这种表述并没有明显地满足循环对称的要求，现在我们来证明循环变换指标只会导致一个BRST恰当项的差别，在关联函数的意义下为$0$。
 
+
+
+任意点振幅都可以通过加上一些BRST恰当的项写成循环对称的形式，比如：
+\begin{equation}
+	A_7(1,2,\ldots,7)=\langle M_{123}M_{45}M_{67}\rangle+\langle M_1M_{234}M_{567}\rangle+\mathrm{cyc}(12\ldots7)
+\end{equation}
+
+原则上，$M_P$可以用$\mathcal{K}_P$表达，而$\mathcal{K}_P$又可以用$K_P$表达，而多粒子超场又可以用单粒子超场表达，单粒子超场$\theta$展开是已知的，所以原则上总可以通过这种方式计算出任意点SYM振幅。上述过程其实可以进一步简化，$\mathcal{K}$的$\theta$展开是可以直接计算的，由于最终只涉及到$M_P$，所以只需要$\mathcal{A}^P_\alpha$的展开：
+\begin{equation}
+	\mathcal{A}_\alpha^P(\theta)=\frac{1}{2}(\theta\gamma_m)_\alpha\mathfrak{e}_P^m+\frac{1}{3}(\theta\gamma^m)_\alpha(\theta\gamma_m\mathfrak{X}_P)-\frac{1}{32}(\theta\gamma^p)_\alpha(\theta\gamma_{mnp}\theta)\mathfrak{f}_P^{mn}+\cdots
+\end{equation}
+其中哥特体标注的多粒子极化矢量（波函数）有递推公式：\footnote{形式上很像是“BG流的BG流”。}
+\begin{align*}
+	&\mathfrak{e}_P^m=\frac{1}{s_P}\sum_{XY=P}\mathfrak{e}_{[X,Y]}^m,\quad\mathfrak{X}_P^\alpha=\frac{1}{s_P}\sum_{XY=P}\mathfrak{X}_{[X,Y]}^\alpha\\
+	&\mathfrak{f}_P^{mn}:=k_P^m\mathfrak{e}_P^n-k_P^n\mathfrak{e}_P^m-\sum_{XY=P}\left(\mathfrak{e}_X^m\mathfrak{e}_Y^n-\mathfrak{e}_X^n\mathfrak{e}_Y^m\right)\\
+	&\mathfrak{e}_{[X,Y]}^m:=\frac{1}{2}\left[\mathfrak{e}_Y^m(k_Y\cdot\mathfrak{e}_X)+\mathfrak{e}_n^X\mathfrak{f}_Y^{nm}+( X_X\gamma^m X_Y)-(X\leftrightarrow Y)\right]\\
+	& \mathfrak{X}_{[X,Y]}^\alpha:=\frac{1}{2}(k_X^p+k_Y^p)\gamma_p^{\alpha\beta}\left[\mathfrak{e}_X^m(\gamma_m \mathfrak{X}_Y)_\beta-\mathfrak{e}_Y^m(\gamma_m \mathfrak{X}_X)_\beta\right]
+\end{align*}
+递推起点为$\mathfrak{e}_i^m:=e_i^m$，$\mathfrak{X}_i^\alpha:=\chi_i^\alpha$。再利用附录\ref{appendix:B}给出的零模积分公式可以得到：
+\begin{equation}
+	\langle M_XM_YM_Z\rangle=\frac{1}{2}\mathfrak{e}_X^m\mathfrak{f}_Y^{mn}\mathfrak{e}_Z^n+(\mathfrak{X}_X\gamma_m\mathfrak{X}_Y)e_Z^m+\mathrm{cyc}(XYZ)
+\end{equation}
+从数值运算的角度从BG流出发的这个公式要快不少。\cite{Badger:2012uz}
+
+由于我们将振幅表述为了多粒子顶角算符，而这又根据\ref{eq:6.69}可以和自由李代数的结构联系起来，所以振幅所满足的性质应当完全可以从组合学的意义上看出。
+
+首先是KK关系，\ref{schocker}
+
+其次是BCJ关系
 \section{利用纯旋量超弦构造Super-Yang-Mills理论的树图BCJ分子}
