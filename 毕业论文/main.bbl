@@ -1,4 +1,4 @@
-\begin{thebibliography}{102}
+\begin{thebibliography}{105}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -422,9 +422,10 @@ ZEE A.
 \newblock {Group Theory in a Nutshell for Physicists}\allowbreak[M].
 \newblock USA: Princeton University Press, 2016.
 
-\bibitem[FEG(2020)]{FEGER2020107490}
-Lieart 2.0 – a mathematica application for lie algebras and representation
-  theory\allowbreak[J/OL].
+\bibitem[Feger et~al.(2020)Feger, Kephart, and Saskowski]{FEGER2020107490}
+FEGER R, KEPHART T~W, SASKOWSKI R~J.
+\newblock Lieart 2.0 – a mathematica application for lie algebras and
+  representation theory\allowbreak[J/OL].
 \newblock Computer Physics Communications, 2020, 257: 107490.
 \newblock
   \url{https://www.sciencedirect.com/science/article/pii/S0010465520302290}.
@@ -600,8 +601,9 @@ MAFRA C~R, SCHLOTTERER O, STIEBERGER S.
 
 \bibitem[Reutenauer(2003)]{REUTENAUER2003887}
 REUTENAUER C.
-\newblock Free lie algebras\allowbreak[M/OL]//\allowbreak
+\newblock \allowbreak[M/OL]//\allowbreak
 HAZEWINKEL M.
+\newblock Handbook of Algebra: Vol.~3\quad {Free lie algebras}.
 \newblock North-Holland, 2003: 887-903.
 \newblock
   \url{https://www.sciencedirect.com/science/article/pii/S157079540380075X}.
@@ -687,5 +689,24 @@ BADGER S, BIEDERMANN B, HACKL L, et~al.
   recursion}\allowbreak[J/OL].
 \newblock Phys. Rev. D, 2013, 87\allowbreak (3): 034011.
 \newblock DOI: \doi{10.1103/PhysRevD.87.034011}.
+
+\bibitem[Srednicki(2007)]{Srednicki:2007qs}
+SREDNICKI M.
+\newblock {Quantum field theory}\allowbreak[M/OL].
+\newblock Cambridge University Press, 2007.
+\newblock DOI: \doi{10.1017/CBO9780511813917}.
+
+\bibitem[Mafra et~al.(2011)Mafra, Schlotterer, and Stieberger]{Mafra:2011kj}
+MAFRA C~R, SCHLOTTERER O, STIEBERGER S.
+\newblock {Explicit BCJ Numerators from Pure Spinors}\allowbreak[J/OL].
+\newblock JHEP, 2011, 07: 092.
+\newblock DOI: \doi{10.1007/JHEP07(2011)092}.
+
+\bibitem[Mafra(2016)]{Mafra:2016ltu}
+MAFRA C~R.
+\newblock {Berends-Giele recursion for double-color-ordered
+  amplitudes}\allowbreak[J/OL].
+\newblock JHEP, 2016, 07: 080.
+\newblock DOI: \doi{10.1007/JHEP07(2016)080}.
 
 \end{thebibliography}

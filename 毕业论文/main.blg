@@ -24,53 +24,46 @@ Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ref/bachelor-refs.bib
-Repeated entry---line 1939 of file ref/bachelor-refs.bib
- : @article{DelDuca:1999rs
- :                        ,
-I'm skipping whatever remains of this entry
-Warning--empty author in FEGER2020107490
-`booktitle' is a missing field, not a string, for entry REUTENAUER2003887
-while executing---line 2449 of file gbt7714-numerical.bst
-Warning--empty booktitle in REUTENAUER2003887
-You've used 102 entries,
+Warning--empty title in REUTENAUER2003887
+You've used 105 entries,
             5374 wiz_defined-function locations,
-            1773 strings with 24309 characters,
-and the built_in function-call counts, 703775 in all, are:
-= -- 17654
-> -- 76391
-< -- 96547
-+ -- 27371
-- -- 4920
-* -- 6079
-:= -- 98268
-add.period$ -- 388
-call.type$ -- 102
-change.case$ -- 655
-chr.to.int$ -- 23694
-cite$ -- 105
-duplicate$ -- 2578
-empty$ -- 11067
-format.name$ -- 2344
-if$ -- 183394
+            1790 strings with 24669 characters,
+and the built_in function-call counts, 729160 in all, are:
+= -- 18240
+> -- 79216
+< -- 100113
++ -- 28365
+- -- 5082
+* -- 6276
+:= -- 101833
+add.period$ -- 402
+call.type$ -- 105
+change.case$ -- 678
+chr.to.int$ -- 24564
+cite$ -- 106
+duplicate$ -- 2651
+empty$ -- 11413
+format.name$ -- 2436
+if$ -- 189987
 int.to.chr$ -- 1
-int.to.str$ -- 103
+int.to.str$ -- 106
 missing$ -- 0
-newline$ -- 612
-num.names$ -- 305
-pop$ -- 34489
+newline$ -- 632
+num.names$ -- 317
+pop$ -- 35759
 preamble$ -- 1
-purify$ -- 102
+purify$ -- 105
 quote$ -- 0
-skip$ -- 73405
+skip$ -- 76075
 stack$ -- 0
-substring$ -- 36464
-swap$ -- 110
-text.length$ -- 1945
+substring$ -- 37743
+swap$ -- 113
+text.length$ -- 2009
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1018
-warning$ -- 2
-while$ -- 2141
+type$ -- 1047
+warning$ -- 1
+while$ -- 2215
 width$ -- 0
-write$ -- 1520
-(There were 2 error messages)
+write$ -- 1569
+(There was 1 warning)

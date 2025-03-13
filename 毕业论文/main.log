@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  13 MAR 2025 05:21
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  14 MAR 2025 05:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1928,43 +1928,24 @@ Package amsmath Warning: Bracket group [A\otimes B,Q] at formula start!
 
 
 [74]
-Underfull \vbox (badness 5519) has occurred while \output is active []
-
-
 
 [75]
 
 Package amsmath Warning: Bracket group [[12,34] at formula start!
 (amsmath)                It could be a misspelled positional argument.
 (amsmath)                If it belongs to the formula add a \relax in
-(amsmath)                front to hide it on input line 297.
+(amsmath)                front to hide it on input line 302.
 
 
 
 [76]
-
-LaTeX Warning: Reference `fig6.7' on page 77 undefined on input line 323.
-
-File: figs/fig15.pdf Graphic file (type pdf)
-<use figs/fig15.pdf>
-
-Overfull \hbox (6.34805pt too wide) in paragraph at lines 326--327
- [][] 
- []
-
-File: figs/fig15.pdf Graphic file (type pdf)
-<use figs/fig15.pdf>
-
-Overfull \hbox (6.34805pt too wide) in paragraph at lines 332--333
- [][] 
- []
-
+File: figs/fig13.pdf Graphic file (type pdf)
+<use figs/fig13.pdf>
+File: figs/fig14.pdf Graphic file (type pdf)
+<use figs/fig14.pdf>
 
 
 [77]
-Underfull \vbox (badness 6708) has occurred while \output is active []
-
-
 
 [78]
 File: figs/fig15.pdf Graphic file (type pdf)
@@ -1977,24 +1958,24 @@ File: figs/fig15.pdf Graphic file (type pdf)
 
 [81]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 523.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 523.
-
-
-
 [82]
-Overfull \hbox (26.14003pt too wide) detected at line 546
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 530.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 530.
+
+
+Overfull \hbox (30.39009pt too wide) detected at line 554
 [][][][]
  []
 
 
 
 [83]
-Overfull \hbox (10.52763pt too wide) detected at line 576
+Overfull \hbox (10.52763pt too wide) detected at line 584
 [][][][][] \OML/cmm/m/it/12.045 dz[]dz[] [] \OMS/cmsy/m/n/12.045 j\OML/cmm/m/it
 /12.045 z[]\OMS/cmsy/m/n/12.045 j[][][] \OT1/cmr/m/n/12.045 = [][] \OML/cmm/m/i
 t/12.045 dz[]dz[] [] \OMS/cmsy/m/n/12.045 j\OML/cmm/m/it/12.045 z[]\OMS/cmsy/m/
@@ -2010,11 +1991,43 @@ File: figs/fig16.pdf Graphic file (type pdf)
 
 [85]
 
-[86])
+[86]
+Overfull \hbox (21.17325pt too wide) detected at line 719
+[]
+ []
 
-[87] (./main.bbl
 
-[88
+
+[87]
+
+[88]
+Overfull \hbox (16.2769pt too wide) detected at line 742
+[][][][][] [] []\OT1/cmr/m/n/12.045 (1\OML/cmm/m/it/12.045 ; A; n; []; n \OMS/c
+msy/m/n/12.045 ^^@ \OT1/cmr/m/n/12.045 1) = (\OMS/cmsy/m/n/12.045 ^^@\OT1/cmr/m
+/n/12.045 1)[] [][] \OML/cmm/m/it/12.045 dz[]dz[] [] dz[]z[]z[]
+ []
+
+
+Overfull \hbox (10.9541pt too wide) detected at line 760
+[][][]\OMS/cmsy/m/n/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 P\OT1/c
+mr/m/n/12.045 ) = []\OMS/cmsy/m/n/12.045 h\OML/cmm/m/it/12.045 V[]V[]V[]\OMS/cm
+sy/m/n/12.045 i\OT1/cmr/m/n/12.045 (\OMS/cmsy/m/n/12.045 ^^@\OT1/cmr/m/n/12.045
+ 1)[]\OML/cmm/m/it/12.045 Z\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 P\OMS/cmsy
+/m/n/12.045 j\OT1/cmr/m/n/12.045 1\OML/cmm/m/it/12.045 ; A; n; B; n \OMS/cmsy/m
+/n/12.045 ^^@ \OT1/cmr/m/n/12.045 1) + [](23 [] \OML/cmm/m/it/12.045 n \OMS/cms
+y/m/n/12.045 ^^@ \OT1/cmr/m/n/12.045 2)
+ []
+
+
+
+[89])
+
+[90] (./main.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[91
 
 
 
@@ -2023,28 +2036,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[89]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[90]
+[92]
 Underfull \hbox (badness 2073) in paragraph at lines 217--223
 []\TU/TimesNewRoman(0)/m/n/12.045 SCHLOTTERER O.  The number theory of superstr
 ing amplitudes[C]//
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[91]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[92]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2064,24 +2062,34 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[96])
+[96]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [97]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[98])
+
+[99]
 \openout2 = `pages/acknowledgement.aux'.
 
  (./pages/acknowledgement.tex
 
-[98
+[100
 
 
 ])
 
-[99]
+[101]
 \openout2 = `pages/appendixA.aux'.
 
  (./pages/appendixA.tex
 
-[100
+[102
 
 
 
@@ -2133,9 +2141,9 @@ m/m/it/12.045 N[] \OT1/cmr/m/n/12.045 =: \OMS/cmsy/m/n/12.045 ^^@[]\OT1/cmr/m/n
 
 
 
-[101])
+[103])
 
-[102]
+[104]
 \openout2 = `pages/appendixB.aux'.
 
  (./pages/appendixB.tex
@@ -2154,7 +2162,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[103
+[105
 
 
 
@@ -2174,9 +2182,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[104])
+[106])
 
-[105] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
+[107] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
 (./pages/chapter3.aux) (./pages/chapter4.aux) (./pages/chapter5.aux)
 (./pages/chapter6.aux) (./pages/acknowledgement.aux) (./pages/appendixA.aux)
 (./pages/appendixB.aux))
@@ -2184,18 +2192,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2022/08/05>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 39865 strings out of 474240
- 901688 string characters out of 5745918
+ 39907 strings out of 474240
+ 902428 string characters out of 5745918
  1949560 words of memory out of 5000000
- 61704 multiletter control sequences out of 15000+600000
+ 61744 multiletter control sequences out of 15000+600000
  589354 words of font info for 240 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,19n,121p,2041b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (117 pages).
+Output written on main.pdf (119 pages).

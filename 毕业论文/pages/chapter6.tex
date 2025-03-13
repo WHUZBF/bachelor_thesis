@@ -253,7 +253,12 @@ Dynkin括号递归定义为：
 	\label{eq:6.38}
 	K_{A\ell(B)C}+K_{B\ell(A)C}=0,\quad A,B\neq\varnothing,\quad\forall C
 \end{equation}
-这样的超场被称作处在BCJ规范的超场，不加任何符号以区分Lorenz等规范下超场。本节要介绍的混合规范本身并不是计算上会用到的规范，更应该看作是为了构造BCJ规范超场的一种定义：
+当$B=i$时上式简化为BCJ恒等式：
+\begin{equation}
+	\label{eq:6.39}
+	K_{AiB}=-K_{i\ell(A)B},\quad A\neq\emptyset,\forall B
+\end{equation}
+这其实就是$K_P\leftrightarrow c_P$的“色-运动学”对偶下要求$K_P$也满足Jacobi恒等式。这样的超场被称作处在BCJ规范的超场，不加任何符号以区分Lorenz等规范下超场。本节要介绍的混合规范本身并不是计算上会用到的规范，更应该看作是为了构造BCJ规范超场的一种定义：
 \begin{equation}
 	\begin{aligned}
 		\check{A}_\alpha^{[P,  {Q}]}&=\frac{1}{2}[A_\alpha^  {Q}(k_Q\cdot A_P)+A_Q^m(\gamma_mW_P)_\alpha-(P\leftrightarrow Q)]
@@ -320,16 +325,16 @@ BCJ规范下的超场满足下面的场方程，这里我们利用$Q=\lambda D$�
 \end{equation}
 同样，接触项完全由$C$算符控制，BCJ规范下场强满足和Lorenz规范相同的关系\ref{eq:6.35}。虽然从混合规范出发构造BCJ规范已经如此复杂，但是直接从Lorenz规范出发更加复杂\cite{Bridges:2019siz}。由于BCJ规范下超场有非常丰富的对称性，所以后续计算都在BCJ规范下进行。
 \subsection{Berends–Giele流}
-不同于现代散射振幅理论使用在壳BCFW递推高效计算振幅，最早的振幅递推计算，即所谓离壳递推是基于Berends-Giele流技术\cite{Berends:1987me}。这一思想十分简单，如图\ref{fig:6.6}所示将$n+1$条外腿的散射振幅$\mathcal{A}_{n+1}$变成离壳传播子，这样就定义了$n$点BG流。显然其可以用更少点BG流递推构造，如图\ref{fig6.7}。
+不同于现代散射振幅理论使用在壳BCFW递推高效计算振幅，最早的振幅递推计算，即所谓离壳递推是基于Berends-Giele流技术\cite{Berends:1987me}。这一思想十分简单，如图\ref{fig:6.6}所示将$n+1$条外腿的散射振幅$\mathcal{A}_{n+1}$变成离壳传播子，这样就定义了$n$点BG流。显然其可以用更少点BG流递推构造，如图\ref{fig:6.7}。
 \begin{figure}[htbp]
 	\centering
-	\includegraphics{figs/fig15.pdf}
+	\includegraphics[width=.5\linewidth]{figs/fig13.pdf}
 	\caption{BG流的定义}
 	\label{fig:6.6}
 \end{figure}
 \begin{figure}[htbp]
 	\centering
-	\includegraphics{figs/fig15.pdf}
+	\includegraphics[width=\linewidth]{figs/fig14.pdf}
 	\caption{BG流的递推关系}
 	\label{fig:6.7}
 \end{figure}
@@ -350,7 +355,7 @@ BCJ规范下的超场满足下面的场方程，这里我们利用$Q=\lambda D$�
 \end{equation}
 从物理上看无非就是在壳粒子取平面波拟设，$T$是在壳粒子带的色因子，而前面的$A$便是一条外腿离壳得来的平面波。所以可以通过平面波拟设解方程的方式得到BG流。
 
-用同样的方法解（非线性）超场方程\ref{eq:5.43}可以得到SYM的BG流：\cite{Lee:2015upy}
+用同样的方法解（非线性）超场方程\ref{eq:5.43}可以得到SYM的BG流$\mathcal{K}_P=\frac{1}{s_P}\sum\limits_{XY=P}\mathcal{K}_{[X,Y]}$：\cite{Lee:2015upy}
 \begin{equation}
 	\begin{aligned}
 		&\mathcal{A}_{\alpha}^{[P,Q]}=\frac{1}{2}\left[\mathcal{A}_\alpha^  {Q}(k_Q\cdot\mathcal{A}_P)+\mathcal{A}_  {Q}^m(\gamma_m\mathcal{W}_P)_\alpha-(P\leftrightarrow  {Q})\right],\\&\mathcal{A}_{[P,  {Q}]}^m=\frac{1}{2}\left[\mathcal{A}_Q^m(k_Q\cdot\mathcal{A}_P)+\mathcal{A}_n^Q\mathcal{F}_P^{mn}+(\mathcal{W}_P\gamma^m\mathcal{W}_  {Q})-(P\leftrightarrow  Q)\right],\\&\mathcal{W}_{[P,  {Q}]}^{\alpha}=\frac{1}{2}\left[\mathcal{W}_Q^\alpha(k_Q\cdot\mathcal{A}_P)+\mathcal{W}_Q^{m\alpha}\mathcal{A}_P^m+\frac{1}{2}\mathcal{F}_P^{rs}(\gamma_{rs}\mathcal{W}_Q)^\alpha-(P\leftrightarrow  Q)\right],\\&\mathcal{F}_{[  {P},  {Q}]}^{mn}=\frac{1}{2}\left[\mathcal{F}_{  {Q}}^{mn}(k_{  {Q}}\cdot\mathcal{A}_{  {P}})+\mathcal{F}_{  {Q}}^{p|mn}\mathcal{A}_{p}^{p}+\mathcal{F}_{  {Q}}^{[m}{}_{r}\mathcal{F}_{P}^{n]r}+2(\mathcal{W}_{  {Q}}\gamma^{[m}\mathcal{W}_{P}^{n]})-(P\leftrightarrow  Q)\right]
@@ -430,6 +435,7 @@ BCJ规范下的超场满足下面的场方程，这里我们利用$Q=\lambda D$�
 \end{equation}
 $S$括号有下面的性质：
 \begin{equation}
+	\label{eq:6.62}
 	\{A\shuffle B,C\}=0,\quad b(\{P,Q\})=[b(P),b(Q)],\quad \sum_{XY=P}\{X,Y\}\sim s_PP
 \end{equation}
 而且$S$括号实际上是$C$映射的伴随算子：
@@ -504,7 +510,8 @@ KLT映射和$b$映射之间互逆，也就是说
 \end{equation}
 同样利用\ref{eq:6.76}类似的基底展开式可以证明下面的Schocker恒等式：
 \begin{equation}
-	B i A \sim (-1)^{|B|} i A \shuffle\tilde{B}
+	\label{eq:schocker}
+	B i A \sim (-1)^{|B|} i (A \shuffle\tilde{B})
 \end{equation}
 再利用\ref{eq:6.69}的对应，只有$b$才能除去等价模掉的$R\shuffle S$的影响（\ref{eq:6.58}），给出：
 \begin{equation}
@@ -533,18 +540,19 @@ KLT映射和$b$映射之间互逆，也就是说
 \begin{equation}
 	V_1\cdots U_i\cdots V_{n-1}V_n\cong\sum_{AB=23...n-2}(V_{1A}\mathcal{Z}_{1A})(V_{n-1,\tilde{B}}\mathcal{Z}_{n-1,\tilde{B}})V_n+\mathrm{perm}(2,3,...,n-2)
 \end{equation}
-其中Park-Taylor因子定义为：
+其中$\mathcal{Z}$因子定义为：
 \begin{equation}
-	\mathcal{Z}_{123...p}:=\frac{1}{z_{12}z_{23}\ldots z_{p-1,p}}
+	\label{PT}
+	\mathcal{Z}_{123...p}:=\frac{1}{z_{12}z_{23}\ldots z_{p-1,p}}=z_{p1}\cdot\mathrm{PT}(1,2,\cdots,p)
 \end{equation}
 类似在RNS超弦振幅计算中所做的，对关联函数取不同盘面顺序积分得到相应的色序振幅，只不过我们这里还需要额外对零模积分：
 \begin{equation}
 	\label{eq:6.85}
 \boxed{
-		\mathcal{A}_n(P)=(2\alpha^{\prime})^{n-3}\int d\mu_P^n\sum_{AB=23...n-2}\langle\left(V_{1A}\mathcal{Z}_{1A}\right)(V_{n-1,\tilde{B}}\mathcal{Z}_{n-1,\tilde{B}})V_n\rangle+\mathrm{perm}(23\ldots n-2)
+		\mathcal{A}_n(P)=(2\alpha^{\prime})^{n-3}\int d\mu_P^n\sum_{AB=23...n-2}\langle\left(V_{1A}\mathcal{Z}_{1A}\right)(V_{(n-1)\tilde{B}}\mathcal{Z}_{n-1,\tilde{B}})V_n\rangle+\mathrm{perm}(23\ldots n-2)
 }
 \end{equation}
-这里积分测度为带Koba-Nielsen因子的$SL(2,\mathbb{C})$不变测度：\footnote{似乎和前面$\S$4计算出来的KN因子不同，这是因为我们选取了$ik\to k$的符号约定，所以$s\to -s$。}
+这里积分测度为带Koba-Nielsen因子的$SL(2,\mathbb{R})$不变测度：\footnote{似乎和前面$\S$4计算出来的KN因子不同，这是因为我们选取了$ik\to k$的符号约定，所以$s\to -s$。}
 \begin{equation}
 	\int d\mu_P^n:=\int_{D(P)}dz_2dz_3\cdots dz_{n-2}\prod_{1\leq i<j}^{n-1}|z_{ij}|^{-2\alpha^{\prime}s_{ij}}
 \end{equation}
@@ -647,7 +655,7 @@ $\gamma$是Euler常数，$\zeta$是黎曼$\zeta$函数，对四点情况展开\r
 		\sum_{XY=P}Q(M_XM_Y)&=\sum_{XY=P}\sum_{RS=X}M_RM_SM_Y-\sum_{XY=P}\sum_{RS=Y}M_XM_RM_S\\&=\sum_{RSY=P}\left(M_RM_SM_Y-M_RM_SM_Y\right)=0
 	\end{aligned}
 \end{equation}
-所以\ref{eq:6.96}是闭的，虽然看似根据\ref{eq:6.71}$\sum_{XY=P}M_XM_Y$是恰当的，但是由于$M_P$本身的定义包含$s_P$因子，所以对于这里$s_P=k_n^2=0$，也就是在壳时\ref{eq:6.71}不是良定义的，所以在壳时无法将$\sum_{XY=P}M_XM_Y$看作是恰当的，但离壳时可以。所以用\ref{eq:6.96}形式写下的算符明显地存在于纯旋量超空间的上同调群中。但是这种表述并没有明显地满足循环对称的要求，现在我们来证明循环变换指标只会导致一个BRST恰当项的差别，在关联函数的意义下为$0$。
+所以\ref{eq:6.96}是闭的，虽然看似根据\ref{eq:6.71}$E_P:=\sum_{XY=P}M_XM_Y$是恰当的，但是由于$M_P$本身的定义包含$s_P$因子，所以对于这里$s_P=k_n^2=0$，也就是在壳时\ref{eq:6.71}不是良定义的，所以在壳时无法将$\sum_{XY=P}M_XM_Y$看作是恰当的，但离壳时可以。所以用\ref{eq:6.96}形式写下的算符明显地存在于纯旋量超空间的上同调群中。但是这种表述并没有明显地满足循环对称的要求，现在我们来证明循环变换指标只会导致一个BRST恰当项的差别，在关联函数的意义下为$0$。
 
 
 
@@ -669,13 +677,122 @@ $\gamma$是Euler常数，$\zeta$是黎曼$\zeta$函数，对四点情况展开\r
 \end{align*}
 递推起点为$\mathfrak{e}_i^m:=e_i^m$，$\mathfrak{X}_i^\alpha:=\chi_i^\alpha$。再利用附录\ref{appendix:B}给出的零模积分公式可以得到：
 \begin{equation}
+	\label{eq:6.105}
 	\langle M_XM_YM_Z\rangle=\frac{1}{2}\mathfrak{e}_X^m\mathfrak{f}_Y^{mn}\mathfrak{e}_Z^n+(\mathfrak{X}_X\gamma_m\mathfrak{X}_Y)e_Z^m+\mathrm{cyc}(XYZ)
 \end{equation}
-从数值运算的角度从BG流出发的这个公式要快不少。\cite{Badger:2012uz}
+从数值运算的角度，依赖于BG流离壳递推的这个公式要快不少。\cite{Badger:2012uz}
 
 由于我们将振幅表述为了多粒子顶角算符，而这又根据\ref{eq:6.69}可以和自由李代数的结构联系起来，所以振幅所满足的性质应当完全可以从组合学的意义上看出。
 
-首先是KK关系，\ref{schocker}
+首先是KK关系，尽管就振幅而言，由于$s_P=0$，$E_P\neq QM_P$，但是单纯从组合学上说$E_P$应当和$M_P$一样满足相同的自由李代数恒等式。比如$E_{R\shuffle S} = 0$，根据\ref{schocker}同样对$E$得到：
+\begin{equation}
+	E_{PjQ}=(-1)^{|P|}E_{j(\tilde{P}\shuffle Q)}\Rightarrow A(P,1,Q,n)=(-1)^{|P|}A(1,\tilde{P}\shuffle Q,n)
+\end{equation}
+这正是场论振幅的KK关系\ref{KK}。单纯$E_{R\shuffle S} = 0$能给出下面的振幅恒等式：
+\begin{equation}
+	A_n(R\shuffle S,n) = 0
+\end{equation}
+一种特殊情况是$A(i\shuffle P,n)=0$，这正是光子解耦公式：\cite{Srednicki:2007qs}
+\begin{equation}
+	A(2134\cdots n)+ A(2314\cdot n)+\cdots A(234\cdots n 1) = 0
+\end{equation}
 
-其次是BCJ关系
+其次是BCJ关系，利用\ref{eq:6.62}第二个等式，由于$b(P)$和$b(Q)$最多只会贡献$1/(s_Ps_Q)$的极点，所以$b(\{P,Q\})$不包含极点$s_{PQ}$，所以$M_{\{P,Q\}}=V_{b(\{P,Q\})}$也就不包含极点$s_{PQ}$。这意味着$E_{\{P,Q\}}$是BRST恰当的，这意味着：
+\begin{equation}
+	\label{eq:6.109}
+	\langle E_{\{P,Q\}}V_n\rangle = A_n(\{P,Q\},n) = 0
+\end{equation}
+这其实就是BCJ关系，为了与\ref{bcj}比对，首先对\ref{bcj}变形，取置换$1\leftrightarrow2$得到：
+\begin{equation}
+	\begin{aligned}
+		0=&\sum_{i=3}^n\sum_{j=3}^i s_{1j}A(2,3,\cdots ,i,1, i+1,\cdots,n)\\
+		=&\sum_{i=2}^{n-1}\sum_{j=2}^is_{1j}A(2,3,\cdots,i,1,i+1,\cdots ,n)\\
+		&-s_{12}\sum_{i=3}^{n-1}A(2,3,\cdots ,i,1,i+1,\cdots, n )+\cancelto{-s_{12}}{k_1\cdots k_{34\cdots n}}A(2,3,4,\cdots ,n)\\
+		=&\sum_{XY=23...n-1}k_1\cdot k_XA(X,1,Y,n)
+	\end{aligned}
+\end{equation}
+第三个等号利用光子解耦公式后面两项直接为$0$，第一项改写为自由李代数表达。利用\ref{eq:schocker}得到下面的等价关系：\footnote{等价之间相差的$R\shuffle S$由于$E_{R\shuffle S} = 0$，不会对振幅有贡献。}
+\begin{align*}
+		\sum_{RS=Q}k_i\cdot k_SRiS&\sim\sum_{RS=Q}k_i\cdot k_Si(\tilde{R}\shuffle S)(-1)^{|R|}\\&\sim\sum_{RjkS=Q}k_i\cdot k_{kS}i(\widetilde{Rj}\shuffle kS)(-1)^{|R|+1}\\&\sim\sum_{RjkS=Q}\left[k_i\cdot k_{kS}ij(\tilde{R}\shuffle kS)(-1)^{|R|+1}+k_i\cdot k_{kS}ik(\widetilde{Rj}\shuffle S)(-1)^{|R|+1}\right]\\
+		&\sim\sum_{RjS=Q}-k_i\cdot k_Sij(\tilde{R}\shuffle S)(-1)^{|R|}+\sum_{RjS=Q}k_i\cdot k_{jS}ij(\tilde{R}\shuffle S)(-1)^{|R|}\\&\sim\sum_{RjS=Q}k_i\cdot k_jij(\tilde{R}\shuffle S)(-1)^{|R|}
+		=\{i,Q\}
+\end{align*}
+选取\ref{eq:6.109}中$P=1$，$Q=23\ldots n-1$，利用上面得到的等价关系立刻得到：
+\begin{equation}
+	\begin{aligned}
+		\mathrm{0}&=-A(\{1,Q\},n)=-\sum_{XY=Q}k_1\cdot k_YA(X,1,Y,n)\\&=\sum_{XY=Q}k_1\cdot k_XA(X,1,Y,n)+\sum_{XY=Q}k_1\cdot k_nA(X,1,Y,n)\\&=\sum_{XY=Q}k_1\cdot k_XA(X,1,Y,n)
+	\end{aligned}
+\end{equation}
+这正是前面恒等变形后的BCJ关系。
 \section{利用纯旋量超弦构造Super-Yang-Mills理论的树图BCJ分子}
+双自伴标量理论振幅\footnote{拉氏量为：\[\mathcal{L}_{\phi^3}=\frac{1}{2}\partial_m\Phi_{i|a}\partial^m\Phi_{i|a}+\frac{1}{3!}f_{ijk}\tilde{f}_{abc}\Phi_{i|a}\Phi_{j|b}\Phi_{k|c}\]}有下面的形式：
+\begin{equation}
+	M_n^{\phi^3}=\sum_{i\in\Gamma_n}\frac{c_i\tilde{c_i}}{D_i}=\sum_{P,Q\in S_{n-2}}c_{1|P|n}m(1,P,n|1,Q,n)\tilde{c}_{1|Q|n}
+\end{equation}
+其中第二个等号利用Jacobi恒等式转换到了DDM基底，第\ref{chap:4}章给出了$m(P|Q)$的计算方法\footnote{只需要去掉分母中的$\sin$和$\tan$，而且接触项全部无贡献。}。如果$\{N_i\}$是BCJ分子，由于上式第二个等号只用到了Jacobi恒等式，所以理应对于BCJ分子表述的振幅也能如上式一样化简：
+\begin{equation}
+	\mathcal{A}_n^\mathrm{gauge}=\sum_{P,Q\in S_{n-2}}c_{1|P|n}m(1,P,n|1,Q,n)N_{1|Q|n}
+\end{equation}
+在DDM基底下这些$N_i$是线性无关的，所以只要我们把振幅写成了上面的形式，也就能直接读出对应的BCJ分子，而纯旋量超弦很容易做到这一点。
+
+利用$\mathcal{Z}$和Park-Taylor因子之间的关系\ref{PT}不难发现：
+\begin{equation}
+	\label{eq:6.114}
+	\int_{D(P)}\frac{dz_1\mathrm{~}dz_2\mathrm{~}\cdots\mathrm{~}dz_n}{\mathrm{vol}(\mathrm{SL}_2(\mathbb{R}))}\operatorname{PT}(1,A,n,\tilde{B},n-1)=(-1)^{|B|-1}\int_{D(P)}dz_2dz_3\ldots dz_{n-2}z_{1A}z_{n-1,B}
+\end{equation}
+负号产生来自于$|z|/z\sim\pm 1$，其中$SL(2,\mathbb{R})$不变测度定义为：\footnote{前面的因子形式上看来自于$c$鬼场的贡献，但注意纯旋量超弦是没有$c$鬼场的，前面的一系列计算也能看出未引入过这个因子，这里纯粹是为了让$Z(P|Q)$具有$SL(2,\mathbb{R})$不变性而人为引入的因子。}
+\begin{equation}
+	\int_{D(P)}\frac{dz_1dz_2\cdots dz_n}{\mathrm{vol}(\mathrm{SL}_2(\mathbb{R}))}=|z_{1,n-1}z_{1,n}z_{n-1,n}|\int_{D(P)}dz_2dz_3\ldots dz_{n-2}
+\end{equation}
+定义$Z$积分：
+\begin{equation}
+	Z(P|Q):=(2\alpha^{\prime})^{n-3}\int_{D(P)}\frac{dz_1dz_2\cdots dz_n}{\mathrm{vol}(\mathrm{SL}_2(\mathbb{R}))}{\prod_{i<j}^n|z_{ij}|^{-2\alpha^{\prime}s_{ij}}}\mathrm{PT}(Q)
+\end{equation}
+这个积分是$SL(2,\mathbb{R})$不变的，而且有和弦振幅类似的形式，所以似乎也能够解释为某种理论的振幅，实际上，在$\alpha'\to 0$的极限下它就是双自伴$\phi^3$理论的色序振幅：\cite{Cachazo:2013iea}
+\begin{equation}
+	\label{eq:6.117}
+	\lim_{\alpha'\to 0}Z(P|Q) = m(P|Q)
+\end{equation}
+利用\ref{eq:6.114}可以把\ref{eq:6.85}改写成如下形式：
+\begin{equation}
+	\label{eq:118}
+	\mathcal{A}_n(P)=\sum_{AB=23\cdots n-2}\langle V_{1A}V_{(n-1)\tilde{B}}V_n\rangle(-1)^{|B|-1}Z(P|1,A,n,B,n-1)+\mathrm{perm}(23\cdots n-2)
+\end{equation}
+再利用场论极限\ref{eq:6.117}我们立刻得到固定外腿$1$和$n-1$的DDM基底下的BCJ分子：
+\begin{equation}
+	\label{eq:6.119}
+\boxed{
+		N_{1|XnY|n-1}=(-1)^{|Y|-1}\langle V_{1X}V_{(n-1)\tilde{Y}}V_n\rangle
+}
+\end{equation}
+其它DDM基底下的表达式只要对指标置换就能得到，知道了DDM基底下的BCJ分子，剩下的所有$\Gamma_n$对应的BCJ分子只需要利用图之间的Jacobi恒等式便可以得到。类似\ref{eq:6.105}，BCJ分子也可以用下式快速计算鬼场零模：
+\begin{equation}
+	\langle V_XV_YV_Z\rangle=\frac{1}{2}e_X^mf_Y^{mn}e_Z^n+(\chi_X\gamma_m\chi_Y)e_Z^m+\mathrm{cyc}(XYZ)
+\end{equation}
+文献\cite{Mafra:2011kj}中给出了不少显式计算结果。SYM振幅$A(P) = \langle E_P V_n \rangle$的公式因为$M_P=V_{b(P)}$，而$b(P)$天然对应平面二叉树求和，所以SYM振幅完全可以编码至平面二叉树求和，这正好是对色序振幅有贡献的三顶角图，比如图\ref{fig:6.8}对应：
+\begin{equation}
+	\label{eq:6.121}
+\begin{aligned}
+		A(12345)=&\frac{\langle V_{[[1,2],3]}V_4V_5\rangle}{s_{12}s_{123}}+\frac{\langle V_{[1,[2,3]]}V_4V_5\rangle}{s_{23}s_{123}}+\frac{\langle V_{[1,2]}V_{[3,4]}V_5\rangle}{s_{12}s_{34}}+\frac{\langle V_1V_{[2,[3,4]]}V_5\rangle}{s_{34}s_{234}}\\
+		&+\frac{\langle V_1V_{[[2,3],4]}V_5\rangle}{s_{23}s_{234}}
+\end{aligned}
+\end{equation}
+遗憾的是虽然这个形式下的SYM振幅明显地保留了二叉树结构，但是也丢失了色-运动学对偶结构，这一编码得到的分子并不是BCJ分子。如果直接用前面得到的BCJ分子\ref{eq:6.119}计算色序偏振幅会得到下面的结果：
+\begin{equation}
+\begin{aligned}
+		A(1,2,3,4,5)=&\frac{\langle V_{123}V_4V_5\rangle}{s_{12}s_{123}}+\frac{\langle V_{123}V_4V_5-V_{132}V_4V_5\rangle}{s_{23}s_{123}}-\frac{\langle V_{12}V_{43}V_5\rangle}{s_{12}s_{34}}+\frac{\langle V_1V_{432}V_5\rangle}{s_{34}s_{234}}\\
+		&+\frac{\langle V_1V_{432}V_5-V_1V_{423}V_5\rangle}{s_{34}s_{234}}
+\end{aligned}
+\end{equation}
+不难发现形式上与图\ref{eq:6.121}的结果差不多，文献\cite{Mafra:2016ltu}发现只需要将\ref{eq:6.121}$V_5$前面的两个无积分顶角算符之间的乘法替换为M\"{o}bius乘法即可实现非BCJ分子到BCJ分子的转换：\footnote{利用此公式时先要利用Baker恒等式把李多项式在$\ell(P)$基底下展开，然后利用BCJ恒等式\ref{eq:6.39}将$i$移到最前面。}
+\begin{equation}
+	V_{iAjB}\circ_{ij}V_C:=\sum_{\delta(B\dot{\ell}(C))=R\otimes S}V_{iAR}V_{jS},\quad V_{AiB}\circ_{ij}V_{CjD}:=V_{AiB}V_{CD}
+\end{equation}
+这里$i$和$j$可以任取，比如选取$\{1,n-1\}$：
+\begin{equation}
+\begin{aligned}
+		A(12345)=&\frac{\langle V_{[[1,2],3]}\circ_{14}V_4V_5\rangle}{s_{12}s_{123}}+\frac{\langle V_{[1,[2,3]]}\circ_{14}V_4V_5\rangle}{s_{23}s_{123}}+\frac{\langle V_{[1,2]}\circ_{14}V_{[3,4]}V_5\rangle}{s_{12}s_{34}}\\
+		&+\frac{\langle V_1\circ_{14}V_{[2,[3,4]]}V_5\rangle}{s_{34}s_{234}}+\frac{\langle V_1\circ_{14}V_{[[2,3],4]}V_5\rangle}{s_{23}s_{234}}
+\end{aligned}
+\end{equation}
+这样得到的振幅的分子自然就是BCJ分子，这是一种计算上的技巧，可以快速生成任意三顶角图的BCJ分子。这种算法将\ref{eq:6.96}和\ref{eq:118}的优势互补结合在了一起。
