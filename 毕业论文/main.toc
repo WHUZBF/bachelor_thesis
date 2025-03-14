@@ -46,7 +46,7 @@
 \contentsline {subsection}{\numberline {5.3.4}*$U(5)$分解}{59}{subsection.5.3.4}%
 \contentsline {section}{\numberline {5.4}纯旋量超弦振幅}{62}{section.5.4}%
 \contentsline {section}{\numberline {5.5}*非最小纯旋量超弦}{65}{section.5.5}%
-\contentsline {chapter}{\numberline {6\hspace {.3em}}BCJ分子的构造}{67}{chapter.6}%
+\contentsline {chapter}{\numberline {6\hspace {.3em}}盘面振幅与Bern-Carrasco-Johanson分子的构造}{67}{chapter.6}%
 \contentsline {section}{\numberline {6.1}色-运动学对偶}{67}{section.6.1}%
 \contentsline {section}{\numberline {6.2}纯旋量超弦关联函数计算}{71}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}多粒子超场}{73}{subsection.6.2.1}%
@@ -61,11 +61,12 @@
 \contentsline {chapter}{参考文献}{91}{chapter*.22}%
 \contentsline {chapter}{致谢}{101}{chapter*.23}%
 \contentsline {chapter}{\numberline {附录 A\hspace {.3em}}本论文主要使用到的算符乘积展开}{103}{appendix.A}%
-\contentsline {section}{\numberline {A1}自由CFT}{103}{section.A.1}%
+\contentsline {section}{\numberline {A1}玻色弦CFT}{103}{section.A.1}%
 \contentsline {subsection}{\numberline {A1.1}自由玻色CFT}{103}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A1.2}$bc$鬼场}{103}{subsection.A.1.2}%
-\contentsline {section}{\numberline {A2}$\mathcal {N}=1$ SCFT}{103}{section.A.2}%
-\contentsline {subsection}{\numberline {A2.1}自由费米CFT}{103}{subsection.A.2.1}%
-\contentsline {subsection}{\numberline {A2.2}$\beta \gamma $鬼场}{103}{subsection.A.2.2}%
-\contentsline {section}{\numberline {A3}纯旋量形式}{103}{section.A.3}%
-\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}一些常用的$\gamma $矩阵计算恒等式}{105}{appendix.B}%
+\contentsline {subsection}{\numberline {A1.2}$bc$鬼场}{104}{subsection.A.1.2}%
+\contentsline {section}{\numberline {A2}$\mathcal {N}=1$ SCFT}{104}{section.A.2}%
+\contentsline {subsection}{\numberline {A2.1}自由费米CFT}{104}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A2.2}$\beta \gamma $鬼场}{105}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A2.3}超空间表述}{106}{subsection.A.2.3}%
+\contentsline {section}{\numberline {A3}纯旋量形式}{108}{section.A.3}%
+\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}一些常用的$\gamma $矩阵计算恒等式}{109}{appendix.B}%

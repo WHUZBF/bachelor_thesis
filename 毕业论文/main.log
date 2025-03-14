@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  14 MAR 2025 05:45
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  15 MAR 2025 01:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1423,26 +1423,26 @@ Underfull \vbox (badness 7944) has occurred while \output is active []
 
  (./pages/chapter1.tex
 1
-)
+
 
 [1
 
 
-]
+])
+
+[2]
 \openout2 = `pages/chapter2.aux'.
 
  (./pages/chapter2.tex
+2
 
-[2
+
+[3
 
 
 
 
 ]
-2
-
-
-[3]
 
 Package fontspec Info: 
 (fontspec)             Font family 'LibertinusSerif-Regular.otf(0)' created
@@ -1745,7 +1745,7 @@ Overfull \hbox (27.04587pt too wide) detected at line 578
 [54]
 
 [55]
-Overfull \hbox (21.82251pt too wide) detected at line 175
+Overfull \hbox (21.82251pt too wide) detected at line 176
 [][][]\OT1/cmr/m/n/12.045 
 (\OML/cmm/m/it/12.045 X; ^^R; ^^U\OT1/cmr/m/n/12.045 ) = \OML/cmm/m/it/12.045 C
 \OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 X; ^^R\OT1/cmr/m/n/12.045 ) + \OML/cm
@@ -1759,7 +1759,7 @@ t/12.045 X; ^^R\OT1/cmr/m/n/12.045 ) + []
 
 
 [56]
-Underfull \hbox (badness 10000) in paragraph at lines 222--222
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
 [][][][]\TU/SimSun(0)/m/n/10.53937 这 里 使 用 $\OMS/cmsy/m/n/10.53937 
 $ \TU/SimSun(0)/m/n/10.53937 而 不 是 $\OMS/cmsy/m/n/10.53937 ^^B$ \TU/SimSun(0)/m
 /n/10.53937 是 为 了 提 醒 平 面 波 不 需 要 双 复 制，|  比 如 $\OML/cmm/m/it/10.53937 V\OT1/cm
@@ -1769,7 +1769,7 @@ r/m/n/10.53937 (\OML/cmm/m/it/10.53937 z; []\OT1/cmr/m/n/10.53937 ) =
 
 
 [57]
-Overfull \hbox (12.13605pt too wide) detected at line 278
+Overfull \hbox (12.13605pt too wide) detected at line 279
 [][][]\OML/cmm/m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 X; ^^R\
 OT1/cmr/m/n/12.045 ) = [] \OML/cmm/m/it/12.045 e[];  [][] \OT1/cmr/m/n/12.045 =
  [](\OML/cmm/m/it/12.045 ^^R[][]^^R\OT1/cmr/m/n/12.045 )\OML/cmm/m/it/12.045 k[
@@ -1779,27 +1779,27 @@ OT1/cmr/m/n/12.045 ) = [] \OML/cmm/m/it/12.045 e[];  [][] \OT1/cmr/m/n/12.045 =
 
 
 [58]
-Overfull \hbox (4.60686pt too wide) detected at line 286
+Overfull \hbox (4.60686pt too wide) detected at line 287
 [][][][][]
  []
 
 
-Overfull \hbox (23.46817pt too wide) detected at line 307
+Overfull \hbox (23.46817pt too wide) detected at line 308
 [][][][][]
  []
 
 
-Overfull \hbox (33.00641pt too wide) detected at line 322
+Overfull \hbox (33.00641pt too wide) detected at line 323
 [][][][][]
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 333.
+(hyperref)                removing `math shift' on input line 334.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 333.
+(hyperref)                removing `math shift' on input line 334.
 
 
 
@@ -1808,7 +1808,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [60]
 
 [61]
-Overfull \hbox (5.66498pt too wide) detected at line 418
+Overfull \hbox (5.66498pt too wide) detected at line 419
 [][][]\OML/cmm/m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 P\OT1/c
 mr/m/n/12.045 ) = [][] \OML/cmm/m/it/12.045 dz[][]dz[] [] dz[][]V[]\OT1/cmr/m/n
 /12.045 (\OML/cmm/m/it/12.045 z[]\OT1/cmr/m/n/12.045 )\OML/cmm/m/it/12.045 U[]\
@@ -1826,12 +1826,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [62]
-Overfull \hbox (15.43799pt too wide) detected at line 453
+Overfull \hbox (15.43799pt too wide) detected at line 454
 [][][][][]
  []
 
 
-Overfull \hbox (11.41612pt too wide) detected at line 463
+Overfull \hbox (11.41612pt too wide) detected at line 464
 [][][]\OMS/cmsy/m/n/12.045 F[] \OT1/cmr/m/n/12.045 := \OML/cmm/m/it/12.045 ik[]
 []\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^UA[]\OT1/cmr/m/n/12.045 (\OML/cmm
 /m/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))(\OML/cmm/m/it/12.045 ^^UA[]\OT1/cmr/m/n/
@@ -1848,7 +1848,7 @@ M[]W[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^R\OT1/cmr/m/n/12.045 ))[]
 
 
 [63]
-Overfull \hbox (10.0966pt too wide) detected at line 510
+Overfull \hbox (10.0966pt too wide) detected at line 511
 [][][]\OML/cmm/m/it/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^O[]; 
 ^^O[]; ^^O[]\OT1/cmr/m/n/12.045 ) \OMS/cmsy/m/n/12.045 ^^X ^^@[] [] []\OT1/cmr/
 m/n/12.045 (\OML/cmm/m/it/12.045 ^^U^^M[]^^R\OT1/cmr/m/n/12.045 )(\OML/cmm/m/it
@@ -1859,7 +1859,7 @@ mr/m/n/12.045 )(\OML/cmm/m/it/12.045 ^^R^^M[]^^R\OT1/cmr/m/n/12.045 )[]
 
 
 [64]
-Overfull \hbox (18.35793pt too wide) detected at line 551
+Overfull \hbox (18.35793pt too wide) detected at line 552
 [][][][][]
  []
 
@@ -1900,12 +1900,12 @@ File: figs/fig12.pdf Graphic file (type pdf)
 [69]
 
 [70]
-Overfull \hbox (3.53009pt too wide) detected at line 133
+Overfull \hbox (3.53009pt too wide) detected at line 134
 [][][][][]
  []
 
 
-Overfull \hbox (5.39966pt too wide) detected at line 150
+Overfull \hbox (5.39966pt too wide) detected at line 151
 [][][][][]
  []
 
@@ -1923,7 +1923,7 @@ Underfull \vbox (badness 5022) has occurred while \output is active []
 Package amsmath Warning: Bracket group [A\otimes B,Q] at formula start!
 (amsmath)                It could be a misspelled positional argument.
 (amsmath)                If it belongs to the formula add a \relax in
-(amsmath)                front to hide it on input line 217.
+(amsmath)                front to hide it on input line 218.
 
 
 
@@ -1934,7 +1934,7 @@ Package amsmath Warning: Bracket group [A\otimes B,Q] at formula start!
 Package amsmath Warning: Bracket group [[12,34] at formula start!
 (amsmath)                It could be a misspelled positional argument.
 (amsmath)                If it belongs to the formula add a \relax in
-(amsmath)                front to hide it on input line 302.
+(amsmath)                front to hide it on input line 303.
 
 
 
@@ -1961,21 +1961,21 @@ File: figs/fig15.pdf Graphic file (type pdf)
 [82]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 530.
+(hyperref)                removing `math shift' on input line 531.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 530.
+(hyperref)                removing `math shift' on input line 531.
 
 
-Overfull \hbox (30.39009pt too wide) detected at line 554
+Overfull \hbox (30.39009pt too wide) detected at line 555
 [][][][]
  []
 
 
 
 [83]
-Overfull \hbox (10.52763pt too wide) detected at line 584
+Overfull \hbox (10.52763pt too wide) detected at line 585
 [][][][][] \OML/cmm/m/it/12.045 dz[]dz[] [] \OMS/cmsy/m/n/12.045 j\OML/cmm/m/it
 /12.045 z[]\OMS/cmsy/m/n/12.045 j[][][] \OT1/cmr/m/n/12.045 = [][] \OML/cmm/m/i
 t/12.045 dz[]dz[] [] \OMS/cmsy/m/n/12.045 j\OML/cmm/m/it/12.045 z[]\OMS/cmsy/m/
@@ -1992,7 +1992,7 @@ File: figs/fig16.pdf Graphic file (type pdf)
 [85]
 
 [86]
-Overfull \hbox (21.17325pt too wide) detected at line 719
+Overfull \hbox (21.17325pt too wide) detected at line 720
 []
  []
 
@@ -2001,14 +2001,14 @@ Overfull \hbox (21.17325pt too wide) detected at line 719
 [87]
 
 [88]
-Overfull \hbox (16.2769pt too wide) detected at line 742
+Overfull \hbox (16.2769pt too wide) detected at line 743
 [][][][][] [] []\OT1/cmr/m/n/12.045 (1\OML/cmm/m/it/12.045 ; A; n; []; n \OMS/c
 msy/m/n/12.045 ^^@ \OT1/cmr/m/n/12.045 1) = (\OMS/cmsy/m/n/12.045 ^^@\OT1/cmr/m
 /n/12.045 1)[] [][] \OML/cmm/m/it/12.045 dz[]dz[] [] dz[]z[]z[]
  []
 
 
-Overfull \hbox (10.9541pt too wide) detected at line 760
+Overfull \hbox (10.9541pt too wide) detected at line 761
 [][][]\OMS/cmsy/m/n/12.045 A[]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 P\OT1/c
 mr/m/n/12.045 ) = []\OMS/cmsy/m/n/12.045 h\OML/cmm/m/it/12.045 V[]V[]V[]\OMS/cm
 sy/m/n/12.045 i\OT1/cmr/m/n/12.045 (\OMS/cmsy/m/n/12.045 ^^@\OT1/cmr/m/n/12.045
@@ -2037,12 +2037,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [92]
-Underfull \hbox (badness 2073) in paragraph at lines 217--223
-[]\TU/TimesNewRoman(0)/m/n/12.045 SCHLOTTERER O.  The number theory of superstr
-ing amplitudes[C]//
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2053,6 +2047,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [94]
+Underfull \hbox (badness 2073) in paragraph at lines 335--341
+[]\TU/TimesNewRoman(0)/m/n/12.045 SCHLOTTERER O.  The number theory of superstr
+ing amplitudes[C]//
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2097,39 +2097,51 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 附录 A
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 20.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 20.
-
+[103]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 21.
+(hyperref)                removing `math shift' on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 21.
+(hyperref)                removing `math shift' on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 25.
+(hyperref)                removing `math shift' on input line 74.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 25.
+(hyperref)                removing `math shift' on input line 74.
+
+
+
+[104]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 111.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gamma' on input line 25.
+(hyperref)                removing `\beta' on input line 111.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 25.
+(hyperref)                removing `\gamma' on input line 111.
 
 
-Overfull \hbox (7.11964pt too wide) detected at line 31
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 111.
+
+
+
+[105]
+
+[106]
+
+[107]
+Overfull \hbox (7.11964pt too wide) detected at line 216
 [][][]\OML/cmm/m/it/12.045 T[] \OT1/cmr/m/n/12.045 =: \OMS/cmsy/m/n/12.045 ^^@[
 ]\OT1/cmr/m/n/12.045 ^^E[]^^E[] \OMS/cmsy/m/n/12.045 ^^@ \OML/cmm/m/it/12.045 d
 [] @  []^^R[] \OT1/cmr/m/n/12.045 + \OML/cmm/m/it/12.045 w[] @  []^^U[] \OT1/cm
@@ -2139,11 +2151,9 @@ m/m/it/12.045 N[] \OT1/cmr/m/n/12.045 =: \OMS/cmsy/m/n/12.045 ^^@[]\OT1/cmr/m/n
 /12.045 w^^M[]^^U\OT1/cmr/m/n/12.045 ) :
  []
 
+)
 
-
-[103])
-
-[104]
+[108]
 \openout2 = `pages/appendixB.aux'.
 
  (./pages/appendixB.tex
@@ -2162,7 +2172,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[105
+[109
 
 
 
@@ -2182,9 +2192,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[106])
+[110])
 
-[107] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
+[111] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
 (./pages/chapter3.aux) (./pages/chapter4.aux) (./pages/chapter5.aux)
 (./pages/chapter6.aux) (./pages/acknowledgement.aux) (./pages/appendixA.aux)
 (./pages/appendixB.aux))
@@ -2194,12 +2204,12 @@ L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 39907 strings out of 474240
- 902428 string characters out of 5745918
- 1949560 words of memory out of 5000000
- 61744 multiletter control sequences out of 15000+600000
+ 39942 strings out of 474240
+ 901619 string characters out of 5745918
+ 1948560 words of memory out of 5000000
+ 61779 multiletter control sequences out of 15000+600000
  589354 words of font info for 240 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,19n,121p,2041b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (119 pages).
+Output written on main.pdf (123 pages).

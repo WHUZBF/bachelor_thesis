@@ -3,12 +3,51 @@
 \chapter{本论文主要使用到的算符乘积展开}
 \label{appendix:A}
 本附录给出一些振幅计算中经常用到的OPE以及能动张量等CFT相关约定，以供查阅。
-\section{自由CFT}
-本节对应玻色弦世界面CFT。
+\section{玻色弦CFT}
 \subsection{自由玻色CFT}
-$XX$包含四项
-
-另外，根据加倍技巧，对于BCFT，左右模之间的OPE不是$0$：
+作用量和能动张量定义为：
+\begin{equation}
+	\label{eq:A1}
+	S=\frac{1}{2\pi\alpha^{\prime}}\int d^2z\mathrm{~}\partial X^\mu\bar{\partial}X_\mu,\quad
+	T(z)=-\frac{1}{\alpha^{\prime}}:\partial X\partial X:
+\end{equation}
+根据运动方程$\partial\bar\partial X = 0$，$X(z,\bar z) = X(z) + \tilde X(\bar z)$ ，后面的讨论主要以左行模为主。OPE为：
+\begin{equation}
+	\label{eq:A2}
+	X^\mu(z_1,\bar{z}_1)X^\nu(z_2,\bar{z}_2)\sim-\frac{\alpha^\prime}{2}\eta^{\mu\nu}\ln|z_{12}|^2
+\end{equation}
+平面波$:e^{ik\cdot X}:$共形权为$\left(\frac{\alpha^{\prime}k^2}{4},\frac{\alpha^{\prime}k^2}{4}\right)$，涉及到$e^A$形式算符的缩并有如下比较常用的等式：
+\begin{equation}
+\wick{\c A(z): \c B^n:(w)}=nA(z)B(w):B^{n-1}(w):
+\end{equation}
+\begin{equation}
+	\wick{\c A(z):\c e^{B(w)}}:=A(z)B(w):e^{B(w)}:
+\end{equation}
+\begin{equation}
+	\begin{aligned}
+		\wick{:\c e^{A(z)}::\c e^{B(z)}:}&=\sum_{m,n,k}\frac{k!}{m!n!}\begin{pmatrix}m\\k\end{pmatrix}\begin{pmatrix}n\\k\end{pmatrix}[{A(z)}B(w)]^k:A^{m-k}(w)B^{n-k}(w):\\&=\exp\left\{\wick{\c A(z)\c B(w)}\right\}:e^{A(w)}e^{B(w)}:
+	\end{aligned}
+\end{equation}
+共形权$h$初级场$\phi$满足：
+\begin{equation}
+	T(z)\phi(w)\sim\frac{h}{(z-w)^{2}}\phi(w)+\frac{1}{z-w}\partial_{w}\phi(w)
+\end{equation}
+对应模展开：
+\begin{equation}
+[L_m,\phi_n]=((h-1)m-n)\phi_{m+n}
+\end{equation}
+$TT$ OPE为：
+\begin{equation}
+	\label{eq:A8}
+	\begin{aligned}
+		T(z)T(w)\sim\frac{c/2}{(z-w)^4}+\frac{2T(w)}{(z-w)^2}+\frac{\partial_wT(w)}{z-w}
+	\end{aligned}
+\end{equation}
+对于$D$维自由玻色场，$c= D$，上述$TT$ OPE对应Virasoro代数：
+\begin{equation}
+	[L_m,L_n] = (m-n)L_{m+n}+\frac{c}{12}\left(m^{3}-m\right)\delta_{m,-n}
+\end{equation}
+左右模之间OPE是解耦的，不过，根据加倍技巧，对于BCFT，左右模之间的OPE不是$0$：\footnote{形象理解为右行模在边界附近的反射的影响。}
 \begin{equation}
 	X^\mu(z_1)\tilde X^\nu(\bar z_2)\sim X^\mu(z_1)X^\nu(z'_2)\sim -\frac{\alpha^{\prime}}{2}\ln|z_1-\overline{z}_2|
 \end{equation}
@@ -16,14 +55,160 @@ $XX$包含四项
 \begin{equation}
 	 X^\mu (y_1) X^\nu(y_2) \sim -2\alpha'\ln |y_1-y_2|
 \end{equation}
-这从\ref{eq:4.36}也能直接看出来，这也印证了$\alpha'_{\text{cl}}\sim4\alpha'_{\text{op}}$。
+这从\ref{eq:4.36}也能直接看出来，由于左右模非零，所以相较于\ref{eq:A2}来说$X(z,\bar z)X(w,\bar w)$ OPE会多一项贡献。这同时也印证了$\alpha'_{\text{cl}}\sim4\alpha'_{\text{op}}$。
 \subsection{$bc$鬼场}
+左模部分作用量和能动张量为：
+\begin{equation}
+	\label{eq:A12}
+	S=\frac{1}{2\pi}\int d^2zb\bar{\partial}c,\quad T(z)=:(\partial b)c:-\lambda\partial(:bc:)
+\end{equation}
+$bc$是反对易的费米场，共形权和中心荷为
+\begin{equation}
+	h_b=\lambda,\quad h_c=1-\lambda\quad c=-3(2\lambda-1)^2+1
+\end{equation}
+对于弦论，$\lambda = 2$。OPE为：
+\begin{equation}
+	b(z)c(w)\sim\frac{1}{z-w}
+\end{equation}
+其它$bb$和$cc$ OPE平凡。
 \section{$\mathcal{N}=1$ SCFT}
 本节对应RNS超弦世界面CFT，玻色场OPE与上一节相同。
 \subsection{自由费米CFT}
-
+左行模部分作用量和能动张量为：
+\begin{equation}
+S=\frac{1}{2\pi}\int\mathrm{d}^2z\psi^\mu\overline{\partial}\psi_\mu	,\quad T(z) = -\frac{1}{2}:\psi\cdot\partial\psi:(z)
+\end{equation}
+中心荷为$D/2$，$\psi$共形权为$\frac12$。
+\begin{equation}
+	\psi^\mu(z)\psi^\nu(w) = \frac{\eta^{\mu\nu}}{z-w}
+\end{equation}
+$\psi X$之间OPE平凡。总的物质场能动张量为：
+\begin{equation}
+	T^\mathrm{m}(z)=-\frac{1}{\alpha^{\prime}}:\partial X\cdot\partial X:-\frac{1}{2}:\psi\cdot\partial\psi:
+\end{equation}
+超共性变换对应的总的物质场超流为：
+\begin{equation}
+	G^\mathrm{m}(z)=i\sqrt{\frac{2}{\alpha^{\prime}}}\psi^\mu\partial X_\mu
+\end{equation}
+$TT$ OPE仍旧满足共性代数\ref{eq:A8}，超共形代数：
+\begin{equation}
+	\label{eq:A19}
+	\begin{aligned}
+		G^\mathrm{m}(z_1)G^\mathrm{m}(z_2)&\sim\frac{\frac{2}{3}c}{(z_1-z_2)^3}+\frac{2T^\mathrm{m}(z_2)}{(z_1-z_2)}\\
+T^\mathrm{m}(z_1)G^\mathrm{m}(z_2)&\sim\frac{\frac{3}{2}G^\mathrm{m}(z_2)}{(z_1-z_2)^2}+\frac{\partial G^\mathrm{m}(z_2)}{(z_1-z_2)}
+	\end{aligned}
+\end{equation}
+超共形权为$h$的超共形初级场定义为共形权为$h$的初级场$\phi_h$且额外满足：
+\begin{equation}
+	\label{eq:A20}
+	G^\mathrm{m}(z_1)\phi_h(z_2)\sim\frac{\phi_{h+1/2}(z_2)}{(z_1-z_2)}
+\end{equation}
+超共形初级场对$(\phi_h,\phi_{h+1/2})$定义为$\psi_h$和$\psi_{h+1/2}$分别为超共形权$h$的超共形初级场和共形权为$h+1/2$的共形初级场，且：
+\begin{equation}
+	\label{eq:A21}
+	G^\mathrm{m}(z_1)\phi_{h+1/2}(z_2)\sim\frac{h\phi_h(z_2)}{(z_1-z_2)^2}+\frac{\partial_{z_2}\phi_h(z_2)}{2(z_1-z_2)}
+\end{equation}
 \subsection{$\beta\gamma$鬼场}
-
+$\beta\gamma$鬼场和$bc$鬼场非常相似，从作用量和能动张量就能看到这一点：
+\begin{equation}
+	S=\frac{1}{2\pi}\int d^2z\beta\bar{\partial}\gamma,\quad T(z)=:(\partial\beta)\gamma:-\lambda\partial(:\beta\gamma:)
+\end{equation}
+共形权和中心荷为：
+\begin{equation}
+	h_\beta=\lambda^2,\quad h_\gamma=1-\lambda,\quad c=3(2\lambda-1)^2-1
+\end{equation}
+弦论中$\lambda = \frac32$。区别主要在于$\beta\gamma$鬼满足的是玻色统计，OPE为：
+\begin{equation}
+	\beta(z)\gamma(w)\thicksim-\frac{1}{z-w}
+\end{equation}
+总的鬼场超流为：
+\begin{equation}
+	G^{(\mathrm{gh})}(z)=-\frac{1}{2}(\partial\beta)c+\frac{3}{2}\partial(\beta c)-2b\gamma
+\end{equation}
+超弦费米部分CFT最重要的是模展开包含NS和R两个部分：
+\begin{equation}
+\begin{gathered}
+		\begin{cases}
+		\psi_\mathrm{NS}^\mu(z)=\sum_{r\in\mathbb{Z}+\frac{1}{2}}\psi_r^\mu z^{-r-\frac{1}{2}}\\\psi_\mathrm{R}^\mu(z)=\sum_{n\in\mathbb{Z}}\psi_n^\mu z^{-n-\frac{1}{2}}
+		\end{cases}
+		,\quad 
+		\begin{cases}G_{\mathrm{NS}}(z)=\sum_{r\in\mathbb{Z}+\frac{1}{2}}G_rz^{-r-\frac{3}{2}}\\G_{\mathrm{R}}(z)=\sum_{n\in\mathbb{Z}}G_nz^{-n-\frac{3}{2}}\end{cases}
+		\\
+	\begin{cases}\beta_{\mathrm{NS}}(z)=\sum_{r\in\mathbb{Z}+\frac{1}{2}}\beta_rz^{-r-\frac{3}{2}}\\\beta_{\mathrm{R}}(z)=\sum_{n\in\mathbb{Z}}\beta_nz^{-n-\frac{3}{2}}\end{cases},\quad
+				\begin{cases}\gamma_{\mathrm{NS}}(z)=\sum_{r\in\mathbb{Z}+\frac{1}{2}}\gamma_rz^{-r+\frac{1}{2}}\\\gamma_{\mathrm{R}}(z)=\sum_{n\in\mathbb{Z}}\gamma_nz^{-n+\frac{1}{2}}\end{cases}
+\end{gathered}
+\end{equation}
+OPE \ref{eq:A19}给出的超共形代数可以写成下面的统一形式：
+\begin{equation}
+	\begin{aligned}&[L_n,G_r]=\frac{n-2r}{2}G_{n+r}\\&\{G_r,G_s\}=2L_{r+s}+\frac{c}{12}(4r^2-1)\delta_{r+s,0}\end{aligned}
+\end{equation}
+NS和R部分只需要对下标取整数或半整数即可。另外上面讨论并未对$G$加上标m，gh，tot区分具体是物质场超流、鬼场超流还是总超流，因为他们满足的超共形代数是一样的。
+\subsection{超空间表述}
+用（二维）超对称场论的语言可以把前面的讨论写成更加显现出$\mathcal{N}=1$超对称的形式。引入和$\{z,\bar z\}$对应的超空间坐标$\{\theta,\bar\theta\}$，他们是二维Weyl旋量。超空间导数定义为：
+\begin{equation}
+	D=\partial_\theta+\theta\partial_z,\quad\bar{D}=\partial_{\bar{\theta}}+\bar{\theta}\partial_{\bar{z}}
+\end{equation}
+考虑坐标变换：
+\begin{equation}
+	z=(z,\theta)\to z^{\prime}=(z^{\prime}(z,\theta),\theta^{\prime}(z,\theta))
+\end{equation}
+共性变换由$\bar \partial z' = 0$的全纯映射生成，普通偏导数由链式法则变换为$\partial=\frac{\partial z^{\prime}}{\partial z}\partial^{\prime}$，这一点是平凡的，超共形变换则是类似要求：
+\begin{equation}
+	D=(D\theta^{\prime})D^{\prime}\Rightarrow Dz^{\prime}-\theta^{\prime}D\theta^{\prime}=0
+\end{equation}
+诱导出如下变换：
+\begin{equation}
+	\begin{aligned}&z^{\prime}=f(z)+\frac{1}{2}\theta g(z)\epsilon(z),\\&\theta^{\prime}=\frac{1}{2}\epsilon(z)+\theta g(z),\quad g^{2}=\partial f+\frac{1}{4}\epsilon\partial\epsilon\end{aligned}
+\end{equation}
+$f$和$g$是普通函数，$\epsilon$则是Grassmann反对易的函数。此式便是世界面上超共形变换的形式，$\theta = 0$时上式退化为共形变换。上式的无穷小变换形式为：
+\begin{equation}
+	\label{inf}
+	\delta z=\xi+\frac{1}{2}\theta\epsilon,\quad\delta\theta=\frac{1}{2}\epsilon+\frac{1}{2}\theta\partial\xi
+\end{equation}
+这里$\xi$对易，$\epsilon$反对易。超共形初级场对构成一个手征超场：
+\begin{equation}
+	\Phi_h(z)=\phi_h(z)+\theta\phi_{h+\frac12}(z),\quad \bar D\Phi(z) = 0
+\end{equation}
+类似共形初级场定义要求共形变换下：
+\begin{equation}
+	\phi^{\prime}(z^{\prime},\bar{z}^{\prime})=\left(\frac{\partial z^{\prime}}{\partial z}\right)^{-h}\left(\frac{\partial\bar{z}^{\prime}}{\partial\bar{z}}\right)^{-\bar{h}}\phi(z,\bar{z})
+\end{equation}
+超共形初级场要求超共形变换下：
+\begin{equation}
+	\Phi(z)=(D\theta^{\prime})^{2h}\Phi^{\prime}(z^{\prime})
+\end{equation}
+利用\ref{inf}可以导出上面要求的无穷小变换下对$\phi$提出的要求，而$\delta_\xi$由能动张量$T$的OPE生成，$\delta_\epsilon$由超流$G$的OPE生成，由此可以得到正好是要求$\phi$满足OPE \ref{eq:A20}和\ref{eq:A21}，且是通常意义下的共形初级场。能动张量和超流同样可以组成一个超场：
+\begin{equation}
+	\label{eq:A36}
+	\mathscr{T}^\text{m}(z)=G^\text{m}(z)+\theta T^\text{m}(z)
+\end{equation}
+而且是共形权为$\frac32$的共形超场，\ref{eq:A20}和\ref{eq:A21}的要求转化为：
+\begin{equation}
+	\mathscr{T}^{\text{m}}(z_1)\Phi(z_2)\sim\frac{h\theta_{12}\Phi(z_2)}{z_{12}^2}+\frac{\frac{1}{2}D\Phi(z_2)}{z_{12}}+\frac{\theta_{12}D^2\Phi(z_2)}{z_{12}}
+\end{equation}
+类似，\ref{eq:A19}可以被紧凑的写为：
+\begin{equation}
+	\mathscr{T}^\text{m}(z_1)\mathscr{T}^\text{m}(z_2)\sim\frac{\frac{1}{6}{c^\text{m}}}{z_{12}^3}+\frac{\frac{3}{2}\theta_{12}\mathscr{T}(z_2)}{z_{12}^2}+\frac{\frac{1}{2}D\mathscr{T}(z_2)}{z_{12}}+\frac{\theta_{12}D^2\mathscr{T}(z_2)}{z_{12}}
+\end{equation}
+RNS超弦中物质场可以组合为一个二维超场：
+\begin{equation}
+	\mathscr{X}^\mu(z,\bar{z})=X^\mu+i\theta\psi^\mu+i\bar{\theta}\bar{\psi}^\mu+\theta\bar{\theta}F^\mu
+\end{equation}
+$F^\mu$是人为引入的保证超对称性的辅助场。利用这个定义可以将物质场能动张量写成和\ref{eq:A1}一致且明显保持共形超对称性的形式：
+\begin{equation}
+	\begin{aligned}
+		S_\text{m}&=\frac{1}{2\pi\alpha'}\int d^2zd^2\theta\bar{D}\mathscr{X}^\mu D\mathscr{X}_\mu\\&=\frac{1}{2\pi\alpha'}\int d^2z\left(\partial X^\mu\overline{\partial}X_\mu+\psi^\mu\overline{\partial}\psi_\mu+\overline{\psi}^\mu\partial\overline{\psi}_\mu+F^\mu F_\mu\right)
+	\end{aligned}
+\end{equation}
+$\delta S_m/\delta F$给出$F=0$，所以辅助场其实可以略去，这就完全回到了前面的讨论，同样，对于鬼场，可以组合成两个共形超场：
+\begin{equation}
+	B=\beta+\theta b,\quad C=c+\theta\gamma
+\end{equation}
+超共形权分别为$\frac32$和$-1$，鬼场能动张量可以写成\ref{eq:A12}的形式：
+\begin{equation}
+	S_{\text{gh}}=\frac{1}{2\pi}\int d^2zd^2\theta B\overline{D}C=\frac{1}{2\pi}\int d^2z(b\overline{\partial}c+\beta\overline{\partial}\gamma)
+\end{equation}
+同样可以类似\ref{eq:A36}引入$\mathscr{T}^{\text{gh}}$，超共形代数是一样的。
 \section{纯旋量形式}
 这里只讨论左模，作用量见\ref{eq:5.23}，能动张量以及对应的超流（费米Lorentz流）：
 \begin{equation}

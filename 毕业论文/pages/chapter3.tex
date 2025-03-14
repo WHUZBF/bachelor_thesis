@@ -1,4 +1,5 @@
 \chapter{Ramond-Neveu-Schwarz超弦}
+\label{chap:3}
 本章使用超对称共形场论（SCFT）的方法介绍世界面超对称的RNS超弦理论。更多细节详见\cite{Green:2012oqa,Green:2012pqa}。
 \section{世界面超场}
 考虑世界面超对称，Polyakov作用量\ref{eq:2.2}中为$X$引入世界面自旋$\frac12$超伴场$\Psi$，为$\gamma$引入世界面自旋$\frac32$超伴场$\chi$，他们都是世界面上的二维旋量。在世界面Wick转动后，RNS超弦作用量为\footnote{$\rho$是二维gamma矩阵。}：
@@ -68,7 +69,7 @@ $z^{D/8}$的出现是BPZ共轭的要求\cite{itocft}，$S_A$的共形权为$\fra
 	\eqnmarkbox[blue]{node1}{\frac{1}{24}c^{\mathrm{m}}}+
 	\left(\eqnmark[red]{node2}{-\frac{1}{24}}+\tikzmarknode{node3}{\frac{1}{24}}\right)D=\frac{1}{16}D
 \end{equation}
-\annotate[yshift=1em]{right}{node1}{能动张量非主场，共形变换贡献}
+\annotate[yshift=1em]{right}{node1}{能动张量非初级场，共形变换贡献}
 \annotate[yshift=-0.5em]{below,left}{node2}{玻色场贡献}
 \annotate[yshift=-1em]{below,label below}{node3}{费米场贡献}
 \vspace{1em}
@@ -174,7 +175,7 @@ $\mathrm{e}^{q\phi}$超鬼数为$q$，其实在经过\ref{eq:3.19}的变换后�
 \end{equation}
 $\beta\gamma$本身的绘景数为$0$，所以用$\beta,\gamma$作用于真空上生成态空间不会改变绘景数。$\xi$鬼数为$+1$，$\eta$为$-1$，$\mathrm{e}^{q\phi}$为$q$。\ref{eq:3.20}相当于选取了一个“海拔最高”的真空，那么其它的更低能量的真空如何理解？类似Dirac当年为了解释反粒子引入费米子海的概念，这里我们应当引入玻色子海，认为所有低能量的真空都被完全填充，而且由于$\beta\gamma$鬼场是自由CFT，所以也不会造成真空不稳定衰变到其它真空的问题。从群表示的观点看，绘景数$q$相当于给出了不同的$\beta\gamma$鬼场的表示，而$:\mathrm{e}^{q\phi}:$沟通了这些不同真空。不同的真空上产生出的希尔伯特空间应当认为描述的是同一个态空间，只是他们带有不同的绘景数。
 
-就像是$bc$鬼场对真空的影响，导致积分顶角算符和无积分顶角算符之间可以相互转换用于描述同一个物理态从而抵消$Q_{b,c}$。同样的，我们应该预期$\beta\gamma$也会有零模的插入，实际上\ref{eq:3.21}也不是共形主场：
+就像是$bc$鬼场对真空的影响，导致积分顶角算符和无积分顶角算符之间可以相互转换用于描述同一个物理态从而抵消$Q_{b,c}$。同样的，我们应该预期$\beta\gamma$也会有零模的插入，实际上\ref{eq:3.21}也不是共形初级场：
 \begin{equation}
 	T_{\beta,\gamma}(z)j_{\beta,\gamma}(w)\sim\frac{+2}{(z-w)^3}+\frac{j_{\beta,\gamma}(w)}{(z-w)^2}+\frac{\partial j_{\beta,\gamma}(w)}{z-w}
 \end{equation}
@@ -262,7 +263,7 @@ $Q_0$由于共形权为$0$自动满足，计算$Q_1$：
 \begin{equation}
 	G^m(z)\Phi_h^{\text{NS}}(w)\sim\frac{\frac12\Phi_{h+\frac12}^{\text{NS}}}{z-w}
 \end{equation}
-从这里可以看出$(\Phi^{\text{NS}}_h,\Phi^{\text{NS}}_{\text{NS}})$构成超对称主场对，他们由世界面超对称联系起来。提取上式的一阶极点留数有：
+从这里可以看出$(\Phi^{\text{NS}}_h,\Phi^{\text{NS}}_{\text{NS}})$构成超共形初级场对，他们由世界面超对称联系起来。提取上式的一阶极点留数有：
 \begin{equation}
 	\Phi_{h+1/2}^{\mathrm{NS}}(w)\mathrm{e}^{0\phi(w)}=2\oint\frac{\mathrm{d}z}{2\pi i}G^m(z)\Phi_h^{\mathrm{NS}}(w)=2(G^m_{-1/2}\Phi_h^{\mathrm{NS}})(w)
 \end{equation}
