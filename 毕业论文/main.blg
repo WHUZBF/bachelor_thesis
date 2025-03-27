@@ -24,46 +24,44 @@ Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ref/bachelor-refs.bib
-Warning--empty title in REUTENAUER2003887
-You've used 105 entries,
+You've used 106 entries,
             5374 wiz_defined-function locations,
-            1790 strings with 24669 characters,
-and the built_in function-call counts, 729160 in all, are:
-= -- 18240
-> -- 79216
-< -- 100113
-+ -- 28365
-- -- 5082
-* -- 6276
-:= -- 101833
-add.period$ -- 402
-call.type$ -- 105
-change.case$ -- 678
-chr.to.int$ -- 24564
+            1794 strings with 24781 characters,
+and the built_in function-call counts, 734364 in all, are:
+= -- 18381
+> -- 79749
+< -- 100803
++ -- 28562
+- -- 5106
+* -- 6328
+:= -- 102564
+add.period$ -- 406
+call.type$ -- 106
+change.case$ -- 684
+chr.to.int$ -- 24731
 cite$ -- 106
-duplicate$ -- 2651
-empty$ -- 11413
-format.name$ -- 2436
-if$ -- 189987
+duplicate$ -- 2674
+empty$ -- 11526
+format.name$ -- 2450
+if$ -- 191355
 int.to.chr$ -- 1
-int.to.str$ -- 106
+int.to.str$ -- 107
 missing$ -- 0
-newline$ -- 632
-num.names$ -- 317
-pop$ -- 35759
+newline$ -- 638
+num.names$ -- 320
+pop$ -- 36009
 preamble$ -- 1
-purify$ -- 105
+purify$ -- 106
 quote$ -- 0
-skip$ -- 76075
+skip$ -- 76626
 stack$ -- 0
-substring$ -- 37743
-swap$ -- 113
-text.length$ -- 2009
+substring$ -- 38019
+swap$ -- 114
+text.length$ -- 2023
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1047
-warning$ -- 1
-while$ -- 2215
+type$ -- 1054
+warning$ -- 0
+while$ -- 2231
 width$ -- 0
-write$ -- 1569
-(There was 1 warning)
+write$ -- 1584

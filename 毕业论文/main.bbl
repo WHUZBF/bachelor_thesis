@@ -1,4 +1,4 @@
-\begin{thebibliography}{105}
+\begin{thebibliography}{106}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -241,6 +241,13 @@ HIRSCHHORN M~D.
 \newblock Jacobi's ``aequatio identica satis abstrusa''\allowbreak[M/OL].
 \newblock Cham: Springer International Publishing, 2017: 169-174.
 \newblock \url{https://doi.org/10.1007/978-3-319-57762-3_19}.
+
+\bibitem[Polchinski(2007)]{Polchinski:1998rr}
+POLCHINSKI J.
+\newblock Cambridge monographs on mathematical physics: {String theory. Vol. 2:
+  Superstring theory and beyond}\allowbreak[M/OL].
+\newblock Cambridge University Press, 2007.
+\newblock DOI: \doi{10.1017/CBO9780511618123}.
 
 \bibitem[Adams et~al.(2010)Adams, Taylor, and DeWolfe]{PhysRevLett.105.071601}
 ADAMS A, TAYLOR W, DEWOLFE O.
@@ -607,7 +614,7 @@ BERN Z, CARRASCO J~J, CHIODAROLI M, et~al.
 
 \bibitem[Reutenauer(2003)]{REUTENAUER2003887}
 REUTENAUER C.
-\newblock \allowbreak[M/OL]//\allowbreak
+\newblock {Free lie algebras}\allowbreak[M/OL]//\allowbreak
 HAZEWINKEL M.
 \newblock Handbook of Algebra: Vol.~3\quad {Free lie algebras}.
 \newblock North-Holland, 2003: 887-903.

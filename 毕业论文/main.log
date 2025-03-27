@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  15 MAR 2025 01:23
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  27 MAR 2025 22:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1525,7 +1525,7 @@ t={*},ItalicFont={*}].
 
 
 [11]
-Overfull \hbox (9.70357pt too wide) detected at line 329
+Overfull \hbox (9.70357pt too wide) detected at line 330
 [][][][][]
  []
 
@@ -1560,7 +1560,7 @@ Overfull \hbox (9.70357pt too wide) detected at line 329
 [20]
 
 [21]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2990) has occurred while \output is active []
 
 
 
@@ -2047,7 +2047,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [94]
-Underfull \hbox (badness 2073) in paragraph at lines 335--341
+Underfull \hbox (badness 2073) in paragraph at lines 342--348
 []\TU/TimesNewRoman(0)/m/n/12.045 SCHLOTTERER O.  The number theory of superstr
 ing amplitudes[C]//
  []
@@ -2204,10 +2204,10 @@ L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 39942 strings out of 474240
- 901619 string characters out of 5745918
- 1948560 words of memory out of 5000000
- 61779 multiletter control sequences out of 15000+600000
+ 39946 strings out of 474240
+ 901698 string characters out of 5745918
+ 1949560 words of memory out of 5000000
+ 61783 multiletter control sequences out of 15000+600000
  589354 words of font info for 240 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,19n,121p,2041b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s

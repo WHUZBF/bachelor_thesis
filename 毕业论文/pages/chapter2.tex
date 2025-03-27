@@ -126,6 +126,7 @@
 \end{equation}
 本论文主要考察无质量激发态，也就是开弦闭弦第一激发态，事实上更高激发态在$\alpha^\prime\to0$的场论极限下会被压低。从上面的弦粒子谱不难看出开弦第一激发态对应无质量规范玻色子，而闭弦第一激发态对应引力子，伸缩子以及$B$-场。
 \subsection{协变量子化}
+\label{sec:2.1.3}
 光锥量子化相当于先取规范使用约束条件后量子化，协变量子化相当于先量子化后使用约束条件，好处是明显地保留了庞加莱对称性。下面仍以开弦为例，好处是左右模重合。
 
 类似QED中的Gupta-Bleule量子化方法\cite{Peskin:1995ev}，要求$T_{ab}=0$从物理上看应当是要求其作用于量子化后的希尔伯特空间上是零算子：
@@ -137,12 +138,12 @@
 \begin{equation}
 	L_m=\frac{1}{2}\sum_{n=-\infty}^{+\infty}\alpha_{m-n}\cdot\alpha_n
 \end{equation}
-上述条件相当于要求物理态为Virasoro最高权态\footnote{$A$是待定常数，不少文献称为正规排序常数，计算上来源于NOP序和产生湮灭算符排序之间相差的常数。本质上来源于真空能贡献。}：
+上述条件相当于要求物理态为Virasoro最高权态\footnote{$A$是待定常数，不少文献称为正规排序常数，计算上来源于NOP序和产生湮灭算符排序之间相差的常数，也即算符不对易性带来的量子修正。本质上来源于真空能贡献。}：
 \begin{equation}
 	\label{eq:2.23}
 	(L_n^\mathrm{~m}+A\delta_{n,0})|\psi\rangle=0\quad\mathrm{for~}n\geq0
 \end{equation}
-由于不用选取光锥规范，\ref{eq:2.12}\ref{eq:2.19}中模展开应当将指标$i$替换为一般的$\mu$，现在态空间由$\alpha^\mu$生成。\ref{eq:2.23}的限制并不够，因为$\mathscr{H}_{\mathrm{phys}}$中还包含一些零模态，与物理态均正交，张成的希尔伯特空间记为$\mathscr{H}_{\mathrm{null}}$，所以和物理过程是解耦的，应当看作是规范变换的生成元，所以应当有下面的等价关系：
+由于不用选取光锥规范，\ref{eq:2.12}和\ref{eq:2.19}中模展开应当将指标$i$替换为一般的$\mu$，现在态空间由$\alpha^\mu$生成。\ref{eq:2.23}的限制并不够，因为$\mathscr{H}_{\mathrm{phys}}$中还包含一些零模态，与物理态均正交，张成的希尔伯特空间记为$\mathscr{H}_{\mathrm{null}}$，所以和物理过程是解耦的，应当看作是规范变换的生成元，所以应当有下面的等价关系：
 \begin{equation}
 	\ket\psi \sim \ket\psi +\ket\chi,\quad \forall\psi\in\mathscr{H}_{\mathrm{phys}},\chi\in\mathscr{H}_{\mathrm{null}}
 \end{equation}
