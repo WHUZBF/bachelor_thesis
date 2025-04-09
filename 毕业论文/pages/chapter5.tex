@@ -415,9 +415,10 @@ $U(5)$分解下荷共轭矩阵以及$\Gamma_{11}$可以表达为：
 \label{sec:5.4}
 选取规范固定$(z_1,z_{n-1},z_n)\to(0,1,\infty)\text{ or }(1,0,\infty)$，类似在$\S$\ref{sec:4.3}做的，上面两种选取分别对应外腿奇偶两种排序，使得盘面顺序自洽。纯旋量形式下的盘面色序超振幅形式为：
 \begin{equation}
+	\label{eq:5.70}
 	A_n(P)=\int_{\partial D}dz_2\mathrm{~}dz_3\ldots dz_{n-2}\llangle V_1(z_1)U_2(z_2)U_3(z_3)\ldots U_{n-2}(z_{n-2})V_{n-1}(z_{n-1})V_n(z_n)\rrangle
 \end{equation}
-这里$\llangle\bullet\rrangle$表示需要零模和非零模两重计算。下面的OPE说明$\{ \partial\theta^\alpha, \Pi^\mu,d_\alpha, N^{\mu\nu} \}$都是共形权为$1$的初级场：
+这里$\llangle\bullet\rrangle$表示需要零模和非零模两重计算。Type II闭弦球面超弦振幅的形式完全类似。下面的OPE说明$\{ \partial\theta^\alpha, \Pi^\mu,d_\alpha, N^{\mu\nu} \}$都是共形权为$1$的初级场：
 \begin{equation}
 	T_{\mathrm{PS}}(z) \left\{ \partial\theta^{\alpha}, \Pi^{\mu}, d_{\alpha}, N^{\mu\nu} \right\}(w) \sim \frac{\left\{ \partial\theta^{\alpha}, \Pi^{\mu}, d_{\alpha}, N^{\mu\nu} \right\}(w)}{(z-w)^{2}} + \frac{\partial \left\{ \partial\theta^{\alpha}, \Pi^{\mu}, d_{\alpha}, N^{\mu\nu} \right\}(w)}{z-w}
 \end{equation}
@@ -518,6 +519,32 @@ $\lambda$鬼数为$+1$，$w$鬼数为$-1$。下面的OPE表明其只是个准初
 	\end{aligned}
 \end{equation}
 从树图就能看出纯旋量形式计算振幅要麻烦不少，但这只是暂时的，因为RNS形式计算圈级振幅格外复杂，比如D'Hoker和Phong的一系列工作\cite{DHoker:2001kkt,DHoker:2001qqx,DHoker:2001foj,DHoker:2001jaf,DHoker:2005dys,DHoker:2005vch,DHoker:2002hof}，相较而言纯旋量形式就轻松不少\cite{Berkovits:2005df,Berkovits:2005ng}。
+
+在下一章我们会系统处理盘面振幅的计算，而闭弦球面振幅可以用KLT关系确定，所以原则上我们已经完全知晓树级Type I/II弦论（无质量态）的振幅计算\footnote{前文$\S$\ref{sec:4.3}最后也提到了开闭弦混合振幅可以用纯开弦振幅表达。}。弦论中还有两类自洽的闭弦理论，$SO(32)$和$E_8\times E_8$杂交弦理论\cite{Gross:1984dd,Gross:1985fr,Gross:1985rr}。这种弦理论是左行模的RNS超弦与右行模的玻色弦混合而成的弦理论\footnote{由于玻色弦定义在$26$维时空，所以构造杂交弦时还需要额外引入一些右行世界面旋量使得在$10$维时空便能抵消掉右行玻色弦的中心荷。}。由于杂交弦振幅计算并不是本文重点，所以这里并不对杂交弦进行完整介绍，只是说明纯旋量超弦依旧可以用于计算杂交弦振幅，只需要对左行模使用纯旋量描述，对右行模不加改变仍采用玻色弦的描述即可，无质量态顶角算符为：
+\begin{equation}
+	V_i^{\mathrm{het}}=\lambda^\alpha A_\alpha^i(\theta)e^{k_i\cdot X}\times\tilde{c}\cdot
+	\begin{cases}
+		\overline{\mathcal{J}}^{q_i},&\text{gauge multiplets}\\
+		\sqrt{\frac2{\alpha'}}\tilde\epsilon_i^m\bar{\partial}X_m,&\text{garvity multiplys}
+	\end{cases}
+\end{equation}
+\begin{equation}
+	U_i^{\mathrm{het}}=\left(\partial\theta^\alpha A_\alpha^i(\theta)+\Pi_pA_i^p(\theta)+d_\alpha W_i^\alpha(\theta)+\frac{1}{2}N_{pq}F_i^{pq}(\theta)\right)e^{k_i\cdot X}\times
+	\tilde c\cdot
+	\begin{cases}
+	\overline{\mathcal{J}}^{q_i}\\
+	\sqrt{\frac2{\alpha'}}\tilde\epsilon_i^m\bar{\partial}X_m
+	\end{cases}
+\end{equation}
+这里极化矢量有$\epsilon\dot k =0$，$\mathcal{J}$是Kac-Moody流代数生成元，有OPE：
+\begin{equation}
+	\overline{\mathcal{J}}^a(z)\overline{\mathcal{J}}^b(w)\sim\frac{\delta^{ab}}{(\overline{z}-\overline{w})^2}+\frac{f^{abc}\overline{\mathcal{J}}^c(w)}{\overline{z}-\overline{w}}
+\end{equation}
+类似\ref{eq:5.70}可以写下杂化弦振幅：
+\begin{equation}
+	\mathcal{M}_{n}^{\mathrm{het}}\sim\int_{\mathbb{CP}^{1}}d^{2}z_{2}d^{2}z_{3}\ldots d^{2}z_{n-2}\llangle(V_{1}^{\mathrm{het}}(z_{1})U_{2}^{\mathrm{het}}(z_{2})...U_{n-2}^{\mathrm{het}}(z_{n-2})V_{n-1}^{\mathrm{het}}(z_{n-1})V_{n}^{\mathrm{het}}(z_{n})\rrangle
+\end{equation}
+至于其具体计算，本文不再深入讨论，只是强调其低能极限为Einstein-Yang-Mills理论。\cite{Du:2017gnh,Fu:2017uzt}
 \section{*非最小纯旋量超弦}
 纯旋量超弦可以通过多引入一组费米鬼场$(r_\alpha,s^\beta)$和玻色鬼场$(\hat\lambda^\alpha,\hat w_\beta)$等价描述，只考虑左模的开弦作用量为：\cite{Berkovits:2005bt}
 \begin{equation}

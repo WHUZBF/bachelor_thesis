@@ -51,7 +51,7 @@
 \begin{equation}
 	A_n(P)=\sum_{i\in\Gamma_n}\frac{N_i}{D_i}c_i\mid_{\tr (\lambda^P)}
 \end{equation}
-其中$c_i\mid_{\tr (\lambda^P)}\in\{0,\pm1\}$表示$c_i$中$\tr (\lambda^P)$前的符号。在后面对树图的讨论中，Del Duca–Dixon–Maltoni 基底是十分有用的\footnote{DelDuca:1999rs}：
+其中$c_i\mid_{\tr (\lambda^P)}\in\{0,\pm1\}$表示$c_i$中$\tr (\lambda^P)$前的符号。在后面对树图的讨论中，Del Duca–Dixon–Maltoni 基底是十分有用的\cite{DelDuca:1999rs}：
 \begin{equation}
 	\label{eq:6.9}
 	\mathcal{A}_n = \sum_{\sigma \in S_{n-2}} f^{a_1 a_{\sigma_1} b_1} f^{b_1 a_{\sigma_2} b_2} \cdots f^{b_{n-3} a_{\sigma_{n-2}} a_n} A_n(1, \sigma_1, \sigma_2, \ldots, \sigma_{n-2}, n)
@@ -110,9 +110,9 @@
 与\ref{eq:6.14}对照可以得到BCJ分子：
 \begin{equation}
 	\begin{aligned}
-		n=4:\quad & n_{12,34} = -s_{12}\,A^{\text{tree}}_{4}[1243], \quad n_{13,24} = 0; \\
-		n=5:\quad & n_{12,3,45} = s_{23}\,s_{45}\,A^{\text{tree}}_{5}[13254], \quad n_{12,4,35} = s_{24}\,s_{35}\,A^{\text{tree}}_{5}[14253]; \\
-		& n_{13,4,25} = n_{14,2,35} = n_{14,3,215} = n_{12,3,415} = 0.
+		n=4:\quad & n_{12,34} = -s_{12}\,A^{\text{tree}}_{4}(1243), \quad n_{13,24} = 0 \\
+		n=5:\quad & n_{12,3,45} = s_{23}\,s_{45}\,A^{\text{tree}}_{5}(13254), \quad n_{12,4,35} = s_{24}\,s_{35}\,A^{\text{tree}}_{5}(14253) \\
+		& n_{13,4,25} = n_{14,2,35} = n_{14,3,215} = n_{12,3,415} = 0
 	\end{aligned}
 \end{equation}
 树图的BCJ双复制关系已经得到证明\cite{Bern:2010yg}，但目前对于圈图BCJ分子的构造仍是一个未解之谜，不过已经构造出了不少例子\cite{Bern:2010ue,Bern:2012uf}，这也让我们相信色-运动学对偶猜想的正确性。近年来，双复制关系也被用在引力波求解等问题上，详见综述\cite{Bern:2019prr,Adamo:2022dcm,Bern:2022wqg}。
@@ -132,7 +132,7 @@
 		U_1(z_1)U_2&(z_2)\sim z_{12}^{-k_1\cdot k_2-1}\left(\partial\theta^\alpha\Big[(k_1\cdot A_2)A_\alpha^1-(k_2\cdot A_1)A_\alpha^2+D_\alpha A_\beta^2W_1^\beta-D_\alpha A_\beta^1W_2^\beta\Big]\right.\\&+\Pi^m\Big[(k_1\cdot A_2)A_m^1-(k_2\cdot A_1)A_m^2+k_m^2(A_2W_1)-k_m^1(A_1W_2)-(W_1\gamma_mW_2)\\&+d_\alpha\left[(k_1\cdot A_2)W_1^\alpha-(k_2\cdot A_1)W_2^\alpha+\frac14(\gamma^{mn}W_1)^\alpha F_{mn}^2-\frac14(\gamma^{mn}W_2)^\alpha F_{mn}^1\right]\\&+\frac12N^{mn}\Big[(k_1\cdot A_2)F_{mn}^1-(k_2\cdot A_1)F_{mn}^2-2k_m^{12}(W_1\gamma_nW_2)+2F_{ma}^1F_{na}^2\Big]\Big)\\&+(1+k_1\cdot k_2)z_{12}^{-k_1\cdot k_2-2}\left[(A_1W_2)+(A_2W_1)-(A_1\cdot A_2)\right]
 	\end{aligned}
 \end{equation}
-其中$Q$是BRST荷，利用$d_\alpha$和超场的OPE，后面的计算可以将$Q$看作是$\lambda^\alpha D_\alpha$。计算中涉及到对超场求导，而平面波求导会出现$ik$因子，为了避免频繁出现虚数单位，我们选取约定$ik\to k$，从而Mandelstam变量与惯用的也相差$-1$。另外，我们隐藏$A^\mu$和$A_\alpha$指标，用$\cdot$表示矢量指标求和，旋量指标求和则不加任何标记。而且假设所有的超场都是$K(\theta)$，已经分离平面波。乍看之下似乎看不出规律，但倘若定义：
+其中$Q$是BRST荷，利用$d_\alpha$和超场的OPE，后面的计算可以将$Q$看作是$\lambda^\alpha D_\alpha$。计算中涉及到对超场求导，而平面波求导会出现$ik$因子，为了避免频繁出现虚数单位，我们选取约定$ik\to k$，从而Mandelstam变量与惯用的也相差$-1$。另外，我们隐藏$A^\mu$和$A_\alpha$指标，用$\cdot$表示矢量指标求和，旋量指标求和则不加任何标记。而且假设所有的超场都是$K(\theta)$，已经分离平面波，后面的讨论都始终假设最终等式右边隐含平面波给出的Koba-Nielsen因子而没有明显写出。乍看之下似乎看不出规律，但倘若定义：
 \begin{equation}
 	\label{eq:6.19}
 	\begin{aligned}
@@ -546,7 +546,7 @@ KLT映射和$b$映射之间互逆，也就是说
 	\label{PT}
 	\mathcal{Z}_{123...p}:=\frac{1}{z_{12}z_{23}\ldots z_{p-1,p}}=z_{p1}\cdot\mathrm{PT}(1,2,\cdots,p)
 \end{equation}
-类似在RNS超弦振幅计算中所做的，对关联函数取不同盘面顺序积分得到相应的色序振幅，只不过我们这里还需要额外对零模积分：
+类似在RNS超弦振幅计算中所做的，对关联函数取不同盘面顺序积分得到相应的色序振幅，只不过我们这里还需要额外对零模积分：\footnote{注意在\ref{eq:5.70}的计算中我们都忽略了弦振幅与$\alpha^\prime$有关的归一化因子，因为我们选取了$\alpha^\prime=\frac12,2$。为了后面更方便和闭弦振幅对比，这里显式写出了归一化系数$(2\alpha^\prime)^{n-3}$。}
 \begin{equation}
 	\label{eq:6.85}
 \boxed{
@@ -565,6 +565,7 @@ KLT映射和$b$映射之间互逆，也就是说
 \end{equation}
 定义一个同样对下标满足广义BCJ恒等式\ref{eq:6.38}的变量：
 \begin{equation}
+	\label{eq:6.88}
 	X_{P}:=\frac{1}{|P|}\sum_{ {Q}}S^{\ell}(P| {Q})\mathcal{Z}_{ {Q}}=\prod_{j=2}^{|P|}\sum_{i=1}^{j-1}\frac{s_{p_ip_j}}{z_{p_ip_j}}
 \end{equation}
 其满足下面的积分恒等式：
@@ -634,6 +635,7 @@ KLT映射和$b$映射之间互逆，也就是说
 \end{equation}
 $\gamma$是Euler常数，$\zeta$是黎曼$\zeta$函数，对四点情况展开\ref{eq:6.98}：
 \begin{equation}
+	\label{eq:6.101}
 \begin{aligned}
 		{F_2}^2&=\frac{\Gamma(1-2\alpha^{\prime}s_{12})\Gamma(1-2\alpha^{\prime}s_{23})}{\Gamma(1-2\alpha^{\prime}s_{12}-2\alpha^{\prime}s_{23})}=\exp\left(\sum_{n=2}^\infty\frac{\zeta_n}{n}(2\alpha^{\prime})^n\left[s_{12}^n+s_{23}^n-(s_{12}+s_{23})^n\right]\right)\\
 	&=1-(2\alpha^{\prime})^2\zeta_2s_{12}s_{23}+\cdots
@@ -739,7 +741,7 @@ $\gamma$是Euler常数，$\zeta$是黎曼$\zeta$函数，对四点情况展开\r
 利用$\mathcal{Z}$和Park-Taylor因子之间的关系\ref{PT}不难发现：
 \begin{equation}
 	\label{eq:6.114}
-	\int_{D(P)}\frac{dz_1\mathrm{~}dz_2\mathrm{~}\cdots\mathrm{~}dz_n}{\mathrm{vol}(\mathrm{SL}_2(\mathbb{R}))}\operatorname{PT}(1,A,n,\tilde{B},n-1)=(-1)^{|B|-1}\int_{D(P)}dz_2dz_3\ldots dz_{n-2}z_{1A}z_{n-1,B}
+	\int_{D(P)}\frac{dz_1\mathrm{~}dz_2\mathrm{~}\cdots\mathrm{~}dz_n}{\mathrm{vol}(\mathrm{SL}_2(\mathbb{R}))}\operatorname{PT}(1,A,n,\tilde{B},n-1)=(-1)^{|B|-1}\int_{D(P)}dz_2dz_3\ldots dz_{n-2}\mathcal{Z}_{1A}\mathcal{Z}_{n-1,B}
 \end{equation}
 负号产生来自于$|z|/z\sim\pm 1$，其中$SL(2,\mathbb{R})$不变测度定义为：\footnote{前面的因子形式上看来自于$c$鬼场的贡献，但注意纯旋量超弦是没有$c$鬼场的，前面的一系列计算也能看出未引入过这个因子，这里纯粹是为了让$Z(P|Q)$具有$SL(2,\mathbb{R})$不变性而人为引入的因子。}
 \begin{equation}
@@ -747,6 +749,7 @@ $\gamma$是Euler常数，$\zeta$是黎曼$\zeta$函数，对四点情况展开\r
 \end{equation}
 定义$Z$积分：
 \begin{equation}
+	\label{eq:6.118}
 	Z(P|Q):=(2\alpha^{\prime})^{n-3}\int_{D(P)}\frac{dz_1dz_2\cdots dz_n}{\mathrm{vol}(\mathrm{SL}_2(\mathbb{R}))}{\prod_{i<j}^n|z_{ij}|^{-2\alpha^{\prime}s_{ij}}}\mathrm{PT}(Q)
 \end{equation}
 这个积分是$SL(2,\mathbb{R})$不变的，而且有和弦振幅类似的形式，所以似乎也能够解释为某种理论的振幅，实际上，在$\alpha'\to 0$的极限下它就是双自伴$\phi^3$理论的色序振幅：\cite{Cachazo:2013iea}
@@ -757,7 +760,7 @@ $\gamma$是Euler常数，$\zeta$是黎曼$\zeta$函数，对四点情况展开\r
 利用\ref{eq:6.114}可以把\ref{eq:6.85}改写成如下形式：
 \begin{equation}
 	\label{eq:118}
-	\mathcal{A}_n(P)=\sum_{AB=23\cdots n-2}\langle V_{1A}V_{(n-1)\tilde{B}}V_n\rangle(-1)^{|B|-1}Z(P|1,A,n,B,n-1)+\mathrm{perm}(23\cdots n-2)
+\boxed{	\mathcal{A}_n(P)=\sum_{AB=23\cdots n-2}\langle V_{1A}V_{(n-1)\tilde{B}}V_n\rangle(-1)^{|B|-1}Z(P|1,A,n,B,n-1)+\mathrm{perm}(23\cdots n-2)}
 \end{equation}
 再利用场论极限\ref{eq:6.117}我们立刻得到固定外腿$1$和$n-1$的DDM基底下的BCJ分子：
 \begin{equation}
@@ -797,3 +800,201 @@ $\gamma$是Euler常数，$\zeta$是黎曼$\zeta$函数，对四点情况展开\r
 \end{aligned}
 \end{equation}
 这样得到的振幅的分子自然就是BCJ分子，这是一种计算上的技巧，可以快速生成任意三顶角图的BCJ分子。这种算法将\ref{eq:6.96}和\ref{eq:118}的优势互补结合在了一起。
+
+\section{*弦长极限中的数论结构}
+数论被誉为最纯粹的数学，但近年来弦论振幅中出现了意想不到的解析数论结构。前面对弦振幅的研究可以看作是对被积函数的研究，而这一节我们将聚焦于积分后涌现的新数学结构，比如对树级弦振幅就是在研究\ref{eq:6.98} ${F_P}^Q$。尤其是其在$\alpha'\sim 0$附近的低能展开式。
+\subsection{弦论低能有效作用量}
+对弦长极限的研究最直接的动机来源于弦论低能展开的有效场论行为，比如前面\ref{eq:6.101}我们已经对四点情况进行了描述：
+
+\begin{equation}
+	\mathcal{A}(1,2,3,4)=A(1,2,3,4)\left(1-(2\alpha^{\prime})^2\zeta_2s_{12}s_{23}+\mathcal{O}(\alpha^{\prime})\right)
+\end{equation}
+$s_{12}s_{23}$会抵消掉$A(1,2,3,4)$中传播子内线带来的极点，从而给出的是纯粹的极化矢量给出的接触项，其可以整理成所谓$t_8$张量的形式：
+\begin{equation}
+	t_8(f_1,f_2,f_3,f_4)=f_1^{mn}f_2^{np}f_3^{pq}f_4^{qm}-\frac{1}{4}f_1^{mn}f_2^{mn}f_3^{pq}f_4^{pq}+\mathrm{cyc}(2,3,4)
+\end{equation}
+\begin{equation}
+	s_{12}s_{23}A(1,2,3,4)=-\frac{1}{2}t_8(f_1,f_2,f_3,f_4)+\mathcal{O}(\chi_j)
+\end{equation}
+$\mathcal{O}(\chi_j)$表示费米子部分的贡献，此处我们只考虑玻色子部分的修正，这对应在SYM理论作用量中添加$\alpha^{\prime2}\operatorname{Tr}\{\mathbb{F}^4\}$形式的抵消项。考虑到合适的对称因子后，得到$(\alpha^\prime)^2$阶的作用量修正为：
+\begin{equation}
+\begin{aligned}
+		-\alpha^{\prime2}\zeta_2\operatorname{Tr}{\left[t_8(\mathbb{F},\mathbb{F},\mathbb{F},\mathbb{F})\right]}
+	=
+	\alpha^{\prime}{}^2\zeta_2\operatorname{Tr}\bigg[&-2\mathbb{F}^m{}_p\mathbb{F}^p{}_n\mathbb{F}^q{}_m\mathbb{F}^n{}_q-\mathbb{F}^m{}_n\mathbb{F}^n{}_p\mathbb{F}^p{}_q\mathbb{F}^q{}_m\\
+	&+\frac{1}{2}\mathbb{F}^{mn}\mathbb{F}_{mn}\mathbb{F}^{pq}\mathbb{F}_{pq}+\frac{1}{4}\mathbb{F}^{mn}\mathbb{F}^{pq}\mathbb{F}_{mn}\mathbb{F}_{pq}\bigg]
+\end{aligned}
+\end{equation}
+直到$(\alpha^\prime)^{\leq 4}$的修正项计算可以在文献\cite{Barreiro:2012aw}中找到。总之，对弦振幅弦长极限的研究最直接的帮助体现在对弦论的低能有效场论的理解上。
+
+\subsection{$\alpha^\prime$展开$\leftrightarrow$生成列}
+现在我们来考虑一般的${F_{P}}^Q$的展开，假设外腿$\{z_1,z_{n-1},z_n\} = \{0,1,\infty\}$固定，取$P=12\cdots n$，$Q=1,\sigma(23\cdots n-2),n-1,n$。记为$F^\sigma$，剩下的$F$可以用重标记外腿得到。对\ref{eq:6.98}中的$F^\sigma$做一些形变得到：
+\begin{equation}
+	\begin{aligned}
+		&\hat{F}_\nu^\sigma:=(2\alpha^{\prime})^{n-3}\int_{0<z_2<z_3<\cdots<z_{n-2}<z_0}dz_2dz_3\ldots dz_{n-2}\prod_{1\leq p<q}^{n-1}|z_{pq}|^{-2\alpha^{\prime}s_{pq}}\prod_{r=2}^{n-2}|z_{0r}|^{-2\alpha^{\prime}s_{0r}}\omega_\nu^\sigma\\
+		&\omega_\nu^\sigma:=\sigma\left\{\prod_{k=2}^\nu\sum_{j=1}^{k-1}\frac{s_{jk}}{z_{jk}}\prod_{m=\nu+1}^{n-2}\sum_{n=m+1}^{n-1}\frac{s_{mn}}{z_{mn}}\right\}
+	\end{aligned}
+\end{equation}
+这里引入了$z_0\in]0,1[$以及辅助Mandelstam变量$s_{0r}$，在$z_0=1$且$s_{0r}=0$时$\hat{ F }^\sigma_\nu$退化为$F^\sigma $。$\nu$的取值是$1,\ldots n-2$，将${\hat{F}}^\sigma_\nu$排列成一个$(n-3)!$分量的矢量$\hat{F}=(\hat{F}_{n-2}^\sigma,\hat{F}_{n-3}^\sigma,\ldots,\hat{F}_2^\sigma,\hat{F}_1^\sigma)$。比如$n=4,5$的情况：
+\begin{equation}
+	\begin{pmatrix}\hat{F}_{2}^{(2)}\\\hat{F}_{1}^{(2)}\end{pmatrix}=2\alpha^{\prime}\int_0^{2_0}dz_2|z_{12}|^{-2\alpha^{\prime}s_{12}}|z_{23}|^{-2\alpha^{\prime}s_{23}}|z_{02}|^{-2\alpha^{\prime}s_{02}}\begin{pmatrix}X_{12}\\X_{23}\end{pmatrix}
+\end{equation}
+\begin{equation}
+\begin{aligned}
+		\begin{psmallmatrix}\hat{F}_3^{(23)}\\\hat{F}_3^{(32)}\\\hat{F}_2^{(23)}\\\hat{F}_2^{(32)}\\\hat{F}_1^{(23)}\\\hat{F}_1^{(32)}\end{psmallmatrix}
+		=(2\alpha^{\prime})^2\int_0^{z_0}dz_3\int_0^{z_3}dz_2
+		\frac{\left|z_{23}\right|^{-2\alpha^{\prime}s_{23}}}
+		{\prod_{j=2}^3|z_{1j}|^{2\alpha^{\prime}s_{1j}}|z_{j4}|^{2\alpha^{\prime}s_{j4}}|z_{0j}|^{2\alpha^{\prime}s_{0j}}}
+	\begin{psmallmatrix}
+		X_{12}(X_{13}+X_{23})\\X_{13}(X_{12}+X_{32})\\X_{12}X_{34}\\X_{13}X_{24}\\(X_{23}+X_{24})X_{34}\\(X_{32}+X_{34})X_{24}
+	\end{psmallmatrix}
+\end{aligned}
+\end{equation}
+这里$X_{ij}=s_{ij}/z_{ij}$的定义是\ref{eq:6.88}的特殊情况。前面定义$X$时发现他们之间在分部积分（IBP）下有奇妙的关联\ref{eq:6.87}，可以预料到$\hat F$的分量之间也存在这些IBP关系，最终会导致$\hat F$满足齐次Knizhnik-Zamolodchikov（KZ）方程：
+\begin{equation}
+	\label{eq:KZ}
+	\frac{d}{dz_0}\hat{F}=\left(\frac{\hat{e}_0}{z_0}+\frac{\hat{e}_1}{1-z_0}\right)\hat{F}
+\end{equation}
+这个方程在$z_0\to 0,1$时的渐近行为被Drinfeld充分研究过\cite{drinfeld1990quasi,drinfeld1991quasi}，两种渐进行为由Drinfeld结合子$\Phi(e_0,e_1)$联系：\footnote{这里矩阵幂指数用$z^A\:= \exp(A\log z)$定义。}
+\begin{equation}
+	\label{eq:6.134}
+	\hat{C}_{0}=\lim_{z_{0}\to0}z_{0}^{-\hat{e}_{0}}F(z_{0}),\quad \hat{C}_{1}=\lim_{z_{0}\to1}(1-z_{0})^{\hat{e}_{1}}F(z_{0})\quad\Rightarrow\quad \hat{C}_{1}=\Phi(\hat{e}_{0},\hat{e}_{1})\hat{C}_{0}
+\end{equation}
+
+现在，我们希望把$\Phi(e_0,e_1)$和MZVs联系起来。对于$n>4$的情况，$F^\sigma$的展开式不只有$\zeta$函数的乘积，还会出现无法被分解为$\zeta$函数乘积的Multiple Zeta Values（MZVs）\footnote{并不是所有的MZVs都不能被分解为Zeta函数的乘积，实际上这种分解在$\sum_{i\leq r} n_i \leq 7$的时候都是可行的。\cite{Blumlein:2009cf}}，其定义为：
+\begin{equation}
+	\zeta_{n_1,n_2,...,n_r}:=\sum_{0<k_1<...<k_r}k_1^{-n_1}k_2^{-n_2}\ldots k_r^{-n_r}
+\end{equation}
+后面更常用到的是依赖对数积分的定义：
+\begin{equation}
+	\begin{aligned}
+		&G(a_1,a_2,\ldots,a_w;z) :=\int_{0<z_w<...<z_2<z_1<z}\frac{\mathrm{d}z_1}{z_1-a_1}\frac{\mathrm{d}z_2}{z_2-a_2}\ldots\frac{\mathrm{d}z_w}{z_w-a_w}\\
+		&\zeta_{n_1,n_2,...,n_r}:=(-1)^rG(\underbrace{0,\ldots,0}_{n_r-1},1,\ldots,\underbrace{0,\ldots,0}_{n_2-1},1,\underbrace{0,\ldots,0}_{n_1-1},1;z=1)
+	\end{aligned} 
+\end{equation}
+但是MZVs在$a_1=1$或者$a_w=1$的时候是发散的，可以利用$\shuffle$建立自洽的正规化：
+\begin{equation}
+	G(0;A;1)G(0;B;1)=\sum_{C\in A\shuffle B}G(0;C;1),\quad G(0;0;1)=G(0;1;1)=0
+\end{equation}
+比如：
+\begin{equation}
+	G(0;01;1)=G(0;0;1)G(0;1;1)-G(0;10;1)=\zeta_2
+\end{equation}
+现在$G$始终是良定义的，文献\cite{Le199639}证明了$\Phi$实际上是MZVs的生成函数：
+\begin{equation}
+	\begin{aligned}
+		\Phi(\hat{e}_0,\hat{e}_1) &= \sum_{A\in\{0,1\}^\times}(-1)^{\sum_{j=1}^{|A|}a_j}G(0;A;1)\hat{e}_A \\
+		&= 1 + \zeta_2[\hat{e}_0,\hat{e}_1] + \zeta_3[\hat{e}_0-\hat{e}_1,[\hat{e}_0,\hat{e}_1]] \\
+		&+ \zeta_4\left([\hat{e}_0,[\hat{e}_0,[\hat{e}_0,\hat{e}_1]]] + \frac{1}{4}[\hat{e}_1,[\hat{e}_0,[\hat{e}_1,\hat{e}_0]]]+ [\hat{e}_1,[\hat{e}_1,[\hat{e}_0,\hat{e}_1]]] + \frac{5}{4}[\hat{e}_0,\hat{e}_1]^2\right) + \cdots
+	\end{aligned}
+\end{equation}
+这里$\{0,1\}^\times$可以理解为$0$和$1$构成的二进制字符串\footnote{只不过开头任意几位可以是$0$。}，$e_A:=e_{a_1}e_{a_2}\ldots e_{a_w}$。而且\ref{eq:6.134}的表达式十分简单：
+\begin{equation}
+	C_0=(F^\sigma|_{k_{N-1}=0},\mathbf{0}_{(N-3)(N-3)!}),\quad C_1=(F^\sigma,\cdots),\quad C_i:=\left.\hat{C}_i\right|_{s_{0r} =0}
+\end{equation}
+其中$\cdots$对后面计算无关紧要，而且：
+\begin{equation}
+	F^{\sigma{(23\ldots N-2)}}|_{k_{N-1}=0}=\begin{cases}F^{\sigma{(23\ldots N-3)}},&\sigma(N-2)=N-2\\0,&\text{otherwise}\end{cases},\quad F^\varnothing :=1
+\end{equation}
+再利用\ref{eq:6.134}给出的$\hat C_0$和$\hat C_1$之间的联系立刻得到：
+\begin{equation}
+	F^{\sigma_i}=\sum_{j=1}^{(n-3)!}\left[\Phi(e_0,e_1)\right]_{ij}\left(F^{\sigma_j}|_{k_{n-1}=0}\right)
+\end{equation}
+其中$e_0=\hat{e}_0\left|_{s_{0j}=0},\quad e_1=\hat{e}_1\right|_{s_{0j}=0}$。所以只要我们通过KZ方程\ref{eq:KZ}求得了$e_0$和$e_1$，原则上我们便能用MZVs的生成函数写下任意点的$F^\sigma$展开。比如$n=4,5$：
+\begin{equation}
+	\begin{pmatrix} 
+		F^{(2)} \\ 
+		\vdots 
+	\end{pmatrix}
+	= [\Phi(\hat{e}_{0},\hat{e}_{1})]_{2\times2}
+	\begin{pmatrix} 
+		1 \\ 
+		0 
+	\end{pmatrix},\quad  \begin{pmatrix}F^{(23)}\\F^{(32)}\\\vdots\end{pmatrix}=[\Phi(e_0,e_1)]_{6\times6}\begin{pmatrix}F^{(2)}\\0\\\mathbf{0}_4\end{pmatrix}
+\end{equation}
+其中：
+\begin{equation}
+	\left.e_0\right|_{n=4}=2\alpha^{\prime}\begin{pmatrix}-s_{12}&s_{12}\\0&0\end{pmatrix},\quad e_1|_{n=4}=2\alpha^{\prime}\begin{pmatrix}0&0\\-s_{23}&s_{23}\end{pmatrix}
+\end{equation}
+\begin{equation}
+	\begin{gathered}
+		\hat{e}_0|_{n=5} = 2\alpha^{\prime}
+		\begin{pmatrix} 
+			-s_{123} & 0 & s_{13}+s_{23} & s_{12} & s_{12} & -s_{12} \\
+			0 & -s_{123} & s_{13} & s_{12}+s_{23} & -s_{13} & s_{13} \\
+			0 & 0 & -s_{12} & 0 & s_{12} & 0 \\
+			0 & 0 & 0 & -s_{13} & 0 & s_{13} \\
+			0 & 0 & 0 & 0 & 0 & 0 \\
+			0 & 0 & 0 & 0 & 0 & 0
+		\end{pmatrix} \\
+		\hat{e}_1|_{n=5} = 2\alpha^{\prime}
+		\begin{pmatrix} 
+			0 & 0 & 0 & 0 & 0 & 0 \\
+			0 & 0 & 0 & 0 & 0 & 0 \\
+			-s_{34} & 0 & s_{34} & 0 & 0 & 0 \\
+			0 & -s_{24} & 0 & s_{24} & 0 & 0 \\
+			-s_{34} & s_{34} & -s_{23}-s_{24} & -s_{34} & s_{234} & 0 \\
+			s_{24} & -s_{24} & -s_{24} & -s_{23}-s_{34} & 0 & s_{234}
+		\end{pmatrix}
+	\end{gathered}
+\end{equation}
+至此，树级弦振幅在$\alpha^\prime$展开的意义下可以理解为MZVs的生成列。可以预料到，随着亏格的增加，高圈弦振幅会出现更多的数论结构。比如一圈开弦振幅就对应elliptic MZVs\cite{Broedel:2014vla}。
+
+\subsection{开闭弦振幅之间的单值映射关系}
+$G(0,1;z)=\log(1-z)$是复平面上的多值函数，但是我们可以和他的复共轭做加法得到单值化后的$G^{\mathrm{sv}}(0,1;z) = \log|1-z|^2$。文献\cite{BROWN2004527,BROWN_2014,schnetz2013graphical}指出这样的单值化总是可以利用和反全纯共轭部分组合来做到的，所以顺势可以定义所谓单值MZVs：
+\begin{equation}
+	\zeta^{\mathrm{sv}}_{n_1,n_2,...,n_r}:=(-1)^rG^{\mathrm{sv}}(\underbrace{0,\ldots,0}_{n_r-1},1,\ldots,\underbrace{0,\ldots,0}_{n_2-1},1,\underbrace{0,\ldots,0}_{n_1-1},1;z=1)
+\end{equation}
+比较重要的是对于黎曼Zeta函数：
+\begin{equation}
+	\zeta_{2k}^\mathrm{sv}=0,\quad\zeta_{2k+1}^\mathrm{sv}=2\zeta_{2k+1}
+\end{equation}
+现在考虑开弦Veneziano振幅\ref{Veneziano}和Virasoro-Shapiro振幅\ref{eq:4.45}：
+\begin{equation}
+	\frac{\Gamma(1-2\alpha^{\prime}s_{12})\Gamma(1-2\alpha^{\prime}s_{23})}{\Gamma(1-2\alpha^{\prime}s_{12}-2\alpha^{\prime}s_{23})}=\exp\left(\sum_{n=2}^{\infty}\frac{\zeta_{n}}{n}(2\alpha^{\prime})^{n}\left[s_{12}^{n}+s_{23}^{n}-(s_{12}+s_{23})^{n}\right]\right)
+\end{equation}
+\begin{equation}
+\begin{aligned}
+		&\frac{\Gamma(1-\frac{\alpha^{\prime}}{2}s_{12})\Gamma(1-\frac{\alpha^{\prime}}{2}s_{23})\Gamma(1-\frac{\alpha^{\prime}}{2}s_{13})}{\Gamma(1+\frac{\alpha^{\prime}}{2}s_{12})\Gamma(1+\frac{\alpha^{\prime}}{2}s_{23})\Gamma(1+\frac{\alpha^{\prime}}{2}s_{13})}\\
+	&=\exp\left(2\sum_{k=1}^{\infty}\frac{\zeta_{2k+1}}{2k+1}\left(\frac{\alpha^{\prime}}{2}\right)^{2k+1}\left[s_{12}^{2k+1}+s_{23}^{2k+1}+s_{13}^{2k+1}\right]\right)
+\end{aligned}
+\end{equation}
+不难发现这正是单值化的过程！\footnote{当然，还需要把开弦弦长参数$\alpha^\prime$替换为$\frac{\alpha^\prime}{4}$。}而单值化是将反全纯部分叠加起来，所以从数学上看似乎和KLT关系联系很大。考虑分离弦振幅中的Koba-Nielsen因子：\footnote{再次提醒这里幂指数和$\S$\ref{chap:4}中相差$\frac12$是因为本章我们沿用$s_P:=\frac12 k_P\cdot k_P$的符号约定，$\S$\ref{chap:4}中则是$-k_P\cdot k_P$}
+\begin{equation}
+	\langle\langle V_1(z_1)\prod_{j=2}^{n-2}U_j(z_j)V_{n-1}(z_{n-1})V_n(\infty)\rangle\rangle=:\langle\bullet\rangle\prod_{i<j}^n|z_{ij}|^{-2\alpha^{\prime}s_{ij}}
+\end{equation}
+本章说白了就是在研究$\langle\bullet\rangle$的性质，特别是我们发现振幅的世界面积分部分完全可以由$Z$积分\ref{eq:6.118}描述，最终振幅被我们拆分成了$Z$积分和一些零模积分的简单乘积\ref{eq:6.119}。对于闭弦，球面上左右模独立传播，被积函数直接多个反全纯部分乘积：
+\begin{equation}
+		\langle\langle V_1^{\mathrm{cl}}(z_1,\bar z_1)\prod_{j=2}^{n-2}U_j^{\mathrm{cl}}(z_j,\bar z_j)V_{n-1}^{\mathrm{cl}}(z_{n-1},\bar z_{n-1})V_n^{\mathrm{cl}}(\infty,\infty)\rangle\rangle=:\langle\bullet\rangle\langle\widetilde\bullet\rangle\prod_{i<j}^n|z_{ij}|^{-\alpha^{\prime}s_{ij}}
+\end{equation}
+同样可以定义类似的$J$积分，可以看到左右模唯一耦合体现在世界面积分上：
+\begin{equation}
+	J(P|Q):=\left(-\frac{\alpha^{\prime}}{2\pi}\right)^{n-3}\int_{\mathbb{C}^{n-3}}\frac{d^2z_1\mathrm{~d}^2z_2\mathrm{~\cdots~d}^2z_n}{\mathrm{vol}(\mathrm{SL}_2(\mathbb{C}))}\prod_{i<j}^n|z_{ij}|^{-\alpha^{\prime}s_{ij}}\operatorname{PT}(Q)\widetilde{\operatorname{PT}(P)}
+\end{equation}
+而KLT关系实际上就是在说：
+\begin{equation}
+	J(P|Q)=-\sum_{A,B\in S_{n-3}}Z(1,A,n,n-1|P;\frac{\alpha^\prime}{4})S_{\alpha^{\prime}}(A|B)Z(1,B,n-1,n|Q;\frac{\alpha^\prime}{4})
+\end{equation}
+正如前面$\S$\ref{chap:4}中所言，KLT关系本质上是球面积分和盘面积分之间的数学关系，和具体顶角算符的插入无关。而且\ref{eq:118}实际上可以写成下面类似KLT关系的形式：\cite{Broedel:2013tta}
+\begin{equation}
+	\label{eq:6.153}
+	\mathcal{A}_n(P)=-\sum_{Q,R\in S_{n-3}}Z(P|1,R,n,n-1)S(R|Q)A(1,Q,n-1,n)
+\end{equation}
+那么闭弦就是两次KLT关系，再注意到两个$Z$积分的KLT之后得到一个$J$积分，最终有：
+\begin{equation}
+	\label{eq:6.154}
+\begin{aligned}
+		\mathcal{M}_{n}=\sum_{P,Q,A,B\in S_{n-3}}\tilde{A}(1,P,n,n-1)S(P|Q)&J(1,Q,n-1,n|1,A,n,n-1)
+	\\&\times S(A|B)A(1,B,n-1,n)
+\end{aligned}
+\end{equation}
+这里省略了$\alpha^\prime\to\alpha^\prime/4$。比较\ref{eq:6.153}和\ref{eq:6.154}，如果能证明在单值变换下：
+\begin{equation}
+	Z^\mathrm{sv}(P|Q) = J(P|Q)
+\end{equation}
+那么我们就从数论上对KLT关系进行了解释，而且这种形式更方便讨论低能展开，从开弦到闭弦的低能展开只用逐阶取单值MZVs即可。【然后这里argue证明的文献和oliver的lecture上面的文献】
+
+再argue一下modular graph form
+本论文仅关注于树级弦振幅结构，所以我们止步于此，不再进行过多讨论。
+
+

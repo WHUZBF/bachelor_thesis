@@ -1,4 +1,4 @@
-\begin{thebibliography}{106}
+\begin{thebibliography}{121}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -539,6 +539,39 @@ MAFRA C~R.
 \newblock 2010.
 \newblock arXiv: \eprint{https://arxiv.org/abs/1007.4999}{1007.4999}.
 
+\bibitem[Gross et~al.(1985)Gross, Harvey, Martinec, and Rohm]{Gross:1984dd}
+GROSS D~J, HARVEY J~A, MARTINEC E~J, et~al.
+\newblock {The Heterotic String}\allowbreak[J/OL].
+\newblock Phys. Rev. Lett., 1985, 54: 502-505.
+\newblock DOI: \doi{10.1103/PhysRevLett.54.502}.
+
+\bibitem[Gross et~al.(1985)Gross, Harvey, Martinec, and Rohm]{Gross:1985fr}
+GROSS D~J, HARVEY J~A, MARTINEC E~J, et~al.
+\newblock {Heterotic String Theory. 1. The Free Heterotic
+  String}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 1985, 256: 253.
+\newblock DOI: \doi{10.1016/0550-3213(85)90394-3}.
+
+\bibitem[Gross et~al.(1986)Gross, Harvey, Martinec, and Rohm]{Gross:1985rr}
+GROSS D~J, HARVEY J~A, MARTINEC E~J, et~al.
+\newblock {Heterotic String Theory. 2. The Interacting Heterotic
+  String}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 1986, 267: 75-124.
+\newblock DOI: \doi{10.1016/0550-3213(86)90146-X}.
+
+\bibitem[Du et~al.(2017)Du, Feng, and Teng]{Du:2017gnh}
+DU Y~J, FENG B, TENG F.
+\newblock {Expansion of All Multitrace Tree Level EYM
+  Amplitudes}\allowbreak[J/OL].
+\newblock JHEP, 2017, 12: 038.
+\newblock DOI: \doi{10.1007/JHEP12(2017)038}.
+
+\bibitem[Fu et~al.(2017)Fu, Du, Huang, and Feng]{Fu:2017uzt}
+FU C~H, DU Y~J, HUANG R, et~al.
+\newblock {Expansion of Einstein-Yang-Mills Amplitude}\allowbreak[J/OL].
+\newblock JHEP, 2017, 09: 021.
+\newblock DOI: \doi{10.1007/JHEP09(2017)021}.
+
 \bibitem[Berkovits(2005)]{Berkovits:2005bt}
 BERKOVITS N.
 \newblock {Pure spinor formalism as an N=2 topological
@@ -715,5 +748,75 @@ MAFRA C~R.
   amplitudes}\allowbreak[J/OL].
 \newblock JHEP, 2016, 07: 080.
 \newblock DOI: \doi{10.1007/JHEP07(2016)080}.
+
+\bibitem[Barreiro et~al.(2012)Barreiro and Medina]{Barreiro:2012aw}
+BARREIRO L~A, MEDINA R.
+\newblock {Revisiting the S-matrix approach to the open superstring low energy
+  effective lagrangian}\allowbreak[J/OL].
+\newblock JHEP, 2012, 10: 108.
+\newblock DOI: \doi{10.1007/JHEP10(2012)108}.
+
+\bibitem[Drinfeld(1990)]{drinfeld1990quasi}
+DRINFELD V.
+\newblock Quasi-hopf algebras\allowbreak[J].
+\newblock Leningrad Math. J., 1990, 1: 1419-1457.
+
+\bibitem[Drinfeld(1991)]{drinfeld1991quasi}
+DRINFELD V.
+\newblock On quasi-triangular quasi-hopf algfebras and a group closely
+  connected with gal (q\^{}\^{}-/q)\allowbreak[J].
+\newblock Leningrad Math. J., 1991, 2: 829-860.
+
+\bibitem[Blumlein et~al.(2010)Blumlein, Broadhurst, and
+  Vermaseren]{Blumlein:2009cf}
+BLUMLEIN J, BROADHURST D~J, VERMASEREN J~A~M.
+\newblock {The Multiple Zeta Value Data Mine}\allowbreak[J/OL].
+\newblock Comput. Phys. Commun., 2010, 181: 582-625.
+\newblock DOI: \doi{10.1016/j.cpc.2009.11.007}.
+
+\bibitem[Le et~al.(1996)Le and Murakami]{Le199639}
+LE T~T~Q, MURAKAMI J.
+\newblock Kontsevich's integral for the kauffman polynomial\allowbreak[J/OL].
+\newblock Nagoya Mathematical Journal, 1996, 142: 39 – 65.
+\newblock
+  \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-0007318728&doi=10.1017%2fs0027763000005638&partnerID=40&md5=0528cae456727f44bac92533bc4f3ffe}.
+\newblock DOI: \doi{10.1017/s0027763000005638}.
+
+\bibitem[Broedel et~al.(2015)Broedel, Mafra, Matthes, and
+  Schlotterer]{Broedel:2014vla}
+BROEDEL J, MAFRA C~R, MATTHES N, et~al.
+\newblock {Elliptic multiple zeta values and one-loop superstring
+  amplitudes}\allowbreak[J/OL].
+\newblock JHEP, 2015, 07: 112.
+\newblock DOI: \doi{10.1007/JHEP07(2015)112}.
+
+\bibitem[Brown(2004)]{BROWN2004527}
+BROWN F~C.
+\newblock Polylogarithmes multiples uniformes en une variable\allowbreak[J/OL].
+\newblock Comptes Rendus Mathematique, 2004, 338\allowbreak (7): 527-532.
+\newblock
+  \url{https://www.sciencedirect.com/science/article/pii/S1631073X04000780}.
+\newblock DOI: \doi{https://doi.org/10.1016/j.crma.2004.02.001}.
+
+\bibitem[BROWN(2014)]{BROWN_2014}
+BROWN F.
+\newblock Single-valued motivic periods and multiple zeta
+  values\allowbreak[J/OL].
+\newblock Forum of Mathematics, Sigma, 2014, 2: e25.
+\newblock DOI: \doi{10.1017/fms.2014.18}.
+
+\bibitem[Schnetz(2013)]{schnetz2013graphical}
+SCHNETZ O.
+\newblock Graphical functions and single-valued multiple
+  polylogarithms\allowbreak[A].
+\newblock 2013.
+
+\bibitem[Broedel et~al.(2013)Broedel, Schlotterer, and
+  Stieberger]{Broedel:2013tta}
+BROEDEL J, SCHLOTTERER O, STIEBERGER S.
+\newblock {Polylogarithms, Multiple Zeta Values and Superstring
+  Amplitudes}\allowbreak[J/OL].
+\newblock Fortsch. Phys., 2013, 61: 812-870.
+\newblock DOI: \doi{10.1002/prop.201300019}.
 
 \end{thebibliography}

@@ -442,9 +442,9 @@ $\succ_{\sigma}$表示在排序$\sigma$中的先后顺序。$a\shuffle b$表示�
 \subsection{KLT关系}
 无论是闭弦谱和开弦谱之间的关系，还是格林函数由于电像法带来的双倍关系。都不禁让人思考开弦与闭弦振幅之间是否存在联系？实际上，在树图层面上闭弦球面振幅和开弦盘面振幅之间由下面的KLT关系联系：
 \begin{equation}
-	\mathcal{M}_n\sim\sum_{\rho,\tau\in S_{n-3}}A_n(1,\rho,n-1,n)S_{\alpha^{\prime}}(\rho|\tau)\tilde A_n(1,\tau,n,n-1)
+	\mathcal{M}_n\sim\sum_{\rho,\tau\in S_{n-3}}A_n\left(1,\rho,n-1,n|\frac{\alpha'}{4}\right)S_{\alpha^{\prime}}(\rho|\tau)\tilde A_n\left(1,\tau,n,n-1|\frac{\alpha^\prime}{4}\right)
 \end{equation}
-注意色序振幅根据上一节的单值关系只有$(n-3)!$个独立的项，在KLT关系这里也有体现，这里$S[\sigma|\tau]$称为KLT核或动量核。此KLR关系在$\alpha^\prime\to 0$的情况下得到胶子振幅与引力子振幅之间的KLT关系，动量核退化为：
+这里$A(\bullet|\frac{\alpha\prime}{4})$表示把开弦振幅中的$\alpha\prime$全部替换为$\alpha^\prime/4$，后面我们提到开闭弦关系假设隐含这一替换约定。注意色序振幅根据上一节的单值关系只有$(n-3)!$个独立的项，在KLT关系这里也有体现，这里$S[\sigma|\tau]$称为KLT核或动量核。此KLT关系在$\alpha^\prime\to 0$的情况下得到胶子振幅与引力子振幅之间的KLT关系，动量核退化为：
 \begin{equation}
 	\mathcal{S}[\alpha|\beta]=\prod_{i=2}^{n-2}\left(s_{1,\alpha(i)}+\sum_{j=2}^{i-1}\theta(\alpha(j),\alpha(i)|\beta) s_{\alpha(j),\alpha(i)}\right),\quad s_{ab}:=2k_a\cdot k_b
 \end{equation}
@@ -452,7 +452,7 @@ $\theta\left(i,j|\beta\right)$当且仅当$(i,j)$在$\alpha$和$\beta$内的顺�
 \begin{equation*}
 	\text{Gravity}=\frac{\text{Yang-Mills}^2}{\text{bi-adjoint scalar}}
 \end{equation*}
-在弦论也类似，可以用$\alpha^\prime$-修正的双自伴随标量场计算KLT核的逆矩阵$m_{\alpha'}(\alpha|\beta)$\cite{Mizera:2016jhj,Mizera:2017cqs,Massidda:2024krv}。其计算过程可以用类似费曼图的组合图形形象表示\footnote{这部分脱离本论文主线，但是其与代数几何中的相交理论等有很深刻的联系，所以作者认为非常有趣，值得介绍。}，下面取符号约定$s_{\mathcal{I}}=\frac{\pi\alpha'}{2}\sum_{i\in\mathcal{I}}p_i$：
+在弦论也类似，可以用$\alpha^\prime$-修正的双自伴随标量场计算KLT核的逆矩阵$m_{\alpha'}(\alpha|\beta)$\cite{Mizera:2016jhj,Mizera:2017cqs,Massidda:2024krv}。其计算过程可以用类似费曼图的组合图形形象表示，下面取符号约定$s_{\mathcal{I}}=\frac{\pi\alpha'}{2}\sum_{i\in\mathcal{I}}p_i$：
 \begin{equation}
 	m_{\alpha'}(\mathbb{I}_6|126435)\, = \parbox[c]{6.5em}{\includegraphics[scale=.5]{figs/eqfig1.pdf}} =\, \frac{1}{\sin s_{12} \,\sin s_{34} \,\sin s_{345}}
 \end{equation}

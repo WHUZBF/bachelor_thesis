@@ -45,28 +45,32 @@
 \contentsline {subsection}{\numberline {5.3.3}十维超对称Yang-Mills理论}{58}{subsection.5.3.3}%
 \contentsline {subsection}{\numberline {5.3.4}*$U(5)$分解}{59}{subsection.5.3.4}%
 \contentsline {section}{\numberline {5.4}纯旋量超弦振幅}{62}{section.5.4}%
-\contentsline {section}{\numberline {5.5}*非最小纯旋量超弦}{65}{section.5.5}%
-\contentsline {chapter}{\numberline {6\hspace {.3em}}盘面振幅与Bern-Carrasco-Johanson分子的构造}{67}{chapter.6}%
-\contentsline {section}{\numberline {6.1}色-运动学对偶}{67}{section.6.1}%
-\contentsline {section}{\numberline {6.2}纯旋量超弦关联函数计算}{71}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}多粒子超场}{73}{subsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.1.1}Lorenz规范}{73}{subsubsection.6.2.1.1}%
-\contentsline {subsubsection}{\numberline {6.2.1.2}混合（hybrid）规范}{74}{subsubsection.6.2.1.2}%
-\contentsline {subsubsection}{\numberline {6.2.1.3}BCJ规范}{75}{subsubsection.6.2.1.3}%
-\contentsline {subsection}{\numberline {6.2.2}Berends–Giele流}{77}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}自由李代数对称性}{80}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}超弦无质量态$n$点盘面振幅}{83}{section.6.3}%
-\contentsline {section}{\numberline {6.4}SYM振幅的纯旋量超空间上同调表述}{85}{section.6.4}%
-\contentsline {section}{\numberline {6.5}利用纯旋量超弦构造Super-Yang-Mills理论的树图BCJ分子}{88}{section.6.5}%
-\contentsline {chapter}{参考文献}{91}{chapter*.22}%
-\contentsline {chapter}{致谢}{101}{chapter*.23}%
-\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}本论文主要使用到的算符乘积展开}{103}{appendix.A}%
-\contentsline {section}{\numberline {A1}玻色弦CFT}{103}{section.A.1}%
-\contentsline {subsection}{\numberline {A1.1}自由玻色CFT}{103}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A1.2}$bc$鬼场}{104}{subsection.A.1.2}%
-\contentsline {section}{\numberline {A2}$\mathcal {N}=1$ SCFT}{104}{section.A.2}%
-\contentsline {subsection}{\numberline {A2.1}自由费米CFT}{104}{subsection.A.2.1}%
-\contentsline {subsection}{\numberline {A2.2}$\beta \gamma $鬼场}{105}{subsection.A.2.2}%
-\contentsline {subsection}{\numberline {A2.3}超空间表述}{106}{subsection.A.2.3}%
-\contentsline {section}{\numberline {A3}纯旋量形式}{108}{section.A.3}%
-\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}一些常用的$\gamma $矩阵计算恒等式}{109}{appendix.B}%
+\contentsline {section}{\numberline {5.5}*非最小纯旋量超弦}{66}{section.5.5}%
+\contentsline {chapter}{\numberline {6\hspace {.3em}}盘面振幅与Bern-Carrasco-Johanson分子的构造}{69}{chapter.6}%
+\contentsline {section}{\numberline {6.1}色-运动学对偶}{69}{section.6.1}%
+\contentsline {section}{\numberline {6.2}纯旋量超弦关联函数计算}{73}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}多粒子超场}{75}{subsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.1.1}Lorenz规范}{75}{subsubsection.6.2.1.1}%
+\contentsline {subsubsection}{\numberline {6.2.1.2}混合（hybrid）规范}{76}{subsubsection.6.2.1.2}%
+\contentsline {subsubsection}{\numberline {6.2.1.3}BCJ规范}{77}{subsubsection.6.2.1.3}%
+\contentsline {subsection}{\numberline {6.2.2}Berends–Giele流}{79}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}自由李代数对称性}{82}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}超弦无质量态$n$点盘面振幅}{85}{section.6.3}%
+\contentsline {section}{\numberline {6.4}SYM振幅的纯旋量超空间上同调表述}{87}{section.6.4}%
+\contentsline {section}{\numberline {6.5}利用纯旋量超弦构造Super-Yang-Mills理论的树图BCJ分子}{91}{section.6.5}%
+\contentsline {section}{\numberline {6.6}*弦长极限中的数论结构}{93}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}弦论低能有效作用量}{93}{subsection.6.6.1}%
+\contentsline {subsection}{\numberline {6.6.2}$\alpha ^\prime $展开$\leftrightarrow $生成列}{94}{subsection.6.6.2}%
+\contentsline {subsection}{\numberline {6.6.3}开闭弦振幅之间的单值映射关系}{96}{subsection.6.6.3}%
+\contentsline {chapter}{参考文献}{99}{chapter*.22}%
+\contentsline {chapter}{致谢}{111}{chapter*.23}%
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}本论文主要使用到的算符乘积展开}{113}{appendix.A}%
+\contentsline {section}{\numberline {A1}玻色弦CFT}{113}{section.A.1}%
+\contentsline {subsection}{\numberline {A1.1}自由玻色CFT}{113}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A1.2}$bc$鬼场}{114}{subsection.A.1.2}%
+\contentsline {section}{\numberline {A2}$\mathcal {N}=1$ SCFT}{114}{section.A.2}%
+\contentsline {subsection}{\numberline {A2.1}自由费米CFT}{114}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A2.2}$\beta \gamma $鬼场}{115}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A2.3}*超空间表述}{116}{subsection.A.2.3}%
+\contentsline {section}{\numberline {A3}纯旋量形式}{118}{section.A.3}%
+\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}一些常用的$\gamma $矩阵计算恒等式}{119}{appendix.B}%
