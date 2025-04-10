@@ -29,7 +29,7 @@
 	\label{eq:5.4}
 	\{d_\alpha,d_\beta\}_{\mathrm{PB}}=-\gamma_{\alpha\beta}^\mu P_\mu
 \end{equation}
-对于无质量粒子取小群表示$P^\mu=(E,0,\ldots,E)$，并且取$X,P,\gamma$的光锥坐标得到：
+对于无质量粒子取小群表示$P^\mu=(E,0,\ldots,E)$，并且取光锥坐标得到：\footnote{与第\ref{chap:2}章中不同，本章我们取光锥坐标为$\gamma^{\pm}:=\frac{1}{\sqrt{2}}(\gamma^0\pm\gamma^9)$。}
 \begin{equation}
 	\label{eq:5.5}
 	\{d_\alpha,d_\beta\}_{\mathrm{PB}}=-\gamma_{\alpha\beta}^-P^+\propto\begin{pmatrix}{1}_{8\times8}&{0}_{8\times8}\\{0}_{8\times8}&{0}_{8\times8}\end{pmatrix}
@@ -38,7 +38,7 @@
 
 第一类约束比如前面玻色弦和RNS超弦量子化中能动张量给出的约束可以在协变量子化框架中将约束看作是\ref{eq:2.23}来解决，但是第二类约束需要用到$\S$\ref{sec:5.2}中的式\ref{2nd}先替换掉泊松括号，然后再进行正则量子化。下面我们直接选取规范固定将第一类约束解除，然后处理第二类约束。
 
-在光锥规范下可以固定$\kappa$规范对称性为$(\gamma^+\theta)_\alpha=0$，在这一规范固定下，作用量\ref{eq:5.1}改写为：\footnote{计算需要利用靶空间Majorana-Weyl旋量性质$\dot{\theta}\gamma^+\theta=\dot{\theta}\gamma^i\theta=0$。}
+在光锥规范下可以固定$\kappa$规范对称性为$(\gamma^+\theta)_\alpha=0$，只用选取$\kappa_\beta=\frac{1}{2P^+}(\gamma^+\theta)_\beta$对$\theta$变换即可做到这一点。在这一规范固定下，作用量\ref{eq:5.1}改写为：\footnote{计算需要利用靶空间Majorana-Weyl旋量性质$\dot{\theta}\gamma^+\theta=\dot{\theta}\gamma^i\theta=0$。}
 \begin{equation}
 S_{\text{BS}}=\int d\tau\left(\dot{X}^\mu P_\mu-\frac{1}{2}\dot{S}_aS_a+eP^\mu P_\mu\right),\quad S^a:=2^{1/4}\sqrt{P^+}\theta^a
 \end{equation}
@@ -156,11 +156,11 @@ Berkovits发现，可以通过引入额外的一组费米的共轭变量$(\theta
 	\label{eq:5.14}
 	S=\int d\tau\left(\dot{X}^\mu P_\mu-\frac{1}{2}\dot{S}_aS_a-\frac{1}{2}P^\mu P_\mu+\dot{\theta}^\alpha p_\alpha+\dot{c}b-\dot{\hat{\lambda}}^\alpha\hat{w}_\alpha\right)
 \end{equation}
-纯旋量形式量子化最常用的方法是BRST量子化，上面作用量的BRST荷为：
+纯旋量形式量子化最常用的方法是BRST量子化，上面作用量的BRST荷为：\cite{Berkovits:2002zk,Berkovits:2001rb}
 \begin{equation}
 	\hat{Q}_B=\hat{\lambda}^\alpha\hat{d}_\alpha+cP^2+\frac{i}{4P^+}b(\hat{\lambda}\gamma^+\hat{\lambda})
 \end{equation}
-可以证明这个复杂的BRST上同调等价于下面的BRST算符的上同调：
+可以证明这个复杂的BRST上同调等价于下面的BRST算符的上同调：\cite{Berkovits:2002zk}
 \begin{equation}
 	\label{eq:5.16}
 	Q_B=\lambda^\alpha d_\alpha, \quad \lambda\gamma^\mu\lambda = 0

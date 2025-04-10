@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  10 APR 2025 05:03
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  10 APR 2025 20:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1762,6 +1762,15 @@ Overfull \hbox (27.04587pt too wide) detected at line 578
 
 
 ]
+Overfull \hbox (6.88805pt too wide) in paragraph at lines 41--42
+[]\TU/SimSun(0)/m/n/12.045 在 光 锥 规 范 下 可 以 固 定 $\OML/cmm/m/it/12.045 ^^T$ \TU/S
+imSun(0)/m/n/12.045 规 范 对 称 性 为 $\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 ^^M[
+]^^R\OT1/cmr/m/n/12.045 )[] = 0$\TU/SimSun(0)/m/n/12.045 ，|  只 用 选 取 $\OML/cmm/
+m/it/12.045 ^^T[] \OT1/cmr/m/n/12.045 = [](\OML/cmm/m/it/12.045 ^^M[]^^R\OT1/cm
+r/m/n/12.045 )[]$
+ []
+
+
 
 [52]
 
@@ -1961,15 +1970,6 @@ Overfull \hbox (5.39966pt too wide) detected at line 151
 [73]
 
 [74]
-Overfull \hbox (0.86484pt too wide) in paragraph at lines 190--192
-\TU/SimSun(0)/m/n/12.045 这 种 下 标 称 为 李 多 项 式[][][][]，|  数 学 方 面 的 介 绍 可 见$[]$，|
-  更 偏 向 物 理 的 介 绍 可 见$[]$。|
- []
-
-
-Underfull \vbox (badness 5022) has occurred while \output is active []
-
-
 
 [75]
 
@@ -2144,7 +2144,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [102]
-Underfull \hbox (badness 2073) in paragraph at lines 342--348
+Underfull \hbox (badness 2073) in paragraph at lines 353--359
 []\TU/TimesNewRoman(0)/m/n/12.045 SCHLOTTERER O.  The number theory of superstr
 ing amplitudes[C]//
  []
@@ -2179,22 +2179,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[108])
-
-[109]
-\openout2 = `pages/acknowledgement.aux'.
-
- (./pages/acknowledgement.tex
-
-[110
-
-
-]
+[108]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[111])
+[109])
+
+[110]
+\openout2 = `pages/acknowledgement.aux'.
+
+ (./pages/acknowledgement.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[111
+
+
+])
 
 [112]
 \openout2 = `pages/appendixA.aux'.
@@ -2314,10 +2317,10 @@ L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 40677 strings out of 474240
- 917857 string characters out of 5745918
+ 40688 strings out of 474240
+ 916731 string characters out of 5745918
  1949560 words of memory out of 5000000
- 62505 multiletter control sequences out of 15000+600000
+ 62516 multiletter control sequences out of 15000+600000
  589354 words of font info for 240 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,19n,121p,2041b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s

@@ -1,4 +1,4 @@
-\begin{thebibliography}{121}
+\begin{thebibliography}{135}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -119,6 +119,59 @@ MAFRA C~R, SCHLOTTERER O, STIEBERGER S.
 \newblock Nucl. Phys. B, 2013, 873: 461-513.
 \newblock DOI: \doi{10.1016/j.nuclphysb.2013.04.022}.
 
+\bibitem[Polchinski(2007)]{Polchinski:1998rq}
+POLCHINSKI J.
+\newblock Cambridge monographs on mathematical physics: {String theory. Vol. 1:
+  An introduction to the bosonic string}\allowbreak[M/OL].
+\newblock Cambridge University Press, 2007.
+\newblock DOI: \doi{10.1017/CBO9780511816079}.
+
+\bibitem[Polchinski(2007)]{Polchinski:1998rr}
+POLCHINSKI J.
+\newblock Cambridge monographs on mathematical physics: {String theory. Vol. 2:
+  Superstring theory and beyond}\allowbreak[M/OL].
+\newblock Cambridge University Press, 2007.
+\newblock DOI: \doi{10.1017/CBO9780511618123}.
+
+\bibitem[Blumenhagen et~al.(2013)Blumenhagen, L\"ust, and
+  Theisen]{Blumenhagen:2013fgp}
+BLUMENHAGEN R, L\"UST D, THEISEN S.
+\newblock Theoretical and mathematical physics: {Basic concepts of string
+  theory}\allowbreak[M/OL].
+\newblock Heidelberg, Germany: Springer, 2013.
+\newblock DOI: \doi{10.1007/978-3-642-29497-6}.
+
+\bibitem[Becker et~al.(2006)Becker, Becker, and Schwarz]{Becker:2006dvp}
+BECKER K, BECKER M, SCHWARZ J~H.
+\newblock {String theory and M-theory: A modern introduction}\allowbreak[M/OL].
+\newblock Cambridge University Press, 2006.
+\newblock DOI: \doi{10.1017/CBO9780511816086}.
+
+\bibitem[Green et~al.(2012)Green, Schwarz, and Witten]{Green:2012oqa}
+GREEN M~B, SCHWARZ J~H, WITTEN E.
+\newblock Cambridge monographs on mathematical physics: {Superstring Theory
+  Vol. 1}: {25th Anniversary Edition}\allowbreak[M/OL].
+\newblock Cambridge University Press, 2012.
+\newblock DOI: \doi{10.1017/CBO9781139248563}.
+
+\bibitem[Green et~al.(2012)Green, Schwarz, and Witten]{Green:2012pqa}
+GREEN M~B, SCHWARZ J~H, WITTEN E.
+\newblock Cambridge monographs on mathematical physics: {Superstring Theory
+  Vol. 2}: {25th Anniversary Edition}\allowbreak[M/OL].
+\newblock Cambridge University Press, 2012.
+\newblock DOI: \doi{10.1017/CBO9781139248570}.
+
+\bibitem[Cecotti(2023)]{Cecotti:2023dnp}
+CECOTTI S.
+\newblock {Introduction to String Theory}: Vol. 9783031365300\allowbreak[M/OL].
+\newblock Springer, 2023.
+\newblock DOI: \doi{10.1007/978-3-031-36530-0}.
+
+\bibitem[Kiritsis(2019)]{Kiritsis:2019npv}
+KIRITSIS E.
+\newblock {String Theory in a Nutshell: Second Edition}\allowbreak[M].
+\newblock USA: Princeton University Press, 2019.
+
 \bibitem[Witten(2012)]{Witten:2012bh}
 WITTEN E.
 \newblock {Superstring Perturbation Theory Revisited}\allowbreak[A].
@@ -142,27 +195,6 @@ MAFRA C~R, SCHLOTTERER O, STIEBERGER S.
 \newblock {Explicit BCJ Numerators from Pure Spinors}\allowbreak[J/OL].
 \newblock JHEP, 2011, 07: 092.
 \newblock DOI: \doi{10.1007/JHEP07(2011)092}.
-
-\bibitem[Polchinski(2007)]{Polchinski:1998rq}
-POLCHINSKI J.
-\newblock Cambridge monographs on mathematical physics: {String theory. Vol. 1:
-  An introduction to the bosonic string}\allowbreak[M/OL].
-\newblock Cambridge University Press, 2007.
-\newblock DOI: \doi{10.1017/CBO9780511816079}.
-
-\bibitem[Blumenhagen et~al.(2013)Blumenhagen, L\"ust, and
-  Theisen]{Blumenhagen:2013fgp}
-BLUMENHAGEN R, L\"UST D, THEISEN S.
-\newblock Theoretical and mathematical physics: {Basic concepts of string
-  theory}\allowbreak[M/OL].
-\newblock Heidelberg, Germany: Springer, 2013.
-\newblock DOI: \doi{10.1007/978-3-642-29497-6}.
-
-\bibitem[Becker et~al.(2006)Becker, Becker, and Schwarz]{Becker:2006dvp}
-BECKER K, BECKER M, SCHWARZ J~H.
-\newblock {String theory and M-theory: A modern introduction}\allowbreak[M/OL].
-\newblock Cambridge University Press, 2006.
-\newblock DOI: \doi{10.1017/CBO9780511816086}.
 
 \bibitem[Di~Francesco et~al.(1997)Di~Francesco, Mathieu, and
   Senechal]{DiFrancesco:1997nk}
@@ -205,20 +237,6 @@ HENNEAUX M, TEITELBOIM C.
 \newblock {Quantization of Gauge Systems}\allowbreak[M].
 \newblock Princeton University Press, 1994.
 
-\bibitem[Green et~al.(2012)Green, Schwarz, and Witten]{Green:2012oqa}
-GREEN M~B, SCHWARZ J~H, WITTEN E.
-\newblock Cambridge monographs on mathematical physics: {Superstring Theory
-  Vol. 1}: {25th Anniversary Edition}\allowbreak[M/OL].
-\newblock Cambridge University Press, 2012.
-\newblock DOI: \doi{10.1017/CBO9781139248563}.
-
-\bibitem[Green et~al.(2012)Green, Schwarz, and Witten]{Green:2012pqa}
-GREEN M~B, SCHWARZ J~H, WITTEN E.
-\newblock Cambridge monographs on mathematical physics: {Superstring Theory
-  Vol. 2}: {25th Anniversary Edition}\allowbreak[M/OL].
-\newblock Cambridge University Press, 2012.
-\newblock DOI: \doi{10.1017/CBO9781139248570}.
-
 \bibitem[Schlotterer(2012)]{Schlotterer:2012zz}
 SCHLOTTERER O.
 \newblock {Scattering amplitudes in open superstring theory}\allowbreak[J/OL].
@@ -241,13 +259,6 @@ HIRSCHHORN M~D.
 \newblock Jacobi's ``aequatio identica satis abstrusa''\allowbreak[M/OL].
 \newblock Cham: Springer International Publishing, 2017: 169-174.
 \newblock \url{https://doi.org/10.1007/978-3-319-57762-3_19}.
-
-\bibitem[Polchinski(2007)]{Polchinski:1998rr}
-POLCHINSKI J.
-\newblock Cambridge monographs on mathematical physics: {String theory. Vol. 2:
-  Superstring theory and beyond}\allowbreak[M/OL].
-\newblock Cambridge University Press, 2007.
-\newblock DOI: \doi{10.1017/CBO9780511618123}.
 
 \bibitem[Adams et~al.(2010)Adams, Taylor, and DeWolfe]{PhysRevLett.105.071601}
 ADAMS A, TAYLOR W, DEWOLFE O.
@@ -490,6 +501,13 @@ FREEDMAN D~Z, VAN~PROEYEN A.
 狄拉克.
 \newblock {狄拉克量子力学演讲集}\allowbreak[M].
 \newblock 科学出版社, 1986.
+
+\bibitem[Berkovits(2001)]{Berkovits:2001rb}
+BERKOVITS N.
+\newblock {Covariant quantization of the superparticle using pure
+  spinors}\allowbreak[J/OL].
+\newblock JHEP, 2001, 09: 016.
+\newblock DOI: \doi{10.1088/1126-6708/2001/09/016}.
 
 \bibitem[Policastro et~al.(2006)Policastro and Tsimpis]{Policastro:2006vt}
 POLICASTRO G, TSIMPIS D.
@@ -790,6 +808,13 @@ BROEDEL J, MAFRA C~R, MATTHES N, et~al.
 \newblock JHEP, 2015, 07: 112.
 \newblock DOI: \doi{10.1007/JHEP07(2015)112}.
 
+\bibitem[Mafra et~al.(2020)Mafra and Schlotterer]{Mafra:2019ddf}
+MAFRA C~R, SCHLOTTERER O.
+\newblock {All Order $\alpha$' Expansion of One-Loop Open-String
+  Integrals}\allowbreak[J/OL].
+\newblock Phys. Rev. Lett., 2020, 124\allowbreak (10): 101603.
+\newblock DOI: \doi{10.1103/PhysRevLett.124.101603}.
+
 \bibitem[Brown(2004)]{BROWN2004527}
 BROWN F~C.
 \newblock Polylogarithmes multiples uniformes en une variable\allowbreak[J/OL].
@@ -818,5 +843,77 @@ BROEDEL J, SCHLOTTERER O, STIEBERGER S.
   Amplitudes}\allowbreak[J/OL].
 \newblock Fortsch. Phys., 2013, 61: 812-870.
 \newblock DOI: \doi{10.1002/prop.201300019}.
+
+\bibitem[Schlotterer et~al.(2013)Schlotterer and
+  Stieberger]{Schlotterer:2012ny}
+SCHLOTTERER O, STIEBERGER S.
+\newblock {Motivic Multiple Zeta Values and Superstring
+  Amplitudes}\allowbreak[J/OL].
+\newblock J. Phys. A, 2013, 46: 475401.
+\newblock DOI: \doi{10.1088/1751-8113/46/47/475401}.
+
+\bibitem[Stieberger(2014)]{Stieberger:2013wea}
+STIEBERGER S.
+\newblock {Closed superstring amplitudes, single-valued multiple zeta values
+  and the Deligne associator}\allowbreak[J/OL].
+\newblock J. Phys. A, 2014, 47: 155401.
+\newblock DOI: \doi{10.1088/1751-8113/47/15/155401}.
+
+\bibitem[Stieberger et~al.(2014)Stieberger and Taylor]{Stieberger:2014hba}
+STIEBERGER S, TAYLOR T~R.
+\newblock {Closed String Amplitudes as Single-Valued Open String
+  Amplitudes}\allowbreak[J/OL].
+\newblock Nucl. Phys. B, 2014, 881: 269-287.
+\newblock DOI: \doi{10.1016/j.nuclphysb.2014.02.005}.
+
+\bibitem[Schlotterer et~al.(2019)Schlotterer and Schnetz]{Schlotterer:2018zce}
+SCHLOTTERER O, SCHNETZ O.
+\newblock {Closed strings as single-valued open strings: A genus-zero
+  derivation}\allowbreak[J/OL].
+\newblock J. Phys. A, 2019, 52\allowbreak (4): 045401.
+\newblock DOI: \doi{10.1088/1751-8121/aaea14}.
+
+\bibitem[Brown et~al.(2021)Brown and Dupont]{Brown:2018omk}
+BROWN F, DUPONT C.
+\newblock {Single-valued integration and double copy}\allowbreak[J/OL].
+\newblock J. Reine Angew. Math., 2021, 2021\allowbreak (775): 145-196.
+\newblock DOI: \doi{10.1515/crelle-2020-0042}.
+
+\bibitem[Brown et~al.(2021)Brown and Dupont]{Brown:2019wna}
+BROWN F, DUPONT C.
+\newblock {Single-valued integration and superstring amplitudes in genus
+  zero}\allowbreak[J/OL].
+\newblock Commun. Math. Phys., 2021, 382\allowbreak (2): 815-874.
+\newblock DOI: \doi{10.1007/s00220-021-03969-4}.
+
+\bibitem[Gerken et~al.(2022)Gerken, Kleinschmidt, Mafra, Schlotterer, and
+  Verbeek]{Gerken:2020xfv}
+GERKEN J~E, KLEINSCHMIDT A, MAFRA C~R, et~al.
+\newblock {Towards closed strings as single-valued open strings at genus
+  one}\allowbreak[J/OL].
+\newblock J. Phys. A, 2022, 55\allowbreak (2): 025401.
+\newblock DOI: \doi{10.1088/1751-8121/abe58b}.
+
+\bibitem[Zerbini(2016)]{Zerbini:2015rss}
+ZERBINI F.
+\newblock {Single-valued multiple zeta values in genus 1 superstring
+  amplitudes}\allowbreak[J/OL].
+\newblock Commun. Num. Theor. Phys., 2016, 10: 703-737.
+\newblock DOI: \doi{10.4310/CNTP.2016.v10.n4.a2}.
+
+\bibitem[Broedel et~al.(2019)Broedel, Schlotterer, and
+  Zerbini]{Broedel:2018izr}
+BROEDEL J, SCHLOTTERER O, ZERBINI F.
+\newblock {From elliptic multiple zeta values to modular graph functions: open
+  and closed strings at one loop}\allowbreak[J/OL].
+\newblock JHEP, 2019, 01: 155.
+\newblock DOI: \doi{10.1007/JHEP01(2019)155}.
+
+\bibitem[Zagier et~al.(2020)Zagier and Zerbini]{Zagier:2019eus}
+ZAGIER D, ZERBINI F.
+\newblock {Genus-zero and genus-one string amplitudes and special multiple zeta
+  values}\allowbreak[J/OL].
+\newblock Commun. Num. Theor. Phys., 2020, 14\allowbreak (2): 413-452.
+\newblock DOI: \doi{10.4310/CNTP.2020.v14.n2.a4}.
 
 \end{thebibliography}
