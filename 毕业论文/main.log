@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  10 APR 2025 20:12
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  17 APR 2025 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1234,7 +1234,8 @@ LaTeX Info: Redefining \cite on input line 694.
 )) (./main.aux
 (./pages/chapter1.aux) (./pages/chapter2.aux) (./pages/chapter3.aux)
 (./pages/chapter4.aux) (./pages/chapter5.aux) (./pages/chapter6.aux)
-(./pages/acknowledgement.aux) (./pages/appendixA.aux) (./pages/appendixB.aux))
+(./pages/chapter7.aux) (./pages/acknowledgement.aux) (./pages/appendixA.aux)
+(./pages/appendixB.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
@@ -1379,13 +1380,6 @@ File: Ushuffle.fd
 
 
 ]
-File: ./logo/whu-logo.pdf Graphic file (type pdf)
-<use ./logo/whu-logo.pdf>
-
-
-[2
-
-]
 
 Package fontspec Info: 
 (fontspec)             Could not resolve font "SimHei/B" (it probably doesn't
@@ -1414,13 +1408,12 @@ t={*},ItalicFont={*}].
 
 
 
-[3]
-
-[4
+[2
 
 ] (./pages/abstract.tex)
 
 [1
+
 
 ]
 
@@ -2119,12 +2112,26 @@ Overfull \hbox (25.91354pt too wide) detected at line 890
 
 [97])
 
-[98] (./main.bbl
+[98]
+\openout2 = `pages/chapter7.aux'.
+
+ (./pages/chapter7.tex
+7
+
+
+[99
+
+
+
+
+])
+
+[100] (./main.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[99
+[101
 
 
 
@@ -2133,23 +2140,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[100]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[101]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
 [102]
-Underfull \hbox (badness 2073) in paragraph at lines 353--359
-[]\TU/TimesNewRoman(0)/m/n/12.045 SCHLOTTERER O.  The number theory of superstr
-ing amplitudes[C]//
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2160,6 +2151,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [104]
+Underfull \hbox (badness 2073) in paragraph at lines 353--359
+[]\TU/TimesNewRoman(0)/m/n/12.045 SCHLOTTERER O.  The number theory of superstr
+ing amplitudes[C]//
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2184,29 +2181,46 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[109])
-
-[110]
-\openout2 = `pages/acknowledgement.aux'.
-
- (./pages/acknowledgement.tex
+[109]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[111
+[110]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-])
 
-[112]
+[111]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[112])
+
+[113]
+\openout2 = `pages/acknowledgement.aux'.
+
+ (./pages/acknowledgement.tex
+
+[114
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[115])
+
+[116]
 \openout2 = `pages/appendixA.aux'.
 
  (./pages/appendixA.tex
 附录 A
 
 
-[113
+[117
 
 
 
@@ -2230,7 +2244,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[114]
+[118]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 111.
@@ -2249,11 +2263,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[115]
+[119]
 
-[116]
+[120]
 
-[117]
+[121]
 Overfull \hbox (7.11964pt too wide) detected at line 216
 [][][]\OML/cmm/m/it/12.045 T[] \OT1/cmr/m/n/12.045 =: \OMS/cmsy/m/n/12.045 ^^@[
 ]\OT1/cmr/m/n/12.045 ^^E[]^^E[] \OMS/cmsy/m/n/12.045 ^^@ \OML/cmm/m/it/12.045 d
@@ -2266,7 +2280,7 @@ m/m/it/12.045 N[] \OT1/cmr/m/n/12.045 =: \OMS/cmsy/m/n/12.045 ^^@[]\OT1/cmr/m/n
 
 )
 
-[118]
+[122]
 \openout2 = `pages/appendixB.aux'.
 
  (./pages/appendixB.tex
@@ -2285,7 +2299,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[119
+[123
 
 
 
@@ -2305,24 +2319,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[120])
+[124])
 
-[121] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
+[125] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
 (./pages/chapter3.aux) (./pages/chapter4.aux) (./pages/chapter5.aux)
-(./pages/chapter6.aux) (./pages/acknowledgement.aux) (./pages/appendixA.aux)
-(./pages/appendixB.aux))
+(./pages/chapter6.aux) (./pages/chapter7.aux) (./pages/acknowledgement.aux)
+(./pages/appendixA.aux) (./pages/appendixB.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 40688 strings out of 474240
- 916731 string characters out of 5745918
+ 40616 strings out of 474240
+ 914294 string characters out of 5745918
  1949560 words of memory out of 5000000
- 62516 multiletter control sequences out of 15000+600000
- 589354 words of font info for 240 fonts, out of 8000000 for 9000
+ 62443 multiletter control sequences out of 15000+600000
+ 589330 words of font info for 237 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 118i,19n,121p,2041b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,19n,121p,2041b,791s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (133 pages).
+Output written on main.pdf (135 pages).

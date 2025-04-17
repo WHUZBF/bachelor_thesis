@@ -1,6 +1,6 @@
 \contentsline {chapter}{摘要}{I}{chapter*.1}%
 \contentsline {chapter}{ABSTRACT}{III}{chapter*.2}%
-\contentsline {chapter}{\numberline {1\hspace {.3em}}引言}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {1\hspace {.3em}}绪论}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2\hspace {.3em}}玻色弦及其量子化}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}正则量子化}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Nambu-Goto 作用量}{3}{subsection.2.1.1}%
@@ -62,15 +62,16 @@
 \contentsline {subsection}{\numberline {6.6.1}弦论低能有效作用量}{93}{subsection.6.6.1}%
 \contentsline {subsection}{\numberline {6.6.2}$\alpha ^\prime $展开$\leftrightarrow $生成列}{94}{subsection.6.6.2}%
 \contentsline {subsection}{\numberline {6.6.3}开闭弦振幅之间的单值映射关系}{96}{subsection.6.6.3}%
-\contentsline {chapter}{参考文献}{99}{chapter*.22}%
-\contentsline {chapter}{致谢}{111}{chapter*.23}%
-\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}本论文主要使用到的算符乘积展开}{113}{appendix.A}%
-\contentsline {section}{\numberline {A1}玻色弦CFT}{113}{section.A.1}%
-\contentsline {subsection}{\numberline {A1.1}自由玻色CFT}{113}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A1.2}$bc$鬼场}{114}{subsection.A.1.2}%
-\contentsline {section}{\numberline {A2}$\mathcal {N}=1$ SCFT}{114}{section.A.2}%
-\contentsline {subsection}{\numberline {A2.1}自由费米CFT}{114}{subsection.A.2.1}%
-\contentsline {subsection}{\numberline {A2.2}$\beta \gamma $鬼场}{115}{subsection.A.2.2}%
-\contentsline {subsection}{\numberline {A2.3}*超空间表述}{116}{subsection.A.2.3}%
-\contentsline {section}{\numberline {A3}纯旋量形式}{118}{section.A.3}%
-\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}一些常用的$\gamma $矩阵计算恒等式}{119}{appendix.B}%
+\contentsline {chapter}{\numberline {7\hspace {.3em}}结论}{99}{chapter.7}%
+\contentsline {chapter}{参考文献}{101}{chapter*.22}%
+\contentsline {chapter}{致谢}{115}{chapter*.23}%
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}本论文主要使用到的算符乘积展开}{117}{appendix.A}%
+\contentsline {section}{\numberline {A1}玻色弦CFT}{117}{section.A.1}%
+\contentsline {subsection}{\numberline {A1.1}自由玻色CFT}{117}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A1.2}$bc$鬼场}{118}{subsection.A.1.2}%
+\contentsline {section}{\numberline {A2}$\mathcal {N}=1$ SCFT}{118}{section.A.2}%
+\contentsline {subsection}{\numberline {A2.1}自由费米CFT}{118}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A2.2}$\beta \gamma $鬼场}{119}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A2.3}*超空间表述}{120}{subsection.A.2.3}%
+\contentsline {section}{\numberline {A3}纯旋量形式}{122}{section.A.3}%
+\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}一些常用的$\gamma $矩阵计算恒等式}{123}{appendix.B}%

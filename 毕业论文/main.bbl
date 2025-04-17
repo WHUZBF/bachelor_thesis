@@ -1,4 +1,4 @@
-\begin{thebibliography}{135}
+\begin{thebibliography}{141}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -915,5 +915,50 @@ ZAGIER D, ZERBINI F.
   values}\allowbreak[J/OL].
 \newblock Commun. Num. Theor. Phys., 2020, 14\allowbreak (2): 413-452.
 \newblock DOI: \doi{10.4310/CNTP.2020.v14.n2.a4}.
+
+\bibitem[Berkovits et~al.(2002)Berkovits and Chandia]{Berkovits:2002qx}
+BERKOVITS N, CHANDIA O.
+\newblock {Massive superstring vertex operator in D = 10
+  superspace}\allowbreak[J/OL].
+\newblock JHEP, 2002, 08: 040.
+\newblock DOI: \doi{10.1088/1126-6708/2002/08/040}.
+
+\bibitem[Chakrabarti et~al.(2018)Chakrabarti, Kashyap, and
+  Verma]{Chakrabarti:2018mqd}
+CHAKRABARTI S, KASHYAP S~P, VERMA M.
+\newblock {Integrated Massive Vertex Operator in Pure Spinor
+  Formalism}\allowbreak[J/OL].
+\newblock JHEP, 2018, 10: 147.
+\newblock DOI: \doi{10.1007/JHEP10(2018)147}.
+
+\bibitem[Chakrabarti et~al.(2018)Chakrabarti, Kashyap, and
+  Verma]{Chakrabarti:2018bah}
+CHAKRABARTI S, KASHYAP S~P, VERMA M.
+\newblock {Amplitudes Involving Massive States Using Pure Spinor
+  Formalism}\allowbreak[J/OL].
+\newblock JHEP, 2018, 12: 071.
+\newblock DOI: \doi{10.1007/JHEP12(2018)071}.
+
+\bibitem[Berkovits(2000)]{Berkovits:2000nn}
+BERKOVITS N.
+\newblock {Cohomology in the pure spinor formalism for the
+  superstring}\allowbreak[J/OL].
+\newblock JHEP, 2000, 09: 046.
+\newblock DOI: \doi{10.1088/1126-6708/2000/09/046}.
+
+\bibitem[Berkovits et~al.(2001)Berkovits and Chandia]{Berkovits:2001mx}
+BERKOVITS N, CHANDIA O.
+\newblock {Lorentz invariance of the pure spinor BRST cohomology for the
+  superstring}\allowbreak[J/OL].
+\newblock Phys. Lett. B, 2001, 514: 394-400.
+\newblock DOI: \doi{10.1016/S0370-2693(01)00789-4}.
+
+\bibitem[Aisaka et~al.(2008)Aisaka, Arroyo, Berkovits, and
+  Nekrasov]{Aisaka:2008vw}
+AISAKA Y, ARROYO E~A, BERKOVITS N, et~al.
+\newblock {Pure Spinor Partition Function and the Massive Superstring
+  Spectrum}\allowbreak[J/OL].
+\newblock JHEP, 2008, 08: 050.
+\newblock DOI: \doi{10.1088/1126-6708/2008/08/050}.
 
 \end{thebibliography}

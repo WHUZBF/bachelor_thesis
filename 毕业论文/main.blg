@@ -8,6 +8,7 @@ A level-1 auxiliary file: pages/chapter3.aux
 A level-1 auxiliary file: pages/chapter4.aux
 A level-1 auxiliary file: pages/chapter5.aux
 A level-1 auxiliary file: pages/chapter6.aux
+A level-1 auxiliary file: pages/chapter7.aux
 A level-1 auxiliary file: pages/acknowledgement.aux
 A level-1 auxiliary file: pages/appendixA.aux
 A level-1 auxiliary file: pages/appendixB.aux
@@ -23,45 +24,46 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 10217 items from 5000.
 Database file #1: ref/bachelor-refs.bib
-You've used 135 entries,
+You've used 141 entries,
             5374 wiz_defined-function locations,
-            1999 strings with 29740 characters,
-and the built_in function-call counts, 957931 in all, are:
-= -- 23991
-> -- 104231
-< -- 131428
-+ -- 37116
-- -- 6757
-* -- 8282
-:= -- 133634
-add.period$ -- 520
-call.type$ -- 135
-change.case$ -- 891
-chr.to.int$ -- 32269
-cite$ -- 135
-duplicate$ -- 3466
-empty$ -- 14980
-format.name$ -- 3158
-if$ -- 249514
+            2040 strings with 30790 characters,
+and the built_in function-call counts, 1013135 in all, are:
+= -- 25240
+> -- 110400
+< -- 139207
++ -- 39259
+- -- 7116
+* -- 8717
+:= -- 141286
+add.period$ -- 544
+call.type$ -- 141
+change.case$ -- 938
+chr.to.int$ -- 34173
+cite$ -- 141
+duplicate$ -- 3621
+empty$ -- 15740
+format.name$ -- 3321
+if$ -- 263870
 int.to.chr$ -- 1
-int.to.str$ -- 136
+int.to.str$ -- 142
 missing$ -- 0
-newline$ -- 810
-num.names$ -- 407
-pop$ -- 46992
+newline$ -- 846
+num.names$ -- 425
+pop$ -- 50043
 preamble$ -- 1
-purify$ -- 135
+purify$ -- 141
 quote$ -- 0
-skip$ -- 100084
+skip$ -- 105667
 stack$ -- 0
-substring$ -- 49839
-swap$ -- 145
-text.length$ -- 2594
+substring$ -- 52704
+swap$ -- 151
+text.length$ -- 2719
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1365
+type$ -- 1431
 warning$ -- 0
-while$ -- 2871
+while$ -- 3010
 width$ -- 0
-write$ -- 2044
+write$ -- 2140
