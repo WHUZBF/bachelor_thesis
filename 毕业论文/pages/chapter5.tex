@@ -194,7 +194,11 @@ BRST算符作用在波函数上可以用正则量子化表示为算符：
 	S_{\mathrm{PS}}=\frac{1}{2\pi\alpha^{\prime}}\int d^2z\left(\frac{1}{2}\partial X^\mu\overline{\partial}X_\mu+p_\alpha\overline{\partial}\theta^\alpha-w_\alpha\overline{\partial}\lambda^\alpha+\tilde{p}_\alpha\partial\tilde{\theta}^\alpha-\tilde{w}_\alpha\partial\tilde{\lambda}^\alpha\right)
 }
 \end{equation}
-这里$\alpha$都是十维Weyl旋量指标，共$2^{\frac{10}{2}-1}=16$个分量，而左右模旋量的手征是否相同反映了II A/B型闭弦理论。对于开弦，边界条件同样同RNS超弦一样，在实轴上左右模相等，所以利用加倍技巧之后对于开弦我们只需要关注上式中不含右模的部分：
+这里$\alpha$都是十维Weyl旋量指标，共$2^{\frac{10}{2}-1}=16$个分量，而左右模旋量的手征是否相同反映了II A/B型闭弦理论。上述体系有如下的靶空间超对称性：
+\begin{equation}
+	\delta\theta^\alpha=\epsilon^\alpha,\quad\delta x^\mu=\frac{1}{2}(\epsilon\gamma^\mu\theta)
+\end{equation}
+对于开弦，边界条件同样同RNS超弦一样，在实轴上左右模相等，所以利用加倍技巧之后对于开弦我们只需要关注上式中不含右模的部分：
 \begin{equation}
 	\label{eq:5.23}
 	S_{\mathrm{PS}}=\frac{1}{\pi}\int d^2z\left(\frac{1}{2}\partial X^\mu\overline{\partial}X_\mu+p_\alpha\overline{\partial}\theta^\alpha-w_\alpha\overline{\partial}\lambda^\alpha\right)
@@ -332,11 +336,13 @@ BRST算符作用在波函数上可以用正则量子化表示为算符：
 
 这些线性超场的作用就相当于Yang-Mills理论中极化矢量的作用，费米子计算中费米波函数$u$的作用，从他们展开的最低阶也确实能看出这一点。
 \subsection{*$U(5)$分解}
+\label{sec:u5}
 纯旋量约束导致纯旋量表述下的OPE不是自由的，比如：\footnote{关于式子中每项的解释请见\cite{Berkovits:2000fe}。}
 \begin{equation}
+	\label{eq:5.55}
 	w_\alpha(y)\lambda^\beta(z)\sim(y-z)^{-1}\delta_\alpha^\beta-\frac{1}{2}(y-z)^{-1}\gamma_m^{\beta+}\xi e^{-\phi}(\gamma^m\lambda)_\alpha
 \end{equation}
-前面纯旋量的约束条件之间其实不是独立的，$U(5)$分解可以完全提取$\lambda^\alpha$的相互之间独立的分量，从而解掉纯旋量约束得到自由的CFT。但这么做也破坏了协变性，所以实践中很少直接用来计算。但是在纯旋量理论本身的发展中是必不可少的，Berkovits就是利用$U(5)$分解构造OPE改进了Siegle方法才得到纯旋量超弦。这里我们对$U(5)$分解本身做一些介绍。
+前面纯旋量的约束条件之间其实不是独立的，$U(5)$分解可以完全提取$\lambda^\alpha$的相互之间独立的分量，从而解掉纯旋量约束得到自由的CFT。虽然这么做也破坏了协变性，但最后得到的OPE总可以整合成协变形式。这里我们对$U(5)$分解本身做一些介绍，附录\ref{appendix:A}中我们会利用$U(5)$分解构造OPE。
 
 OPE中涉及到的那些场都是$SO(1,9)$的矢量表示或旋量表示，假设我们做了Wick转动到$SO(10)$\footnote{这也是不少文献喜欢将$\eta^{\mu\nu}$写作$\delta^{mn}$的原因。}，$U(5)\cong SU(5)\otimes U(1)$作为$SO(10)$的子群，我们希望计算$SO(10)$表示在其子群$U(5)$上的分导表示。在粒子物理唯象学上的大统一理论（Grand Unified Theory）其实就涉及到这种分解：\cite{Georgi:2000vve,Zee:2016fuk}
 \begin{equation}
@@ -370,10 +376,10 @@ OPE中涉及到的那些场都是$SO(1,9)$的矢量表示或旋量表示，假�
 \begin{equation}
 	\{b_a,b^b\}=\delta_a^b,\quad\{b_a,b_b\}=\{b^a,b^b\}=0
 \end{equation}
-那么左手（$\Gamma_{11}=-1$）Weyl旋量$\ket{\lambda}$和右手（$\Gamma_{11}=+1$）Weyl旋量$\ket{\Omega}$可以用下面的式子生成：
+那么左手（$\Gamma_{11}=-1$）Weyl旋量$\ket{\lambda}$和右手（$\Gamma_{11}=+1$）Weyl旋量$\ket{\omega}$可以用下面的式子生成：
 \begin{equation}
 	\begin{aligned}
-		\left|\lambda\right\rangle&=\lambda^+|0\rangle+\frac{1}{2}\lambda_{ab}b^bb^a|0\rangle+\frac{1}{4!}\lambda^a\epsilon_{abcde}b^eb^db^cb^b|0\rangle,\\\left|{\Omega}\right\rangle&=\frac{1}{5!}\omega_+\varepsilon_{abcde}b^ab^bb^cb^db^e\ket{0}+\frac{1}{2!3!}\omega^{ab}\varepsilon_{abcde}b^cb^db^e\ket{0}+\omega_ab^a\ket{0}
+		\left|\lambda\right\rangle&=\lambda^+|0\rangle+\frac{1}{2}\lambda_{ab}b^bb^a|0\rangle+\frac{1}{4!}\lambda^a\epsilon_{abcde}b^eb^db^cb^b|0\rangle,\\\left|{\omega}\right\rangle&=\frac{1}{5!}\omega_+\varepsilon_{abcde}b^ab^bb^cb^db^e\ket{0}+\frac{1}{2!3!}\omega^{ab}\varepsilon_{abcde}b^cb^db^e\ket{0}+\omega_ab^a\ket{0}
 	\end{aligned}
 \end{equation}
 \begin{equation}
@@ -387,7 +393,8 @@ $U(5)$分解下荷共轭矩阵以及$\Gamma_{11}$可以表达为：
 \end{equation}
 左手Weyl旋量的纯旋量约束$\lambda \gamma^\mu \lambda = 0$是在$16\times 16$的Weyl基底下写的，补写成$32\times 32$的Dirac旋量有形式：
 \begin{equation}
-	\Lambda^T\mathcal{C}\Gamma^m\Lambda=0,\quad \Gamma_{11}\Lambda=-\Lambda
+	\label{eq:diracps}
+	\Lambda^T\mathcal{C}\Gamma^m\Lambda=0,\quad \Gamma_{11}\Lambda=-\Lambda, \quad \Lambda = (\lambda , 0)^{\mathrm{T}}
 \end{equation}
 上式在$U(5)$分解的记号下可以表达为：
 \begin{equation}
@@ -400,15 +407,19 @@ $U(5)$分解下荷共轭矩阵以及$\Gamma_{11}$可以表达为：
 \end{equation}
 对应得到$b^a$的性质：
 \begin{equation}
-	b_a^\dagger=b^a,\quad(b^a)^\dagger=b_a,\quad b_a^T=-b^a,\quad(b^a)^T=-b_a,\quad \mathcal{C}b_a=b^a\mathcal{C},\quad \mathcal{C}b^a=b_a\mathcal{C}
+\begin{gathered}
+		b_a^\dagger=b^a,\quad(b^a)^\dagger=b_a,\quad b_a^T=-b^a,\quad(b^a)^T=-b_a,\quad \mathcal{C}b_a=b^a\mathcal{C},\quad \mathcal{C}b^a=b_a\mathcal{C}\\
+	\langle0|\mathcal{C}b^ab^bb^cb^db^e|0\rangle=\epsilon^{abcde}\Rightarrow\langle0|\mathcal{C}b^a|\lambda\rangle=\lambda^a,\cdots
+\end{gathered}
 \end{equation}
 所以：\footnote{$\llangle{0}|=\bra{0}$}
 \begin{equation}
-	\llangle\lambda|=\langle0|\lambda_++\frac{1}{2}\langle0|b_ab_b\lambda_{ab}+\frac{1}{24}\langle0|b_bb_cb_db_e\lambda^a\epsilon_{abcde}
+	\llangle\lambda|=\langle0|\lambda^++\frac{1}{2}\langle0|b_ab_b\lambda_{ab}+\frac{1}{24}\langle0|b_bb_cb_db_e\lambda^a\epsilon_{abcde}
 \end{equation}
 带入到\ref{eq:5.64}纯旋量条件后计算得到：
 \begin{equation}
-	2\lambda^+\lambda^a-\frac{1}{4}\epsilon^{abcde}\lambda_{bc}\lambda_{de}=0,\quad \langle0|Cb_b|0\rangle=2\lambda^a\lambda_{ab}
+	\label{eq:5.69}
+	2\lambda^+\lambda^a-\frac{1}{4}\epsilon^{abcde}\lambda_{bc}\lambda_{de}=0,\quad \langle0|\mathcal{C}b_b|0\rangle=2\lambda^a\lambda_{ab}
 \end{equation}
 注意第二个约束由第一个约束隐含，所以看似纯旋量约束有$10$个分量，但在$U(5)$分解下看到其独立分量只有五个，所以纯旋量有$11$个自由度。
 \section{纯旋量超弦振幅}
@@ -482,11 +493,11 @@ $\lambda$鬼数为$+1$，$w$鬼数为$-1$。下面的OPE表明其只是个准初
 \begin{equation}
 	[\mathcal{D}\lambda][\mathcal{D}\omega]\to[d\lambda_0^\alpha]\prod_{i=1}[d\lambda_i^\alpha][d\omega_\beta^i]
 \end{equation}
-后面的非零模鬼数贡献抵消，也就是说$[d\lambda_0^\alpha]$贡献鬼数$+8$。由于纯旋量空间是$16$维复流形的$11$维子流形，在纯旋量空间中积分应当构造下面的顶微分形式：
+后面的非零模鬼数贡献抵消，也就是说$[d\lambda_0^\alpha]$贡献鬼数$+8$。由于纯旋量空间是$16$维复流形的$11$维子流形，在纯旋量空间中积分应当构造与下面的顶微分形式成正比的协变$11$形式$[\mathcal{D}\lambda]$：
 \begin{equation}
-	\epsilon_{\alpha_1...\alpha_5\beta_1...\beta_{11}}d\lambda^{\beta_1}\wedge\cdots\wedge d\lambda^{\beta_{11}}=?
+	\epsilon_{\alpha_1...\alpha_5\beta_1...\beta_{11}}d\lambda^{\beta_1}\wedge\cdots\wedge d\lambda^{\beta_{11}}:=[d\lambda^{11}]
 \end{equation}
-其鬼数为$11$，但三个无积分顶角算符贡献的$\lambda^3$和$[d\lambda_0^\alpha]$合在一起正好贡献$11$的鬼数，再加上旋量指标全反对称的要求给出下面的测度定义：
+其鬼数为$11$，但三个无积分顶角算符贡献的$\lambda^3$和$[d\lambda_0^\alpha]$合在一起正好贡献$11$的鬼数，再加上旋量指标全反对称的要求，以及纯旋量约束$d(\lambda\gamma^{m}\lambda)=2\lambda\gamma^{m}d\lambda=0$给出的要求$\lambda^\beta\gamma_{\beta\alpha_i}^{\boldsymbol{m}}(d^{11}\lambda)^{[\alpha_1...\alpha_{11}]}=0$，导出下面的测度定义：
 \begin{equation}
 	[d\lambda^\alpha](\lambda\gamma^{\mu_1})_{\alpha_1}(\lambda\gamma^{\mu_2})_{\alpha_2}(\lambda\gamma^{\mu_3})_{\alpha_3}(\gamma_{\mu_1\mu_2\mu_3})_{\alpha_4\alpha_5}=\epsilon_{\alpha_1...\alpha_5\beta_1...\beta_{11}}d\lambda^{\beta_1}\wedge\cdots\wedge d\lambda^{\beta_{11}}
 \end{equation}
@@ -505,6 +516,8 @@ $\lambda$鬼数为$+1$，$w$鬼数为$-1$。下面的OPE表明其只是个准初
 	\end{aligned}
 \end{equation}
 附录\ref{appendix:B}中给出了更多例子。利用\texttt{FORM}计算软件可实现自动化计算。\cite{Mafra:2010pn}
+
+这里对纯旋量空间协变积分测度的定义采用非常简略的启发式的导出方法，对于后面树图计算而言已足够，更加详细的协变积分测度构造方法，特别是在圈图计算上的应用可参考文献\cite{gzq,Berkovits:2004px,GomezZuniga:2011soo,Gomez:2009qd,Berkovits:2004bw}。
 
 最后，再来看一个三点超振幅计算的例子。只有无积分顶角算符插入，不需要计算OPE，只需要展开超场算零模就好了。由于纯旋量超弦直接计算的就是超振幅，但是从超场展开式可以看出$A_\alpha$的$\theta^{2k}$分量代表胶微子，$\theta^{2k-1}$分量代表胶子，通过这种方式便可以提取分量振幅\ref{eq:4.71}和\ref{eq:4.74}。比如三胶子振幅有三项：\footnote{由于三点特殊的运动学性质，不难发现Koba-Nielsen因子为$1$。}
 \begin{equation}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{141}
+\begin{thebibliography}{149}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -557,6 +557,31 @@ MAFRA C~R.
 \newblock 2010.
 \newblock arXiv: \eprint{https://arxiv.org/abs/1007.4999}{1007.4999}.
 
+\bibitem[高志全(2015)]{gzq}
+高志全.
+\newblock 超弦理论的高圈散射振幅计算\allowbreak[D].
+\newblock 中国科学院大学, 2015.
+
+\bibitem[Gomez Zu\~niga(2011)]{GomezZuniga:2011soo}
+GOMEZ ZU\~NIGA H.
+\newblock {Some mathematical aspects and scattering amplitudes in the pure
+  spinor formalism}\allowbreak[D].
+\newblock Sao Paulo, IFT, 2011.
+
+\bibitem[Gomez(2009)]{Gomez:2009qd}
+GOMEZ H.
+\newblock {One-loop Superstring Amplitude From Integrals on Pure Spinors
+  Space}\allowbreak[J/OL].
+\newblock JHEP, 2009, 12: 034.
+\newblock DOI: \doi{10.1088/1126-6708/2009/12/034}.
+
+\bibitem[Berkovits et~al.(2004)Berkovits and Cherkis]{Berkovits:2004bw}
+BERKOVITS N, CHERKIS S~A.
+\newblock {Higher-dimensional twistor transforms using pure
+  spinors}\allowbreak[J/OL].
+\newblock JHEP, 2004, 12: 049.
+\newblock DOI: \doi{10.1088/1126-6708/2004/12/049}.
+
 \bibitem[Gross et~al.(1985)Gross, Harvey, Martinec, and Rohm]{Gross:1984dd}
 GROSS D~J, HARVEY J~A, MARTINEC E~J, et~al.
 \newblock {The Heterotic String}\allowbreak[J/OL].
@@ -960,5 +985,33 @@ AISAKA Y, ARROYO E~A, BERKOVITS N, et~al.
   Spectrum}\allowbreak[J/OL].
 \newblock JHEP, 2008, 08: 050.
 \newblock DOI: \doi{10.1088/1126-6708/2008/08/050}.
+
+\bibitem[Schwichtenberg(2018)]{Schwichtenberg:2015jcd}
+SCHWICHTENBERG J.
+\newblock Undergraduate lecture notes in physics: {Physics from
+  Symmetry}\allowbreak[M/OL].
+\newblock Springer, 2018.
+\newblock DOI: \doi{10.1007/978-3-319-66631-0}.
+
+\bibitem[彭俊金\ 等(2019)彭俊金 and 雷良建]{ZSDZ201905004}
+彭俊金, 雷良建.
+\newblock
+  由反对称化操作探究Levi-Civita与Kronecker符号的性质\allowbreak[J/OL].
+\newblock 中山大学学报(自然科学版), 2019, 58\allowbreak (05): 26-32.
+\newblock DOI: \doi{10.13471/j.cnki.acta.snus.2019.05.004}.
+
+\bibitem[Berkovits(2001)]{Berkovits:2001us}
+BERKOVITS N.
+\newblock {Relating the RNS and pure spinor formalisms for the
+  superstring}\allowbreak[J/OL].
+\newblock JHEP, 2001, 08: 026.
+\newblock DOI: \doi{10.1088/1126-6708/2001/08/026}.
+
+\bibitem[Hoogeveen et~al.(2010)Hoogeveen and Skenderis]{Hoogeveen:2009hk}
+HOOGEVEEN J, SKENDERIS K.
+\newblock {Decoupling of unphysical states in the minimal pure spinor formalism
+  I}\allowbreak[J/OL].
+\newblock JHEP, 2010, 01: 041.
+\newblock DOI: \doi{10.1007/JHEP01(2010)041}.
 
 \end{thebibliography}

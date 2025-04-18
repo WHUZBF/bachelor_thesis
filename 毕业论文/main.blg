@@ -24,46 +24,46 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 10217 items from 5000.
+Reallocated field_info (elt_size=4) to 10513 items from 5000.
 Database file #1: ref/bachelor-refs.bib
-You've used 141 entries,
+You've used 149 entries,
             5374 wiz_defined-function locations,
-            2040 strings with 30790 characters,
-and the built_in function-call counts, 1013135 in all, are:
-= -- 25240
-> -- 110400
-< -- 139207
-+ -- 39259
-- -- 7116
-* -- 8717
-:= -- 141286
-add.period$ -- 544
-call.type$ -- 141
-change.case$ -- 938
-chr.to.int$ -- 34173
-cite$ -- 141
-duplicate$ -- 3621
-empty$ -- 15740
-format.name$ -- 3321
-if$ -- 263870
+            2090 strings with 31997 characters,
+and the built_in function-call counts, 1057881 in all, are:
+= -- 26487
+> -- 114958
+< -- 145168
++ -- 41028
+- -- 7410
+* -- 9156
+:= -- 147628
+add.period$ -- 574
+call.type$ -- 149
+change.case$ -- 974
+chr.to.int$ -- 35680
+cite$ -- 149
+duplicate$ -- 3816
+empty$ -- 16632
+format.name$ -- 3457
+if$ -- 275525
 int.to.chr$ -- 1
-int.to.str$ -- 142
+int.to.str$ -- 150
 missing$ -- 0
-newline$ -- 846
-num.names$ -- 425
-pop$ -- 50043
+newline$ -- 892
+num.names$ -- 449
+pop$ -- 52264
 preamble$ -- 1
-purify$ -- 141
+purify$ -- 149
 quote$ -- 0
-skip$ -- 105667
+skip$ -- 110080
 stack$ -- 0
-substring$ -- 52704
-swap$ -- 151
-text.length$ -- 2719
+substring$ -- 55165
+swap$ -- 159
+text.length$ -- 2849
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1431
+type$ -- 1515
 warning$ -- 0
-while$ -- 3010
+while$ -- 3157
 width$ -- 0
-write$ -- 2140
+write$ -- 2259
