@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{为什么要研究弦振幅？}{3}{0}{1}
+\beamer@sectionintoc {2}{纯旋量超弦}{4}{0}{2}
+\beamer@sectionintoc {3}{盘面散射振幅}{10}{0}{3}
+\beamer@sectionintoc {4}{构建SYM树图BCJ分子}{15}{0}{4}
+\setcounter {tocdepth}{-5}
