@@ -1,15 +1,13 @@
 \chapter{弦微扰论}
-\ref{chap:4}
 \label{chap:4}
-本节核心是将\ref{eq:2.39}的规范固定于黎曼曲面模空间相联系，并利用鬼场进行计算。弦微扰论目前前沿研究方向可见\cite{berkovits2022snowmasswhitepaperstring}，超弦的规范固定比较复杂，详细可见\cite{Witten:2012bh}。本节还给出了一些玻色弦和超弦振幅的计算例子，以及Kawai-Lewellen-Tye关系\cite{Kawai:1985xq}和单值关系\cite{Bjerrum-Bohr:2009ulz}。
+本章首先从数学上介绍黎曼曲面模空间的相关背景知识，并给出了玻色弦振幅路径积分测度的一般形式，超弦理论与之类似但复杂不少，一般讨论可见\cite{Witten:2012bh}。然后详细计算了球面与盘面上物质场和鬼场的关联函数，进而给出了一些玻色弦和超弦振幅的计算例子，以及Kawai-Lewellen-Tye关系\cite{Kawai:1985xq}和单值关系\cite{Bjerrum-Bohr:2009ulz}。
 
 \section{模空间测度}
-\ref{eq:2.39}的路径积分是对所有$\text{diff}\times\text{Weyl}$二维闭曲面等价类（$\mathcal{D}g$）以及到靶空间的嵌入（$\mathcal{D}X$）的求和。在数学上，$\text{diff}$的等价类由黎曼流形描述，多模去$\text{Weyl}$的等价类则由一维复流形，也就是黎曼曲面描述。我们首先从数学上对此进行叙述，这是代数几何中标准的内容\cite{forster2012lectures,schlichenmaier2010introduction,griffiths2014principles}，我们选用更容易接受的物理些的讲法\cite{Giacchetto:2024aka,Staessens:2010vi}。
+式\ref{eq:2.39}的路径积分是对所有$\text{diff}\times\text{Weyl}$二维闭曲面等价类（$\mathcal{D}g$）以及到靶空间的嵌入（$\mathcal{D}X$）的求和。在数学上，$\text{diff}$的等价类由黎曼流形描述，多模去$\text{Weyl}$的等价类则由一维复流形，也就是黎曼曲面描述。我们首先从数学上对此进行叙述，这是代数几何中标准的内容\cite{forster2012lectures,schlichenmaier2010introduction,griffiths2014principles}，我们选用更容易接受的物理些的讲法\cite{Giacchetto:2024aka,Staessens:2010vi}。方便后续利用Faddeev–Popov（FP）鬼场方法进行计算。
 \subsection{黎曼曲面模空间}
 黎曼曲面本身的定义是不含度规的，但是考虑在二维曲面$M$上加入不同的度规结构$[g]_{\text{diff}}$使之称为黎曼流形。下标$\text{diff}$提醒度量本身与坐标卡选取无关\footnote{在物理上微分同胚变换总是用不严谨的坐标变换替代，而数学上更偏向使用坐标无关的语言。}。可以证明任意一个度规结构$g$都给定了$M$上的复结构，而且此复结构仅仅依赖于度规的共形结构，也就是等价类$[g]_{\text{diff}\times\text{Weyl}}$，反过来，任意一个黎曼曲面都存在唯一一个与复结构相容的共形结构$[g]$。这样我们就把${\mathcal{D}[g]_{\text{diff}\times\text{Weyl}}}$的计算彻底与黎曼曲面上的复结构关联起来了。
 
 类似微分同胚的定义，可以给出黎曼曲面之间全纯同构（共性等价）的概念，全纯同构对黎曼曲面进行了非常强的划分：
-
 \begin{boxedtext}[单值化定理]
 任何黎曼曲面$M$都共形等价于$\hat{M}/\pi_1(M)$，其中$\hat{M}$为$M$的泛覆叠空间，有下面几种情况：
 \begin{equation*}
@@ -444,7 +442,7 @@ $\succ_{\sigma}$表示在排序$\sigma$中的先后顺序。$a\shuffle b$表示�
 \begin{equation}
 	\mathcal{M}_n\sim\sum_{\rho,\tau\in S_{n-3}}A_n\left(1,\rho,n-1,n|\frac{\alpha'}{4}\right)S_{\alpha^{\prime}}(\rho|\tau)\tilde A_n\left(1,\tau,n,n-1|\frac{\alpha^\prime}{4}\right)
 \end{equation}
-这里$A(\bullet|\frac{\alpha\prime}{4})$表示把开弦振幅中的$\alpha\prime$全部替换为$\alpha^\prime/4$，后面我们提到开闭弦关系假设隐含这一替换约定。注意色序振幅根据上一节的单值关系只有$(n-3)!$个独立的项，在KLT关系这里也有体现，这里$S[\sigma|\tau]$称为KLT核或动量核。此KLT关系在$\alpha^\prime\to 0$的情况下得到胶子振幅与引力子振幅之间的KLT关系，动量核退化为：
+这里$A(\bullet|\frac{\alpha^\prime}{4})$表示把开弦振幅中的$\alpha^\prime$全部替换为$\alpha^\prime/4$，后面我们提到开闭弦关系假设隐含这一替换约定。注意色序振幅根据上一节的单值关系只有$(n-3)!$个独立的项，在KLT关系这里也有体现，这里$S[\sigma|\tau]$称为KLT核或动量核。此KLT关系在$\alpha^\prime\to 0$的情况下得到胶子振幅与引力子振幅之间的KLT关系，动量核退化为：
 \begin{equation}
 	\mathcal{S}[\alpha|\beta]=\prod_{i=2}^{n-2}\left(s_{1,\alpha(i)}+\sum_{j=2}^{i-1}\theta(\alpha(j),\alpha(i)|\beta) s_{\alpha(j),\alpha(i)}\right),\quad s_{ab}:=2k_a\cdot k_b
 \end{equation}
