@@ -71,7 +71,8 @@
 \contentsline {subsection}{\numberline {A1.2}$bc$鬼场}{118}{subsection.A.1.2}%
 \contentsline {section}{\numberline {A2}$\mathcal {N}=1$ SCFT}{118}{section.A.2}%
 \contentsline {subsection}{\numberline {A2.1}自由费米CFT}{118}{subsection.A.2.1}%
-\contentsline {subsection}{\numberline {A2.2}$\beta \gamma $鬼场}{119}{subsection.A.2.2}%
-\contentsline {subsection}{\numberline {A2.3}*超空间表述}{120}{subsection.A.2.3}%
+\contentsline {subsection}{\numberline {A2.2}自旋场OPE}{119}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A2.3}$\beta \gamma $鬼场}{120}{subsection.A.2.3}%
+\contentsline {subsection}{\numberline {A2.4}*超空间表述}{120}{subsection.A.2.4}%
 \contentsline {section}{\numberline {A3}纯旋量形式}{122}{section.A.3}%
-\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}一些常用的$\gamma $矩阵计算恒等式}{125}{appendix.B}%
+\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}一些常用的$\gamma $矩阵计算恒等式}{127}{appendix.B}%

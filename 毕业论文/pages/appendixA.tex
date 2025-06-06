@@ -108,6 +108,24 @@ T^\mathrm{m}(z_1)G^\mathrm{m}(z_2)&\sim\frac{\frac{3}{2}G^\mathrm{m}(z_2)}{(z_1-
 	\label{eq:A21}
 	G^\mathrm{m}(z_1)\phi_{h+1/2}(z_2)\sim\frac{h\phi_h(z_2)}{(z_1-z_2)^2}+\frac{\partial_{z_2}\phi_h(z_2)}{2(z_1-z_2)}
 \end{equation}
+\subsection{自旋场OPE}
+RNS超弦的CFT实际上是非自由的CFT，由于RNS超弦真空态比较微妙，导致顶角算符会出现自旋场，而自旋场的OPE从式\ref{eq:4.61}可以看出为：
+\begin{equation}
+	\psi^{\boldsymbol{\mu}}(z)S_A(w)\sim\frac{(\Gamma^{\boldsymbol{\mu}})_A{}^BS_B(w)}{\sqrt{2}(z-w)^{1/2}}
+\end{equation}
+\begin{equation}
+	S_A(z)S_B(w)\sim\frac{C_{AB}}{(z-w)^{D/8}}+\frac{(\Gamma^\mu C)_{AB}\psi_\mu(w)}{\sqrt{2}(z-w)^{D/8-1/2}}
+\end{equation}
+显然自旋场的引入导致CFT非自由，也使得前面利用CFT方法计算振幅变得更加困难。在\ref{eq:4.65}的手征分解后有如下形式：
+\begin{equation}
+	\psi^\mu(z)S_\alpha(w)\sim\frac{1}{\sqrt{2}}\frac{(\Gamma^\mu)_\alpha\dot{\beta}}{(z-w)^{1/2}}S_{\dot{\beta}}(w)
+\end{equation}
+\begin{equation}
+	S_\alpha(z)S_\beta(w)\sim\frac{1}{\sqrt2}\frac{(\Gamma_\mu)_{\alpha\beta}}{(z-w)^{3/4}}\psi^\mu(w)
+\end{equation}
+\begin{equation}
+	S_\alpha(z)S_\beta(w)\sim\frac{C_{\alpha\dot{\beta}}}{(z-w)^{5/4}}+\frac{1}{2}\frac{(\Gamma_\mu\Gamma_\nu)_{\alpha\dot{\beta}}}{(z-w)^{1/4}}:\psi^\mu\psi^\nu(w):
+\end{equation}
 \subsection{$\beta\gamma$鬼场}
 $\beta\gamma$鬼场和$bc$鬼场非常相似，从作用量和能动张量就能看到这一点：
 \begin{equation}

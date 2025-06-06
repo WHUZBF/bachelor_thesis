@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  12 MAY 2025 13:23
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.14)  7 JUN 2025 00:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2244,19 +2244,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [118]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 111.
+(hyperref)                removing `math shift' on input line 129.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 111.
+(hyperref)                removing `\beta' on input line 129.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gamma' on input line 111.
+(hyperref)                removing `\gamma' on input line 129.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 111.
+(hyperref)                removing `math shift' on input line 129.
 
 
 
@@ -2265,7 +2265,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [120]
 
 [121]
-Overfull \hbox (7.11964pt too wide) detected at line 216
+Overfull \hbox (7.11964pt too wide) detected at line 234
 [][][]\OML/cmm/m/it/12.045 T[] \OT1/cmr/m/n/12.045 =: \OMS/cmsy/m/n/12.045 ^^@[
 ]\OT1/cmr/m/n/12.045 ^^E[]^^E[] \OMS/cmsy/m/n/12.045 ^^@ \OML/cmm/m/it/12.045 d
 [] @  []^^R[] \OT1/cmr/m/n/12.045 + \OML/cmm/m/it/12.045 w[] @  []^^U[] \OT1/cm
@@ -2279,12 +2279,21 @@ m/m/it/12.045 N[] \OT1/cmr/m/n/12.045 =: \OMS/cmsy/m/n/12.045 ^^@[]\OT1/cmr/m/n
 
 [122]
 
-[123])
+[123]
 
-[124]
+[124])
+
+[125]
 \openout2 = `pages/appendixB.aux'.
 
  (./pages/appendixB.tex
+
+[126
+
+
+
+
+]
 附录 B
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2300,12 +2309,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[125
-
-
-
-
-]
+[127]
 Overfull \hbox (1.24109pt too wide) detected at line 83
 [][][][][]
  []
@@ -2320,9 +2324,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[126])
+[128])
 
-[127] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
+[129] (./main.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
 (./pages/chapter3.aux) (./pages/chapter4.aux) (./pages/chapter5.aux)
 (./pages/chapter6.aux) (./pages/chapter7.aux) (./pages/acknowledgement.aux)
 (./pages/appendixA.aux) (./pages/appendixB.aux))
@@ -2332,12 +2336,12 @@ L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 40673 strings out of 474240
- 915379 string characters out of 5745918
+ 40674 strings out of 474240
+ 915385 string characters out of 5745918
  1949560 words of memory out of 5000000
- 62500 multiletter control sequences out of 15000+600000
+ 62501 multiletter control sequences out of 15000+600000
  589330 words of font info for 237 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,19n,121p,2041b,791s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (137 pages).
+Output written on main.pdf (139 pages).
